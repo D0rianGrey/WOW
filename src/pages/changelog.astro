@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { entityRefHref } from '../lib/entity-links';
+
+const entries = (await getCollection('changelog')).sort((left, right) => {
+  return right.data.version.localeCompare(left.data.version, undefined, { numeric: true });
+});
+
+const refLabel = (ref: string) => {
+  const [collection, id] = ref.split('/');
+  const labels: Record<string, string> = {
+    timeline: 'Хронология',
+    forever: 'Изменения Forever',
+    characters: 'Персонаж',
+    factions: 'Фракция',
+    locations: 'Место',
+    glossary: 'Словарь',
+    chapters: 'Глава'
+  };
+  return `${labels[collection] ?? collection}: ${id}`;
+};
+---
+
+<BaseLayout title="Журнал обновлений" description="Что и когда менялось в энциклопедии World of Warcraft: Forever.">
+  <header class="path-header">
+    <p class="eyebrow">История самой энциклопедии</p>
+    <h1>Журнал обновлений</h1>
+    <p class="lead">Здесь записано, что менялось в энциклопедии. Каждое изменение лора сначала проходит проверку цитатами официальных источников.</p>
+  </header>
+
+  <ol class="changelog">
+    {entries.map((entry) => (
+      <li class="changelog-entry" id={entry.data.id}>
+        <p class="event-date">{entry.data.date} · v{entry.data.version}</p>
+        <h2>{entry.data.title}</h2>
+        <ul>
+          {entry.data.changes.map((change) => <li>{change}</li>)}
+        </ul>
+        {entry.data.entityRefs.length > 0 && (
+          <ul class="event-entities" aria-label="Затронутые разделы">
+            {entry.data.entityRefs.map((ref) => <li><a href={entityRefHref(ref)}>{refLabel(ref)}</a></li>)}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ol>
+</BaseLayout>

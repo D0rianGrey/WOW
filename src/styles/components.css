@@ -238,3 +238,28 @@ main:focus { outline: none; }
   .timeline-event article { padding: 14px; }
   .era-item { grid-template-columns: 1fr; gap: 6px; }
 }
+
+/* Forever changes and changelog */
+.forever-index ol { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 30px; padding-left: 20px; font-size: .86rem; }
+.forever-list { display: grid; gap: 28px; }
+.forever-change { padding: 22px 24px; border: 1px solid var(--line); background: #151c21; }
+.forever-change-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.forever-change-header h2 { margin: 0; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+.forever-summary { color: var(--muted); }
+.forever-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 14px 0; }
+.forever-column { padding: 14px 16px; border: 1px solid #333c43; }
+.forever-column p:last-child { margin-bottom: 0; }
+.forever-column.is-original { border-left: 3px solid var(--color-status-established); }
+.forever-column.is-forever { border-left: 3px solid var(--color-status-forever); background: #1b1822; }
+.forever-why { margin: 0 0 10px; }
+.forever-sources { font-size: .82rem; color: var(--muted); }
+.forever-sources summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
+.forever-schedule { margin-top: 34px; padding: 22px 24px; border: 1px solid var(--gold); background: #1c1a14; }
+.forever-schedule h2 { margin: 6px 0 10px; }
+.changelog { list-style: none; margin: 10px 0; padding: 0; border-top: 1px solid var(--line); }
+.changelog-entry { padding: 22px 8px; border-bottom: 1px solid var(--line); }
+.changelog-entry h2 { margin: 6px 0 10px; font-size: 1.45rem; }
+@media (max-width: 760px) {
+  .forever-columns { grid-template-columns: 1fr; }
+  .forever-change, .forever-schedule { padding: 16px; }
+}

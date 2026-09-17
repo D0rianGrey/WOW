@@ -1,0 +1,47 @@
+[
+  {
+    "id": "v0-1-guided-path",
+    "date": "2026-09-17",
+    "version": "0.1",
+    "title": "Путеводитель из восьми глав",
+    "changes": [
+      "Восемь глав от древнего Azeroth до порога Forever с режимами «Главное» и «Подробно».",
+      "Статусы лора, спойлеры Retail и отметка прочитанных глав."
+    ],
+    "entityRefs": []
+  },
+  {
+    "id": "v0-2-evidence-audit",
+    "date": "2026-09-17",
+    "version": "0.2",
+    "title": "Аудит и реестр доказательств",
+    "changes": [
+      "Каждый факт глав подкреплён дословной цитатой официального источника Blizzard; цитаты проверяются скриптом по живым страницам.",
+      "Главы переписаны: War of the Ancients рассказана полностью, описан мир первого года, убраны детали без официального источника.",
+      "Спойлеры Retail раскрываются по отдельным блокам."
+    ],
+    "entityRefs": []
+  },
+  {
+    "id": "v0-3-timeline",
+    "date": "2026-09-17",
+    "version": "0.3",
+    "title": "Хронология и эпохи",
+    "changes": [
+      "Главная хронология из 32 событий без выдуманных лет, с пометками о приблизительных датах.",
+      "Фильтры по эпохе, фракции, персонажу, месту и статусу; страница эпох."
+    ],
+    "entityRefs": ["timeline/forever", "timeline/great-sundering"]
+  },
+  {
+    "id": "v0-4-forever-changes",
+    "date": "2026-09-17",
+    "version": "0.4",
+    "title": "Изменения Forever",
+    "changes": [
+      "Сравнение первого года оригинального World of Warcraft и объявленного Forever: time bubble, Forsaken Kingdom, Forsaken Paladins, новые сочетания расы и класса, Skyborne, Zephras Isle, Mount Hyjal, Shen’dralas, Riverglades, подземелья и рейды.",
+      "Объявленные даты беты, запуска и первых рейдов с пометкой о несогласованных часовых поясах."
+    ],
+    "entityRefs": ["forever/time-bubble-year-1", "forever/skyborne", "forever/announced-schedule"]
+  }
+]

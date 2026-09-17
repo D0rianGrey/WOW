@@ -1,7 +1,14 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 
-import { chapterEntrySchema, loreEntrySchema, sourceSchema, timelineEntrySchema } from './lib/content';
+import {
+  changelogEntrySchema,
+  chapterEntrySchema,
+  foreverEntrySchema,
+  loreEntrySchema,
+  sourceSchema,
+  timelineEntrySchema
+} from './lib/content';
 
 const chapters = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/chapters' }),
@@ -25,7 +32,12 @@ const locations = defineCollection({
 
 const forever = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/forever' }),
-  schema: loreEntrySchema
+  schema: foreverEntrySchema
+});
+
+const changelog = defineCollection({
+  loader: file('src/content/changelog/entries.json'),
+  schema: changelogEntrySchema
 });
 
 const timeline = defineCollection({
@@ -51,5 +63,6 @@ export const collections = {
   forever,
   timeline,
   glossary,
-  sources
+  sources,
+  changelog
 };

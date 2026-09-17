@@ -253,5 +253,50 @@
     "type": "official-fiction",
     "checkedAt": "2026-09-17",
     "notes": "Official short story; used only for its statement that Grom ended the blood curse at the cost of his life."
+  },
+  {
+    "id": "forever-deep-dive",
+    "title": "World of Warcraft: Forever Deep Dive Panel Recap",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24303313/world-of-warcraft-forever-deep-dive-panel-recap",
+    "type": "official-article",
+    "checkedAt": "2026-09-17",
+    "notes": "Deep Dive panel recap: new race and class combinations, Hardcore after launch."
+  },
+  {
+    "id": "forever-pre-purchase",
+    "title": "Pre-Purchase World of Warcraft: Forever Upgrades and Begin Your Next Journey in Azeroth",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24301508/pre-purchase-world-of-warcraft-forever-upgrades-and-begin-your-next-journey-in-azeroth",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Launch, beta and name reservation dates; what the upgrade packs include."
+  },
+  {
+    "id": "forever-collectors-edition",
+    "title": "Pre-Purchase the World of Warcraft®: Forever Collector’s Edition",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/24302498/pre-purchase-the-world-of-warcraft-forever-collectors-edition",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Labels the beta access period PDT where the pre-purchase article says PST."
+  },
+  {
+    "id": "forever-hub",
+    "title": "World of Warcraft: Forever",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/forever",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Official product page: Skyborne faction paths, new combinations, Mount Hyjal."
+  },
+  {
+    "id": "blizzcon-2026-opening-ceremony",
+    "title": "Everything Announced at BlizzCon® 2026 Opening Ceremony",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24301453/everything-announced-at-blizzcon-2026-opening-ceremony",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Counts Forever content as three new zones, nine dungeons and two raids."
   }
 ]

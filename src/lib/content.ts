@@ -71,6 +71,29 @@ export const timelineEntrySchema = z.object({
   chapterSlug: z.string().trim().min(1)
 }).superRefine(requireSourcesUnlessEstablished);
 
+export const foreverEntryKinds = ['change', 'schedule'] as const;
+
+// Forever comparison entries: what original WoW Year 1 had versus what Forever announces.
+export const foreverEntrySchema = z.object({
+  ...loreFields,
+  kind: z.enum(foreverEntryKinds),
+  order: z.number().int().min(0),
+  oldExpectation: z.string().trim().min(1),
+  foreverVersion: z.string().trim().min(1),
+  whyItMatters: z.string().trim().min(1),
+  sourceNote: z.string().trim().min(1).optional()
+}).superRefine(requireSourcesUnlessEstablished);
+
+// Editorial record of what changed in the encyclopedia; entityRefs use "collection/id".
+export const changelogEntrySchema = z.object({
+  id: z.string().trim().min(1),
+  date: dateSchema,
+  version: z.string().trim().min(1),
+  title: z.string().trim().min(1),
+  changes: z.array(z.string().trim().min(1)).min(1),
+  entityRefs: z.array(z.string().trim().regex(/^[a-z-]+\/[a-z0-9-]+$/))
+});
+
 export const sourceTypes = [
   'official-article',
   'official-announcement',
@@ -109,6 +132,8 @@ export const sourceSchema = z.object({
 export type LoreEntry = z.infer<typeof loreEntrySchema>;
 export type ChapterEntry = z.infer<typeof chapterEntrySchema>;
 export type TimelineEntry = z.infer<typeof timelineEntrySchema>;
+export type ForeverEntry = z.infer<typeof foreverEntrySchema>;
+export type ChangelogEntry = z.infer<typeof changelogEntrySchema>;
 export type Source = z.infer<typeof sourceSchema>;
 
 const referenceTargets = {

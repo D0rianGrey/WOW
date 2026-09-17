@@ -235,6 +235,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "forever/time-bubble-year-1",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -246,6 +247,9 @@
     "locator": "PDF p. 87",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
     ]
   },
   {
