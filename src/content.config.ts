@@ -1,0 +1,55 @@
+import { defineCollection } from 'astro:content';
+import { file, glob } from 'astro/loaders';
+
+import { chapterEntrySchema, loreEntrySchema, sourceSchema, timelineEntrySchema } from './lib/content';
+
+const chapters = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/chapters' }),
+  schema: chapterEntrySchema
+});
+
+const characters = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/characters' }),
+  schema: loreEntrySchema
+});
+
+const factions = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/factions' }),
+  schema: loreEntrySchema
+});
+
+const locations = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/locations' }),
+  schema: loreEntrySchema
+});
+
+const forever = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/forever' }),
+  schema: loreEntrySchema
+});
+
+const timeline = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/timeline' }),
+  schema: timelineEntrySchema
+});
+
+const glossary = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/glossary' }),
+  schema: loreEntrySchema
+});
+
+const sources = defineCollection({
+  loader: file('src/content/sources/core.json'),
+  schema: sourceSchema
+});
+
+export const collections = {
+  chapters,
+  characters,
+  factions,
+  locations,
+  forever,
+  timeline,
+  glossary,
+  sources
+};

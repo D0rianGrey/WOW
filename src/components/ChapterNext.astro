@@ -1,0 +1,51 @@
+---
+import { route } from '../lib/routes';
+
+interface ChapterLink { slug: string; title: string }
+interface Props {
+  currentId: string;
+  previous?: ChapterLink;
+  next?: ChapterLink;
+}
+const { currentId, previous, next } = Astro.props;
+---
+
+<nav class="chapter-next" aria-label="Переход между главами" data-completion-id={currentId}>
+  <div class="chapter-completion">
+    <p class="section-kicker">Ваш путь</p>
+    <button type="button" data-complete-chapter aria-pressed="false">
+      <span aria-hidden="true">✓</span>
+      <span data-completion-label>Отметить главу прочитанной</span>
+    </button>
+  </div>
+  <div class="chapter-links">
+    {previous ? <a class="chapter-link previous" href={route(`chapters/${previous.slug}`)}><span>← Предыдущая глава</span><strong>{previous.title}</strong></a> : <span />}
+    {next ? <a class="chapter-link next" href={route(`chapters/${next.slug}`)}><span>Следующая глава →</span><strong>{next.title}</strong></a> : <a class="chapter-link next" href={route('start-here')}><span>Путь завершён →</span><strong>Вернуться к маршруту</strong></a>}
+  </div>
+</nav>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-completion-id]').forEach((navigation) => {
+    const chapterId = navigation.dataset.completionId!;
+    const button = navigation.querySelector<HTMLButtonElement>('[data-complete-chapter]')!;
+    const label = navigation.querySelector<HTMLElement>('[data-completion-label]')!;
+    const readProgress = (): string[] => {
+      try {
+        const value: unknown = JSON.parse(localStorage.getItem('wow-reading-progress') || '[]');
+        return Array.isArray(value) ? value.filter((id): id is string => typeof id === 'string') : [];
+      } catch { return []; }
+    };
+    const update = () => {
+      const complete = new Set(readProgress()).has(chapterId);
+      button.setAttribute('aria-pressed', String(complete));
+      label.textContent = complete ? 'Глава прочитана' : 'Отметить главу прочитанной';
+    };
+    button.addEventListener('click', () => {
+      const completed = [...new Set([...readProgress(), chapterId])];
+      try { localStorage.setItem('wow-reading-progress', JSON.stringify(completed)); } catch { /* Completion remains usable as a session action. */ }
+      update();
+      window.dispatchEvent(new Event('wow:progress-changed'));
+    });
+    update();
+  });
+</script>

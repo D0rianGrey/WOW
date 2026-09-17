@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+
+import LoreBadge from '../components/LoreBadge.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { route } from '../lib/routes';
+import { validateChapterSourceIds } from '../lib/content';
+
+const chapters = (await getCollection('chapters')).sort((a, b) => a.data.order - b.data.order);
+const sources = await getCollection('sources');
+validateChapterSourceIds(chapters, sources);
+const chapterIds = chapters.map((chapter) => chapter.data.id);
+const totalMinutes = chapters.reduce((sum, chapter) => sum + chapter.data.readingMinutes, 0);
+---
+
+<BaseLayout title="Начать здесь" description="Восемь глав от древнего Azeroth до World of Warcraft: Forever." chapterIds={chapterIds}>
+  <header class="path-header">
+    <p class="eyebrow">Перед первым шагом</p>
+    <h1>Путь к Forever</h1>
+    <p class="lead">Восемь глав соединяют древний Azeroth, войны Alliance и Horde, падение Lordaeron и подтверждённую точку старта Forever. На первом проходе оставайтесь в режиме «Главное»: подробности всегда можно открыть позже.</p>
+    <div class="path-summary"><span>{chapters.length} глав</span><span>≈ {totalMinutes} минут</span><span>Прогресс хранится в этом браузере</span></div>
+  </header>
+
+  <ol class="chapter-path" aria-label="Порядок чтения">
+    {chapters.map((chapter, index) => (
+      <li data-path-chapter data-path-id={chapter.data.id}>
+        <span class="path-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        <div>
+          <div class="path-meta"><LoreBadge status={chapter.data.status} /><span>{chapter.data.readingMinutes} мин</span><span data-path-state>Не прочитано</span></div>
+          <h2><a href={route(`chapters/${chapter.data.slug}`)}>{chapter.data.title}</a></h2>
+          <p>{chapter.data.summary}</p>
+        </div>
+        <span class="path-arrow" aria-hidden="true">→</span>
+      </li>
+    ))}
+  </ol>
+</BaseLayout>
+
+<script>
+  function updatePath() {
+    let saved: unknown = [];
+    try { saved = JSON.parse(localStorage.getItem('wow-reading-progress') || '[]'); } catch { /* Empty path is safe. */ }
+    const completed = new Set(Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string') : []);
+    document.querySelectorAll<HTMLElement>('[data-path-id]').forEach((item) => {
+      const done = completed.has(item.dataset.pathId!);
+      item.classList.toggle('is-complete', done);
+      item.querySelector<HTMLElement>('[data-path-state]')!.textContent = done ? 'Прочитано' : 'Не прочитано';
+    });
+  }
+  updatePath();
+  window.addEventListener('wow:progress-changed', updatePath);
+  window.addEventListener('storage', updatePath);
+</script>

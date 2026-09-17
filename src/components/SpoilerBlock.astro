@@ -1,0 +1,45 @@
+---
+import LoreBadge from './LoreBadge.astro';
+interface Props { title: string; kind?: 'retail' | 'unconfirmed'; id?: string }
+const { title, kind = 'retail', id = `note-${crypto.randomUUID()}` } = Astro.props;
+---
+<section class="spoiler-block" data-spoiler-kind={kind} aria-label={title}>
+  <div class="spoiler-heading">
+    <span class="section-kicker">{kind === 'retail' ? 'За границей Forever' : 'Отдельная заметка'}</span>
+    {kind === 'unconfirmed' && <LoreBadge status="UNCONFIRMED" />}
+  </div>
+  <h3>{title}</h3>
+  <p class="spoiler-warning">{kind === 'retail'
+    ? 'Поздняя история Retail раскрывается только по вашему выбору.'
+    : 'Не установленный факт. Эта заметка открывается отдельно от спойлеров Retail.'}</p>
+  <button type="button" class="text-button" data-reveal aria-expanded="false" aria-controls={id}>
+    {kind === 'retail' ? 'Открыть раздел Retail' : 'Прочитать неподтверждённую заметку'}
+  </button>
+  <div id={id} data-spoiler-content hidden><slot /></div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-spoiler-kind]').forEach(block => {
+    const content = block.querySelector<HTMLElement>('[data-spoiler-content]')!;
+    const button = block.querySelector<HTMLButtonElement>('[data-reveal]')!;
+    const initialLabel = button.textContent;
+    function show(shown: boolean) {
+      content.hidden = !shown;
+      button.setAttribute('aria-expanded', String(shown));
+      button.textContent = shown ? 'Скрыть раздел' : initialLabel;
+    }
+    button.addEventListener('click', () => {
+      const shown = content.hidden !== false;
+      if (block.dataset.spoilerKind === 'retail') {
+        document.dispatchEvent(new CustomEvent('wow:spoilers-request', { detail: { shown } }));
+      } else {
+        show(shown);
+      }
+    });
+    if (block.dataset.spoilerKind === 'retail') {
+      show(document.documentElement.dataset.spoilers === 'shown');
+      document.addEventListener('wow:spoilers-changed', event => {
+        show((event as CustomEvent<{ shown: boolean }>).detail.shown);
+      });
+    }
+  });
+</script>

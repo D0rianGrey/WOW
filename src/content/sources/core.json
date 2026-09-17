@@ -1,0 +1,101 @@
+[
+  {
+    "id": "forever-announcement",
+    "title": "Carve a New Path with World of Warcraft: Forever",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever",
+    "type": "official-article",
+    "publishedAt": "2026-09-12",
+    "notes": "Core announcement for the permanent offering, starting point, and announced launch plan."
+  },
+  {
+    "id": "forever-found-photos",
+    "title": "World of Warcraft: Forever Found Photos Panel Recap",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24304071/world-of-warcraft-forever-found-photos-panel-recap",
+    "type": "official-article",
+    "publishedAt": "2026-09-13",
+    "notes": "Primary source for the time-bubble framing, Skyborne, Forsaken Paladins, and new regions."
+  },
+  {
+    "id": "forever-whats-next",
+    "title": "World of Warcraft: Forever What's Next Panel Recap",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
+    "type": "official-article",
+    "publishedAt": "2026-09-12",
+    "notes": "Primary source for geography, playable differences, and announced group content."
+  },
+  {
+    "id": "forsaken-kingdom-deep-dive",
+    "title": "Warcraft III: Reforged — Forsaken Kingdom Deep Dive Recap",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24298590/warcraft-iii-reforged-forsaken-kingdom-deep-dive-recap",
+    "type": "official-article",
+    "notes": "Primary bridge source; it does not replace campaign or quest text for detailed plot claims."
+  },
+  {
+    "id": "warcraft-iii-story-so-far",
+    "title": "Warcraft III: The Story So Far",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/23229617/warcraft-iii-the-story-so-far",
+    "type": "official-retrospective",
+    "notes": "Readable official retrospective for Warcraft I and II history; later than the original releases."
+  },
+  {
+    "id": "world-of-warcraft-2004-manual",
+    "title": "World of Warcraft Online Manual",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://assets.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt2e9295db02a222fc/6025bcbb6968b53d529edb2a/media_manual_classic_enUS.pdf",
+    "type": "official-manual",
+    "notes": "Contemporary-to-vanilla historical baseline; copyright 2004."
+  },
+  {
+    "id": "warcraft-ii-battle-net-article",
+    "title": "Fight for Honor in Warcraft II: Tides of Darkness, Now Available on Battle.net",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24055598/fight-for-honor-in-warcraft-ii-tides-of-darkness-now-available-on-battle-net",
+    "type": "official-article",
+    "notes": "Official context for the Second War and a link to the Warcraft II manual."
+  },
+  {
+    "id": "dragon-aspects-story-so-far",
+    "title": "The Story So Far: Take Wing Through Time with the Dragon Aspects",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/23876527/the-story-so-far-take-wing-through-time-with-the-dragon-aspects",
+    "type": "official-retrospective",
+    "notes": "Later official account of Azeroth's ancient history; kept distinct from Warcraft III-era creation language."
+  },
+  {
+    "id": "burning-crusade-story-so-far",
+    "title": "Burning Crusade Classic: The Story So Far",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/23679744/burning-crusade-classic-the-story-so-far",
+    "type": "official-retrospective",
+    "notes": "Later official account of the High Elves, Quel'Thalas, the Sunwell, and their alliance with Arathor."
+  },
+  {
+    "id": "muradin-hero-week",
+    "title": "Muradin Hero Week",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/14301664/muradin-hero-week",
+    "type": "official-retrospective",
+    "notes": "Warcraft-history section used for the War of the Three Hammers and Ironforge; crossover mechanics are excluded."
+  },
+  {
+    "id": "molten-core-anniversary",
+    "title": "20th Anniversary Realms: Molten Core and Onyxia's Lair Now Live",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24165121/20th-anniversary-realms-molten-core-and-onyxia-s-lair-now-live",
+    "type": "official-retrospective",
+    "notes": "Official dungeon history for Thaurissan's summoning of Ragnaros and the Molten Core consequence."
+  },
+  {
+    "id": "zuldazar-visitors-guide",
+    "title": "Battle for Azeroth Preview: Zuldazar Visitor's Guide",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/21701414/battle-for-azeroth-preview-zuldazar-visitors-guide",
+    "type": "official-retrospective",
+    "notes": "Later official account of Zuldazar's ancient imperial significance and loa worship; later political plot is excluded."
+  }
+]
