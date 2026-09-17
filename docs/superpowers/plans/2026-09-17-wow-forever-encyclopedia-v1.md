@@ -10,6 +10,8 @@
 
 **Spec:** `docs/superpowers/specs/2026-09-17-wow-forever-encyclopedia-design.md`
 
+**Revision 2026-09-17 (after audit):** Tasks 5–10 were rewritten from the audit in `docs/audits/2026-09-17-encyclopedia-v1-audit.md`. Task 4R records the remediation of Tasks 1–4. Read the gate before Task 5 first.
+
 ## Global Constraints
 
 - Main prose is Russian; canonical Warcraft names stay in original English.
@@ -18,6 +20,8 @@
 - Post-Forever Retail spoilers are hidden by default.
 - V1 contains real lore content, not placeholder cards.
 - Use primary Blizzard/in-game sources for Forever-sensitive claims where available.
+- Every factual claim is backed by a verbatim quote in `docs/research/evidence/` that passes `npm run verify:evidence`; nothing is written from memory.
+- Content describes the world as of original WoW Year 1 / the Forever starting point; later Retail material lives only inside `SpoilerBlock`.
 - Keep runtime dependencies minimal; do not add Tailwind or a client SPA framework.
 - Site must work under GitHub Pages base path `/WOW`.
 - No feature may depend on hover-only interaction.
@@ -44,6 +48,8 @@ WOW/
 │   │   ├── timeline/*.json
 │   │   ├── forever/*.md
 │   │   ├── glossary/*.json
+│   │   ├── changelog/*.json
+│   │   ├── update-log/*.json
 │   │   └── sources/*.json
 │   ├── components/
 │   │   ├── AppShell.astro
@@ -62,20 +68,23 @@ WOW/
 │   │   ├── index.astro
 │   │   ├── start-here.astro
 │   │   ├── timeline.astro
+│   │   ├── eras.astro
 │   │   ├── forever-changes.astro
 │   │   ├── glossary.astro
 │   │   ├── sources.astro
+│   │   ├── search.astro
 │   │   ├── changelog.astro
 │   │   ├── chapters/[slug].astro
-│   │   ├── characters/[slug].astro
-│   │   ├── factions/[slug].astro
-│   │   └── locations/[slug].astro
+│   │   ├── characters/{index,[slug]}.astro
+│   │   ├── factions/{index,[slug]}.astro
+│   │   └── locations/{index,[slug]}.astro
 │   ├── styles/
 │   │   ├── tokens.css
 │   │   ├── global.css
 │   │   ├── components.css
 │   │   └── print.css
 │   └── lib/
+│       ├── canonical-ids.ts
 │       ├── content.ts
 │       ├── routes.ts
 │       ├── timeline.ts
@@ -84,15 +93,22 @@ WOW/
 ├── public/
 │   ├── favicon.svg
 │   └── diagrams/*.svg
+├── scripts/
+│   └── verify-evidence.mjs
+├── docs/
+│   ├── research/evidence/*.json
+│   └── audits/*.md
 ├── tests/
 │   ├── content-schema.test.ts
+│   ├── chapter-content.test.ts
+│   ├── evidence-ledger.test.ts
 │   ├── timeline.test.ts
 │   ├── search.test.ts
 │   └── e2e/navigation.spec.ts
 ├── .github/workflows/
 │   ├── validate.yml
+│   ├── evidence.yml
 │   └── deploy.yml
-├── CHANGELOG.md
 └── README.md
 ```
 
@@ -340,23 +356,56 @@ git commit -m "feat: add guided pre-Forever lore path"
 
 ---
 
-### Task 5: Implement the master timeline
+### Task 4R: Audit remediation of Tasks 1–4 (done 2026-09-17)
+
+Audit report: `docs/audits/2026-09-17-encyclopedia-v1-audit.md`. This task records what the audit changed so later tasks build on it.
+
+**Result:**
+- Evidence ledger `docs/research/evidence/*.json` + `npm run verify:evidence` (every quote machine-checked against the live official page or PDF).
+- Chapters 00–07 corrected against the ledger: War of the Ancients told from the official Well of Eternity preview, Year-1 world state added to chapter 07, missing `sourceIds` added, mixed-status paragraphs marked with `data-lore-status` blocks.
+- Source schema: `type` is an enum, `url` or `citation` required (printed books allowed), optional `checkedAt`.
+- Non-`ESTABLISHED` lore must cite at least one source.
+- Tests: chapter sources must be backed by ledger entries; `passWithNoTests` removed; Playwright runs against `astro preview` of the real build.
+
+---
+
+## Gate before Task 5 (applies to Tasks 5–10)
+
+- Every factual claim added by a task needs a ledger entry in `docs/research/evidence/` whose verbatim quote passes `npm run verify:evidence`. Research is done with Grok (web, read-only) and then machine-verified; nothing is written from memory.
+- Community sites (Warcraft Wiki, Wowpedia, Wowhead, Icy Veins) may only point to an official text or back `BETA` / `UNCONFIRMED` material. They are never the source of `ESTABLISHED` or `FOREVER` claims.
+- Year-1 fence: dossiers, timeline, glossary and search describe the world as of original WoW Year 1 / the Forever starting point. Anything later in Retail lives only inside a `SpoilerBlock`.
+- Canonical IDs come from `src/lib/canonical-ids.ts`. A new entity gets its ID there first; timeline, dossiers and search reference only registered IDs.
+- Before each task's review, run a Grok fact-check pass on the new content (web, read-only) and store its findings in `docs/audits/`.
+
+---
+
+### Task 5: Implement the master timeline and eras
 
 **Files:**
 - Create: `src/content/timeline/core.json`
+- Modify: `src/content.config.ts` (timeline loader: `glob` → `file('src/content/timeline/core.json')`)
+- Modify: `src/lib/content.ts` (timeline fields below)
 - Create: `src/lib/timeline.ts`
 - Create: `src/components/Timeline.astro`
 - Create: `src/components/TimelineFilters.astro`
 - Create: `src/pages/timeline.astro`
+- Create: `src/pages/eras.astro`
+- Create: `docs/research/evidence/timeline.json`
 - Create: `tests/timeline.test.ts`
 
 **Interfaces:**
-- `TimelineEvent` fields: `id`, `label`, `dateLabel`, `sortKey`, `era`, `status`, `major`, `characterIds`, `factionIds`, `locationIds`, `chapterSlug`, `sourceIds`.
-- `sortTimeline(events)` sorts by `sortKey` without inventing numeric precision for approximate dates.
+- `TimelineEvent` fields: `id`, `title`, `dateLabel`, `dateNote?`, `approximate`, `sortKey`, `era`, `status`, `major`, `characterIds`, `factionIds`, `locationIds`, `chapterSlug`, `sourceIds`. Use `title` (the shared lore field), not `label`.
+- `sortKey` is an ordinal for ordering only. It is never rendered and never implies a calendar year.
+- `sortTimeline(events)` and `filterTimeline(events, { era, factionId, characterId, locationId, status })`.
+
+**Dating rules (from the audit's official-source research):**
+- Official texts disagree on durations (for example First War length, the gap between the Second War and Warcraft III). Show ranges or relative labels and put the disagreement in `dateNote`; never invent an absolute year.
+- "Year 1" in Forever is the early period of original World of Warcraft, not the first year after the Dark Portal.
+- The gap between Warcraft III and World of Warcraft is stated officially as four years; use it only as a relative anchor.
 
 - [ ] **Step 1: Write tests for ordering and filtering**
 
-Include approximate-date and same-era cases.
+Include approximate-date and same-era cases, plus a test that reads the real `core.json` and asserts it is non-empty, every event has evidence, and exactly one event has `id: "forever"`.
 
 - [ ] **Step 2: Run tests to confirm failure**
 
@@ -364,30 +413,31 @@ Include approximate-date and same-era cases.
 npm test -- timeline.test.ts
 ```
 
-- [ ] **Step 3: Add real timeline data**
+- [ ] **Step 3: Research and verify dates**
 
-Include Ancient Azeroth → War of the Ancients → Dark Portal → First War → Second War → Thrall/New Horde → Third War → Forsaken Kingdom → Forever `YOU ARE HERE`.
+Grok collects verbatim official quotes for every event and duration → add them to `docs/research/evidence/timeline.json` → `npm run verify:evidence` must pass.
 
-- [ ] **Step 4: Implement timeline UI**
+- [ ] **Step 4: Add real timeline data**
 
-Desktop uses wide scrollable rail or vertical chronological layout depending viewport. Mobile uses stacked cards. Filters: era, faction, status.
+Ancient Azeroth → War of the Ancients → Dark Portal → First War → Second War → Thrall/New Horde → Third War → Forsaken Kingdom → Forever `YOU ARE HERE` (`id: "forever"`, anchor `#forever` used by `AppShell`).
 
-- [ ] **Step 5: Add uncertainty treatment**
+- [ ] **Step 5: Implement timeline UI and eras page**
 
-Approximate dates show `~` or a descriptive range and an explanation icon; no fabricated year.
+Desktop: wide scrollable rail or vertical layout. Mobile: stacked cards. Filters: era, faction, character, location, status (spec §9). Approximate dates show `~` or a range with a visible explanation (not hover-only). `eras.astro` lists the spec §6 eras with their chapters and timeline ranges.
 
-- [ ] **Step 6: Run tests and build**
+- [ ] **Step 6: Run tests, evidence and build**
 
 ```bash
-npm test -- timeline.test.ts
+npm test
+npm run verify:evidence
 npm run build
 ```
 
 - [ ] **Step 7: Commit**
 
 ```bash
-git add src/content/timeline src/lib/timeline.ts src/components/Timeline* src/pages/timeline.astro tests/timeline.test.ts
-git commit -m "feat: add interactive master timeline"
+git add src/content/timeline src/content.config.ts src/lib docs/research/evidence/timeline.json src/components/Timeline* src/pages/timeline.astro src/pages/eras.astro tests/timeline.test.ts
+git commit -m "feat: add interactive master timeline and eras"
 ```
 
 ---
@@ -395,189 +445,194 @@ git commit -m "feat: add interactive master timeline"
 ### Task 6: Add character, faction, and location dossiers
 
 **Files:**
-- Create real content entries for at least:
-  - Characters: Arthas, Thrall, Sylvanas, Jaina, Uther, Medivh, Gul’dan, Orgrim, Grom, Tyrande, Malfurion, Illidan, Azshara.
-  - Factions: Alliance, Horde, Forsaken, Scourge, Burning Legion, Night Elves.
-  - Locations: Azeroth, Lordaeron, Stormwind, Kalimdor, Northrend, Mount Hyjal, Undercity, Tirisfal Glades, Durotar, Quel’Thalas.
+- Create real, evidence-backed content entries for at least:
+  - Characters: Arthas, Thrall, Sylvanas, Jaina, Uther, Medivh, Gul’dan, Orgrim, Grom, Tyrande, Malfurion, Illidan, Azshara, Kel’Thuzad, Cairne Bloodhoof, Anduin Wrynn (Year-1 child king), and the Forsaken Kingdom leads Garek Bandarion and Dark Ranger Anya.
+  - Factions: Alliance, Horde, Forsaken, Scourge, Burning Legion, Night Elves, Scarlet Crusade, and the Forever factions Windshapers, High Order and Al’Aketh.
+  - Locations: Azeroth, Lordaeron, Stormwind, Kalimdor, Northrend (background only in Year 1), Mount Hyjal, Undercity, Tirisfal Glades, Durotar, Quel’Thalas, Teldrassil, and the Forever places Zephras Isle, Shen’dralas, Riverglades, Bandarion Keep.
+- Modify: `src/lib/content.ts` and `src/content.config.ts` (dossier fields: `aliases`, `relatedCharacterIds`, `relatedFactionIds`, `relatedLocationIds`)
+- Modify: `src/lib/canonical-ids.ts` (only if the roster grows)
 - Create: `src/components/EntityCard.astro`
-- Create: `src/pages/characters/[slug].astro`
-- Create: `src/pages/factions/[slug].astro`
-- Create: `src/pages/locations/[slug].astro`
+- Create: `src/pages/characters/index.astro`, `src/pages/characters/[slug].astro`
+- Create: `src/pages/factions/index.astro`, `src/pages/factions/[slug].astro`
+- Create: `src/pages/locations/index.astro`, `src/pages/locations/[slug].astro`
+- Create: `docs/research/evidence/dossiers.json`
 - Create: `public/diagrams/arthas-path.svg`
 - Create: `public/diagrams/faction-relations.svg`
 
 **Interfaces:**
-- Entity pages cross-link via canonical IDs.
+- Entity pages cross-link via canonical IDs; build fails on an unknown reference (`assertValidContentReferences` over all populated collections).
 - Location pages include `What happened here`, `Who controls it now`, `What you may encounter in Forever`.
+- Names without published lore (for example Forever factions announced only by name) get a short, clearly scoped entry, not an invented history.
 
-- [ ] **Step 1: Add sourced character content**
+- [ ] **Step 1: Research and verify**
 
-Each page includes identity, affiliations, motivations from source-backed facts, personal timeline, related locations, and Forever relevance.
+Grok evidence pass per entity → `docs/research/evidence/dossiers.json` → `npm run verify:evidence`.
 
-- [ ] **Step 2: Add faction content**
+- [ ] **Step 2: Add sourced character content**
+
+Identity, affiliations, source-backed motivations, personal timeline, related locations, Forever relevance. Post-Year-1 Retail fates only inside `SpoilerBlock`.
+
+- [ ] **Step 3: Add faction content**
 
 Describe goals and conflicts neutrally; avoid simplistic good/evil labeling.
 
-- [ ] **Step 3: Add location content**
+- [ ] **Step 4: Add location content**
 
-Prioritize player-facing geography and consequences of past events.
+Prioritize player-facing geography and consequences of past events. Where official recaps describe a place differently (Shen’dralas: "south of Desolace through the Valley of Bones" vs "between Mulgore and Desolace"), show both.
 
-- [ ] **Step 4: Add original SVG explanatory diagrams**
+- [ ] **Step 5: Add original SVG explanatory diagrams**
 
-One diagram traces Arthas from Lordaeron to Northrend and back. One diagram shows major faction relationships at the Forever starting point. SVG must include text alternatives in surrounding page copy.
+One diagram traces Arthas from Lordaeron to Northrend and back. One shows major faction relationships at the Forever starting point. Text alternatives in surrounding copy.
 
-- [ ] **Step 5: Implement dynamic routes and cross-links**
+- [ ] **Step 6: Optional illustrations (only with explicit user approval)**
 
-Generate static paths from collections and render related entities as cards.
+Portraits or hero images may be generated through Codex built-in `image_gen` (see `CLAUDE.md`). Each image is labeled as an original illustration, never presented as Blizzard art, stored under `public/images/` with source metadata, lazy-loaded and given meaningful alt text.
 
-- [ ] **Step 6: Build**
+- [ ] **Step 7: Implement index pages, dynamic routes and cross-links**
+
+- [ ] **Step 8: Test, verify evidence, build**
 
 ```bash
+npm test
+npm run verify:evidence
 npm run build
 ```
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 9: Commit**
 
 ```bash
-git add src/content/characters src/content/factions src/content/locations src/pages/characters src/pages/factions src/pages/locations src/components/EntityCard.astro public/diagrams
+git add src/content/characters src/content/factions src/content/locations src/lib src/content.config.ts src/pages/characters src/pages/factions src/pages/locations src/components/EntityCard.astro public/diagrams docs/research/evidence/dossiers.json
 git commit -m "feat: add lore dossiers and diagrams"
 ```
 
+**Decided (2026-09-17):** Retail spoilers reveal per block. A `SpoilerBlock` button opens only that block for the current page view; the toolbar switch is the only site-wide, persisted opt-in. Dossiers rely on this behavior.
+
 ---
 
-### Task 7: Build the Forever Changes experience
+### Task 7: Build the Forever Changes experience and changelog
 
 **Files:**
-- Create: `src/content/forever/forsaken-kingdom.md`
-- Create: `src/content/forever/forsaken-paladins.md`
-- Create: `src/content/forever/skyborne.md`
-- Create: `src/content/forever/mount-hyjal-aftermath.md`
-- Create: `src/content/forever/shendralas.md`
-- Create: `src/content/forever/riverglades.md`
+- Modify: `src/lib/content.ts` and `src/content.config.ts` (`foreverEntrySchema` = lore fields + `oldExpectation`, `foreverVersion`, `whyItMatters`)
+- Create `src/content/forever/`: `time-bubble-year-1.md`, `forsaken-kingdom.md`, `forsaken-paladins.md`, `skyborne.md`, `zephras-isle.md`, `mount-hyjal-aftermath.md`, `shendralas.md`, `riverglades.md`, `race-class-combinations.md`, `dungeons-and-raids.md`
+- Create: `src/content/changelog/entries.json` + `changelog` collection (`file` loader)
 - Create: `src/pages/forever-changes.astro`
+- Create: `src/pages/changelog.astro`
 - Create: `src/components/ForeverComparison.astro`
-- Create: `CHANGELOG.md`
+- Create: `docs/research/evidence/forever.json`
 
 **Interfaces:**
 - Each Forever change entry stores: `oldExpectation`, `foreverVersion`, `whyItMatters`, `status`, `sourceIds`, `updatedAt`.
+- Changelog entries: `date`, `version`, `summary`, `entityIds`, `sourceIds`; each links to affected entities (spec §18).
 
-- [ ] **Step 1: Add only confirmed or clearly beta-labeled Forever entries**
+**Content rules:**
+- Announced ≠ observed. Blizzard recaps prove announced content, not quest outcomes. Beta observations are `BETA`; datamining and community reconstructions (for example a dated Skyborne chronology) are `UNCONFIRMED` and stay out of the comparison table.
+- Product dates are facts with sources: beta began 17 September 2026, launch 4 November 2026, new raids unlock 9 December 2026. The announcement article gives the launch time once as PDT and once as PST — do not present a single time zone as settled.
+- Official recaps name nine new dungeons and two raids (Hyjal Summit, 20 players; Barrow Deeps, 10 players); describe only what is published.
 
-Every sensitive claim must have source IDs. Unconfirmed material is excluded from the primary comparison table.
-
-- [ ] **Step 2: Implement comparison layout**
-
-Desktop: side-by-side `Classic/Older expectation` vs `Forever`. Mobile: stacked cards. `CHANGED` items explicitly explain the divergence.
-
-- [ ] **Step 3: Add human-readable changelog**
-
-Seed with V1 creation entry and a section describing how future automated lore updates will be recorded.
-
-- [ ] **Step 4: Build**
+- [ ] **Step 1: Research and verify** (Grok evidence pass → `docs/research/evidence/forever.json` → `npm run verify:evidence`)
+- [ ] **Step 2: Add only confirmed or clearly beta-labeled Forever entries**
+- [ ] **Step 3: Implement comparison layout** (desktop side-by-side, mobile stacked; `CHANGED` explains the divergence)
+- [ ] **Step 4: Add changelog collection and page** (seed with the V1 entry and the audit remediation entry)
+- [ ] **Step 5: Test, verify evidence, build**
 
 ```bash
-npm run build
-```
-
-- [ ] **Step 5: Commit**
-
-```bash
-git add src/content/forever src/pages/forever-changes.astro src/components/ForeverComparison.astro CHANGELOG.md
-git commit -m "feat: add Forever-specific lore comparison"
-```
-
----
-
-### Task 8: Add glossary, source explorer, and client-side search
-
-**Files:**
-- Create: `src/content/glossary/core.json`
-- Create: `src/lib/search.ts`
-- Create: `src/components/SearchIndex.astro`
-- Create: `src/pages/glossary.astro`
-- Create: `src/pages/sources.astro`
-- Create: `tests/search.test.ts`
-
-**Interfaces:**
-- Search document shape: `{ id, type, title, summary, href, status, keywords }`.
-- Search is generated at build time and filtered client-side without external service.
-
-- [ ] **Step 1: Write search tests**
-
-Test exact name, alias, glossary keyword, and status filtering.
-
-- [ ] **Step 2: Implement index builder**
-
-Normalize lowercase Unicode strings and include original names plus common Russian explanatory terms.
-
-- [ ] **Step 3: Add glossary**
-
-Initial terms: Azeroth, Old Gods, Titans, Well of Eternity, Burning Legion, Scourge, Horde, Alliance, Forsaken, Dark Portal, Third War, Retcon, Beta canon.
-
-- [ ] **Step 4: Add source explorer**
-
-Group sources by publisher/type and show which encyclopedia entries cite each source.
-
-- [ ] **Step 5: Run tests/build**
-
-```bash
-npm test -- search.test.ts
+npm test
+npm run verify:evidence
 npm run build
 ```
 
 - [ ] **Step 6: Commit**
 
 ```bash
-git add src/content/glossary src/lib/search.ts src/components/SearchIndex.astro src/pages/glossary.astro src/pages/sources.astro tests/search.test.ts
+git add src/content/forever src/content/changelog src/lib src/content.config.ts src/pages/forever-changes.astro src/pages/changelog.astro src/components/ForeverComparison.astro docs/research/evidence/forever.json
+git commit -m "feat: add Forever-specific lore comparison and changelog"
+```
+
+---
+
+### Task 8: Add glossary, source explorer, and search
+
+**Files:**
+- Create: `src/content/glossary/core.json`
+- Modify: `src/content.config.ts` (glossary loader: `glob` → `file('src/content/glossary/core.json')`)
+- Create: `src/lib/search.ts`
+- Create: `src/components/SearchIndex.astro`
+- Create: `src/pages/search.astro`
+- Create: `src/pages/glossary.astro`
+- Create: `src/pages/sources.astro`
+- Create: `tests/search.test.ts`
+
+**Interfaces:**
+- Search document shape: `{ id, type, title, summary, href, status, keywords }`.
+- Search is generated at build time and filtered client-side without an external service. Decision: custom index, not Pagefind — the contract is structured (type/status/aliases) and the corpus is small.
+
+- [ ] **Step 1: Write search tests**
+
+Exact name, alias, glossary keyword, status filtering, Russian word forms (Орда / Орды / Орде), and a spoiler test: nothing from `SpoilerBlock` content or post-Year-1 material appears in the index.
+
+- [ ] **Step 2: Implement index builder**
+
+Normalize lowercase Unicode; include original English names, Russian explanatory terms and common Russian inflections in `keywords`.
+
+- [ ] **Step 3: Add glossary**
+
+Initial terms: Azeroth, Old Gods, Titans, Well of Eternity, Burning Legion, Scourge, Horde, Alliance, Forsaken, Dark Portal, Third War, time bubble, Retcon, Beta canon. Lore terms need evidence entries.
+
+- [ ] **Step 4: Add source explorer**
+
+Group sources by `type`, show `checkedAt`, which entries cite each source, and how many ledger quotes back it.
+
+- [ ] **Step 5: Run tests/build**
+
+```bash
+npm test
+npm run verify:evidence
+npm run build
+```
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add src/content/glossary src/content.config.ts src/lib/search.ts src/components/SearchIndex.astro src/pages/search.astro src/pages/glossary.astro src/pages/sources.astro tests/search.test.ts
 git commit -m "feat: add search glossary and source explorer"
 ```
 
 ---
 
-### Task 9: Add E2E coverage, CI validation, and GitHub Pages deployment
+### Task 9: E2E coverage, CI validation, and gated GitHub Pages deployment
 
 **Files:**
 - Create: `tests/e2e/navigation.spec.ts`
 - Create: `.github/workflows/validate.yml`
 - Create: `.github/workflows/deploy.yml`
+- Create: `.github/workflows/evidence.yml`
+- Modify: `package.json` (`engines.node: ">=22.12.0"`), create `.nvmrc` (`24`)
 
 **Interfaces:**
-- PR/push validation runs `npm ci`, unit tests, Astro build.
-- Deploy runs from `main` after successful build and publishes Pages artifact.
+- Validation (PRs and pushes): `npm ci`, `npm test`, `npm run build`, Playwright Chromium, `npm run test:e2e` against `astro preview` of the build.
+- Deployment is **manual**: `workflow_dispatch` only, job `environment: github-pages` with required reviewers. No deploy on push to `main` until the user explicitly changes that.
+- Evidence check: `npm run verify:evidence` on a weekly schedule and on demand (network-dependent, so not a PR gate). A failure means a source page changed or died — review, do not auto-edit.
+
+**Versions (checked 2026-09-17 against Astro's GitHub Pages guide; re-check at implementation):** `actions/checkout@v7`, `withastro/action@v6` (defaults to Node 24; `@v3` defaults to Node 20 and cannot build Astro 7), `actions/deploy-pages@v5`. Keep TypeScript on `^6`: `@astrojs/check` supports TypeScript 5–6 only.
 
 - [ ] **Step 1: Write Playwright smoke tests**
 
-Cover:
-- Home → Start Here navigation.
-- Essential/Deep Dive toggle persistence.
-- Spoiler reveal behavior.
-- Timeline page rendering.
-- Forever Changes page rendering.
-- Mobile navigation at 390 px.
+Cover: Home → Start Here; Essential/Deep toggle persistence; spoiler reveal; timeline with `#forever`; Forever Changes; mobile navigation at 390 px; **every navigation link returns 200** on the preview build; `page.goto` always includes the `/WOW` base.
 
 - [ ] **Step 2: Run E2E locally**
 
 ```bash
-npx playwright install --with-deps chromium
-npm run build
+npx playwright install chromium
 npm run test:e2e
 ```
 
-Expected: all smoke tests pass.
-
-- [ ] **Step 3: Add validation workflow**
-
-Trigger on pull requests and pushes. Run unit tests and `npm run build`.
-
-- [ ] **Step 4: Add Pages deployment workflow**
-
-Use `actions/checkout@v4`, `withastro/action@v3`, `actions/deploy-pages@v4`. Permissions: `contents: read`, `pages: write`, `id-token: write`.
-
+- [ ] **Step 3: Add validation, evidence and deployment workflows** (versions above; Settings → Pages → Source: GitHub Actions is a manual user step)
+- [ ] **Step 4: Close deferred Minor findings**: empty-state progress semantics (`max=1` with 0/0), `ChapterNext` one-way `aria-pressed` (undo or disabled completed state), `NO_COLOR`/`FORCE_COLOR` warnings, visible focus after the skip link.
 - [ ] **Step 5: Commit**
 
 ```bash
-git add tests/e2e .github/workflows
-git commit -m "ci: validate and deploy encyclopedia"
+git add tests/e2e .github/workflows package.json .nvmrc
+git commit -m "ci: validate and gate encyclopedia deployment"
 ```
 
 ---
@@ -586,44 +641,45 @@ git commit -m "ci: validate and deploy encyclopedia"
 
 **Files:**
 - Create: `docs/automation/lore-update-contract.md`
-- Create: `src/content/forever/update-log.json`
+- Create: `src/content/update-log/entries.json` + `updateLog` collection (own schema; never inside `src/content/forever/`)
 
 **Interfaces:**
-- Future automation may modify lore content only when it can provide source IDs and a valid status.
-- Contradictions never overwrite established content silently; they create a `CHANGED` entry or remain `BETA/UNCONFIRMED`.
-- Every meaningful automated change appends a changelog entry and update-log record.
+- Automation may change lore only with source IDs, a valid status and ledger entries that pass `npm run verify:evidence`.
+- Automation works on a branch and opens a pull request. It never pushes to `main` and never deploys.
+- A human approves every `FOREVER`, `CHANGED` or `BETA` change.
+- Contradictions never overwrite `ESTABLISHED` content silently: they create a `CHANGED` entry (with `supersedes`) or stay `BETA`/`UNCONFIRMED`.
+- Every meaningful change appends a changelog entry and an update-log record.
 
 - [ ] **Step 1: Document the update contract**
 
 Require automation to:
-1. discover new Forever information;
-2. validate source quality;
-3. compare with repository content;
-4. classify status;
+1. discover new Forever information (official Blizzard news, blue posts, in-game text; community sites only as leads);
+2. research with Grok (web, read-only) and extract verbatim quotes;
+3. add ledger entries and run `npm run verify:evidence`;
+4. compare with repository content and classify status;
 5. edit the minimum affected content files;
-6. append changelog/update-log;
-7. run content validation/build;
-8. commit with `lore:` prefix;
+6. append changelog and update-log records;
+7. run `npm test` and `npm run build`;
+8. commit with `lore:` prefix on a branch and open a PR;
 9. notify only if the change is meaningful.
 
 - [ ] **Step 2: Add machine-readable update log**
 
-Each record contains `date`, `entityIds`, `status`, `summary`, `sourceIds`, `commitSha?`.
+Each record contains `date`, `entityIds`, `status`, `summary`, `sourceIds`, `supersedes?`, `commitSha?`.
 
-- [ ] **Step 3: Validate build**
+- [ ] **Step 3: Validate**
 
 ```bash
 npm test
+npm run verify:evidence
 npm run build
 npm run test:e2e
 ```
 
-Expected: all tests pass.
-
 - [ ] **Step 4: Commit**
 
 ```bash
-git add docs/automation src/content/forever/update-log.json
+git add docs/automation src/content/update-log src/content.config.ts src/lib
 git commit -m "docs: define automated lore update contract"
 ```
 
@@ -636,18 +692,19 @@ Run:
 ```bash
 npm ci
 npm test
+npm run verify:evidence
 npm run build
 npm run test:e2e
 ```
 
 Verify manually:
-- navigation works at 390 px and 1440 px;
+- navigation works at 390 px and 1440 px, and no navigation link 404s;
 - all `FOREVER`, `CHANGED`, `BETA`, `UNCONFIRMED` badges are distinct without relying only on color;
-- all chapter pages have sources;
-- all Forever-sensitive claims have primary or clearly qualified secondary sourcing;
-- no post-Forever Retail spoiler is visible by default;
-- `/WOW` base path works in all internal links and assets;
-- changelog contains V1 entry;
+- every chapter, dossier, timeline event and Forever entry is backed by verified ledger quotes;
+- a final Grok fact-check pass over all content reports no unsupported claims, and its report is stored in `docs/audits/`;
+- no post-Year-1 Retail spoiler is visible by default, including in search results;
+- `/WOW` base path works in all internal links and assets on the preview build;
+- changelog contains the V1 entry;
 - generated site contains no empty placeholder sections.
 
-Then open a pull request from `feat/encyclopedia-v1` to `main` with a summary of architecture, content scope, tests, and deployment notes.
+Then open a pull request from `feat/encyclopedia-v1` to `main` with a summary of architecture, content scope, tests, and deployment notes. Merging and deploying require explicit user approval.

@@ -1,5 +1,7 @@
 # Encyclopedia V1 — handoff after Task 4
 
+> **Superseded** by `docs/superpowers/handoffs/2026-09-17-encyclopedia-v1-after-audit.md`. Several source rulings below were overturned by the audit (the Well of Eternity preview and the Warcraft III manual are readable). Kept for history.
+
 Date: 2026-09-17
 Branch: `feat/encyclopedia-v1`
 Binding spec: `docs/superpowers/specs/2026-09-17-wow-forever-encyclopedia-design.md`

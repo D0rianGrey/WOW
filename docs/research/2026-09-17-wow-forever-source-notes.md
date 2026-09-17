@@ -1,5 +1,16 @@
 # Official-source research — checked 2026-09-17
 
+## Corrections after the audit (2026-09-17, later the same day)
+
+The verified evidence now lives in `docs/research/evidence/` and is machine-checked with `npm run verify:evidence`. Where this note disagrees with the ledger, the ledger wins. Corrections to the sections below:
+
+- **H3, H4, P2 — Warcraft II and Warcraft III manuals are readable.** Both open over plain `http://ftp.blizzard.com/...` (the `https://` host has a certificate mismatch, which is why earlier fetches failed). The Warcraft III manual (PDF dated April 2002) contains full chapters on human, orc, undead and night elf history. Registered as `warcraft-iii-manual` and `warcraft-ii-manual`.
+- **P3 — the Well of Eternity preview is not 403.** The page opened with HTTP 200 and full text during the audit. Registered as `well-of-eternity-preview`; the earlier ruling "do not restore dead links" does not apply to it.
+- **K2 — the Legion Warrior artifact page opens** (`https://worldofwarcraft.blizzard.com/en-us/news/19942707`). Registered as `legion-warrior-artifact-reveal`.
+- **P1 — confirmed accurate.** The Dragon Aspects article does name C’Thun, N’Zoth and Yogg-Saron and calls the Old Gods "physical manifestations of the Void". One audit pass by another model claimed otherwise; that claim was checked against the page and rejected.
+- **Remaining gaps, narrowed.** The Warcraft III manual now covers the classic War of the Ancients, the exile of the Highborne to Quel’Thalas, the planting of Nordrassil and the night elves' immortality. Still without an open official text: the order of the Old Gods' arrival, the primordial elemental wars, Y’Shaarj and the Well's origin in later cosmology, the dark-troll origin of the kaldorei, the breakup of Arathor, and the gnomes' Curse of Flesh lineage.
+- **Official texts that disagree** (keep both in content): First War length (Warcraft II manual "nearly five years" vs. the Reforged retrospective's march on Stormwind "three years after" the portal); the interwar gap ("nearly 13 years" and "the past decade" in the same retrospective); Lothar's death (a "titanic battle" vs. a "suicidal charge"); survivors of Quel’Thalas (2004 manual "not one living elf" vs. Burning Crusade Classic "most of its population"); the naga transformation (Well implosion vs. a later bargain with N’Zoth); Shen’dralas location ("south of Desolace through the Valley of Bones" vs. "between Mulgore and Desolace"); the Forever launch time zone (PDT and PST on the same announcement page).
+
 Read-only web research for the WoW Forever encyclopedia. All substantive sources below are Blizzard publications. Community posts, search-engine date labels, and third-party speculation are not evidence. Some search metadata incorrectly says “last year”; use the publication page/BlizzCon context, not that metadata.
 
 ## F1 — Core announcement

@@ -1,0 +1,176 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Проект
+
+Статическая русскоязычная энциклопедия лора **World of Warcraft: Forever**: Astro 7 + TypeScript,
+без БД и без клиентского фреймворка, публикация на GitHub Pages под базовым путём `/WOW`
+(`https://d0riangrey.github.io/WOW`). Продукт целиком держится на точности фактов и дат —
+см. раздел «Доказательства».
+
+## Состояние работ
+
+- Код живёт в ветке `feat/encyclopedia-v1`; `main` содержит только спеку.
+  **Не мержить в `main` и не деплоить без явного одобрения.**
+- План из 10 задач: 1–4 выполнены, затем аудит и исправления (Task 4R). Следующая — **Task 5**.
+- Перед работой читать handoff `docs/superpowers/handoffs/2026-09-17-encyclopedia-v1-after-audit.md`
+  (предыдущий `…-after-task-4.md` устарел) и раздел плана «Gate before Task 5».
+
+| Файл | Роль |
+|---|---|
+| `docs/superpowers/specs/2026-09-17-wow-forever-encyclopedia-design.md` | Обязательная спека продукта |
+| `docs/superpowers/plans/2026-09-17-wow-forever-encyclopedia-v1.md` | План задач (5–10 переписаны после аудита) |
+| `docs/audits/2026-09-17-encyclopedia-v1-audit.md` | Аудит: находки, что проверено, что исправлено |
+| `docs/research/evidence/` | Реестр доказательств — цитаты официальных источников |
+| `docs/research/2026-09-17-wow-forever-source-notes.md` | Заметки по источникам и известные пробелы |
+
+## Команды
+
+```bash
+npm run dev              # dev-сервер: http://localhost:4321/WOW/
+npm run build            # astro check && astro build — ошибки типов валят сборку
+npm run preview          # просмотр собранного dist/
+npm test                 # Vitest (tests/*.test.ts, e2e исключены), офлайн
+npm run test:e2e         # Playwright: сам делает build + preview на 127.0.0.1:4321
+npm run verify:evidence  # сверка всех цитат реестра с живыми страницами и PDF (нужна сеть)
+
+# Один файл
+npm test -- tests/content-schema.test.ts
+npx playwright test tests/e2e/home.spec.ts
+node scripts/verify-evidence.mjs docs/research/evidence/chapter-07.json
+
+# Первый прогон e2e на машине
+npx playwright install chromium
+```
+
+Playwright переиспользует уже запущенный сервер на 4321 (вне CI) — если там висит `npm run dev`,
+тесты пойдут против него, а не против сборки.
+
+Ожидаемый шум: пока задачи 5–8 не заполнили коллекции, `build` печатает предупреждения о пустых
+лоадерах; в выводе тестов бывают `NO_COLOR` / `FORCE_COLOR`. Глобальную конфигурацию машины не менять.
+
+## Доказательства (обязательно для любого факта)
+
+Ни одно утверждение о лоре, датах или продукте Forever не пишется по памяти — ни моей, ни чужой модели.
+
+1. **Поиск — Grok** (веб, только чтение): официальные URL и **дословные** английские цитаты под каждое
+   утверждение. Вызов из корня репо:
+   `grok --prompt-file <prompt.md> --deny 'Write(*)' --deny 'Edit(*)' --deny 'Bash(*)' --cwd "$PWD" --effort xhigh --output-format json`
+   (текст ответа — `jq -r .text`; никогда не запускать с `--debug`).
+2. **Проверка — скрипт**: кандидатов в JSON реестра → `node scripts/verify-evidence.mjs <file>`.
+   Сравнение игнорирует регистр, пунктуацию и пробелы, но требует ту же последовательность слов;
+   для PDF печатает страницу. `NOT_FOUND` означает, что цитаты нет — утверждение выбрасывается.
+   Grok ошибается и в цитатах, и в выводах «имени нет на странице» — доверять только скрипту.
+3. **Текст** пишется только из проверенных записей; `sourceIds` главы = источники её записей.
+4. **Контроль — снова Grok**: фактчек готового текста; спорные находки проверять скриптом или `curl`.
+
+Формат реестра и правила — `docs/research/evidence/README.md`. `tests/evidence-ledger.test.ts` требует,
+чтобы каждый источник главы был подкреплён цитатой для этой главы и чтобы в реестре не было мёртвых источников.
+
+Источники:
+- Схема (`sourceSchema`): `type` — enum (`official-article`, `official-announcement`,
+  `official-retrospective`, `official-preview`, `official-promo`, `official-manual`, `official-book`,
+  `official-fiction`, `in-game`);
+  нужен `url` **или** `citation` (печатные книги вроде Warcraft Chronicle — через `citation`).
+- Мануалы Warcraft II и III на `ftp.blizzard.com` открываются только по `http://` (у `https://` битый
+  сертификат). Это не мёртвые ссылки.
+- Community-сайты (Warcraft Wiki, Wowpedia, Wowhead, Icy Veins) — только чтобы найти официальный текст
+  или подкрепить `BETA` / `UNCONFIRMED`.
+
+## Архитектура
+
+### Контент отделён от представления
+
+Лор живёт в `src/content/`, UI — в `src/pages`, `src/layouts`, `src/components`; будущая автоматизация
+правит факты, не трогая код страниц (контракт — Task 10 плана: только через PR и ревью человека).
+
+- Схемы (zod из `astro/zod`) — `src/lib/content.ts`; коллекции — `src/content.config.ts`.
+  Лор-схемы строятся через `createLoreSchema` (`safeExtend` поверх схемы с `superRefine`), кроме
+  `chapterEntrySchema`: обобщённый помощник стирает типы полей, на которые опираются страницы глав.
+  Правило источников у всех общее — `requireSourcesUnlessEstablished`.
+- Коллекции: `chapters`, `characters`, `factions`, `locations`, `forever`, `timeline`, `glossary`
+  (Markdown через `glob`) и `sources` (`file` на `src/content/sources/core.json`). Когда появятся
+  `timeline/core.json` (Task 5) и `glossary/core.json` (Task 8), их лоадер переключить на `file`.
+- Статусы — `src/lib/status.ts`. Всё, что не `ESTABLISHED`, обязано ссылаться хотя бы на один источник.
+- Канонические ID сущностей — `src/lib/canonical-ids.ts`: новый ID регистрируется там до первой ссылки.
+- Ссылочная целостность — `assertValidContentReferences`; сейчас в сборке проверяются только
+  `sourceIds` глав (неизвестный ID валит build). Полный реестр — после задач 5–8.
+
+### Контракт глав
+
+`tests/chapter-content.test.ts` и `tests/evidence-ledger.test.ts`:
+
+- ровно 8 файлов `NN-slug.md`, `order` = индекс, `readingMinutes` 5–10;
+- блок `data-depth="deep"`, заголовки `## Почему это важно в Forever` и `## Запомните три вещи`
+  (ровно три пункта в этом разделе);
+- без общих английских слов (`kingdom`, `quest`, `region`…) и без упоминаний внутреннего «исследования»;
+- абзацы со статусом, отличным от статуса главы, оборачиваются так (markdown внутри разбирается):
+
+```html
+<div class="lore-status-block" data-lore-status="FOREVER">
+<p class="lore-badge status-forever"><span aria-hidden="true">✦</span> Forever<span class="sr-only"> — Подтверждённое дополнение World of Warcraft: Forever.</span></p>
+
+Абзацы markdown…
+
+</div>
+```
+
+  Подписи и символы статусов — как в `src/components/LoreBadge.astro`.
+
+### Оболочка и клиентское состояние
+
+Вложенность: `LoreLayout` (статьи) → `BaseLayout` → `AppShell` (навигация на 11 разделов, панель режимов,
+прогресс). Страницы с прогрессом передают `chapterIds: string[]`.
+
+Интерактивность — обычные `<script>` в Astro-компонентах; общение через атрибуты `<html>` и DOM-события:
+
+| Что | Хранение (`localStorage`) | Механика |
+|---|---|---|
+| Режим чтения | `wow-reading-mode`: `essential \| deep` | `html[data-reading-mode]`; CSS в `global.css` скрывает `[data-depth="deep"]` вне режима `deep` |
+| Спойлеры Retail (весь сайт) | `wow-spoilers`: `hidden \| shown` | переключатель в панели → `html[data-spoilers]` + событие `wow:spoilers-changed` |
+| Прогресс | `wow-reading-progress`: JSON-массив ID глав | событие `wow:progress-changed` на `window`; только явной кнопкой |
+
+- Инлайн-скрипт в `<head>` `BaseLayout` выставляет режимы до отрисовки.
+- Кнопка внутри `SpoilerBlock` раскрывает **только этот блок** и только до перезагрузки (не сохраняется); общий
+  переключатель в панели раскрывает все Retail-блоки и сбрасывает локальные выборы. Решение владельца, 2026-09-17.
+- `SpoilerBlock kind="unconfirmed"` раскрывается отдельно и **не** следует переключателю Retail.
+- Любой доступ к `localStorage` — в `try/catch` (e2e эмулирует недоступное хранилище).
+
+### Базовый путь `/WOW`
+
+Внутренние ссылки — только через `route()` из `src/lib/routes.ts`; в e2e `page.goto` всегда с `/WOW`.
+Навигация уже ссылается на разделы будущих задач — до их реализации это 404 (владельцы страниц — в плане).
+
+### Стили
+
+Чистый CSS: токены в `tokens.css`, далее `global.css`, `components.css`, `print.css`. Без Tailwind
+и SPA-фреймворка; ничего не должно работать только на hover.
+
+## Изображения
+
+Спека §13–14: только оригинальные иллюстрации и схемы или официальные материалы Blizzard с метаданными;
+сгенерированное никогда не выдаётся за арт Blizzard. Каждую иллюстрацию одобряет пользователь.
+
+- **Растровые иллюстрации — через Codex** (встроенный `image_gen`, по подписке, без API-ключа): субагент
+  `codex-executor` или `~/.claude/bin/codex-stage`. Файл появляется не в проекте, а в
+  `~/.codex-slim/generated_images/<thread_id>/` — копировать самому в `public/images/`.
+  Размер промптом не управляется; проверка — `file <путь>`, соответствие задумке — глазами.
+- Схемы, карты связей и таймлайны — SVG руками (`public/diagrams/`), с текстовой альтернативой рядом.
+- Всё тяжёлое — `loading="lazy"` и осмысленный `alt`.
+
+## Правила лора
+
+- Основной текст — русский; английский только для канонических имён, названий и терминов Warcraft.
+- `BETA` и `UNCONFIRMED` никогда не оформляются как канон; поздний Retail скрыт по умолчанию.
+- Мир описывается на момент первого года оригинального WoW / старта Forever. «Year 1» Forever — это
+  ранний период оригинального WoW, а не первый год после Dark Portal.
+- Иерархия источников: официальные публикации Blizzard → игровые материалы → официальные книги и
+  мануалы → community-сайты (только поиск и `BETA` / `UNCONFIRMED`).
+- Анонс Blizzard доказывает анонсированный контент, а не исходы квестов и сюжет кампании Forsaken Kingdom.
+- Если официальные тексты расходятся (длительность войн, описание места Shen’dralas, часовой пояс
+  запуска), показывать обе версии, а не выбирать одну.
+- Не путать Shen’dralas (место), Shen’dralar (группа) и shen’dorei (Skyborne).
+- Мануал 2004 года — базовая линия эпохи; поздние ретроспективы помечаются как поздний слой.
+- Пробелы без открытого официального текста (порядок Old Gods, цепочка Y’Shaarj → Well, происхождение
+  тёмных троллей, распад Arathor, полная Curse of Flesh) не заполнять, пока нет источника.
