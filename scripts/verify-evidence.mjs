@@ -140,7 +140,7 @@ async function readCapped(response) {
 
 // Blizzard's CDN answers 502/504 under load, so a transient gateway error must not be reported
 // as a missing quote in the weekly run.
-const retryDelays = [2_000, 6_000, 15_000];
+const retryDelays = [3_000, 10_000, 30_000];
 
 async function loadPageText(url, agent = userAgent) {
   for (let attempt = 0; ; attempt += 1) {
@@ -319,6 +319,35 @@ async function run(files, results) {
   assertLedgerShape(entries);
   const pageCache = new Map();
 
+  const load = (url, agent) => {
+    const key = `${url}|${agent}`;
+
+    if (!pageCache.has(key)) {
+      pageCache.set(key, loadPageText(url, agent).catch((error) => ({ error: String(error.message ?? error) })));
+    }
+
+    return pageCache.get(key);
+  };
+
+  // Sources are fetched up front, one request at a time per host and several hosts at once:
+  // downloading sequentially made a weekly run scale with the number of sources, while firing
+  // everything in parallel made Blizzard answer with throttling pages that look like missing quotes.
+  const urls = [...new Set(entries.map((entry) => entry.url ?? urlById.get(entry.sourceId)).filter(Boolean))];
+  const byHost = new Map();
+
+  for (const url of urls) {
+    const host = new URL(url).hostname;
+    byHost.set(host, [...(byHost.get(host) ?? []), url]);
+  }
+
+  await Promise.all(
+    [...byHost.values()].map(async (hostUrls) => {
+      for (const url of hostUrls) {
+        await load(url, userAgent);
+      }
+    })
+  );
+
   for (const entry of entries) {
     const url = entry.url ?? urlById.get(entry.sourceId);
 
@@ -327,17 +356,7 @@ async function run(files, results) {
       continue;
     }
 
-    const load = (agent) => {
-      const key = `${url}|${agent}`;
-
-      if (!pageCache.has(key)) {
-        pageCache.set(key, loadPageText(url, agent).catch((error) => ({ error: String(error.message ?? error) })));
-      }
-
-      return pageCache.get(key);
-    };
-
-    const page = await load(userAgent);
+    const page = await load(url, userAgent);
 
     if (page.error) {
       results.push({ id: entry.id, status: 'FETCH_ERROR', detail: `${url} — ${page.error}` });
@@ -353,7 +372,7 @@ async function run(files, results) {
     let crawlerPage = null;
 
     if (!inVisibleText && !inEmbeddedData && !page.pages) {
-      crawlerPage = await load(crawlerAgent);
+      crawlerPage = await load(url, crawlerAgent);
 
       if (!crawlerPage.error) {
         inVisibleText = matches(crawlerPage.text);

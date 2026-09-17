@@ -94,7 +94,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       input.value = params.get('q') ?? '';
     }
 
-    form.addEventListener('input', render);
+    let pending: number | undefined;
+    const scheduleRender = () => {
+      window.clearTimeout(pending);
+      pending = window.setTimeout(render, 120);
+    };
+
+    form.addEventListener('input', scheduleRender);
     form.addEventListener('change', render);
     render();
   }

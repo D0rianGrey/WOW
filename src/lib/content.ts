@@ -229,11 +229,21 @@ export function assertValidContentReferences(
   registry: ReferenceRegistry
 ): void {
   const problems: string[] = [];
+  const knownByTarget = new Map<string, Set<string>>();
+
+  for (const [target, ids] of Object.entries(registry)) {
+    if (ids !== undefined) {
+      knownByTarget.set(target, new Set(ids));
+    }
+  }
 
   for (const entry of entries) {
     for (const [field, target] of Object.entries(referenceTargets)) {
-      const registeredIds = registry[target as ReferenceCollection];
-      if (registeredIds === undefined) continue;
+      const knownIds = knownByTarget.get(target);
+
+      if (knownIds === undefined) {
+        continue;
+      }
 
       const value = entry[field];
       const referenceIds = Array.isArray(value)
@@ -241,7 +251,6 @@ export function assertValidContentReferences(
         : typeof value === 'string'
           ? [value]
           : [];
-      const knownIds = new Set(registeredIds);
 
       for (const referenceId of referenceIds) {
         if (!knownIds.has(referenceId)) {

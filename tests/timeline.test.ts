@@ -4,6 +4,8 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 import { loadEntityIds } from './helpers/content-index';
+
+const entityIds = loadEntityIds();
 import { timelineEntrySchema } from '../src/lib/content';
 import { eras } from '../src/lib/eras';
 import { filterTimeline, matchesTimelineFilter, sortTimeline } from '../src/lib/timeline';
@@ -79,15 +81,15 @@ describe('timeline data', () => {
       expect(chapterSlugs, event.id).toContain(event.chapterSlug);
 
       for (const id of event.characterIds) {
-        expect(loadEntityIds().characters, `${event.id} character`).toContain(id);
+        expect(entityIds.characters, `${event.id} character`).toContain(id);
       }
 
       for (const id of event.factionIds) {
-        expect(loadEntityIds().factions, `${event.id} faction`).toContain(id);
+        expect(entityIds.factions, `${event.id} faction`).toContain(id);
       }
 
       for (const id of event.locationIds) {
-        expect(loadEntityIds().locations, `${event.id} location`).toContain(id);
+        expect(entityIds.locations, `${event.id} location`).toContain(id);
       }
     }
   });

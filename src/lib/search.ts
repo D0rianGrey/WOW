@@ -67,6 +67,27 @@ function tokenMatches(queryToken: string, documentToken: string): boolean {
   return documentToken.startsWith(queryToken) || (documentToken.length >= 3 && queryToken.startsWith(documentToken));
 }
 
+// Tokenising a document costs a stem per word, so the result is cached per document object:
+// without this every keystroke re-tokenises the whole index.
+const tokenCache = new WeakMap<SearchDocument, { title: string[]; body: string[] }>();
+
+function documentTokens(document: SearchDocument): { title: string[]; body: string[] } {
+  const cached = tokenCache.get(document);
+
+  if (cached !== undefined) {
+    return cached;
+  }
+
+  const tokens = {
+    title: tokenize([document.title, ...document.keywords].join(' ')),
+    body: tokenize(document.summary)
+  };
+
+  tokenCache.set(document, tokens);
+
+  return tokens;
+}
+
 export function scoreDocument(document: SearchDocument, query: string): number {
   const queryTokens = tokenize(query);
 
@@ -74,8 +95,7 @@ export function scoreDocument(document: SearchDocument, query: string): number {
     return 0;
   }
 
-  const titleTokens = tokenize([document.title, ...document.keywords].join(' '));
-  const bodyTokens = tokenize(document.summary);
+  const { title: titleTokens, body: bodyTokens } = documentTokens(document);
   let score = 0;
 
   for (const queryToken of queryTokens) {
