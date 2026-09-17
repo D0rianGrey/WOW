@@ -4,6 +4,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import ChapterNext from '../../components/ChapterNext.astro';
 import SourceList from '../../components/SourceList.astro';
 import LoreLayout from '../../layouts/LoreLayout.astro';
+import { chapterIllustrations } from '../../lib/illustrations';
 import { route } from '../../lib/routes';
 import { validateChapterSourceIds } from '../../lib/content';
 
@@ -37,6 +38,7 @@ const next = chapters[index + 1];
   status={chapter.data.status}
   eyebrow={`${String(index + 1).padStart(2, '0')} / ${chapter.data.era}`}
   readingMinutes={chapter.data.readingMinutes}
+  illustration={chapterIllustrations[chapter.data.slug]}
   breadcrumbs={[{ label: 'Начать здесь', href: route('start-here') }]}
 >
   <Content />

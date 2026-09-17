@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import LoreBadge from '../components/LoreBadge.astro';
+import { illustrationCredit, type Illustration } from '../lib/illustrations';
 import type { LoreStatus } from '../lib/status';
 interface Props {
   title: string;
@@ -9,12 +10,28 @@ interface Props {
   eyebrow?: string;
   readingMinutes?: number;
   breadcrumbs?: { label: string; href?: string }[];
+  illustration?: Illustration;
 }
-const { title, summary, status = 'ESTABLISHED', eyebrow = 'Хроники Азерота', readingMinutes, breadcrumbs } = Astro.props;
+const { title, summary, status = 'ESTABLISHED', eyebrow = 'Хроники Азерота', readingMinutes, breadcrumbs, illustration } = Astro.props;
 ---
 <BaseLayout title={title} description={summary} breadcrumbs={breadcrumbs}>
   <article class="lore-article">
     <header class="chapter-header"><p class="eyebrow">{eyebrow}</p><h1>{title}</h1>{summary && <p class="lead">{summary}</p>}<div class="chapter-meta"><LoreBadge status={status} />{readingMinutes && <span>{readingMinutes} мин · главное</span>}</div></header>
+    {illustration && (
+      <figure class="chapter-illustration">
+        <img
+          src={illustration.src}
+          srcset={`${illustration.srcSmall} 960w, ${illustration.src} ${illustration.width}w`}
+          sizes="(max-width: 1100px) 100vw, 860px"
+          width={illustration.width}
+          height={illustration.height}
+          alt={illustration.alt}
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>{illustrationCredit}</figcaption>
+      </figure>
+    )}
     <div class="prose"><slot /></div>
     <slot name="navigation" />
   </article>

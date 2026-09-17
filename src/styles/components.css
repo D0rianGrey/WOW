@@ -101,6 +101,9 @@ main:focus-visible { outline-offset: -4px; }
 .chapter-header { max-width: 780px; padding: 10px 0 38px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
 .chapter-header h1 { font-size: clamp(2.5rem, 4.5vw, 4.4rem); }
 .chapter-header .lead { margin-top: 24px; }
+.chapter-illustration { max-width: 860px; margin: 0 0 36px; }
+.chapter-illustration img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); background: #11181b; }
+.chapter-illustration figcaption { margin-top: 10px; color: var(--muted); font-size: .78rem; }
 .chapter-meta { display: flex; gap: 20px; align-items: center; color: #aab3ba; font-size: .74rem; }
 .prose { max-width: 72ch; color: #ced2d1; line-height: 1.85; }
 .prose h2, .prose h3 { color: #eee2c7; margin-top: 1.5em; }

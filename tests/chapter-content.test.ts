@@ -1,7 +1,9 @@
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
+
+import { chapterIllustrations } from '../src/lib/illustrations';
 
 const chapterDir = resolve('src/content/chapters');
 
@@ -77,6 +79,21 @@ describe('guided lore chapter contract', () => {
     for (const file of readdirSync(chapterDir).filter((entry) => entry.endsWith('.md'))) {
       const body = readFileSync(resolve(chapterDir, file), 'utf8').replace(/^---[\s\S]*?---/, '');
       expect(body, `${file} mentions the internal research process`).not.toMatch(/исследовательск/i);
+    }
+  });
+});
+
+describe('chapter illustrations', () => {
+  it('point to existing chapters and to both image sizes in public/', () => {
+    const slugs = readdirSync(resolve('src/content/chapters'))
+      .filter((file) => file.endsWith('.md'))
+      .map((file) => file.replace(/^\d+-/, '').replace(/\.md$/, ''));
+
+    for (const [slug, illustration] of Object.entries(chapterIllustrations)) {
+      expect(slugs, slug).toContain(slug);
+      expect(existsSync(resolve('public', illustration.src.replace(/^\//, ''))), illustration.src).toBe(true);
+      expect(existsSync(resolve('public', illustration.srcSmall.replace(/^\//, ''))), illustration.srcSmall).toBe(true);
+      expect(illustration.alt.length, slug).toBeGreaterThan(20);
     }
   });
 });
