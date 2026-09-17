@@ -12,9 +12,12 @@ const { currentId, previous, next } = Astro.props;
 
 <nav class="chapter-next" aria-label="Переход между главами" data-completion-id={currentId}>
   <div class="chapter-completion">
-    <p class="section-kicker">Ваш путь</p>
-    <button type="button" data-complete-chapter aria-pressed="false">
-      <span aria-hidden="true">✓</span>
+    <div>
+      <p class="section-kicker">Ваш путь</p>
+      <p class="completion-status" data-completion-status role="status">Глава не отмечена</p>
+    </div>
+    <button type="button" data-complete-chapter data-complete="false">
+      <span aria-hidden="true" data-completion-icon>✓</span>
       <span data-completion-label>Отметить главу прочитанной</span>
     </button>
   </div>
@@ -25,24 +28,41 @@ const { currentId, previous, next } = Astro.props;
 </nav>
 
 <script>
+  // The button toggles, so a mistaken mark can be undone; its label names the next action
+  // and the status line announces the current state.
   document.querySelectorAll<HTMLElement>('[data-completion-id]').forEach((navigation) => {
     const chapterId = navigation.dataset.completionId!;
     const button = navigation.querySelector<HTMLButtonElement>('[data-complete-chapter]')!;
     const label = navigation.querySelector<HTMLElement>('[data-completion-label]')!;
+    const status = navigation.querySelector<HTMLElement>('[data-completion-status]')!;
+    const icon = navigation.querySelector<HTMLElement>('[data-completion-icon]')!;
     const readProgress = (): string[] => {
       try {
         const value: unknown = JSON.parse(localStorage.getItem('wow-reading-progress') || '[]');
         return Array.isArray(value) ? value.filter((id): id is string => typeof id === 'string') : [];
-      } catch { return []; }
+      } catch {
+        return [];
+      }
     };
     const update = () => {
-      const complete = new Set(readProgress()).has(chapterId);
-      button.setAttribute('aria-pressed', String(complete));
-      label.textContent = complete ? 'Глава прочитана' : 'Отметить главу прочитанной';
+      const complete = readProgress().includes(chapterId);
+      button.dataset.complete = String(complete);
+      icon.hidden = complete;
+      label.textContent = complete ? 'Снять отметку о прочтении' : 'Отметить главу прочитанной';
+      status.textContent = complete ? 'Глава прочитана' : 'Глава не отмечена';
     };
     button.addEventListener('click', () => {
-      const completed = [...new Set([...readProgress(), chapterId])];
-      try { localStorage.setItem('wow-reading-progress', JSON.stringify(completed)); } catch { /* Completion remains usable as a session action. */ }
+      const current = new Set(readProgress());
+      if (current.has(chapterId)) {
+        current.delete(chapterId);
+      } else {
+        current.add(chapterId);
+      }
+      try {
+        localStorage.setItem('wow-reading-progress', JSON.stringify([...current]));
+      } catch {
+        // Storage can be blocked; the page state still reflects nothing was saved.
+      }
       update();
       window.dispatchEvent(new Event('wow:progress-changed'));
     });

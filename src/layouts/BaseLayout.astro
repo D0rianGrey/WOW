@@ -8,9 +8,8 @@ interface Props {
   description?: string;
   documentTitle?: string;
   breadcrumbs?: { label: string; href?: string }[];
-  chapterIds?: string[];
 }
-const { title, description = 'Русскоязычный путеводитель по истории Warcraft и World of Warcraft: Forever с прозрачными статусами лора.', documentTitle = `${title} — Warcraft: Forever`, breadcrumbs, chapterIds } = Astro.props;
+const { title, description = 'Русскоязычный путеводитель по истории Warcraft и World of Warcraft: Forever с прозрачными статусами лора.', documentTitle = `${title} — Warcraft: Forever`, breadcrumbs } = Astro.props;
 ---
 <!doctype html>
 <html lang="ru" data-reading-mode="essential" data-spoilers="hidden">
@@ -29,5 +28,5 @@ const { title, description = 'Русскоязычный путеводител�
       } catch { /* Defaults are safe when browser storage is unavailable. */ }
     </script>
   </head>
-  <body><AppShell title={title} breadcrumbs={breadcrumbs} chapterIds={chapterIds}><slot /></AppShell></body>
+  <body><AppShell title={title} breadcrumbs={breadcrumbs}><slot /></AppShell></body>
 </html>

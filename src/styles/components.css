@@ -40,7 +40,8 @@ progress::-webkit-progress-bar { background: #333c41; }
 progress::-webkit-progress-value { background: var(--gold); }
 progress::-moz-progress-bar { background: var(--gold); }
 main { padding: 26px 5% 60px; }
-main:focus { outline: none; }
+main:focus:not(:focus-visible) { outline: none; }
+main:focus-visible { outline-offset: -4px; }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 12px; font-size: .67rem; color: #919ba2; margin-bottom: 42px; }
 .breadcrumbs a { text-decoration: none; }
 .breadcrumbs [aria-current] { color: #c9c7bd; }
@@ -142,8 +143,9 @@ main:focus { outline: none; }
 .chapter-next { margin-top: 34px; padding-top: 28px; border-top: 1px solid var(--line); }
 .chapter-completion { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 25px; background: #1b2428; border: 1px solid #3b4549; }
 .chapter-completion p { margin: 0; }
+.chapter-completion .completion-status { margin-top: 6px; color: #c7dccf; font-size: .82rem; }
 .chapter-completion button { min-height: 46px; padding: 10px 16px; border: 1px solid #a88a53; background: #d8bc82; color: #191d1d; font-weight: 650; }
-.chapter-completion button[aria-pressed="true"] { background: #20372d; color: #c7dccf; border-color: #547963; }
+.chapter-completion button[data-complete="true"] { background: #20372d; color: #c7dccf; border-color: #547963; }
 .chapter-links { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
 .chapter-link { display: flex; flex-direction: column; min-height: 95px; padding: 18px 20px; border: 1px solid #343d42; background: #131a1f; text-decoration: none; }
 .chapter-link:hover { border-color: #806f4e; background: #182127; }

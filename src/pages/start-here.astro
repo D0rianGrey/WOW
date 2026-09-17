@@ -9,11 +9,10 @@ import { validateChapterSourceIds } from '../lib/content';
 const chapters = (await getCollection('chapters')).sort((a, b) => a.data.order - b.data.order);
 const sources = await getCollection('sources');
 validateChapterSourceIds(chapters, sources);
-const chapterIds = chapters.map((chapter) => chapter.data.id);
 const totalMinutes = chapters.reduce((sum, chapter) => sum + chapter.data.readingMinutes, 0);
 ---
 
-<BaseLayout title="Начать здесь" description="Восемь глав от древнего Azeroth до World of Warcraft: Forever." chapterIds={chapterIds}>
+<BaseLayout title="Начать здесь" description="Восемь глав от древнего Azeroth до World of Warcraft: Forever.">
   <header class="path-header">
     <p class="eyebrow">Перед первым шагом</p>
     <h1>Путь к Forever</h1>

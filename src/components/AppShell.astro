@@ -1,12 +1,15 @@
 ---
+import { getCollection } from 'astro:content';
+
 import ReadingModeToggle from './ReadingModeToggle.astro';
 import { route } from '../lib/routes';
 interface Props {
   title: string;
   breadcrumbs?: { label: string; href?: string }[];
-  chapterIds?: string[];
 }
-const { title, breadcrumbs = [], chapterIds = [] } = Astro.props;
+const { title, breadcrumbs } = Astro.props;
+// Every page shows progress along the same guided path, so a reader never sees an empty "0 / 0".
+const chapterIds = (await getCollection('chapters')).sort((a, b) => a.data.order - b.data.order).map((chapter) => chapter.data.id);
 const navigation = [
   ['', 'Главная'], ['start-here', 'Начать здесь'], ['timeline', 'Хронология'],
   ['eras', 'Эпохи'], ['characters', 'Персонажи'], ['factions', 'Фракции'],
@@ -37,12 +40,12 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '');
       <span class="edition-label">ПУТЕВОДИТЕЛЬ ПО ЛОРУ <span> / </span> RU</span>
       <a class="search-link" href={route('search')} aria-label="Поиск по энциклопедии"><span aria-hidden="true">⌕</span> Поиск</a>
     </header>
-    <div class="reader-toolbar"><ReadingModeToggle /><div class="reading-progress" data-chapter-ids={JSON.stringify(chapterIds)}>
+    <div class="reader-toolbar"><ReadingModeToggle />{chapterIds.length > 0 && <div class="reading-progress" data-chapter-ids={JSON.stringify(chapterIds)}>
       <div><span>Ваш путь</span><span data-progress-label>0 / {chapterIds.length} глав</span></div>
-      <progress value="0" max={Math.max(1, chapterIds.length)} aria-label="Прочитанные главы"></progress>
-    </div></div>
+      <progress value="0" max={chapterIds.length} aria-label="Прочитанные главы"></progress>
+    </div>}</div>
     <main id="main-content" tabindex="-1">
-      <nav class="breadcrumbs" aria-label="Навигационная цепочка"><a href={route()}>Хроники</a><span aria-hidden="true">/</span>{breadcrumbs.map(crumb => <><span>{crumb.href ? <a href={crumb.href}>{crumb.label}</a> : crumb.label}</span><span aria-hidden="true">/</span></>)}<span aria-current="page">{title}</span></nav>
+      <nav class="breadcrumbs" aria-label="Навигационная цепочка"><a href={route()}>Хроники</a><span aria-hidden="true">/</span>{(breadcrumbs ?? []).map(crumb => <><span>{crumb.href ? <a href={crumb.href}>{crumb.label}</a> : crumb.label}</span><span aria-hidden="true">/</span></>)}<span aria-current="page">{title}</span></nav>
       <slot />
     </main>
     <footer class="site-footer"><span>WORLD OF WARCRAFT <b>FOREVER</b></span><p>Независимый путеводитель по лору. Warcraft — вселенная Blizzard Entertainment.</p><a href={route('sources')}>Каждая история начинается с источника ↗</a></footer>

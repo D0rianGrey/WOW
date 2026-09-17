@@ -26,7 +26,6 @@ interface Props {
 
 const { chapter, chapters, sources, index } = Astro.props;
 const { Content } = await render(chapter);
-const chapterIds = chapters.map((entry) => entry.data.id);
 const selectedSources = chapter.data.sourceIds.map((id) => sources.find((source) => source.id === id)!);
 const previous = chapters[index - 1];
 const next = chapters[index + 1];
@@ -38,7 +37,6 @@ const next = chapters[index + 1];
   status={chapter.data.status}
   eyebrow={`${String(index + 1).padStart(2, '0')} / ${chapter.data.era}`}
   readingMinutes={chapter.data.readingMinutes}
-  chapterIds={chapterIds}
   breadcrumbs={[{ label: 'Начать здесь', href: route('start-here') }]}
 >
   <Content />

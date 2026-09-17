@@ -82,7 +82,8 @@ for (const width of [390, 768, 1440]) {
 
 test('progress counts only unique completed chapters in the supplied reading path', async ({ page }) => {
   await page.goto('/WOW/');
-  await expect(page.locator('[data-progress-label]')).toHaveText('0 / 0 глав');
+  await expect(page.locator('[data-progress-label]')).toHaveText('0 / 8 глав');
+  await expect(page.getByRole('progressbar')).toHaveAttribute('max', '8');
   await page.evaluate(() => {
     document.querySelector<HTMLElement>('[data-chapter-ids]')!.dataset.chapterIds = JSON.stringify(['prologue', 'first-war']);
     localStorage.setItem('wow-reading-progress', JSON.stringify(['prologue', 'prologue', 'unknown', 4]));
@@ -97,7 +98,7 @@ test('progress counts only unique completed chapters in the supplied reading pat
   await expect(page.locator('[data-progress-label]')).toHaveText('0 / 2 глав');
 });
 
-test('guided path opens chapters in order and records explicit completion once', async ({ page }) => {
+test('guided path opens chapters in order and completion can be undone', async ({ page }) => {
   await page.goto('/WOW/start-here');
   await expect(page.getByRole('heading', { name: 'Путь к Forever' })).toBeVisible();
   await expect(page.locator('[data-path-chapter]')).toHaveCount(8);
@@ -107,7 +108,12 @@ test('guided path opens chapters in order and records explicit completion once',
   await expect(page).toHaveURL(/\/WOW\/chapters\/azeroth-before-civilization\/?$/);
   await page.getByRole('button', { name: 'Отметить главу прочитанной' }).click();
   await expect(page.locator('[data-progress-label]')).toHaveText('1 / 8 глав');
-  await page.getByRole('button', { name: 'Глава прочитана' }).click();
+  await expect(page.getByRole('status')).toHaveText('Глава прочитана');
+  await page.getByRole('button', { name: 'Снять отметку о прочтении' }).click();
+  await expect(page.locator('[data-progress-label]')).toHaveText('0 / 8 глав');
+  await expect(page.getByRole('status')).toHaveText('Глава не отмечена');
+  await page.getByRole('button', { name: 'Отметить главу прочитанной' }).click();
+  await page.reload();
   await expect(page.locator('[data-progress-label]')).toHaveText('1 / 8 глав');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('wow-reading-progress') || '[]'))).toEqual([
     'azeroth-before-civilization'
