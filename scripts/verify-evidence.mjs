@@ -100,7 +100,7 @@ async function readLedgers(paths) {
   const entries = [];
 
   for (const file of files) {
-    const parsed = JSON.parse(await readFile(file, 'utf8'));
+    const parsed = await readJson(file);
 
     for (const entry of parsed) {
       entries.push({ ...entry, file });
@@ -110,12 +110,24 @@ async function readLedgers(paths) {
   return entries;
 }
 
+async function readJson(file) {
+  try {
+    return JSON.parse(await readFile(file, 'utf8'));
+  } catch (error) {
+    throw new Error(`Cannot read JSON from ${file}: ${error.message}`);
+  }
+}
+
 function parseArgs(argv) {
   const files = [];
   let jsonOut = null;
 
   for (let index = 0; index < argv.length; index += 1) {
     if (argv[index] === '--json') {
+      if (index + 1 >= argv.length) {
+        throw new Error('--json requires an output file path');
+      }
+
       jsonOut = argv[index + 1];
       index += 1;
     } else {
@@ -128,7 +140,7 @@ function parseArgs(argv) {
 
 async function main() {
   const { files, jsonOut } = parseArgs(process.argv.slice(2));
-  const sources = JSON.parse(await readFile(sourcesFile, 'utf8'));
+  const sources = await readJson(sourcesFile);
   const urlById = new Map(sources.map((source) => [source.id, source.url]));
   const entries = await readLedgers(files);
   const pageCache = new Map();
