@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -40,6 +42,26 @@ jobs:
       # The Playwright web server rebuilds and serves the site under the /WOW base path.
       - name: End-to-end tests
         run: npm run test:e2e
+
+      # Without this a pull request could add an invented quote and stay green until the weekly run.
+      - name: Verify quotes changed by this pull request
+        if: github.event_name == 'pull_request'
+        run: |
+          set -e
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- 'docs/research/evidence/*.json' | tr '\n' ' ')
+          if [ -z "$changed" ]; then
+            echo "The evidence ledger is unchanged."
+            exit 0
+          fi
+          echo "Verifying: $changed"
+          set +e
+          node scripts/verify-evidence.mjs $changed
+          status=$?
+          if [ $status -eq 2 ]; then
+            echo "::warning::Some sources could not be loaded; the quotes themselves are unchanged."
+            exit 0
+          fi
+          exit $status
 
       - name: Upload Playwright results
         if: failure()

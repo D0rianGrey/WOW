@@ -151,32 +151,49 @@ async function knownArticleIds() {
   const ids = new Set();
 
   for (const source of sources) {
-    for (const id of (source.url ?? '').matchAll(/\/(\d{6,})(?:\/|$)/g)) {
-      ids.add(id[1]);
+    const match = (source.url ?? '').match(/\/(?:news|article)\/(\d{6,})(?:\/|$)/);
+
+    if (match) {
+      ids.add(match[1]);
     }
   }
 
   return ids;
 }
 
+// The news page answers 502/504 under load, and a throttled minute must not look like a broken watch.
+const retryDelays = [3_000, 10_000, 30_000];
+
+async function fetchNews() {
+  for (let attempt = 0; ; attempt += 1) {
+    const response = await fetch(newsUrl, { headers: { 'user-agent': 'wow-forever-encyclopedia-source-watch' } });
+
+    if (response.ok) {
+      return response.text();
+    }
+
+    if (response.status < 500 || attempt >= retryDelays.length) {
+      throw new Error(`${newsUrl} answered HTTP ${response.status}`);
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, retryDelays[attempt]));
+  }
+}
+
 async function main() {
   const { jsonOut, since } = parseArgs(process.argv.slice(2));
-  const response = await fetch(newsUrl, { headers: { 'user-agent': 'wow-forever-encyclopedia-source-watch' } });
-
-  if (!response.ok) {
-    throw new Error(`${newsUrl} answered HTTP ${response.status}`);
-  }
+  const html = await fetchNews();
 
   const known = await knownArticleIds();
-  const articles = extractArticles(await response.text());
+  const articles = extractArticles(html);
 
   if (articles.length === 0) {
     throw new Error(`No articles found on ${newsUrl} — the page format probably changed`);
   }
 
-  const unregistered = articles.filter(
-    (article) => article.publishedAt >= since && isRelevant(article) && !known.has(article.id)
-  );
+  const recent = articles.filter((article) => article.publishedAt >= since && !known.has(article.id));
+  const unregistered = recent.filter(isRelevant);
+  const filteredOut = recent.filter((article) => !isRelevant(article));
 
   console.log(`Checked ${articles.length} articles on ${newsUrl}, cut-off ${since}.`);
 
@@ -190,13 +207,28 @@ async function main() {
     console.log(`\n${unregistered.length} article(s) not registered as sources yet.`);
   }
 
+  // Printed even when nothing matched: a keyword list can only miss silently, and a human
+  // scanning three titles costs less than an announcement the watch never mentions.
+  if (filteredOut.length > 0) {
+    console.log('\nUnregistered but filtered out by keywords (check the wording if one of these matters):');
+
+    for (const article of filteredOut) {
+      console.log(`  ${article.publishedAt}  ${article.title}\n     ${article.url}`);
+    }
+  }
+
   if (jsonOut) {
-    await writeFile(jsonOut, JSON.stringify({ checkedAt: new Date().toISOString(), since, unregistered, articles }, null, 2));
+    await writeFile(jsonOut, JSON.stringify({ checkedAt: new Date().toISOString(), since, unregistered, filteredOut, articles }, null, 2));
   }
 
   process.exitCode = unregistered.length > 0 ? 20 : 0;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  await main();
+  try {
+    await main();
+  } catch (error) {
+    console.error(`watch-sources failed: ${error.message ?? error}`);
+    process.exitCode = 1;
+  }
 }

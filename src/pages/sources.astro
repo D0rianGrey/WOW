@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
-import type { SourceType } from '../lib/content';
+import { sourceTypeLabels, type SourceType } from '../lib/content';
 import { entityRefHref } from '../lib/entity-links';
 import { route } from '../lib/routes';
 
@@ -19,18 +19,6 @@ const chapters = await getCollection('chapters');
 const chapterTitles = Object.fromEntries(chapters.map((chapter) => [chapter.data.id, chapter.data]));
 
 const typeOrder: SourceType[] = ['official-manual', 'official-announcement', 'official-article', 'official-retrospective', 'official-preview', 'official-promo', 'official-forum', 'official-fiction', 'official-book', 'in-game'];
-const typeLabels: Record<SourceType, string> = {
-  'official-manual': 'Официальные руководства',
-  'official-announcement': 'Официальные анонсы',
-  'official-article': 'Публикации Blizzard',
-  'official-retrospective': 'Поздние ретроспективы',
-  'official-preview': 'Официальные превью',
-  'official-promo': 'Промоматериалы',
-  'official-fiction': 'Официальные рассказы',
-  'official-forum': 'Официальный форум Blizzard',
-  'official-book': 'Официальные книги',
-  'in-game': 'Тексты в игре'
-};
 
 const usage = (sourceId: string) => {
   const entries = ledger.filter((entry) => entry.sourceId === sourceId);
@@ -54,7 +42,7 @@ const totalQuotes = ledger.length;
 
   {groups.map((group) => (
     <section class="source-group" aria-labelledby={`group-${group.type}`}>
-      <h2 id={`group-${group.type}`}>{typeLabels[group.type]}</h2>
+      <h2 id={`group-${group.type}`}>{sourceTypeLabels[group.type].plural}</h2>
       <ul class="source-list">
         {group.items.map((source) => {
           const used = usage(source.id);

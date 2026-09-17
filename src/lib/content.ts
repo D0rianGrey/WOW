@@ -182,6 +182,20 @@ export const sourceTypes = [
 
 export type SourceType = (typeof sourceTypes)[number];
 
+// One table for the source list under an article and for the source explorer.
+export const sourceTypeLabels: Record<SourceType, { singular: string; plural: string }> = {
+  'official-article': { singular: 'Публикация Blizzard', plural: 'Публикации Blizzard' },
+  'official-announcement': { singular: 'Официальный анонс', plural: 'Официальные анонсы' },
+  'official-retrospective': { singular: 'Поздняя ретроспектива', plural: 'Поздние ретроспективы' },
+  'official-preview': { singular: 'Официальное превью', plural: 'Официальные превью' },
+  'official-promo': { singular: 'Промоматериал', plural: 'Промоматериалы' },
+  'official-manual': { singular: 'Официальное руководство', plural: 'Официальные руководства' },
+  'official-book': { singular: 'Официальная книга', plural: 'Официальные книги' },
+  'official-fiction': { singular: 'Официальный рассказ', plural: 'Официальные рассказы' },
+  'official-forum': { singular: 'Официальный форум', plural: 'Официальный форум Blizzard' },
+  'in-game': { singular: 'Текст в игре', plural: 'Тексты в игре' }
+};
+
 export const sourceSchema = z.object({
   id: z.string().trim().min(1),
   title: z.string().trim().min(1),

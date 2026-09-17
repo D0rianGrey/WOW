@@ -332,7 +332,7 @@ async function run(files, results) {
   // Sources are fetched up front, one request at a time per host and several hosts at once:
   // downloading sequentially made a weekly run scale with the number of sources, while firing
   // everything in parallel made Blizzard answer with throttling pages that look like missing quotes.
-  const urls = [...new Set(entries.map((entry) => entry.url ?? urlById.get(entry.sourceId)).filter(Boolean))];
+  const urls = [...new Set(entries.map((entry) => urlById.get(entry.sourceId)).filter(Boolean))];
   const byHost = new Map();
 
   for (const url of urls) {
@@ -349,7 +349,7 @@ async function run(files, results) {
   );
 
   for (const entry of entries) {
-    const url = entry.url ?? urlById.get(entry.sourceId);
+    const url = urlById.get(entry.sourceId);
 
     if (!url) {
       results.push({ id: entry.id, status: 'UNKNOWN_SOURCE', detail: entry.sourceId });

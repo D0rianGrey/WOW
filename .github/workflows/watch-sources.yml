@@ -5,7 +5,9 @@ name: Watch official sources
 # or an agent then follows docs/automation/lore-update-contract.md.
 on:
   schedule:
-    - cron: '23 7 * * *'
+    # The news page only lists the few newest articles and an item can rotate off within hours,
+    # so the watch runs four times a day rather than once.
+    - cron: '17 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -37,28 +39,39 @@ jobs:
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit $((status == 20 ? 0 : status))
 
+      # The issue is never closed automatically: an article can disappear from the news page before
+      # anyone registers it, and a closed issue would quietly take that material with it.
       - name: Open or refresh the tracking issue
         if: steps.watch.outputs.status == '20'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -e
           title="Новые официальные материалы: проверить лор"
-          body=$'Следилка нашла официальные статьи, которых нет в `src/content/sources/core.json`.\n\n```\n'"$(cat watch-output.txt)"$'\n```\n\nДальше — по контракту `docs/automation/lore-update-contract.md`: цитаты в реестр, `npm run verify:evidence`, правки контента, записи в журналы, PR. Issue закроется сама, когда источники будут зарегистрированы.'
-          number=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number')
+          number=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')
+          urls=$(jq -r '.unregistered[].url' watch-report.json)
+
+          if [ -n "$number" ]; then
+            seen=$(gh issue view "$number" --json body,comments --jq '.body, (.comments[].body)')
+            fresh=""
+            for url in $urls; do
+              case "$seen" in
+                *"$url"*) ;;
+                *) fresh="yes" ;;
+              esac
+            done
+            if [ -z "$fresh" ]; then
+              echo "Everything found is already listed in issue #$number."
+              exit 0
+            fi
+          fi
+
+          body=$'Следилка нашла официальные статьи, которых нет в `src/content/sources/core.json`.\n\n```\n'"$(cat watch-output.txt)"$'\n```\n\nДальше — по контракту `docs/automation/lore-update-contract.md`: цитаты в реестр, `npm run verify:evidence`, правки контента, записи в журналы, PR. Issue закрывает человек, когда материалы разобраны.'
+
           if [ -n "$number" ]; then
             gh issue comment "$number" --body "$body"
           else
             gh issue create --title "$title" --body "$body"
-          fi
-
-      - name: Close the tracking issue when everything is registered
-        if: steps.watch.outputs.status == '0'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          number=$(gh issue list --state open --search "Новые официальные материалы: проверить лор in:title" --json number --jq '.[0].number')
-          if [ -n "$number" ]; then
-            gh issue close "$number" --comment "Все найденные официальные статьи зарегистрированы в реестре источников."
           fi
 
       - name: Upload report
