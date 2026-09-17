@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
-import { searchDocuments, stem, tokenize, type SearchDocument } from '../src/lib/search';
+import { searchDocuments, serializeSearchIndex, stem, tokenize, type SearchDocument } from '../src/lib/search';
 
 const glossary = JSON.parse(readFileSync(resolve('src/content/glossary/core.json'), 'utf8')) as {
   id: string;
@@ -45,7 +45,10 @@ describe('search', () => {
 
   it('filters by lore status and type', () => {
     expect(searchDocuments(documents, 'Horde', { status: 'FOREVER' }).map((document) => document.id)).toEqual(['factions/windshapers']);
-    expect(searchDocuments(documents, 'Horde', { type: 'Термин' }).every((document) => document.type === 'Термин')).toBe(true);
+    const terms = searchDocuments(documents, 'Horde', { type: 'Термин' }).map((document) => document.id);
+
+    expect(terms.length).toBeGreaterThan(0);
+    expect([...terms].sort()).toEqual(['glossary/azeroth', 'glossary/dark-portal', 'glossary/forsaken', 'glossary/horde']);
   });
 
   it('returns nothing for an empty or unmatched query', () => {
@@ -62,5 +65,15 @@ describe('search', () => {
     const source = readFileSync(resolve('src/lib/search-index.ts'), 'utf8');
 
     expect(source).not.toMatch(/\.body\b|render\(/);
+  });
+});
+
+describe('search index serialization', () => {
+  it('escapes "<" so content can never close the embedded script tag', () => {
+    const payload = [{ id: 'x', title: '</script><script>alert(1)</script>', summary: 'a < b', href: '/WOW/x', type: 'Глава', status: 'ESTABLISHED', keywords: [] }];
+    const serialized = serializeSearchIndex(payload as never);
+
+    expect(serialized).not.toContain('<');
+    expect(JSON.parse(serialized)[0].title).toBe('</script><script>alert(1)</script>');
   });
 });

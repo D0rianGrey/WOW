@@ -1,7 +1,8 @@
 ---
 import { buildSearchIndex } from '../lib/search-index';
+import { serializeSearchIndex } from '../lib/search';
 
 const documents = await buildSearchIndex();
 ---
 
-<script type="application/json" id="search-index" set:html={JSON.stringify(documents)} />
+<script type="application/json" id="search-index" set:html={serializeSearchIndex(documents)} />

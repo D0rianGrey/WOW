@@ -100,3 +100,9 @@ export function searchDocuments(documents: readonly SearchDocument[], query: str
     .sort((left, right) => right.score - left.score || left.document.title.localeCompare(right.document.title))
     .map((result) => result.document);
 }
+
+// The index is embedded in a <script> tag, so a "<" in any title, summary or alias must not be
+// able to close that tag; JSON.parse decodes \u003c back to "<" in the browser.
+export function serializeSearchIndex(documents: SearchDocument[]): string {
+  return JSON.stringify(documents).replaceAll('<', '\\u003c');
+}

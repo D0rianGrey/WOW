@@ -7,9 +7,42 @@ export const confidenceLevels = ['high', 'medium', 'low'] as const;
 
 export type Confidence = (typeof confidenceLevels)[number];
 
+// A real calendar date, not just the right shape: 2026-02-30 would sort and render as a fact.
+function isCalendarDate(value: string): boolean {
+  const [year, month, day] = value.split('-').map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+
+  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day;
+}
+
 const dateSchema = z
   .string()
-  .regex(/^\d{4}-\d{2}-\d{2}$/, 'Expected an ISO date in YYYY-MM-DD format');
+  .regex(/^\d{4}-\d{2}-\d{2}$/, 'Expected an ISO date in YYYY-MM-DD format')
+  .refine(isCalendarDate, 'Expected a date that exists in the calendar');
+
+// Blizzard keeps the Warcraft II and III manuals on an FTP host that has no working certificate;
+// everything else must be https, so no source can ship a javascript:, data: or file: link.
+const httpOnlyHosts = new Set(['ftp.blizzard.com']);
+
+export function isPublishableSourceUrl(value: string): boolean {
+  let url;
+
+  try {
+    url = new URL(value);
+  } catch {
+    return false;
+  }
+
+  if (url.username !== '' || url.password !== '') {
+    return false;
+  }
+
+  if (url.protocol === 'https:') {
+    return true;
+  }
+
+  return url.protocol === 'http:' && httpOnlyHosts.has(url.hostname);
+}
 
 const loreFields = {
   id: z.string().trim().min(1),
@@ -84,6 +117,8 @@ export const dossierEntrySchema = z.object({
 export const glossaryEntrySchema = z.object({
   ...loreFields,
   term: z.string().trim().min(1),
+  // Conventions of this encyclopedia (lore statuses, dating rules) carry no lore status badge.
+  editorial: z.boolean().default(false),
   aliases: z.array(z.string().trim().min(1))
 }).superRefine(requireSourcesUnlessEstablished);
 
@@ -135,6 +170,7 @@ export const sourceTypes = [
   'official-manual',
   'official-book',
   'official-fiction',
+  'official-forum',
   'in-game'
 ] as const;
 
@@ -144,7 +180,7 @@ export const sourceSchema = z.object({
   id: z.string().trim().min(1),
   title: z.string().trim().min(1),
   publisher: z.string().trim().min(1),
-  url: z.url().optional(),
+  url: z.url().refine(isPublishableSourceUrl, 'Expected an https URL (http only for ftp.blizzard.com)').optional(),
   citation: z.string().trim().min(1).optional(),
   type: z.enum(sourceTypes),
   publishedAt: dateSchema.optional(),

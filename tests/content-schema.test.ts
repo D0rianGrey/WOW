@@ -171,3 +171,32 @@ describe('assertValidContentReferences', () => {
     ).toThrow(/first-war.*missing/s);
   });
 });
+
+describe('source URL and date validation', () => {
+  const base = {
+    id: 'probe',
+    title: 'Probe',
+    publisher: 'Blizzard Entertainment',
+    type: 'official-article'
+  } as const;
+
+  it('rejects executable and local URL schemes, and credentials in the URL', () => {
+    for (const url of ['javascript:alert(1)', 'data:text/html,<script>alert(1)</script>', 'file:///etc/passwd', 'https://user:pass@news.blizzard.com/a']) {
+      expect(sourceSchema.safeParse({ ...base, url }).success, url).toBe(false);
+    }
+  });
+
+  it('accepts https and the Blizzard FTP manuals over http', () => {
+    expect(sourceSchema.safeParse({ ...base, url: 'https://news.blizzard.com/en-us/article/1/x' }).success).toBe(true);
+    expect(sourceSchema.safeParse({ ...base, url: 'http://ftp.blizzard.com/pub/misc/Warcraft%20III%20Manual.pdf' }).success).toBe(true);
+    expect(sourceSchema.safeParse({ ...base, url: 'http://news.blizzard.com/en-us/article/1/x' }).success).toBe(false);
+  });
+
+  it('rejects dates that match the format but do not exist', () => {
+    for (const publishedAt of ['2026-02-30', '2026-13-01', '0000-00-00']) {
+      expect(sourceSchema.safeParse({ ...base, url: 'https://news.blizzard.com/a', publishedAt }).success, publishedAt).toBe(false);
+    }
+
+    expect(sourceSchema.safeParse({ ...base, url: 'https://news.blizzard.com/a', publishedAt: '2026-02-28' }).success).toBe(true);
+  });
+});
