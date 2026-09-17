@@ -4,58 +4,73 @@ title: Arthas и падение Lordaeron
 slug: arthas-and-lordaeron
 status: ESTABLISHED
 era: Third War
-summary: Plague of Undeath, Stratholme и Frostmourne превратили защитника Lordaeron в оружие Scourge и разрушили северное королевство.
+summary: Чума Cult of the Damned, Stratholme и Frostmourne превратили наследного принца Lordaeron в оружие Scourge и уничтожили два королевства.
 spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
+  - warcraft-iii-manual
   - warcraft-iii-story-so-far
-  - forsaken-kingdom-deep-dive
+  - jaina-hero-week
+  - heroes-patch-notes-2018-10-16
+  - muradin-hero-week
+  - sylvanas-hero-week
+  - burning-crusade-story-so-far
+  - kelthuzad-enters-the-nexus
+  - forsaken-kingdom-whats-next
+  - forever-announcement
+  - forever-found-photos
 updatedAt: "2026-09-17"
 confidence: high
 order: 6
-readingMinutes: 9
+readingMinutes: 10
 ---
 
 ## Главное
 
-Lordaeron вступает в Third War как сильнейшее человеческое королевство с памятью о прежней победе. Новая угроза не приходит строем через границу. Plague of Undeath распространяется через зерно и превращает население в часть Scourge. Военная сила королевства плохо отвечает на опасность, которая использует его дороги и снабжение против него самого.
+Единственный сын короля Terenas, Arthas, вырос сильным и уверенным молодым человеком. Бою его учил Muradin Bronzebeard, брат короля Magni из Ironforge, а в девятнадцать лет принц вступил в Order of the Silver Hand под началом Uther. Подругой его детства была Jaina Proudmoore, младшая дочь адмирала Proudmoore и лучшая ученица Kirin Tor — совета магов Dalaran.
 
-Prince Arthas стремится остановить plague до того, как она уничтожит его народ. В Andorhal он сталкивается с масштабом бедствия и преследует Mal’Ganis, которого считает ключом к врагу. Чем сильнее желание победить любой ценой, тем уже становится пространство для совета и сомнения.
+Мирные годы кончились слухами. Руководство к Warcraft III рассказывает о «культах смерти», появившихся в северных провинциях. Затем по Lordaeron быстро расползлись вести о чуме, и принц Arthas отправился искать её источник.
 
-Stratholme — точка нравственного разрыва. Узнав, что заражённое зерно достигло города, Arthas решает уничтожить жителей до превращения. Uther и Jaina не принимают его решение. Даже если смотреть только на причинную нить, последствия ясны: Arthas отделяет себя от тех, кто мог ограничить его, и продолжает погоню уже без прежней опоры.
+За чумой стоял замысел. Руководство 2004 года объясняет: demon Kil’jaeden создал Scourge — огромную армию нежити, подчинённую единой воле Lich King. Lich King и его живой слуга Kel’Thuzad задумали распространить страшную чуму по землям людей, чтобы пополнять ряды Scourge восставшей нежитью. Kel’Thuzad и его Cult of the Damned нанесли первый удар, выпустив чуму на севере Lordaeron.
 
-Эта сцена важна не как простой тест с готовым удобным ответом. Plague ставит защитников перед катастрофой, в которой время работает на врага. Но Arthas превращает срочность в право единолично определять средство и отвергает тех, кто не согласен. После этого каждое новое решение принимается в ещё большей изоляции.
+Uther the Lightbringer расследовал заражённые области, надеясь остановить болезнь. Arthas взялся за борьбу со Scourge и сумел убить Kel’Thuzad, но с каждым павшим солдатом армия Lich King только росла. Вместе с принцем расследовала чуму и Jaina.
 
-В Northrend он находит Frostmourne. Предупреждение о проклятии не останавливает его, потому что клинок обещает средство достигнуть выбранной цели. Получив силу, Arthas теряет то, что хотел защитить. Он возвращается Death Knight, убивает King Terenas и делает падение Lordaeron частью наступления Scourge.
+Отчаяние толкало Arthas ко всё более крайним мерам. В Stratholme он приказал солдатам перебить жителей города, многие из которых, возможно, ещё не были заражены. Для Jaina это стало последней каплей: она ушла, чтобы не видеть этой расправы. Поздний официальный текст уточняет, что demon Mal’Ganis был выбран, чтобы привести Arthas на службу Lich King, и подтолкнул принца к зачистке Stratholme. Uther предупредил Arthas, что тот теряет человечность.
 
-Возвращение наследника особенно разрушительно, потому что стены и порядок королевства рассчитаны на внешнего врага. Arthas знает людей, символы и центр власти Lordaeron. Когда он приходит как оружие Scourge, доверие к принцу помогает ударить по самому основанию государства. Plague разрушает население снизу, а убийство Terenas уничтожает верховную власть сверху.
+Arthas проследил источник чумы до ледяного Northrend, чтобы покончить с угрозой навсегда. Вместо этого он попал в ловушку Lich King: взял проклятый рунический клинок Frostmourne, веря, что спасёт им свой народ. Поздняя статья Blizzard о Muradin добавляет подробности: Arthas знал, что за клинок придётся страшно заплатить, но его ослепляла жажда мести; проклятие клинка сразило Muradin, и Arthas, сочтя друга погибшим, отправился за Mal’Ganis.
 
-Дальше война уничтожает Quel’Thalas и Sunwell. Arthas использует его силу для возвращения Kel’Thuzad. King Anasterian погибает, Silvermoon разорён, а Sylvanas Windrunner после сопротивления превращена в undead. Эти события связывают несколько будущих кризисов: разрушение родины High Elves, усиление Scourge и личную войну Sylvanas за свободу.
+Frostmourne дал Arthas невообразимую силу, но украл его душу. Принц стал величайшим из death knights Lich King. Он сам повёл Scourge на своё королевство, убил Uther в бою и своего отца, короля Terenas. Застигнутый врасплох этими преступлениями, Lordaeron пал под железной пятой Lich King.
 
-Для Sylvanas превращение означает принудительное участие в армии, против которой она сражалась. Поэтому последующее освобождение от контроля Lich King — не возвращение к прежней жизни. Её тело, отношения с живыми и положение в разрушенном Lordaeron уже изменены. Forsaken возникают из общей свободы от контроля, но каждому из них приходится жить с последствиями Scourge.
+Но Arthas не остановился. Его преследовал призрак Kel’Thuzad, требовавший доставить свои останки к Sunwell, скрытому в Quel’Thalas. Scourge вторгся в королевство high elves. Sylvanas Windrunner, Ranger-General of Silvermoon, храбро сражалась, но Arthas разбил эльфийскую армию и прорвался к Sunwell. Arthas не дал Sylvanas достойной смерти: он поднял её тело как banshee, обречённую служить Scourge. Погиб и король Anasterian Sunstrider.
 
-Падение Lordaeron важно не только как трагедия одного героя. Северная политическая система разрушается изнутри: погибает династия, население становится армией врага, а бывшие защитники теряют командование и территорию. Когда часть undead позднее вырвется из-под контроля Lich King, им придётся искать место среди руин собственного королевства.
+Останки Kel’Thuzad погрузили в священные воды Sunwell. Источник был осквернён, а Kel’Thuzad возродился могущественным lich. Затем Arthas повёл Scourge на юг, к Dalaran, где lich добыл книгу заклинаний Medivh, чтобы вновь призвать в мир demonlord Archimonde.
 
-Живые соседи видят те же тела, что недавно атаковали их в составе Scourge, и не всегда способны различить контроль и свободу. Forsaken, в свою очередь, помнят, что были жителями этих земель. Из этого несоответствия вырастает их политика: они не считают себя случайными захватчиками, но окружающие не готовы просто восстановить прежнее доверие.
-
-<section data-depth="deep" aria-labelledby="deep-arthas-motive">
-  <h2 id="deep-arthas-motive">Подробно: ловушка мотива</h2>
-  <p>Arthas начинает с понятной обязанности защищать Lordaeron. Трагедия строится на том, что каждая следующая крайность кажется ему необходимым продолжением предыдущей: остановить plague, догнать Mal’Ganis, получить Frostmourne. Цель не оправдывает средства; средства постепенно меняют самого действующего.</p>
-  <p>Глава не добавляет реплики и внутренние мысли из памяти. Руководство 2004 года даёт достаточный событийный каркас Arthas, Frostmourne, Sylvanas и Kel’Thuzad.</p>
+<section data-depth="deep" aria-labelledby="deep-kelthuzad">
+  <h2 id="deep-kelthuzad">Подробно: кем был Kel’Thuzad</h2>
+  <p>Официальный рассказ Blizzard называет Kel’Thuzad архимагом Kirin Tor и членом его правящего совета. Он считал себя выше законов Совета, запрещавших опыты с тёмной магией, а затем присягнул существу, которое узнал как Lich King, и отправился вербовать для него новых слуг.</p>
 </section>
 
-<section data-depth="deep" aria-labelledby="deep-forsaken-boundary">
-  <h2 id="deep-forsaken-boundary">Подробно: граница с Forsaken Kingdom</h2>
-  <p>Официальный отчёт о <em>Forsaken Kingdom</em> подтверждает пролог <em>Last Days of Lordaeron</em>, основную кампанию, Stratholme и Undercity, а также нового героя Forsaken Paladin. Это не стенограмма миссий: документ не подтверждает поимённо все сюжетные встречи, диалоги или финал.</p>
-  <p>Поэтому переход к новой кампании проводится через установленный результат Warcraft III, а её неизвестные подробности не реконструируются.</p>
+<section data-depth="deep" aria-labelledby="deep-arthas-sources">
+  <h2 id="deep-arthas-sources">Подробно: где официальные тексты расходятся</h2>
+  <p><strong>Stratholme.</strong> Руководство 2004 года ведёт Arthas от убийства Kel’Thuzad сразу к Northrend и Frostmourne и не называет Stratholme. Расправу в городе описывают более поздние официальные тексты о Jaina и Mal’Ganis.</p>
+  <p><strong>Quel’Thalas.</strong> Руководство 2004 года утверждает, что к уходу Scourge в Quel’Thalas не осталось ни одного живого эльфа, а королевство простояло более девяти тысяч лет. Ретроспектива Burning Crusade Classic пишет, что Arthas уничтожил большую часть населения, — то есть выжившие были.</p>
 </section>
 
 ## Почему это важно в Forever
 
-Forever начинается после Warcraft III Reforged: Forsaken Kingdom. Forsaken занимают пространство, созданное падением Lordaeron, а новая возможность Forsaken Paladins строится на напряжении между undeath, Light и недоверием окружающих. Официально подтверждены Bandarion Keep, Whispering Wood, важность Tirisfal и задание на ездовое животное 60 уровня с акцентом на Retribution. Не подтверждены личные концовки этих историй. Историческая часть главы — **ESTABLISHED**; перечисленные дополнения — **FOREVER**.
+Forever начинается после событий Warcraft III Reforged: Forsaken Kingdom и до Molten Core. Forsaken занимают пространство, созданное падением Lordaeron.
+
+Сама кампания-мост начинается прологом <em>Last Days of Lordaeron</em> из четырёх заданий: он открывается возвращением Arthas домой. В нём можно снова увидеть столицу Lordaeron, канализацию будущего Undercity, Andorhal и Stratholme после чистки. В центре истории — новые персонажи Garek Bandarion, недавно восставший воин Forsaken, и Dark Ranger Anya. Через них Blizzard обещает показать, как возник Undercity, как Forsaken создали собственную культуру и почему Scourge не вернул себе Lordaeron. Подробности и финалы этих историй официально не пересказаны.
+
+<div class="lore-status-block" data-lore-status="FOREVER">
+<p class="lore-badge status-forever"><span aria-hidden="true">✦</span> Forever<span class="sr-only"> — Подтверждённое дополнение World of Warcraft: Forever.</span></p>
+
+Путь Forsaken paladins в Forever напрямую вытекает из Forsaken Kingdom. Он начинается, когда бывшим паладинам глубоко не доверяют другие Forsaken, а сами они ещё учатся направлять Light в нежизни. Ключевым местом этого пути становится Bandarion Keep в Whispering Wood, Tirisfal Glades. На 60 уровне Forsaken paladins отправятся за собственным эпическим скакуном: паладины Alliance получают его во имя Redemption, а Forsaken — во имя Retribution.
+
+</div>
 
 ## Запомните три вещи
 
-1. Plague of Undeath превратил инфраструктуру Lordaeron в оружие Scourge.
-2. Решение в Stratholme изолировало Arthas, а Frostmourne завершил его падение.
-3. Разрушение Lordaeron и освобождение части undead создали политическое пространство для Forsaken.
+1. Kel’Thuzad и Cult of the Damned выпустили чуму на Lordaeron, чтобы пополнять Scourge мертвецами.
+2. Stratholme разлучил Arthas с Jaina, а Frostmourne забрал его душу.
+3. Arthas убил Uther и короля Terenas, разорил Quel’Thalas и вернул Kel’Thuzad к жизни.

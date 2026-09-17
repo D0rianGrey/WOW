@@ -1,0 +1,295 @@
+[
+  {
+    "id": "ch00-titans-order",
+    "claim": "Titans состоят из магии Order и первозданной материи; среди них Aman’Thul и Sargeras.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "The titans are a race of majestic planet-sized cosmic beings made up of Order magic and the primordial matter from which the universe was born. Notable titans are Aman'Thul and Sargeras.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-old-gods-void",
+    "claim": "Old Gods — проявления Void; названы C’Thun, N’Zoth и Yogg-Saron.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Physical manifestations of the Void, these parasitic horrors grow like cancers and are administrators of corruption. Notable Old Gods are C'Thun, N'Zoth, and Yogg-Saron.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-titans-agents",
+    "claim": "Упорядочивая Azeroth, titans нуждались в более тонком средстве против слуг Old Gods.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "When the titans were ordering Azeroth, they needed a more delicate hand to combat the agents of the Old Gods.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-world-soul-constructs",
+    "claim": "Aggramar боялся повредить world-soul и предложил создать конструкты против Black Empire.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Due to their colossal forms, Aggramar feared the Pantheon would irreparably damage or even kill the world-soul. He proposed creating powerful constructs to act as the Pantheon's hands and prosecute their will against the Black Empire.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-keepers-black-empire",
+    "claim": "Keepers повели titan-forged против армий Black Empire.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "In time, the keepers led the titan-forged against the armies of the Black Empire.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-galakrond-north",
+    "claim": "Galakrond был крупнейшим хищником на севере древнего Kalimdor.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "In the far north of ancient Kalimdor, the proto-dragon Galakrond had been the largest and most effective predator.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-galakrond-corruption",
+    "claim": "Galakrond поддался порче и начал пожирать себе подобных.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Eventually, he would succumb to corruption and began to devour his own kind.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-five-protodragons",
+    "claim": "Ответом стали пять proto-dragons: Alexstrasza, Malygos, Neltharion, Nozdormu и Ysera.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "The answer lay with five of the greatest and most intelligent proto-dragons: Alexstrasza, Malygos, Neltharion, Nozdormu, and Ysera.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-tyr-guidance",
+    "claim": "Под руководством Tyr proto-dragons сражались с Galakrond.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Under Tyr's guidance, the proto-dragons warred with Galakrond.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-tyr-request",
+    "claim": "Tyr попросил наделить пятерых силой охранять земли Azeroth.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Tyr requested that these five proto-dragons be imbued with powers to guard Azeroth's lands.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-aspects-transformed",
+    "claim": "Proto-dragons стали Aspects — предводителями стай и хранителями Azeroth.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "the proto-dragons were transformed into the Aspects—leaders of the dragonflights and guardians of Azeroth.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-alexstrasza-life",
+    "claim": "Eonar наделил Alexstrasza ролью хранительницы всей жизни.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Alexstrasza was empowered by Eonar to act as guardian of all life.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-alexstrasza-leader",
+    "claim": "Alexstrasza возглавляла Aspects.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "As Dragon Queen, Alexstrasza served as the leader of the Aspects, bringing them together in times of great need.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-nozdormu-time",
+    "claim": "Aman’Thul наделил Nozdormu силой охранять время.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Nozdormu was empowered by Aman'Thul to safeguard time itself",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-malygos-magic",
+    "claim": "Malygos получил сущность Norgannon и стал хранителем магии.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "He was empowered with the essence of Norgannon to serve as the guardian of magic and hidden arcanum.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-ysera-dream",
+    "claim": "Ysera, младшая сестра Alexstrasza, по выбору Eonar следит за дикой природой из Emerald Dream.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Alexstrasza's younger sister, Ysera, was chosen by Eonar to watch over the growing wilds of the world from the Emerald Dream.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-neltharion-deathwing",
+    "claim": "Обезумев под влиянием Old Gods, Neltharion взял имя Deathwing.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "After being driven mad by the Old Gods, he took the name Deathwing the Destroyer.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-dragon-soul",
+    "claim": "Dragon Soul выкован Deathwing во время War of the Ancients.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Forged by Deathwing during the War of the Ancients, the Dragon Soul harnessed the combined power of the dragonflights until it was ultimately destroyed.",
+    "chapterIds": [
+      "azeroth-before-civilization",
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch00-wc3-well-heart",
+    "claim": "По руководству к Warcraft III, озеро, позже названное Well of Eternity, было сердцем магии мира.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The lake, which would later be called the Well of Eternity, was the true heart of the world’s magic and natural power.",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-wc3-kaldorei-immortal",
+    "claim": "Сила Well сделала племя сильным, мудрым и почти бессмертным.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Over time, the Well’s cosmic power affected the strange tribe, making them strong, wise and virtually immortal.",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-forever-year-one",
+    "claim": "Forever начинается в раннем «Year 1» оригинального WoW, до повторного открытия Dark Portal Kazzak.",
+    "sourceId": "forever-found-photos",
+    "quote": "WoW: Forever begins where original World of Warcraft begins: in the early “Year 1” period of Azeroth, before Kazzak reopened the Dark Portal and before later journeys to places like Northrend reshaped the timeline.",
+    "chapterIds": [
+      "azeroth-before-civilization",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch00-forever-time-bubble",
+    "claim": "Forever занимает собственную «time bubble», не разрушая фундаментальных историй оригинального Azeroth.",
+    "sourceId": "forever-found-photos",
+    "quote": "WoW: Forever occupies its own “time bubble,” allowing the team to explore those possibilities without disrupting original Azeroth’s foundational stories.",
+    "chapterIds": [
+      "azeroth-before-civilization",
+      "orcs-and-humans",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch00-forever-skyborne-origin",
+    "claim": "Предки Skyborne ушли из Eldre’Thalas после War of the Ancients и нашли убежище в Skywall.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
+    "chapterIds": [
+      "azeroth-before-civilization",
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch00-forever-shendralas",
+    "claim": "Shen’dralas между Mulgore и Desolace связан с Shen’dralar, Eldre’Thalas, Dire Maul и кентаврами.",
+    "sourceId": "forever-whats-next",
+    "quote": "In Shen'dralas, a long-hidden mystery between Mulgore and Desolace becomes a new adventure tied to the Shen’dralar, Eldre’Thalas, Dire Maul, and the centaur tribes of the region.",
+    "chapterIds": [
+      "azeroth-before-civilization",
+      "war-of-the-ancients",
+      "kingdoms-and-peoples",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch00-tyr-knew",
+    "claim": "Tyr понимал, что без отпора Galakrond пожрёт всю природу.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Tyr knew that if Galakrond remained unchecked, he would devour all nature, spreading his affliction to the far corners of Azeroth.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-neltharion-suggested",
+    "claim": "Во время вторжения Legion Neltharion предложил создать артефакт против демонов.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "When the armies of the Burning Legion began an invasion of Azeroth, Neltharion suggested creating a magical artifact to aid in destroying the demons.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-became-deathwing",
+    "claim": "Поддавшись порче, Neltharion стал Deathwing the Destroyer.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "But in his corruption, Neltharion, once the Earth-Warder and protector of Azeroth, became Deathwing the Destroyer.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-turned-soul",
+    "claim": "Deathwing обратил Dragon Soul против других Aspects.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "He would shock his fellow Aspects as he turned the Dragon Soul against them.",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-wc3-one-continent",
+    "claim": "По руководству к Warcraft III titans придавали форму земле, пока не остался один континент.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "For many ages the Titans moved and shaped the earth, until at last, there remained only one perfect continent.",
+    "locator": "PDF p. 41",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-wc3-titans-crafted-well",
+    "claim": "Titans создали в центре континента озеро энергий.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "At the continent’s center, the Titans crafted a lake of scintillating energies.",
+    "locator": "PDF p. 41",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  },
+  {
+    "id": "ch00-wc3-fount-of-life",
+    "claim": "Озеро назвали Well of Eternity, источником жизни для мира.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The lake, that they named the Well of Eternity, was to be the fount of life for the world.",
+    "locator": "PDF p. 41",
+    "chapterIds": [
+      "azeroth-before-civilization"
+    ]
+  }
+]

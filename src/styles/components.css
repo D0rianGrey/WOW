@@ -109,6 +109,13 @@ main:focus { outline: none; }
 .prose > section[data-depth="deep"]::before { content: 'ПОДРОБНО'; display: block; color: #9bc0b1; font-size: .6rem; font-weight: 700; letter-spacing: .18em; }
 .prose > section[data-depth="deep"] h2 { margin-top: 10px; font-size: 1.55rem; }
 .prose > section[data-depth="deep"] p:last-child { margin-bottom: 0; }
+.prose > .lore-status-block { margin-block: 30px; padding: 2px 0 2px 22px; border-left: 3px solid var(--color-border); }
+.prose > .lore-status-block[data-lore-status="ESTABLISHED"] { border-left-color: var(--color-status-established); }
+.prose > .lore-status-block[data-lore-status="FOREVER"] { border-left-color: var(--color-status-forever); }
+.prose > .lore-status-block[data-lore-status="CHANGED"] { border-left-color: var(--color-status-changed); }
+.prose > .lore-status-block[data-lore-status="BETA"] { border-left-style: dashed; border-left-color: var(--color-status-beta); }
+.prose > .lore-status-block[data-lore-status="UNCONFIRMED"] { border-left-style: dotted; border-left-color: var(--color-status-unconfirmed); }
+.prose > .lore-status-block > .lore-badge { margin: 0 0 4px; }
 .path-header { max-width: 830px; padding: 10px 0 38px; }
 .path-header h1 { max-width: 12ch; }
 .path-header .lead { margin: 24px 0; }

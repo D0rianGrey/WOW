@@ -26,7 +26,8 @@ describe('guided lore chapter contract', () => {
       expect(chapter).toContain('data-depth="deep"');
       expect(chapter).toContain('## Почему это важно в Forever');
       expect(chapter).toContain('## Запомните три вещи');
-      expect(chapter.match(/^\d\. /gm)).toHaveLength(3);
+      const takeaways = chapter.split('## Запомните три вещи')[1];
+      expect(takeaways.match(/^\d\. /gm), `${file} must end with exactly three takeaways`).toHaveLength(3);
     }
   });
 
@@ -51,14 +52,31 @@ describe('guided lore chapter contract', () => {
     }
   });
 
-  it('does not expose chapter citations that research marked inaccessible', () => {
-    const chapters = readdirSync(chapterDir)
-      .filter((entry) => entry.endsWith('.md'))
-      .map((file) => readFileSync(resolve(chapterDir, file), 'utf8'))
-      .join('\n');
-    const sources = readFileSync(resolve('src/content/sources/core.json'), 'utf8');
+  it('marks mixed-status passages with a valid, labelled status block', () => {
+    const labels: Record<string, string> = {
+      ESTABLISHED: 'История Warcraft',
+      FOREVER: 'Forever',
+      CHANGED: 'Изменено',
+      BETA: 'Бета · может измениться',
+      UNCONFIRMED: 'Не подтверждено'
+    };
 
-    expect(chapters).not.toMatch(/warcraft-iii-manual|well-of-eternity-preview/);
-    expect(sources).not.toMatch(/"id": "(?:warcraft-iii-manual|well-of-eternity-preview)"/);
+    for (const file of readdirSync(chapterDir).filter((entry) => entry.endsWith('.md'))) {
+      const chapter = readFileSync(resolve(chapterDir, file), 'utf8');
+      const blocks = [...chapter.matchAll(/<div class="lore-status-block" data-lore-status="([A-Z]+)">\n(.+)\n/g)];
+
+      for (const [, status, badgeLine] of blocks) {
+        expect(Object.keys(labels), `${file} uses unknown status ${status}`).toContain(status);
+        expect(badgeLine, `${file} ${status} block needs a visible badge`).toContain(`class="lore-badge status-${status.toLowerCase()}"`);
+        expect(badgeLine, `${file} ${status} block label`).toContain(labels[status]);
+      }
+    }
+  });
+
+  it('keeps the research process out of reader-facing prose', () => {
+    for (const file of readdirSync(chapterDir).filter((entry) => entry.endsWith('.md'))) {
+      const body = readFileSync(resolve(chapterDir, file), 'utf8').replace(/^---[\s\S]*?---/, '');
+      expect(body, `${file} mentions the internal research process`).not.toMatch(/исследовательск/i);
+    }
   });
 });

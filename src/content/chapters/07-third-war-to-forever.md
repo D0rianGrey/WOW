@@ -2,16 +2,20 @@
 id: third-war-to-forever
 title: От Third War к Forever
 slug: third-war-to-forever
-status: FOREVER
+status: ESTABLISHED
 era: "Порог World of Warcraft: Forever"
-summary: "Hyjal, Forsaken, Forsaken Kingdom и отдельная time bubble складываются в мир, где начинается World of Warcraft: Forever."
+summary: "Битва за Hyjal, новый Lich King, свобода Forsaken и мир первого года — отправная точка, с которой начинается World of Warcraft: Forever."
 spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
+  - warcraft-iii-manual
+  - jaina-hero-week
+  - forsaken-kingdom-whats-next
+  - forsaken-kingdom-deep-dive
+  - forsaken-kingdom-wage-war
   - forever-announcement
   - forever-found-photos
   - forever-whats-next
-  - forsaken-kingdom-deep-dive
 updatedAt: "2026-09-17"
 confidence: high
 order: 7
@@ -20,43 +24,57 @@ readingMinutes: 10
 
 ## Главное
 
-Пока Lordaeron падает, Burning Legion возвращается к цели, начатой в War of the Ancients. Jaina Proudmoore и Thrall ведут свои народы к Kalimdor. Там humans и orcs встречают Night Elves — общество, для которого вторжение Legion связано с самой древней катастрофой мира. У вчерашних врагов появляется причина действовать вместе.
+Призванный Archimonde и его демоны последовали за Scourge в Kalimdor, чтобы уничтожить Nordrassil — Мировое древо. Под руководством Medivh вчерашние враги Thrall и Jaina Proudmoore поняли, что должны забыть о распрях. Ночные эльфы во главе с Malfurion и Tyrande тоже решили объединиться ради защиты древа. Во время вторжения Legion в Ashenvale Tyrande освободила Illidan из темницы, где он провёл десять тысяч лет.
 
-Archimonde идёт к World Tree на Mount Hyjal. Финальная оборона требует времени и участия нескольких сил. Победа уничтожает Archimonde, но не возвращает мир в прежнее состояние. Леса, Night Elves и отношения между народами несут последствия. Поэтому официальный анонс Forever говорит о Mount Hyjal как об исследовании последствий поражения Archimonde, а не о повторе самой битвы.
+Jaina и Thrall сдерживали натиск Legion, пока друиды ночных эльфов готовили последнюю защиту. Malfurion, получивший силу самого мира, высвободил первобытную ярость Nordrassil, уничтожил Archimonde и разорвал связь Legion с Well of Eternity. Лишившись этой силы, Burning Legion рухнул под общим натиском смертных армий. Победа стоила ночным эльфам бессмертия, дарованного когда-то вместе с Nordrassil, и их любимых лесов.
 
-В Eastern Kingdoms власть Lich King ослабевает, и Sylvanas вместе с другими undead освобождается от его контроля. Они называют себя Forsaken и закрепляются в руинах Lordaeron, включая Undercity. Свобода не решает вопрос принадлежности: живые помнят Scourge, а Forsaken сохраняют память о собственной жизни и насилии, совершённом над ними.
+Kil’jaeden был разгневан поражением Archimonde, но тревожился о большем: его создание, Lich King, выходило из-под контроля. Он приказал Illidan уничтожить Ner’zhul — дух Lich King, заключённый во Frozen Throne, — и покончить со Scourge.
 
-Warcraft III Reforged: Forsaken Kingdom помещён между этим историческим результатом и стартом Forever. Blizzard подтверждает четыре линейные миссии пролога <em>Last Days of Lordaeron</em> и основную кампанию с мягкой открытой структурой ролевой игры, вдохновлённую кампанией Rexxar. Подтверждены Stratholme, Undercity и герой Forsaken Paladin со способностями Warcraft III. Детальный сюжет, отдельные диалоги и итог кампании не были подтверждены доступным отчётом, поэтому здесь они не придуманы.
+Когда сила Lich King слабела, слабел и Arthas. Половина нежити во главе с banshee Sylvanas Windrunner подняла мятеж. Sylvanas и её восставшая нежить, известная как Forsaken, заняли разрушенную столицу Lordaeron, построили под ней собственный оплот и поклялись изгнать Scourge.
 
-Теперь граница: World of Warcraft: Forever — отдельное постоянное предложение рядом с современным и Classic WoW. Оно начинается после Forsaken Kingdom и до Molten Core, на исходных континентах, с уровнем 60. Отчёт о панели описывает Forever как собственную «time bubble», начинающуюся в первый год до того, как Kazzak вновь открывает Portal. Это официальная рамка **FOREVER**. Она позволяет истории идти своим путём, но не доказывает автоматическую отмену всей общей предыстории.
+Arthas поспешил на помощь господину. Даже ослабленный, он опередил Illidan и первым достиг Frozen Throne. Руническим клинком Frostmourne Arthas разбил ледяную темницу Lich King и надел шлем Ner’zhul, и их духи слились в одно могущественное существо, как Ner’zhul и задумывал.
 
-В эту точку входят новые территории. Mount Hyjal исследует восстановление после Archimonde и Darkwhisper Gorge. Shen’dralas лежит между Mulgore и Desolace и развивает связи Shen’dralar, Eldre’Thalas, Dire Maul и centaurs. Riverglades — область для середины пути прокачки с Powderfuse Port и несколькими конфликтующими силами. Точное число заданий различается между двумя официальными отчётами, поэтому здесь нет искусственно выбранной цифры.
+## Каким игрок застаёт мир
 
-Новые области выполняют разные роли. Hyjal продолжает известное событие и показывает его цену. Shen’dralas раскрывает старые связи Highborne в новом пространстве. Riverglades связывает соседние восточные области через локальные конфликты, а не через очередную угрозу всему миру. Вместе они показывают замысел Forever: знакомая карта получает направления, которых не было в исходной версии первого года.
+Руководство 2004 года описывает положение дел в начале World of Warcraft. Вторжение Legion случилось четыре года назад. Arthas — новый бессмертный Lich King — живёт в Northrend. Его верный лейтенант Kel’Thuzad командует Scourge в Plaguelands, а Sylvanas и её Forsaken удерживают только Tirisfal Glades — малую часть разорённого королевства.
 
-Самое крупное новое происхождение — Skyborne, или shen’dorei. По официальному рассказу, их предки-бунтовщики ушли из Eldre’Thalas после War of the Ancients, нашли убежище в Skywall, а духи ветра помогли закрепить остров Zephras. Теперь благодетели исчезают, пилоны слабеют, а Windshapers, High Order и Al’Aketh спорят о пути народа. Zephras служит стартовой зоной уровней 1–12. Исход конфликта не объявлен.
+После войны народы начали всё заново, и первым шагом стало шаткое перемирие между Alliance и Horde. Stormwind, отстроенный после Second War, остался одним из последних оплотов людей. Им правит ребёнок-король Anduin Wrynn: его отец, король Varian Wrynn, недавно пропал при подозрительных обстоятельствах по пути на дипломатическую встречу в Theramore. Армии Stormwind снова ушли воевать с Horde на далёких полях сражений.
 
-Forsaken Paladins образуют вторую важную новую связь. Отчёт о панели прямо связывает их путь с Forsaken Kingdom, недоверием окружающих и использованием Light в undeath. Это подтверждает тему и существование пути, но не даёт универсального объяснения переживаний каждого персонажа. Способности героя Warcraft III из кампании-моста нельзя автоматически выдавать за точную механику класса WoW.
+Ночные эльфы учатся жить смертными, и многие не смогли смириться со старением и болезнями. Дух Malfurion затерялся в Emerald Dream, и новым Arch-Druid стал Fandral Staghelm. Его друиды посадили новое древо, Teldrassil, у штормового побережья северного Kalimdor, и среди его ветвей вырос город Darnassus. Но древо не получило благословения природы и вскоре поддалось порче Burning Legion.
 
-<section data-depth="deep" aria-labelledby="deep-forever-layers">
-  <h2 id="deep-forever-layers">Подробно: три слоя знания</h2>
-  <p><strong>Рассказ эпохи 2004 года:</strong> руководство фиксирует Battle of Mount Hyjal, Forsaken в Tirisfal, Undercity, Durotar и другие условия раннего WoW. Оно отражает знания и ожидания той эпохи.</p>
-  <p><strong>Поздняя официальная ретроспектива:</strong> материалы Blizzard помогают читать ранние войны и древнюю историю, но поздняя развязка Retail не становится установленным будущим Forever.</p>
-  <p><strong>Прямой анонс Forever:</strong> «time bubble», точка старта, новые области, Skyborne и Forsaken Paladins подтверждены публикациями 2026 года. Их заявленные будущие даты остаются планом анонса, а не доказательством уже увиденного нами релиза или игрового процесса беты.</p>
+Gnomes потеряли свой дом. Когда их город заполонили troggs, по приказу High Tinker Mekkatorque gnomes выпустили в Gnomeregan ядовитую радиацию. Она убила почти восемьдесят процентов народа, и выжившие бежали под защиту dwarves Ironforge.
+
+<section data-depth="deep" aria-labelledby="deep-illidan-throne">
+  <h2 id="deep-illidan-throne">Подробно: удар по Icecrown</h2>
+  <p>Illidan добыл Eye of Sargeras и из Dalaran обрушил разрушительное заклинание на цитадель Icecrown в Northrend. Его остановили Malfurion и Tyrande, пришедшие на помощь тюремщице Illidan — Maiev Shadowsong, которая стерегла его десять тысяч лет. После поражения у Frozen Throne Illidan бежал в Outland.</p>
 </section>
 
-<section data-depth="deep" aria-labelledby="deep-new-content">
-  <h2 id="deep-new-content">Подробно: что известно без домыслов</h2>
-  <p>Skyborne выбирают Alliance или Horde при создании. Путь Alliance связан с магическими традициями предков и Mage; путь Horde — со стихийными традициями и Shaman. Обеим сторонам доступны Warrior, Hunter, Rogue и Druid. Это игровые и лоровые различия из официального отчёта, а не описание финального политического исхода Zephras.</p>
-  <p>Для группового контента объявлены Hyjal Summit на 20 игроков и Barrow Deeps на 10. Названия и формат подтверждены; их полные истории и победители не установлены опубликованными материалами.</p>
+<section data-depth="deep" aria-labelledby="deep-bridge">
+  <h2 id="deep-bridge">Подробно: мост Forsaken Kingdom</h2>
+  <p>Кампания Warcraft III Reforged: Forsaken Kingdom рассказывает о событиях между возвращением Arthas в Lordaeron и появлением Undercity и заполняет четырёхлетний разрыв между Warcraft III и World of Warcraft. Кампания уже доступна. Forever продолжает историю вскоре после её событий.</p>
 </section>
 
 ## Почему это важно в Forever
 
-Это и есть стартовая позиция игрока. Alliance и Horde несут память прежних войн; Forsaken строят будущее после Lordaeron и новой кампании-моста; Night Elves живут с последствиями Hyjal; Skyborne впервые входят в широкий мир; Riverglades и Shen’dralas добавляют связи между знакомыми регионами. Forever обещает новый путь внутри собственной «time bubble». Энциклопедия будет считать установленным только то, что подтверждено источником, а события Retail после Forever останутся скрытыми и не будут использоваться как готовая судьба этой линии.
+Это стартовая позиция игрока: Scourge на севере, Forsaken в Tirisfal, ночные эльфы без бессмертия, в Stormwind правит ребёнок-король, Horde и Alliance в шатком перемирии.
+
+<div class="lore-status-block" data-lore-status="FOREVER">
+<p class="lore-badge status-forever"><span aria-hidden="true">✦</span> Forever<span class="sr-only"> — Подтверждённое дополнение World of Warcraft: Forever.</span></p>
+
+World of Warcraft: Forever — новый постоянный дом рядом с современным и Classic WoW. Он начинается там же, где начинался оригинальный World of Warcraft: в раннем «Year 1», до того как Kazzak вновь открыл Dark Portal и до более поздних походов в места вроде Northrend. Forever существует в собственной «time bubble», которая позволяет развивать новые истории, не разрушая фундаментальных сюжетов Azeroth.
+
+На Mount Hyjal игроки исследуют последствия поражения Archimonde, пройдут через Darkwhisper Gorge и помогут определить будущее восстанавливающейся земли. Riverglades — новая зона для середины пути размером примерно со Stranglethorn Vale, созданная из прежде недоступной части мира. Место Shen’dralas официальные рассказы описывают двумя способами: «к югу от Desolace через Valley of Bones» и «между Mulgore и Desolace».
+
+Skyborne, или shen’dorei, начинают путь на Zephras Isle с 1 по 12 уровень. Их стихийные покровители исчезли, пилоны острова отказывают, а за Zephras спорят Windshapers, High Order и Al’Aketh. Ключевым местом пути Forsaken paladins станет Bandarion Keep, а самим бывшим паладинам не доверяют даже другие Forsaken. Для группового контента объявлены Barrow Deeps — испытание максимального уровня для 10 игроков — и рейд Hyjal Summit на 20 игроков.
+
+Запуск Forever объявлен на 4 ноября 2026 года, начало беты — на 17 сентября, а новые рейды откроются 9 декабря.
+
+</div>
+
+Энциклопедия считает установленным только то, что подтверждено источником. Исходы новых историй Forever пока не объявлены, а события Retail после первого года не используются как готовая судьба этой линии.
 
 ## Запомните три вещи
 
-1. Победа на Mount Hyjal остановила Archimonde, но оставила последствия, которые Forever исследует напрямую.
-2. Forsaken Kingdom — подтверждённый мост между Warcraft III и Forever, однако его подробный сюжет нельзя восстанавливать из одного отчёта.
-3. Forever начинается в первый год как отдельная «time bubble» с новыми территориями и Skyborne, а её будущие исходы пока не объявлены.
+1. На Hyjal смертные армии уничтожили Archimonde силой Nordrassil, но ночные эльфы потеряли бессмертие.
+2. Arthas слился с Ner’zhul и стал Lich King, а Sylvanas возглавила мятеж нежити, известной как Forsaken, и заняла руины Lordaeron.
+3. Forever начинается в «Year 1» оригинального WoW, в собственной «time bubble», после Forsaken Kingdom и до Molten Core.

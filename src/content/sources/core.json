@@ -4,9 +4,10 @@
     "title": "Carve a New Path with World of Warcraft: Forever",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever",
-    "type": "official-article",
+    "type": "official-announcement",
     "publishedAt": "2026-09-12",
-    "notes": "Core announcement for the permanent offering, starting point, and announced launch plan."
+    "checkedAt": "2026-09-17",
+    "notes": "Core announcement: permanent offering, starting point after Forsaken Kingdom and before Molten Core. The page gives the launch time once as PDT and once as PST."
   },
   {
     "id": "forever-found-photos",
@@ -15,24 +16,72 @@
     "url": "https://news.blizzard.com/en-us/article/24304071/world-of-warcraft-forever-found-photos-panel-recap",
     "type": "official-article",
     "publishedAt": "2026-09-13",
-    "notes": "Primary source for the time-bubble framing, Skyborne, Forsaken Paladins, and new regions."
+    "checkedAt": "2026-09-17",
+    "notes": "Primary source for the Year 1 starting point, the time bubble, Skyborne, Forsaken Paladins and new regions. A panel recap, not a quest log."
   },
   {
     "id": "forever-whats-next",
-    "title": "World of Warcraft: Forever What's Next Panel Recap",
+    "title": "World of Warcraft: Forever What’s Next Panel Recap",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap",
     "type": "official-article",
     "publishedAt": "2026-09-12",
-    "notes": "Primary source for geography, playable differences, and announced group content."
+    "checkedAt": "2026-09-17",
+    "notes": "Regions, Skyborne class split, raids, launch and beta dates."
   },
   {
     "id": "forsaken-kingdom-deep-dive",
-    "title": "Warcraft III: Reforged — Forsaken Kingdom Deep Dive Recap",
+    "title": "Warcraft III Reforged: Forsaken Kingdom Deep Dive Recap",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/24298590/warcraft-iii-reforged-forsaken-kingdom-deep-dive-recap",
     "type": "official-article",
-    "notes": "Primary bridge source; it does not replace campaign or quest text for detailed plot claims."
+    "checkedAt": "2026-09-17",
+    "notes": "Campaign structure, the Forsaken Paladin hero and release. Not a mission transcript."
+  },
+  {
+    "id": "forsaken-kingdom-whats-next",
+    "title": "Warcraft III Reforged: Forsaken Kingdom What's Next Panel Recap",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24302500/warcraft-iii-reforged-forsaken-kingdom-what-s-next-panel-recap",
+    "type": "official-article",
+    "checkedAt": "2026-09-17",
+    "notes": "The four-year gap between Warcraft III and World of Warcraft, the prologue, and the new characters Garek Bandarion and Dark Ranger Anya."
+  },
+  {
+    "id": "forsaken-kingdom-wage-war",
+    "title": "Wage War Once More with Warcraft III Reforged: Forsaken Kingdom",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/24302499/wage-war-once-more-with-warcraft-iii-reforged-forsaken-kingdom",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Places Forever shortly after the Forsaken Kingdom campaign."
+  },
+  {
+    "id": "world-of-warcraft-2004-manual",
+    "title": "World of Warcraft Manual",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://assets.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt2e9295db02a222fc/6025bcbb6968b53d529edb2a/media_manual_classic_enUS.pdf",
+    "type": "official-manual",
+    "checkedAt": "2026-09-17",
+    "notes": "Copyright 2004. Appendix I (history of the Third War) and the race chapters describe the world as original WoW players found it. Year-1 baseline."
+  },
+  {
+    "id": "warcraft-iii-manual",
+    "title": "Warcraft III Manual",
+    "publisher": "Blizzard Entertainment",
+    "url": "http://ftp.blizzard.com/pub/misc/Warcraft%20III%20Manual.pdf",
+    "type": "official-manual",
+    "checkedAt": "2026-09-17",
+    "notes": "PDF dated April 2002. Histories of humans, orcs, undead and night elves up to Warcraft III, including the classic War of the Ancients. Opens over http only; the https host has a certificate mismatch."
+  },
+  {
+    "id": "warcraft-ii-manual",
+    "title": "Warcraft II Battle.net Edition Manual",
+    "publisher": "Blizzard Entertainment",
+    "url": "http://ftp.blizzard.com/pub/misc/Warcraft%202%20Battlenet%20edition.PDF",
+    "type": "official-manual",
+    "checkedAt": "2026-09-17",
+    "notes": "Copyright 1995–1999. Era text for the First and Second Wars; uses a King's Calendar year and durations that later retrospectives do not repeat. Opens over http only."
   },
   {
     "id": "warcraft-iii-story-so-far",
@@ -40,23 +89,26 @@
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-gb/article/23229617/warcraft-iii-the-story-so-far",
     "type": "official-retrospective",
-    "notes": "Readable official retrospective for Warcraft I and II history; later than the original releases."
+    "checkedAt": "2026-09-17",
+    "notes": "Reforged-era retrospective of Warcraft I and II and the start of Warcraft III."
   },
   {
-    "id": "world-of-warcraft-2004-manual",
-    "title": "World of Warcraft Online Manual",
+    "id": "wow-story-timeline-orcs-and-humans",
+    "title": "Warcraft: Orcs & Humans — World of Warcraft Story Timeline",
     "publisher": "Blizzard Entertainment",
-    "url": "https://assets.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt2e9295db02a222fc/6025bcbb6968b53d529edb2a/media_manual_classic_enUS.pdf",
-    "type": "official-manual",
-    "notes": "Contemporary-to-vanilla historical baseline; copyright 2004."
+    "url": "https://worldofwarcraft.blizzard.com/en-us/story/timeline/chapter-1",
+    "type": "official-retrospective",
+    "checkedAt": "2026-09-17",
+    "notes": "Official story timeline chapter for the First War. The article text is embedded in page data."
   },
   {
-    "id": "warcraft-ii-battle-net-article",
-    "title": "Fight for Honor in Warcraft II: Tides of Darkness, Now Available on Battle.net",
+    "id": "wow-story-timeline-beyond-the-dark-portal",
+    "title": "Warcraft II: Beyond the Dark Portal — World of Warcraft Story Timeline",
     "publisher": "Blizzard Entertainment",
-    "url": "https://news.blizzard.com/en-us/article/24055598/fight-for-honor-in-warcraft-ii-tides-of-darkness-now-available-on-battle-net",
-    "type": "official-article",
-    "notes": "Official context for the Second War and a link to the Warcraft II manual."
+    "url": "https://worldofwarcraft.blizzard.com/en-us/story/timeline/chapter-3",
+    "type": "official-retrospective",
+    "checkedAt": "2026-09-17",
+    "notes": "Official story timeline chapter for Ner'zhul and the shattering of Draenor. The article text is embedded in page data."
   },
   {
     "id": "dragon-aspects-story-so-far",
@@ -64,7 +116,8 @@
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/23876527/the-story-so-far-take-wing-through-time-with-the-dragon-aspects",
     "type": "official-retrospective",
-    "notes": "Later official account of Azeroth's ancient history; kept distinct from Warcraft III-era creation language."
+    "checkedAt": "2026-09-17",
+    "notes": "Dragonflight-era cosmology: world-soul, titans, keepers, Old Gods, the Black Empire, Galakrond and the Dragon Soul. Later layer."
   },
   {
     "id": "burning-crusade-story-so-far",
@@ -72,30 +125,133 @@
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-gb/article/23679744/burning-crusade-classic-the-story-so-far",
     "type": "official-retrospective",
-    "notes": "Later official account of the High Elves, Quel'Thalas, the Sunwell, and their alliance with Arathor."
+    "checkedAt": "2026-09-17",
+    "notes": "Quel'Thalas, the Sunwell, Arathor, the Amani and Illidan. Continues past Year 1 into Outland; later material is not used as Forever history."
+  },
+  {
+    "id": "well-of-eternity-preview",
+    "title": "Patch 4.3 Dungeons Preview, Part Two: Well of Eternity",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/3502666/patch-43-dungeons-preview-part-two-well-of-eternity",
+    "type": "official-preview",
+    "checkedAt": "2026-09-17",
+    "notes": "Cataclysm dungeon preview describing Zin-Azshari, the Highborne portal and the Sundering. The time-travel framing belongs to the patch, not to the historical events."
+  },
+  {
+    "id": "warbringers-azshara",
+    "title": "Warbringers: Azshara",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/22358468/warbringers-azshara",
+    "type": "official-article",
+    "checkedAt": "2026-09-17",
+    "notes": "Short cinematic article on Azshara and the Sundering."
+  },
+  {
+    "id": "vashjir-surviving-the-depths",
+    "title": "Vashj'ir: Surviving the Depths",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/9986542/vashjir-surviving-the-depths",
+    "type": "official-preview",
+    "checkedAt": "2026-09-17",
+    "notes": "Cataclysm zone preview: the Sundering, the Well's implosion and the naga."
+  },
+  {
+    "id": "eternal-palace-raid-finder-wing-3",
+    "title": "The Eternal Palace: Raid Finder Wing 3 Now Available!",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/23021200/the-eternal-palace-raid-finder-wing-3-now-available",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Battle for Azeroth text that later names N'Zoth as the agent of the naga transformation."
+  },
+  {
+    "id": "legion-warrior-artifact-reveal",
+    "title": "Legion: Warrior Artifact Reveal",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/19942707",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Strom'kar description: Thoradin united humanity, founded Arathor and helped end the Troll Wars."
   },
   {
     "id": "muradin-hero-week",
     "title": "Muradin Hero Week",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/14301664/muradin-hero-week",
-    "type": "official-retrospective",
-    "notes": "Warcraft-history section used for the War of the Three Hammers and Ironforge; crossover mechanics are excluded."
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature: the War of the Three Hammers, the Grand Alliance and Frostmourne. Also contains later Cataclysm events that are not used."
   },
   {
     "id": "molten-core-anniversary",
     "title": "20th Anniversary Realms: Molten Core and Onyxia's Lair Now Live",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/24165121/20th-anniversary-realms-molten-core-and-onyxia-s-lair-now-live",
-    "type": "official-retrospective",
-    "notes": "Official dungeon history for Thaurissan's summoning of Ragnaros and the Molten Core consequence."
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Anniversary raid announcement with dungeon lore: Thaurissan summoned Ragnaros during the dwarven civil war."
   },
   {
     "id": "zuldazar-visitors-guide",
-    "title": "Battle for Azeroth Preview: Zuldazar Visitor's Guide",
+    "title": "Battle for Azeroth Preview: Zuldazar Visitor’s Guide",
     "publisher": "Blizzard Entertainment",
     "url": "https://news.blizzard.com/en-us/article/21701414/battle-for-azeroth-preview-zuldazar-visitors-guide",
-    "type": "official-retrospective",
-    "notes": "Later official account of Zuldazar's ancient imperial significance and loa worship; later political plot is excluded."
+    "type": "official-preview",
+    "checkedAt": "2026-09-17",
+    "notes": "Ancient Zandalari context: Dazar and the loa. Battle for Azeroth politics are not used."
+  },
+  {
+    "id": "thrall-hero-week",
+    "title": "Thrall Hero Week",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/17528770/thrall-hero-week",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature on Thrall's youth, escape and rise to Warchief."
+  },
+  {
+    "id": "jaina-hero-week",
+    "title": "Jaina Hero Week",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/16887806/jaina-hero-week",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature: the plague investigation, Stratholme, Kalimdor, Mount Hyjal. Mentions later Retail events that are not used."
+  },
+  {
+    "id": "sylvanas-hero-week",
+    "title": "Sylvanas Hero Week",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-gb/article/18443711/sylvanas-hero-week",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature: the fall of Quel'Thalas, the banshee curse and the founding of the Forsaken."
+  },
+  {
+    "id": "kelthuzad-enters-the-nexus",
+    "title": "Kel’Thuzad Enters the Nexus!",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/21033386/kelthuzad-enters-the-nexus",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature on Kel'Thuzad's fall from the Kirin Tor."
+  },
+  {
+    "id": "heroes-patch-notes-2018-10-16",
+    "title": "Heroes of the Storm Patch Notes – October 16, 2018",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/22548919/heroes-of-the-storm-patch-notes-october-16-2018",
+    "type": "official-announcement",
+    "checkedAt": "2026-09-17",
+    "notes": "Mal'Ganis hero description: chosen to bring Arthas into the Lich King's service and drove him to purge Stratholme."
+  },
+  {
+    "id": "garrosh-heart-of-war",
+    "title": "Garrosh Hellscream: Heart of War",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/media/short-story/garrosh-hellscream-heart-of-war",
+    "type": "official-fiction",
+    "checkedAt": "2026-09-17",
+    "notes": "Official short story; used only for its statement that Grom ended the blood curse at the cost of his life."
   }
 ]
