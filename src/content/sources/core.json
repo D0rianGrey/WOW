@@ -316,5 +316,15 @@
     "type": "official-article",
     "checkedAt": "2026-09-17",
     "notes": "Developers say time periods in-game are intentionally vague."
+  },
+  {
+    "id": "forever-dungeon-levels",
+    "title": "Krol’dok Stronghold — уточнение уровней подземелий Forever",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://us.forums.blizzard.com/en/wow/t/kroldok-stronghold/2349672",
+    "type": "official-forum",
+    "publishedAt": "2026-09-15",
+    "checkedAt": "2026-09-17",
+    "notes": "Blue-post Kaivax на официальном форуме: полный список девяти подземелий с уровнями и исправление диапазона Krol’dok Stronghold."
   }
 ]

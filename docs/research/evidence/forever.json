@@ -626,5 +626,109 @@
     "entryRefs": [
       "forever/announced-schedule"
     ]
+  },
+  {
+    "id": "fv-80",
+    "claim": "Blue-post Blizzard уточняет: Krol’dok Stronghold в Forever рассчитан на уровни 40–45.",
+    "sourceId": "forever-dungeon-levels",
+    "quote": "In WoW: Forever, Krol’dok Stronghold will be for levels 40-45.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-81",
+    "claim": "Blue-post даёт полный список девяти новых подземелий Forever.",
+    "sourceId": "forever-dungeon-levels",
+    "quote": "Here’s the full list of nine new dungeons coming in WoW: Forever.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-82",
+    "claim": "Официальные имена и диапазоны уровней девяти подземелий Forever.",
+    "sourceId": "forever-dungeon-levels",
+    "quote": "The Hall of Thanes 13 18 Ruins of Lordaeron 15 20 Excavation Site: Wetlands 24 29 City of Dalaran 28 33 The Drowned City 35 40 Krol’dok Stronghold 40 45 Alcaz Prison 48 53 Blackmaw Hold 55 60 Shaper’s Terrace 58 60",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-83",
+    "claim": "В Forever появится поле боя Darkspear Islands на 15 против 15 у побережья Kalimdor.",
+    "sourceId": "forever-whats-next",
+    "quote": "For PvP, the Darkspear Islands will introduce a 15 vs 15 Battleground off the coast of Kalimdor, combining strategic control points with Arathi Basin-style flag captures and defense.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/darkspear-islands"
+    ]
+  },
+  {
+    "id": "fv-84",
+    "claim": "В первый год battlegrounds — особый тип зон для состязаний игрок против игрока.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Battlegrounds are a special type of zone where unique player versus player challenges can be found.",
+    "locator": "PDF p. 67",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/darkspear-islands"
+    ]
+  },
+  {
+    "id": "fv-85",
+    "claim": "В Forever открываются новые корабельные маршруты между континентами.",
+    "sourceId": "forever-found-photos",
+    "quote": "Stormwind Harbor to Auberdine opens an early path between the Eastern Kingdoms and Kalimdor, while Menethil, Southshore, and Auberdine add another route with more flexibility for leveling.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/sea-routes"
+    ]
+  },
+  {
+    "id": "fv-86",
+    "claim": "Третий маршрут начинается у Steamwheedle Cartel в Tanaris и ведёт к Riverglades.",
+    "sourceId": "forever-found-photos",
+    "quote": "The final route begins with the Steamwheedle Cartel in Tanaris, pointing players beyond known shores toward the Riverglades",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/sea-routes"
+    ]
+  },
+  {
+    "id": "fv-87",
+    "claim": "В первый год корабли Alliance связывали Auberdine и Theramore в Kalimdor с Menethil в Eastern Kingdoms.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Alliance ship routes link Auberdine and Theramore in Kalimdor to Menethil in the Eastern Kingdoms.",
+    "locator": "PDF p. 54",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/sea-routes"
+    ]
+  },
+  {
+    "id": "fv-88",
+    "claim": "Пересечь Great Sea между континентами можно только кораблём или зеппелином.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Crossing the violent Great Sea that separates the continents is a journey that can only be made by sturdy ship or airborne zeppelin.",
+    "locator": "PDF p. 54",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/sea-routes"
+    ]
+  },
+  {
+    "id": "fv-89",
+    "claim": "Horde в первый год перемещается между континентами на гоблинских зеппелинах.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Horde players can travel between the continents by using goblin-operated zeppelins.",
+    "locator": "PDF p. 54",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/sea-routes"
+    ]
   }
 ]

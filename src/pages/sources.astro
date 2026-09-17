@@ -18,7 +18,7 @@ const sources = await getCollection('sources');
 const chapters = await getCollection('chapters');
 const chapterTitles = Object.fromEntries(chapters.map((chapter) => [chapter.data.id, chapter.data]));
 
-const typeOrder: SourceType[] = ['official-manual', 'official-announcement', 'official-article', 'official-retrospective', 'official-preview', 'official-promo', 'official-fiction', 'official-book', 'in-game'];
+const typeOrder: SourceType[] = ['official-manual', 'official-announcement', 'official-article', 'official-retrospective', 'official-preview', 'official-promo', 'official-forum', 'official-fiction', 'official-book', 'in-game'];
 const typeLabels: Record<SourceType, string> = {
   'official-manual': 'Официальные руководства',
   'official-announcement': 'Официальные анонсы',
@@ -27,6 +27,7 @@ const typeLabels: Record<SourceType, string> = {
   'official-preview': 'Официальные превью',
   'official-promo': 'Промоматериалы',
   'official-fiction': 'Официальные рассказы',
+  'official-forum': 'Официальный форум Blizzard',
   'official-book': 'Официальные книги',
   'in-game': 'Тексты в игре'
 };
