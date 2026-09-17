@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 import { changelogEntrySchema } from '../src/lib/content';
+import { contentRefExists, loadContentIds } from './helpers/content-index';
 
 const foreverDir = resolve('src/content/forever');
 
@@ -42,23 +43,11 @@ describe('changelog', () => {
     const path = resolve('src/content/changelog/entries.json');
     expect(existsSync(path)).toBe(true);
     const entries = (JSON.parse(readFileSync(path, 'utf8')) as unknown[]).map((raw) => changelogEntrySchema.parse(raw));
-    const timelineIds = (JSON.parse(readFileSync(resolve('src/content/timeline/core.json'), 'utf8')) as { id: string }[]).map((event) => event.id);
-    const foreverIds = readdirSync(foreverDir).map((file) => file.replace(/\.md$/, ''));
-    const glossaryIds = (JSON.parse(readFileSync(resolve('src/content/glossary/core.json'), 'utf8')) as { id: string }[]).map((term) => term.id);
+    const index = loadContentIds();
 
     for (const entry of entries) {
       for (const ref of entry.entityRefs) {
-        const [collection, id] = ref.split('/');
-
-        if (collection === 'timeline') {
-          expect(timelineIds, ref).toContain(id);
-        } else if (collection === 'glossary') {
-          expect(glossaryIds, ref).toContain(id);
-        } else if (collection === 'forever') {
-          expect(foreverIds, ref).toContain(id);
-        } else {
-          expect(existsSync(resolve('src/content', collection, `${id}.md`)), ref).toBe(true);
-        }
+        expect(contentRefExists(index, ref), ref).toBe(true);
       }
     }
   });

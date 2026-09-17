@@ -8,7 +8,8 @@ import {
   foreverEntrySchema,
   glossaryEntrySchema,
   sourceSchema,
-  timelineEntrySchema
+  timelineEntrySchema,
+  updateLogEntrySchema
 } from './lib/content';
 
 const chapters = defineCollection({
@@ -56,6 +57,11 @@ const sources = defineCollection({
   schema: sourceSchema
 });
 
+const updateLog = defineCollection({
+  loader: file('src/content/update-log/entries.json'),
+  schema: updateLogEntrySchema
+});
+
 export const collections = {
   chapters,
   characters,
@@ -65,5 +71,6 @@ export const collections = {
   timeline,
   glossary,
   sources,
-  changelog
+  changelog,
+  updateLog
 };

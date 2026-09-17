@@ -1,0 +1,49 @@
+[
+  {
+    "id": "2026-09-17-audited-chapters-baseline",
+    "date": "2026-09-17",
+    "entityIds": [
+      "chapters/azeroth-before-civilization",
+      "chapters/war-of-the-ancients",
+      "chapters/kingdoms-and-peoples",
+      "chapters/orcs-and-humans",
+      "chapters/second-war",
+      "chapters/thrall-and-new-horde",
+      "chapters/arthas-and-lordaeron",
+      "chapters/third-war-to-forever"
+    ],
+    "status": "ESTABLISHED",
+    "summary": "Отправная точка журнала: восемь глав переписаны после аудита, каждая формулировка опирается на проверенную цитату из реестра доказательств.",
+    "sourceIds": [],
+    "commitSha": "8179be14291e619e92d8d6d1a777016b2b0620fc"
+  },
+  {
+    "id": "2026-09-17-forever-announcements-baseline",
+    "date": "2026-09-17",
+    "entityIds": [
+      "forever/announced-schedule",
+      "forever/dungeons-and-raids",
+      "forever/forsaken-kingdom",
+      "forever/forsaken-paladins",
+      "forever/mount-hyjal-aftermath",
+      "forever/race-class-combinations",
+      "forever/riverglades",
+      "forever/shendralas",
+      "forever/skyborne",
+      "forever/time-bubble-year-1",
+      "forever/zephras-isle"
+    ],
+    "status": "FOREVER",
+    "summary": "Отправная точка журнала для Forever: сравнения с первым годом оригинального WoW и график запуска по анонсам BlizzCon 2026. Всё опирается на официальные анонсы, а не на наблюдения беты.",
+    "sourceIds": [
+      "forever-announcement",
+      "forever-found-photos",
+      "forever-whats-next",
+      "forever-deep-dive",
+      "forever-pre-purchase",
+      "forever-hub",
+      "blizzcon-2026-opening-ceremony"
+    ],
+    "commitSha": "8fe3edb82c245d5224280076b3b98b7bed396312"
+  }
+]

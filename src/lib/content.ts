@@ -100,6 +100,8 @@ export const foreverEntrySchema = z.object({
   sourceNote: z.string().trim().min(1).optional()
 }).superRefine(requireSourcesUnlessEstablished);
 
+const entityRefSchema = z.string().trim().regex(/^[a-z-]+\/[a-z0-9-]+$/, 'Expected a "collection/id" reference');
+
 // Editorial record of what changed in the encyclopedia; entityRefs use "collection/id".
 export const changelogEntrySchema = z.object({
   id: z.string().trim().min(1),
@@ -107,8 +109,22 @@ export const changelogEntrySchema = z.object({
   version: z.string().trim().min(1),
   title: z.string().trim().min(1),
   changes: z.array(z.string().trim().min(1)).min(1),
-  entityRefs: z.array(z.string().trim().regex(/^[a-z-]+\/[a-z0-9-]+$/))
+  entityRefs: z.array(entityRefSchema)
 });
+
+// Machine-readable lore history for people and the future monitoring automation.
+// Records are append-only: a correction adds a new record that names the old one in `supersedes`.
+// Contract: docs/automation/lore-update-contract.md
+export const updateLogEntrySchema = z.object({
+  id: z.string().trim().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/, 'Expected "YYYY-MM-DD-slug"'),
+  date: dateSchema,
+  entityIds: z.array(entityRefSchema).min(1),
+  status: z.enum(loreStatuses),
+  summary: z.string().trim().min(1),
+  sourceIds: z.array(z.string().trim().min(1)),
+  supersedes: z.string().trim().min(1).optional(),
+  commitSha: z.string().regex(/^[0-9a-f]{7,40}$/, 'Expected a git commit hash').optional()
+}).superRefine(requireSourcesUnlessEstablished);
 
 export const sourceTypes = [
   'official-article',
@@ -152,6 +168,7 @@ export type ForeverEntry = z.infer<typeof foreverEntrySchema>;
 export type DossierEntry = z.infer<typeof dossierEntrySchema>;
 export type GlossaryEntry = z.infer<typeof glossaryEntrySchema>;
 export type ChangelogEntry = z.infer<typeof changelogEntrySchema>;
+export type UpdateLogEntry = z.infer<typeof updateLogEntrySchema>;
 export type Source = z.infer<typeof sourceSchema>;
 
 const referenceTargets = {
