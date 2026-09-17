@@ -1,23 +1,16 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
-import { entityNames } from '../lib/canonical-ids';
+import { loadEntityRegistry } from '../lib/entities';
 import { eras } from '../lib/eras';
-import { loreStatuses } from '../lib/status';
+import { loreStatuses, statusLabels } from '../lib/status';
 
 interface Props {
   events: CollectionEntry<'timeline'>[];
 }
 
 const { events } = Astro.props;
-
-const statusLabels: Record<string, string> = {
-  ESTABLISHED: 'История Warcraft',
-  FOREVER: 'Forever',
-  CHANGED: 'Изменено',
-  BETA: 'Бета',
-  UNCONFIRMED: 'Не подтверждено'
-};
+const { names: entityNames } = await loadEntityRegistry();
 
 const used = (field: 'characterIds' | 'factionIds' | 'locationIds') => {
   const ids = new Set(events.flatMap((event) => event.data[field]));

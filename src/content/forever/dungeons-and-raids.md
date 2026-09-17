@@ -5,7 +5,6 @@ slug: dungeons-and-raids
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Девять новых подземелий и два рейда, первые рейды — после запуска."
-spoilerLevel: 0
 sourceIds:
   - forever-dungeon-levels
   - forever-announcement

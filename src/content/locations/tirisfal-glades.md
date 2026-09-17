@@ -5,7 +5,6 @@ slug: tirisfal-glades
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Призрачные леса Lordaeron — последняя земля, которую удерживают Forsaken."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

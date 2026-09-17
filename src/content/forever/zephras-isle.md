@@ -5,7 +5,6 @@ slug: zephras-isle
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Стартовая зона Skyborne на острове, который духи ветра закрепили в плане стихий."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

@@ -5,7 +5,6 @@ slug: darkspear-islands
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Новое поле боя 15 на 15 у побережья Kalimdor."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-whats-next

@@ -5,7 +5,6 @@ slug: third-war-to-forever
 status: ESTABLISHED
 era: "Порог World of Warcraft: Forever"
 summary: "Битва за Hyjal, новый Lich King, свобода Forsaken и мир первого года — отправная точка, с которой начинается World of Warcraft: Forever."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - warcraft-iii-manual

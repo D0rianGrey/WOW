@@ -5,7 +5,6 @@ slug: bandarion-keep
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Крепость в Whispering Wood, Tirisfal Glades — сердце пути Forsaken paladins."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
 updatedAt: "2026-09-17"

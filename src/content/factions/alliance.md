@@ -5,7 +5,6 @@ slug: alliance
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Союз humans, dwarves, gnomes и night elves — одна из двух играбельных фракций первого года."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - world-of-warcraft-2004-manual

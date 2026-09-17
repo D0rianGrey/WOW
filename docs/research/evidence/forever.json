@@ -1,25 +1,5 @@
 [
   {
-    "id": "fv-25",
-    "claim": "Forever начинается в раннем «Year 1», до повторного открытия Dark Portal.",
-    "sourceId": "forever-found-photos",
-    "quote": "WoW: Forever begins where original World of Warcraft begins: in the early “Year 1” period of Azeroth, before Kazzak reopened the Dark Portal and before later journeys to places like Northrend reshaped the timeline.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/time-bubble-year-1"
-    ]
-  },
-  {
-    "id": "fv-26",
-    "claim": "Forever занимает собственную «time bubble».",
-    "sourceId": "forever-found-photos",
-    "quote": "WoW: Forever occupies its own “time bubble,” allowing the team to explore those possibilities without disrupting original Azeroth’s foundational stories.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/time-bubble-year-1"
-    ]
-  },
-  {
     "id": "fv-28",
     "claim": "Forever — постоянный дом рядом с modern и Classic WoW.",
     "sourceId": "forever-announcement",
@@ -47,47 +27,6 @@
     "chapterIds": [],
     "entryRefs": [
       "forever/time-bubble-year-1"
-    ]
-  },
-  {
-    "id": "fv-33",
-    "claim": "Forsaken Kingdom заполняет четырёхлетний разрыв между Warcraft III и WoW.",
-    "sourceId": "forsaken-kingdom-whats-next",
-    "quote": "Warcraft III Reforged: Forsaken Kingdom explores the events between Arthas's return to Lordaeron and the emergence of the Undercity, filling in the four-year gap between Warcraft III and World of Warcraft.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/forsaken-kingdom"
-    ]
-  },
-  {
-    "id": "fv-34",
-    "claim": "Пролог Last Days of Lordaeron — четыре миссии с возвращения Arthas.",
-    "sourceId": "forsaken-kingdom-whats-next",
-    "quote": "The four-mission Last Days of Lordaeron prologue begins as Arthas returns home. Players experience the kingdom’s final hours through the eyes of the Capital City Guard",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/forsaken-kingdom",
-      "locations/lordaeron"
-    ]
-  },
-  {
-    "id": "fv-35",
-    "claim": "Новые персонажи — Garek Bandarion и Dark Ranger Anya.",
-    "sourceId": "forsaken-kingdom-whats-next",
-    "quote": "At the heart of the story are two new characters—Garek Bandarion, a newly risen Forsaken warrior, and Dark Ranger Anya.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/forsaken-kingdom"
-    ]
-  },
-  {
-    "id": "fv-36",
-    "claim": "Forsaken Kingdom уже доступна.",
-    "sourceId": "forsaken-kingdom-deep-dive",
-    "quote": "Forsaken Kingdom is available today. Players can also see Definitive Edition Graphics and the Forsaken Paladin in action during the Classic Cup.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/forsaken-kingdom"
     ]
   },
   {
@@ -257,32 +196,10 @@
     ]
   },
   {
-    "id": "fv-02",
-    "claim": "Alliance — dwarves, gnomes, humans, night elves; Horde — orcs, tauren, trolls, undead.",
-    "sourceId": "world-of-warcraft-2004-manual",
-    "quote": "The Alliance is comprised of the dwarves, gnomes, humans, and night elves, while the Horde consists of the orcs, tauren, trolls, and undead.",
-    "locator": "PDF p. 8",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/skyborne"
-    ]
-  },
-  {
     "id": "fv-45",
     "claim": "Skyborne — новая раса, также shen’dorei, «скрытый народ».",
     "sourceId": "forever-found-photos",
     "quote": "For one of our more unexpected additions, players will discover Zephras Isle and the Skyborne, also known as the shen’dorei or hidden people.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/skyborne",
-      "forever/zephras-isle"
-    ]
-  },
-  {
-    "id": "fv-46",
-    "claim": "Предки Skyborne бежали из Eldre’Thalas после War of the Ancients в Skywall.",
-    "sourceId": "forever-found-photos",
-    "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
     "chapterIds": [],
     "entryRefs": [
       "forever/skyborne",
@@ -332,36 +249,6 @@
     ]
   },
   {
-    "id": "fv-50",
-    "claim": "Zephras Isle — стартовая зона Skyborne уровней 1–12.",
-    "sourceId": "forever-whats-next",
-    "quote": "On Zephras Isle, you’ll begin an elemental skybound starting experience from levels 1 through 12, blending Classic Warcraft aesthetics with architecture inspired by Skywall.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/zephras-isle"
-    ]
-  },
-  {
-    "id": "fv-51",
-    "claim": "Покровители исчезли, пилоны Zephras отказывают.",
-    "sourceId": "forever-found-photos",
-    "quote": "Their elemental benefactors have vanished, the pylons that hold Zephras together are failing, and portions of the island have begun falling into ruin and darkness.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/zephras-isle"
-    ]
-  },
-  {
-    "id": "fv-52",
-    "claim": "За Zephras спорят Windshapers, High Order и Al’Aketh.",
-    "sourceId": "forever-found-photos",
-    "quote": "Several groups are vying for control of Zephras Isle as the crisis deepens, including the Windshapers, the High Order, and the Al’Aketh.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/zephras-isle"
-    ]
-  },
-  {
     "id": "fv-53",
     "claim": "Доступ к Skyborne и Zephras Isle входит в наборы улучшений.",
     "sourceId": "forever-pre-purchase",
@@ -369,17 +256,6 @@
     "chapterIds": [],
     "entryRefs": [
       "forever/zephras-isle"
-    ]
-  },
-  {
-    "id": "fv-22",
-    "claim": "В первый год битва за Hyjal уже в прошлом.",
-    "sourceId": "world-of-warcraft-2004-manual",
-    "quote": "Empowered by the very strength of the world, Malfurion succeeded in unleashing Nordrassil’s primal fury, utterly destroying Archimonde and severing the Legion’s anchor to the Well of Eternity.",
-    "locator": "PDF p. 85",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/mount-hyjal-aftermath"
     ]
   },
   {
@@ -397,16 +273,6 @@
     "claim": "Forever открывает доступ к месту, полному смысла со времён ранних историй Warcraft.",
     "sourceId": "forever-found-photos",
     "quote": "It is one of the clearest examples of giving players access to a place that has held meaning and mystery since Warcraft’s earliest stories.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/mount-hyjal-aftermath"
-    ]
-  },
-  {
-    "id": "fv-56",
-    "claim": "На Hyjal исследуют последствия поражения Archimonde и Darkwhisper Gorge.",
-    "sourceId": "forever-whats-next",
-    "quote": "Mount Hyjal invites you to explore the aftermath of Archimonde’s defeat, journey through Darkwhisper Gorge, and help shape the future of a recovering land.",
     "chapterIds": [],
     "entryRefs": [
       "forever/mount-hyjal-aftermath"
@@ -433,26 +299,6 @@
     ]
   },
   {
-    "id": "fv-59",
-    "claim": "What’s Next: Shen’dralas между Mulgore и Desolace.",
-    "sourceId": "forever-whats-next",
-    "quote": "In Shen'dralas, a long-hidden mystery between Mulgore and Desolace becomes a new adventure tied to the Shen’dralar, Eldre’Thalas, Dire Maul, and the centaur tribes of the region.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/shendralas"
-    ]
-  },
-  {
-    "id": "fv-60",
-    "claim": "Found Photos: Shen’dralas к югу от Desolace через Valley of Bones — новая область.",
-    "sourceId": "forever-found-photos",
-    "quote": "South of Desolace through the Valley of Bones, the addition of Shen’dralas opens a fresh, new area, exploring the characters and stories connected to Eldre’Thalas.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/shendralas"
-    ]
-  },
-  {
     "id": "fv-65",
     "claim": "Opening Ceremony говорит о трёх новых зонах, девяти данжах и двух рейдах.",
     "sourceId": "blizzcon-2026-opening-ceremony",
@@ -471,16 +317,6 @@
     "chapterIds": [],
     "entryRefs": [
       "forever/shendralas"
-    ]
-  },
-  {
-    "id": "fv-64",
-    "claim": "Riverglades соседствует с Burning Steppes, Redridge, Swamp of Sorrows и Badlands и была недоступна.",
-    "sourceId": "forever-found-photos",
-    "quote": "The Riverglades is one of our first major examples of “new, but familiar” content: a land connected to surrounding regions like the Burning Steppes, Redridge Mountains, the Swamp of Sorrows, and the Badlands, but previously beyond players’ reach.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/riverglades"
     ]
   },
   {
@@ -543,17 +379,6 @@
     "entryRefs": [
       "forever/dungeons-and-raids",
       "locations/lordaeron"
-    ]
-  },
-  {
-    "id": "fv-70",
-    "claim": "Barrow Deeps — испытание для 10 игроков, Hyjal Summit — рейд на 20.",
-    "sourceId": "forever-whats-next",
-    "quote": "The Barrow Deeps is planned as a maximum-level 10-player challenge, while Hyjal Summit will bring 20-player raid encounters to one of Warcraft’s most important locations.",
-    "chapterIds": [],
-    "entryRefs": [
-      "forever/dungeons-and-raids",
-      "locations/mount-hyjal"
     ]
   },
   {

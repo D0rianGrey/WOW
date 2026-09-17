@@ -224,7 +224,11 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
+      "factions/scourge",
+      "forever/time-bubble-year-1",
       "glossary/time-bubble",
+      "locations/northrend",
       "timeline/forever"
     ]
   },
@@ -239,6 +243,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "forever/time-bubble-year-1",
       "glossary/time-bubble",
       "timeline/forever"
     ]
@@ -250,11 +255,15 @@
     "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
     "chapterIds": [
       "azeroth-before-civilization",
-      "war-of-the-ancients",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "war-of-the-ancients"
     ],
     "entryRefs": [
-      "characters/queen-azshara"
+      "characters/queen-azshara",
+      "factions/night-elves",
+      "forever/skyborne",
+      "forever/zephras-isle",
+      "locations/zephras-isle"
     ]
   },
   {
@@ -264,9 +273,14 @@
     "quote": "In Shen'dralas, a long-hidden mystery between Mulgore and Desolace becomes a new adventure tied to the Shen’dralar, Eldre’Thalas, Dire Maul, and the centaur tribes of the region.",
     "chapterIds": [
       "azeroth-before-civilization",
-      "war-of-the-ancients",
       "kingdoms-and-peoples",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "forever/shendralas",
+      "locations/kalimdor",
+      "locations/shendralas"
     ]
   },
   {

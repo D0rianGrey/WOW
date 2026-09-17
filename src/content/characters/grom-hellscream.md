@@ -5,7 +5,6 @@ slug: grom-hellscream
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Последний непокорённый вождь, убивший Cenarius и искупивший честь в битве с Mannoroth."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

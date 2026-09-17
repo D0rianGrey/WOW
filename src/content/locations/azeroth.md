@@ -5,7 +5,6 @@ slug: azeroth
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Мир Warcraft: два исходных континента, восемь играбельных рас и две фракции."
-spoilerLevel: 0
 sourceIds:
   - dragon-aspects-story-so-far
   - warcraft-iii-manual

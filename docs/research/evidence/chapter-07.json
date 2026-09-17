@@ -9,6 +9,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/jaina-proudmoore",
+      "characters/medivh",
       "timeline/battle-of-mount-hyjal"
     ]
   },
@@ -22,6 +24,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/tyrande-whisperwind",
+      "locations/mount-hyjal",
       "timeline/battle-of-mount-hyjal"
     ]
   },
@@ -35,6 +39,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "factions/burning-legion",
       "timeline/archimonde-summoned"
     ]
   },
@@ -60,6 +65,10 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/malfurion-stormrage",
+      "factions/burning-legion",
+      "factions/night-elves",
+      "forever/mount-hyjal-aftermath",
       "locations/mount-hyjal",
       "timeline/battle-of-mount-hyjal"
     ]
@@ -72,6 +81,9 @@
     "locator": "PDF p. 85",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "factions/burning-legion"
     ]
   },
   {
@@ -84,6 +96,9 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "factions/night-elves",
+      "locations/mount-hyjal",
+      "locations/teldrassil",
       "timeline/battle-of-mount-hyjal"
     ]
   },
@@ -105,6 +120,11 @@
     "locator": "PDF p. 94",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/malfurion-stormrage",
+      "factions/night-elves",
+      "locations/teldrassil"
     ]
   },
   {
@@ -115,6 +135,10 @@
     "locator": "PDF p. 94",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/kalimdor",
+      "locations/teldrassil"
     ]
   },
   {
@@ -146,6 +170,10 @@
     "chapterIds": [
       "third-war-to-forever",
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/illidan-stormrage",
+      "characters/tyrande-whisperwind"
     ]
   },
   {
@@ -158,6 +186,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/illidan-stormrage",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -171,6 +200,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/sylvanas-windrunner",
       "timeline/forsaken-rise"
     ]
   },
@@ -184,7 +214,10 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/sylvanas-windrunner",
       "glossary/third-war",
+      "locations/lordaeron",
+      "locations/tirisfal-glades",
       "timeline/forsaken-rise"
     ]
   },
@@ -213,6 +246,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
+      "characters/illidan-stormrage",
       "locations/northrend",
       "timeline/arthas-becomes-lich-king"
     ]
@@ -227,7 +262,9 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
       "glossary/lich-king",
+      "locations/northrend",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -267,6 +304,10 @@
     "locator": "PDF p. 87",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "factions/alliance",
+      "factions/horde"
     ]
   },
   {
@@ -295,6 +336,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/anduin-wrynn",
+      "factions/alliance",
       "timeline/varian-missing"
     ]
   },
@@ -328,6 +371,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "locations/stormwind",
       "timeline/varian-missing"
     ]
   },
@@ -367,6 +411,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "factions/alliance",
       "timeline/gnomeregan-lost"
     ]
   },
@@ -379,6 +424,9 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/dark-ranger-anya",
+      "characters/garek-bandarion",
+      "forever/forsaken-kingdom",
       "locations/lordaeron",
       "timeline/forsaken-kingdom"
     ]
@@ -390,6 +438,9 @@
     "quote": "Forsaken Kingdom is available today. Players can also see Definitive Edition Graphics and the Forsaken Paladin in action during the Classic Cup.",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/forsaken-kingdom"
     ]
   },
   {
@@ -422,6 +473,15 @@
     "quote": "Mount Hyjal invites you to explore the aftermath of Archimonde’s defeat, journey through Darkwhisper Gorge, and help shape the future of a recovering land.",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/tyrande-whisperwind",
+      "factions/burning-legion",
+      "factions/night-elves",
+      "forever/mount-hyjal-aftermath",
+      "locations/kalimdor",
+      "locations/mount-hyjal",
+      "locations/teldrassil"
     ]
   },
   {
@@ -440,6 +500,10 @@
     "quote": "On Zephras Isle, you’ll begin an elemental skybound starting experience from levels 1 through 12, blending Classic Warcraft aesthetics with architecture inspired by Skywall.",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/zephras-isle",
+      "locations/zephras-isle"
     ]
   },
   {
@@ -449,6 +513,10 @@
     "quote": "The Barrow Deeps is planned as a maximum-level 10-player challenge, while Hyjal Summit will bring 20-player raid encounters to one of Warcraft’s most important locations.",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/dungeons-and-raids",
+      "locations/mount-hyjal"
     ]
   },
   {

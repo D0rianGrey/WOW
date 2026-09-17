@@ -5,7 +5,6 @@ slug: horde
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Коалиция orcs, tauren, trolls и undead под началом warchief Thrall."
-spoilerLevel: 0
 sourceIds:
   - burning-crusade-story-so-far
   - warcraft-iii-manual

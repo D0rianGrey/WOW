@@ -5,7 +5,6 @@ slug: night-elves
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
 summary: "Древний народ Kalimdor, заплативший бессмертием за победу над Archimonde."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

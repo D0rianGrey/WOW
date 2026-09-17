@@ -7,7 +7,6 @@
     "era": "Пролог: Azeroth до знакомого мира",
     "eraId": "prologue",
     "summary": "Руководство к Warcraft III: titans веками двигают и формируют землю, пока не остаётся один совершенный континент. Поздняя ретроспектива эпохи Dragonflight: Aggramar опасается, что Pantheon повредит world-soul, и titans действуют через созданные конструкты — keepers ведут titan-forged против армий Black Empire.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "dragon-aspects-story-so-far"
@@ -34,7 +33,6 @@
     "era": "Пролог: Azeroth до знакомого мира",
     "eraId": "prologue",
     "summary": "По ретроспективе эпохи Dragonflight, под руководством Tyr пять proto-dragons сражаются с Galakrond и получают силу охранять земли Azeroth.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "dragon-aspects-story-so-far"
     ],
@@ -60,7 +58,6 @@
     "era": "Эпоха I: Древний Azeroth",
     "eraId": "ancient",
     "summary": "Магия Highborne у Well of Eternity привлекает Sargeras, и Queen Azshara открывает Burning Legion портал в глубинах Well.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "burning-crusade-story-so-far"
@@ -92,7 +89,6 @@
     "era": "Эпоха I: Древний Azeroth",
     "eraId": "ancient",
     "summary": "Схватка Furion с Azshara ввергает заклинание Highborne в хаос; Well of Eternity схлопывается, Kalimdor раскалывается, и возникает Maelstrom.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "warbringers-azshara"
@@ -125,7 +121,6 @@
     "era": "Эпоха I: Древний Azeroth",
     "eraId": "ancient",
     "summary": "Furion заточает Illidan; Alexstrasza кладёт в сердце Well of Eternity волшебный жёлудь, из него вырастает Мировое древо Nordrassil, и Nozdormu дарует ночным эльфам бессмертие, пока древо стоит.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual"
     ],
@@ -155,7 +150,6 @@
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
     "summary": "Dath’Remar высмеивает друидов, отказавшихся от магии, и его последователи обрушивают на Ashenvale магический шторм. Безрассудных Highborne изгоняют: они уплывают, высаживаются на землях будущего Lordaeron и становятся high elves.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual"
     ],
@@ -182,7 +176,6 @@
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
     "summary": "После многих битв с trolls high elves основывают Quel’Thalas и создают Sunwell из воды, украденной из первого Well of Eternity.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "burning-crusade-story-so-far",
       "world-of-warcraft-2004-manual"
@@ -209,7 +202,6 @@
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
     "summary": "Против Amani high elves заключают союз с Arathor, основанным Thoradin: эльфы учат магии небольшую группу людей, люди помогают разрушить опору силы trolls.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "burning-crusade-story-so-far",
       "legion-warrior-artifact-reveal"
@@ -236,7 +228,6 @@
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
     "summary": "После смерти Modimus Anvilmar кланы dwarves воюют за Ironforge; Thaurissan призывает Ragnaros, а клан Bronzebeard удерживает город.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "muradin-hero-week",
       "molten-core-anniversary"
@@ -261,7 +252,6 @@
     "era": "Эпоха III: Orcs & Humans",
     "eraId": "orcs-and-humans",
     "summary": "Kil’jaeden развращает orcs через Ner’zhul и Gul’dan; кровь Mannoroth превращает Horde в армию, одержимую жаждой крови.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "burning-crusade-story-so-far",
       "warcraft-iii-story-so-far"
@@ -291,7 +281,6 @@
     "era": "Эпоха III: Orcs & Humans",
     "eraId": "orcs-and-humans",
     "summary": "Sargeras овладевает Medivh, чтобы развязать войну миров; Medivh заключает сделку с Gul’dan, открывается Dark Portal, и Horde вторгается в Azeroth. Официальные тексты по-разному называют создателя врат: Gul’dan, Medivh или обоих.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far",
       "warcraft-ii-manual",
@@ -324,7 +313,6 @@
     "era": "Эпоха III: Orcs & Humans",
     "eraId": "orcs-and-humans",
     "summary": "Первый штурм Stormwind отбит; под знаменем Doomhammer Horde возвращается, Garona убивает короля Llane, и город падает.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far",
       "warcraft-ii-manual"
@@ -355,7 +343,6 @@
     "era": "Эпоха IV: Alliance и Horde",
     "eraId": "alliance-and-horde",
     "summary": "Беженцы Stormwind бегут на север, и семь человеческих государств впервые за три тысячи лет объединяются под одним знаменем.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far"
     ],
@@ -383,7 +370,6 @@
     "era": "Эпоха IV: Alliance и Horde",
     "eraId": "alliance-and-horde",
     "summary": "Gul’dan уводит часть Horde к Tomb of Sargeras; Doomhammer убивает Lothar, но Turalyon разбивает Horde, Doomhammer попадает в плен, а Dark Portal разрушен.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far",
       "warcraft-iii-manual"
@@ -413,7 +399,6 @@
     "era": "Эпоха IV: Alliance и Horde",
     "eraId": "alliance-and-horde",
     "summary": "Ner’zhul снова открывает Dark Portal; его порталы разрывают Draenor, а Khadgar и его спутники уничтожают портал, чтобы спасти Azeroth.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "wow-story-timeline-beyond-the-dark-portal"
@@ -440,7 +425,6 @@
     "era": "Эпоха IV: Alliance и Horde",
     "eraId": "alliance-and-horde",
     "summary": "Orcs в лагерях впадают в апатию, а налоги на содержание лагерей и споры раскалывают Alliance: уходят Quel’Thalas, Gilneas и Stromgarde.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "warcraft-iii-story-so-far"
@@ -469,7 +453,6 @@
     "era": "Эпоха V: New Horde",
     "eraId": "new-horde",
     "summary": "Бывший раб-гладиатор Thrall возвращает orcs шаманизм; Doomhammer погибает при освобождении одного из лагерей, и Thrall становится вождём Horde.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
       "warcraft-iii-story-so-far"
@@ -499,7 +482,6 @@
     "era": "Эпоха VI: Arthas и падение Lordaeron",
     "eraId": "fall-of-lordaeron",
     "summary": "Kel’Thuzad и Cult of the Damned выпускают чуму на севере Lordaeron; Arthas убивает Kel’Thuzad, но армия Scourge продолжает расти.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -530,7 +512,6 @@
     "era": "Эпоха VI: Arthas и падение Lordaeron",
     "eraId": "fall-of-lordaeron",
     "summary": "Arthas приказывает перебить жителей Stratholme, многие из которых, возможно, ещё не заражены, и Jaina уходит от него.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "jaina-hero-week",
       "heroes-patch-notes-2018-10-16"
@@ -560,7 +541,6 @@
     "era": "Эпоха VI: Arthas и падение Lordaeron",
     "eraId": "fall-of-lordaeron",
     "summary": "В Northrend Arthas берёт Frostmourne и теряет душу; вернувшись, он убивает Uther и своего отца, короля Terenas.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -591,7 +571,6 @@
     "era": "Эпоха VI: Arthas и падение Lordaeron",
     "eraId": "fall-of-lordaeron",
     "summary": "Scourge прорывается к Sunwell: Sylvanas поднята как banshee, король Anasterian погибает, а Kel’Thuzad возрождается lich.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual",
       "burning-crusade-story-so-far"
@@ -623,7 +602,6 @@
     "era": "Эпоха VII: Third War",
     "eraId": "third-war",
     "summary": "В Dalaran Kel’Thuzad добывает книгу заклинаний Medivh и призывает Archimonde; демоны следуют за Scourge в Kalimdor.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -653,7 +631,6 @@
     "era": "Эпоха VII: Third War",
     "eraId": "third-war",
     "summary": "Пророк Medivh по отдельности ведёт orcs и людей в Kalimdor; в Barrens Thrall заключает союз с tauren Cairne Bloodhoof.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -685,7 +662,6 @@
     "era": "Эпоха VII: Third War",
     "eraId": "third-war",
     "summary": "Grom Hellscream убивает Cenarius, но затем помогает Thrall победить Mannoroth, и проклятие крови orcs заканчивается.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -716,7 +692,6 @@
     "era": "Эпоха VII: Third War",
     "eraId": "third-war",
     "summary": "Под руководством Medivh смертные народы объединяются, и Malfurion силой Nordrassil уничтожает Archimonde; ночные эльфы платят за победу бессмертием.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual",
       "jaina-hero-week"
@@ -753,7 +728,6 @@
     "era": "Эпоха VII: Third War",
     "eraId": "third-war",
     "summary": "Thrall основывает Durotar, Jaina — Theramore; флот Daelin Proudmoore нарушает перемирие, и Jaina помогает Thrall его победить.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -785,7 +759,6 @@
     "era": "Эпоха VIII: Мост к Forever",
     "eraId": "bridge",
     "summary": "Новая кампания Warcraft III Reforged рассказывает о событиях между возвращением Arthas в Lordaeron и появлением Undercity; в центре истории — Garek Bandarion и Dark Ranger Anya.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "forsaken-kingdom-whats-next"
     ],
@@ -817,7 +790,6 @@
     "era": "Эпоха VIII: Мост к Forever",
     "eraId": "bridge",
     "summary": "Когда сила Lich King слабеет, Sylvanas поднимает мятеж нежити; Forsaken занимают руины столицы Lordaeron и строят под ними свой оплот.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -848,7 +820,6 @@
     "era": "Эпоха VIII: Мост к Forever",
     "eraId": "bridge",
     "summary": "Illidan по приказу Kil’jaeden пытается уничтожить Frozen Throne, но Arthas первым достигает трона и сливается с Ner’zhul.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -878,7 +849,6 @@
     "era": "Эпоха VIII: Мост к Forever",
     "eraId": "bridge",
     "summary": "Troggs вторгаются в Gnomeregan; радиация, выпущенная по приказу Mekkatorque, убивает почти восемьдесят процентов gnomes, и выжившие бегут в Ironforge.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -904,7 +874,6 @@
     "era": "Эпоха VIII: Мост к Forever",
     "eraId": "bridge",
     "summary": "Король Varian Wrynn пропадает при подозрительных обстоятельствах по пути в Theramore; Stormwind правит ребёнок-король Anduin.",
-    "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
     ],
@@ -934,7 +903,6 @@
     "era": "Эпоха IX: World of Warcraft: Forever",
     "eraId": "forever",
     "summary": "Forever начинается в раннем «Year 1» оригинального World of Warcraft, до того как Kazzak вновь открыл Dark Portal, — после Forsaken Kingdom и до Molten Core, в собственной «time bubble».",
-    "spoilerLevel": 0,
     "sourceIds": [
       "forever-found-photos",
       "forever-announcement"

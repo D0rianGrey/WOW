@@ -5,7 +5,6 @@ slug: forsaken
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
 summary: "Нежить, вырвавшаяся из-под власти Lich King и поселившаяся в руинах Lordaeron."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forsaken-kingdom-whats-next

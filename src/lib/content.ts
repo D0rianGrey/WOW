@@ -7,6 +7,13 @@ export const confidenceLevels = ['high', 'medium', 'low'] as const;
 
 export type Confidence = (typeof confidenceLevels)[number];
 
+// Shown next to the lore badge: a reader should see when the sources are thin, not only the editor.
+export const confidenceLabels: Record<Confidence, string> = {
+  high: 'Источники прямые',
+  medium: 'Источники косвенные',
+  low: 'Источники спорные'
+};
+
 // A real calendar date, not just the right shape: 2026-02-30 would sort and render as a fact.
 function isCalendarDate(value: string): boolean {
   const [year, month, day] = value.split('-').map(Number);
@@ -51,7 +58,6 @@ const loreFields = {
   status: z.enum(loreStatuses),
   era: z.string().trim().min(1),
   summary: z.string().trim().min(1),
-  spoilerLevel: z.number().int().min(0),
   sourceIds: z.array(z.string().trim().min(1)),
   updatedAt: dateSchema,
   confidence: z.enum(confidenceLevels)

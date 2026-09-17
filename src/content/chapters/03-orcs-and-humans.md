@@ -5,7 +5,6 @@ slug: orcs-and-humans
 status: ESTABLISHED
 era: First War
 summary: Демоническая порча orcs, сделка Gul’dan с одержимым Medivh и Dark Portal привели Horde в Azeroth и закончились падением Stormwind.
-spoilerLevel: 0
 sourceIds:
   - burning-crusade-story-so-far
   - warcraft-iii-story-so-far

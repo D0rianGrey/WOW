@@ -5,7 +5,6 @@ slug: arthas-and-lordaeron
 status: ESTABLISHED
 era: Third War
 summary: Чума Cult of the Damned, Stratholme и Frostmourne превратили наследного принца Lordaeron в оружие Scourge и уничтожили два королевства.
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - warcraft-iii-manual

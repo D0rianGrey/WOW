@@ -5,7 +5,6 @@ slug: thrall-and-new-horde
 status: ESTABLISHED
 era: New Horde
 summary: Раб-гладиатор освободил orcs из лагерей, вернул им шаманизм и привёл в Kalimdor, где с tauren и Darkspear родилась Horde первого года.
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - warcraft-iii-story-so-far

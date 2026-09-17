@@ -5,7 +5,6 @@ slug: arthas-menethil
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Наследный принц Lordaeron, взявший Frostmourne, погубивший собственное королевство и ставший новым Lich King."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

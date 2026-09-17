@@ -5,7 +5,6 @@ slug: cairne-bloodhoof
 status: ESTABLISHED
 era: "Эпоха V: New Horde"
 summary: "Вождь tauren, объединивший племена в Mulgore и ставший другом Thrall."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
 updatedAt: "2026-09-17"

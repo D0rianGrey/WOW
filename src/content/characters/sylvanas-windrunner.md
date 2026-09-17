@@ -5,7 +5,6 @@ slug: sylvanas-windrunner
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
 summary: "Бывшая Ranger-General of Silvermoon, поднятая Arthas как banshee и ставшая королевой Forsaken."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forsaken-kingdom-whats-next

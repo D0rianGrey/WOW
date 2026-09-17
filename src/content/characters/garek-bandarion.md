@@ -5,7 +5,6 @@ slug: garek-bandarion
 status: FOREVER
 era: "Эпоха VIII: Мост к Forever"
 summary: "Недавно восставший воин Forsaken, один из двух новых героев кампании Forsaken Kingdom."
-spoilerLevel: 0
 sourceIds:
   - forsaken-kingdom-whats-next
   - forsaken-kingdom-wage-war

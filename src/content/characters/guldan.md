@@ -5,7 +5,6 @@ slug: guldan
 status: ESTABLISHED
 era: "Эпоха III: Orcs & Humans"
 summary: "Первый орочий warlock, продавший свой народ демонам и погибший у Tomb of Sargeras."
-spoilerLevel: 0
 sourceIds:
   - guldan-hero-week
   - burning-crusade-story-so-far

@@ -5,7 +5,6 @@ slug: burning-legion
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
 summary: "Демоническая армия Sargeras, вторгавшаяся в Azeroth во время War of the Ancients и вернувшаяся в Third War."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - warcraft-iii-manual

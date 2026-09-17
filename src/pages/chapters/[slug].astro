@@ -36,6 +36,7 @@ const next = chapters[index + 1];
   title={chapter.data.title}
   summary={chapter.data.summary}
   status={chapter.data.status}
+  confidence={chapter.data.confidence}
   eyebrow={`${String(index + 1).padStart(2, '0')} / ${chapter.data.era}`}
   readingMinutes={chapter.data.readingMinutes}
   illustration={chapterIllustrations[chapter.data.slug]}

@@ -5,7 +5,6 @@ slug: durotar
 status: ESTABLISHED
 era: "Эпоха V: New Horde"
 summary: "Суровая родина orcs в Kalimdor с их столицей Orgrimmar."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
 updatedAt: "2026-09-17"

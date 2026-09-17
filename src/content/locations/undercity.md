@@ -5,7 +5,6 @@ slug: undercity
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
 summary: "Подземная столица Forsaken под руинами Lordaeron."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forsaken-kingdom-whats-next

@@ -5,7 +5,6 @@ slug: scarlet-crusade
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Фанатичные люди, одержимые уничтожением нежити и возвращением своей родины."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forsaken-kingdom-whats-next

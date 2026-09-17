@@ -16,7 +16,6 @@ const validLoreEntry = {
   status: 'FOREVER',
   era: 'World of Warcraft: Forever',
   summary: 'Skyborne starting region.',
-  spoilerLevel: 0,
   sourceIds: ['forever-found-photos'],
   updatedAt: '2026-09-17',
   confidence: 'high'

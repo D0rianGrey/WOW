@@ -5,7 +5,6 @@ slug: high-order
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Одна из групп, борющихся за Zephras Isle; Skyborne могут выбрать путь High Order Alliance."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
   - forever-hub

@@ -5,7 +5,6 @@ slug: quelthalas
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Королевство high elves с Sunwell, опустошённое Scourge."
-spoilerLevel: 0
 sourceIds:
   - burning-crusade-story-so-far
   - warcraft-iii-manual

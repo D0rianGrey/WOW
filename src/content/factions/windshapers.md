@@ -5,7 +5,6 @@ slug: windshapers
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Одна из групп, борющихся за Zephras Isle; Skyborne могут выбрать путь Windshaper Horde."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
   - forever-hub

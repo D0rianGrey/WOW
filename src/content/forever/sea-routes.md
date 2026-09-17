@@ -5,7 +5,6 @@ slug: sea-routes
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Новые корабельные пути между континентами и к Riverglades."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

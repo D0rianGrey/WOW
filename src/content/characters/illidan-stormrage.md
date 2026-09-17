@@ -5,7 +5,6 @@ slug: illidan-stormrage
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Брат Malfurion, предавший ради магии, десять тысяч лет проведший в заточении и бежавший в Outland."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

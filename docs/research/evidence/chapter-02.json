@@ -87,6 +87,7 @@
     ],
     "entryRefs": [
       "glossary/sunwell",
+      "locations/quelthalas",
       "timeline/quelthalas-founded"
     ]
   },
@@ -157,6 +158,7 @@
       "second-war"
     ],
     "entryRefs": [
+      "factions/alliance",
       "glossary/alliance",
       "locations/lordaeron",
       "timeline/alliance-of-lordaeron"
@@ -292,10 +294,12 @@
     "quote": "By the time Arthas and his army of the dead turned southward, not one living elf remained in Quel’Thalas. The glorious homeland of the high elves, which had stood for more than nine thousand years, was no more.",
     "locator": "PDF p. 83",
     "chapterIds": [
-      "kingdoms-and-peoples",
-      "arthas-and-lordaeron"
+      "arthas-and-lordaeron",
+      "kingdoms-and-peoples"
     ],
     "entryRefs": [
+      "factions/scourge",
+      "locations/quelthalas",
       "timeline/quelthalas-founded"
     ]
   },
@@ -307,6 +311,10 @@
     "chapterIds": [
       "kingdoms-and-peoples",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/riverglades",
+      "locations/riverglades"
     ]
   },
   {

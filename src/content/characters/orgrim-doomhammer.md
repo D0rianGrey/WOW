@@ -5,7 +5,6 @@ slug: orgrim-doomhammer
 status: ESTABLISHED
 era: "Эпоха IV: Alliance и Horde"
 summary: "Warchief Horde во Second War, освободитель лагерей вместе с Thrall; в его честь назван Orgrimmar."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - warcraft-iii-manual

@@ -5,7 +5,6 @@ slug: tyrande-whisperwind
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Верховная жрица Elune, почти десять тысяч лет ведущая Sentinels, правительница ночных эльфов."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-whats-next

@@ -296,7 +296,19 @@ async function main() {
   }
 
   console.log(`\n${results.length - failures.length}/${results.length} quotes verified against live sources.`);
-  process.exitCode = failures.length > 0 ? 1 : 0;
+
+  // A quote that no longer exists is a content problem (exit 1); a source that would not load is
+  // usually the network or the host (exit 2), and the two must not look the same in CI.
+  const broken = failures.filter((result) => result.status !== 'FETCH_ERROR');
+
+  if (broken.length > 0) {
+    process.exitCode = 1;
+  } else if (failures.length > 0) {
+    console.log(`${failures.length} source(s) could not be loaded; quotes themselves are unchanged.`);
+    process.exitCode = 2;
+  } else {
+    process.exitCode = 0;
+  }
 }
 
 async function run(files, results) {

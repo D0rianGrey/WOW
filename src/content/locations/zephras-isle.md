@@ -5,7 +5,6 @@ slug: zephras-isle
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Летающий остров Skyborne — их стартовая зона в Forever."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
   - forever-hub

@@ -5,7 +5,6 @@ slug: kingdoms-and-peoples
 status: ESTABLISHED
 era: Возникновение королевств
 summary: Изгнанные Highborne основали Quel’Thalas, люди объединились в Arathor, dwarves раскололись в войне трёх кланов — так сложилась карта, которую унаследуют Alliance и Horde.
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - burning-crusade-story-so-far

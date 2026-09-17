@@ -5,7 +5,6 @@ slug: shendralas
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Новая область, связанная с историями Eldre’Thalas."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
   - forever-whats-next

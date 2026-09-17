@@ -5,7 +5,6 @@ slug: time-bubble-year-1
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Forever начинается там же, где оригинальный World of Warcraft, но живёт в собственной «time bubble»."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

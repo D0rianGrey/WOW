@@ -5,7 +5,6 @@ slug: queen-azshara
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
 summary: "Королева древних ночных эльфов, чьё тщеславие привело Burning Legion в мир."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - well-of-eternity-preview

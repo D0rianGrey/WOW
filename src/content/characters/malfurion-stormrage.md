@@ -5,7 +5,6 @@ slug: malfurion-stormrage
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
 summary: "Величайший друид, дважды спасший ночных эльфов от Legion и затерявшийся в Emerald Dream."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - burning-crusade-story-so-far

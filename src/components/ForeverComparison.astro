@@ -1,4 +1,5 @@
 ---
+import { confidenceLabels } from '../lib/content';
 import type { CollectionEntry } from 'astro:content';
 
 import LoreBadge from './LoreBadge.astro';
@@ -29,6 +30,7 @@ const data = entry.data;
     </div>
   </div>
   <p class="forever-why"><strong>Почему это важно.</strong> {data.whyItMatters}</p>
+  <p class="confidence-note">{confidenceLabels[data.confidence]}</p>
   {data.sourceNote && <p class="event-date-note"><strong>Об источниках:</strong> {data.sourceNote}</p>}
   <details class="forever-sources">
     <summary>Источники ({data.sourceIds.length})</summary>
