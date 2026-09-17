@@ -41,6 +41,28 @@ describe('loreEntrySchema', () => {
     expect(result.success).toBe(false);
   });
 
+  it('rejects BETA, CHANGED and UNCONFIRMED lore without a source', () => {
+    for (const status of ['BETA', 'CHANGED', 'UNCONFIRMED'] as const) {
+      const result = loreEntrySchema.safeParse({
+        ...validLoreEntry,
+        status,
+        sourceIds: []
+      });
+
+      expect(result.success, status).toBe(false);
+    }
+  });
+
+  it('allows established background history without a source', () => {
+    const result = loreEntrySchema.safeParse({
+      ...validLoreEntry,
+      status: 'ESTABLISHED',
+      sourceIds: []
+    });
+
+    expect(result.success).toBe(true);
+  });
+
   it('rejects confidence values outside high, medium, and low', () => {
     const result = loreEntrySchema.safeParse({
       ...validLoreEntry,
@@ -94,6 +116,29 @@ describe('collection-specific schemas', () => {
     });
 
     expect(result.success).toBe(true);
+  });
+
+  it('accepts a printed book with a citation instead of a url', () => {
+    const result = sourceSchema.safeParse({
+      id: 'chronicle-volume-1',
+      title: 'World of Warcraft: Chronicle Volume 1',
+      publisher: 'Blizzard Entertainment / Dark Horse Books',
+      citation: 'Dark Horse Books, 2016',
+      type: 'official-book'
+    });
+
+    expect(result.success).toBe(true);
+  });
+
+  it('rejects a source with neither url nor citation, or with an unknown type', () => {
+    const base = {
+      id: 'broken',
+      title: 'Broken source',
+      publisher: 'Blizzard Entertainment'
+    };
+
+    expect(sourceSchema.safeParse({ ...base, type: 'official-book' }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...base, url: 'https://news.blizzard.com/', type: 'fan-wiki' }).success).toBe(false);
   });
 });
 

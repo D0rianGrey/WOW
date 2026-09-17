@@ -1,6 +1,6 @@
 import { z } from 'astro/zod';
 
-import { loreStatuses } from './status';
+import { loreStatuses, type LoreStatus } from './status';
 
 export const confidenceLevels = ['high', 'medium', 'low'] as const;
 
@@ -23,15 +23,23 @@ const loreFields = {
   confidence: z.enum(confidenceLevels)
 } as const;
 
-const baseLoreSchema = z.object(loreFields).superRefine((entry, context) => {
-  if (entry.status === 'FOREVER' && entry.sourceIds.length === 0) {
+interface SourcedEntry {
+  status: LoreStatus;
+  sourceIds: string[];
+}
+
+// Anything newer or less certain than established history must show where it came from.
+function requireSourcesUnlessEstablished(entry: SourcedEntry, context: z.core.$RefinementCtx<SourcedEntry>): void {
+  if (entry.status !== 'ESTABLISHED' && entry.sourceIds.length === 0) {
     context.addIssue({
       code: 'custom',
       path: ['sourceIds'],
-      message: 'FOREVER lore must cite at least one source'
+      message: `${entry.status} lore must cite at least one source`
     });
   }
-});
+}
+
+const baseLoreSchema = z.object(loreFields).superRefine(requireSourcesUnlessEstablished);
 
 export function createLoreSchema<T extends z.ZodRawShape>(extraFields: T) {
   return baseLoreSchema.safeExtend(extraFields);
@@ -39,19 +47,13 @@ export function createLoreSchema<T extends z.ZodRawShape>(extraFields: T) {
 
 export const loreEntrySchema = createLoreSchema({});
 
+// Built from the raw fields rather than createLoreSchema: the generic helper erases the field types
+// that chapter pages rely on (order, readingMinutes, sourceIds).
 export const chapterEntrySchema = z.object({
   ...loreFields,
   order: z.number().int().min(0),
   readingMinutes: z.number().int().min(1)
-}).superRefine((entry, context) => {
-  if (entry.status === 'FOREVER' && entry.sourceIds.length === 0) {
-    context.addIssue({
-      code: 'custom',
-      path: ['sourceIds'],
-      message: 'FOREVER lore must cite at least one source'
-    });
-  }
-});
+}).superRefine(requireSourcesUnlessEstablished);
 
 export const timelineEntrySchema = createLoreSchema({
   dateLabel: z.string().trim().min(1),
@@ -63,14 +65,39 @@ export const timelineEntrySchema = createLoreSchema({
   chapterSlug: z.string().trim().min(1)
 });
 
+export const sourceTypes = [
+  'official-article',
+  'official-announcement',
+  'official-retrospective',
+  'official-preview',
+  'official-promo',
+  'official-manual',
+  'official-book',
+  'official-fiction',
+  'in-game'
+] as const;
+
+export type SourceType = (typeof sourceTypes)[number];
+
 export const sourceSchema = z.object({
   id: z.string().trim().min(1),
   title: z.string().trim().min(1),
   publisher: z.string().trim().min(1),
-  url: z.url(),
-  type: z.string().trim().min(1),
+  url: z.url().optional(),
+  citation: z.string().trim().min(1).optional(),
+  type: z.enum(sourceTypes),
   publishedAt: dateSchema.optional(),
+  checkedAt: dateSchema.optional(),
   notes: z.string().trim().min(1).optional()
+}).superRefine((source, context) => {
+  // Printed books have no reader-openable URL, so they must carry a precise citation instead.
+  if (source.url === undefined && source.citation === undefined) {
+    context.addIssue({
+      code: 'custom',
+      path: ['url'],
+      message: 'A source needs a url or, for printed material, a citation'
+    });
+  }
 });
 
 export type LoreEntry = z.infer<typeof loreEntrySchema>;
