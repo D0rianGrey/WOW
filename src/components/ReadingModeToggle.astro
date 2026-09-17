@@ -36,9 +36,6 @@
     save('wow-spoilers', root.dataset.spoilers);
     updateSpoilers();
   }
-  document.addEventListener('wow:spoilers-request', event => {
-    setSpoilers((event as CustomEvent<{ shown: boolean }>).detail.shown);
-  });
   document.querySelectorAll('[data-spoiler-toggle]').forEach(button => {
     button.addEventListener('click', () => {
       setSpoilers(root.dataset.spoilers !== 'shown');

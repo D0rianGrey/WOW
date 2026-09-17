@@ -18,28 +18,36 @@ const { title, kind = 'retail', id = `note-${crypto.randomUUID()}` } = Astro.pro
   <div id={id} data-spoiler-content hidden><slot /></div>
 </section>
 <script>
+  const root = document.documentElement;
+
   document.querySelectorAll<HTMLElement>('[data-spoiler-kind]').forEach(block => {
     const content = block.querySelector<HTMLElement>('[data-spoiler-content]')!;
     const button = block.querySelector<HTMLButtonElement>('[data-reveal]')!;
     const initialLabel = button.textContent;
-    function show(shown: boolean) {
+    const followsSiteSetting = block.dataset.spoilerKind === 'retail';
+    // null follows the site-wide Retail switch; true/false is this block's own choice for the current page view.
+    let override: boolean | null = null;
+
+    function render() {
+      const siteShown = followsSiteSetting && root.dataset.spoilers === 'shown';
+      const shown = override ?? siteShown;
       content.hidden = !shown;
       button.setAttribute('aria-expanded', String(shown));
       button.textContent = shown ? 'Скрыть раздел' : initialLabel;
     }
+
     button.addEventListener('click', () => {
-      const shown = content.hidden !== false;
-      if (block.dataset.spoilerKind === 'retail') {
-        document.dispatchEvent(new CustomEvent('wow:spoilers-request', { detail: { shown } }));
-      } else {
-        show(shown);
-      }
+      override = content.hidden !== false;
+      render();
     });
-    if (block.dataset.spoilerKind === 'retail') {
-      show(document.documentElement.dataset.spoilers === 'shown');
-      document.addEventListener('wow:spoilers-changed', event => {
-        show((event as CustomEvent<{ shown: boolean }>).detail.shown);
+
+    if (followsSiteSetting) {
+      document.addEventListener('wow:spoilers-changed', () => {
+        override = null;
+        render();
       });
     }
+
+    render();
   });
 </script>

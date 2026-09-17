@@ -48,7 +48,7 @@ test('storage failures do not break controls or expose hidden content', async ({
   const retail = page.locator('[data-spoiler-kind="retail"]');
   await retail.getByRole('button', { name: 'Открыть раздел Retail' }).click();
   await expect(retail.locator('[data-spoiler-content]')).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Спойлеры Retail', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByRole('button', { name: 'Спойлеры Retail', exact: true })).toHaveAttribute('aria-pressed', 'false');
   await retail.getByRole('button', { name: 'Скрыть раздел' }).click();
   await expect(retail.locator('[data-spoiler-content]')).toBeHidden();
   expect(errors).toEqual([]);
@@ -127,18 +127,38 @@ test('spoilers remain absent from accessibility tree without JavaScript', async 
   await context.close();
 });
 
-test('Retail block controls synchronize toolbar and persist reveal and hide', async ({ page }) => {
+test('a Retail block reveals only itself and forgets the choice on reload', async ({ page }) => {
   await page.goto('/WOW/');
   const retail = page.locator('[data-spoiler-kind="retail"]');
+  const content = retail.locator('[data-spoiler-content]');
   const toolbar = page.getByRole('button', { name: 'Спойлеры Retail', exact: true });
+
   await retail.getByRole('button', { name: 'Открыть раздел Retail' }).click();
-  await expect(toolbar).toHaveAttribute('aria-pressed', 'true');
-  await page.reload();
-  await expect(retail.locator('[data-spoiler-content]')).toBeVisible();
-  await expect(toolbar).toHaveAttribute('aria-pressed', 'true');
-  await retail.getByRole('button', { name: 'Скрыть раздел' }).click();
+  await expect(content).toBeVisible();
   await expect(toolbar).toHaveAttribute('aria-pressed', 'false');
+  expect(await page.evaluate(() => localStorage.getItem('wow-spoilers'))).not.toBe('shown');
+
   await page.reload();
-  await expect(retail.locator('[data-spoiler-content]')).toBeHidden();
+  await expect(content).toBeHidden();
+});
+
+test('the toolbar reveals Retail blocks site-wide and a block can still hide itself', async ({ page }) => {
+  await page.goto('/WOW/');
+  const retail = page.locator('[data-spoiler-kind="retail"]');
+  const content = retail.locator('[data-spoiler-content]');
+  const toolbar = page.getByRole('button', { name: 'Спойлеры Retail', exact: true });
+
+  await toolbar.click();
+  await expect(content).toBeVisible();
+
+  await retail.getByRole('button', { name: 'Скрыть раздел' }).click();
+  await expect(content).toBeHidden();
+  await expect(toolbar).toHaveAttribute('aria-pressed', 'true');
+
+  await page.reload();
+  await expect(content).toBeVisible();
+
+  await toolbar.click();
+  await expect(content).toBeHidden();
   await expect(toolbar).toHaveAttribute('aria-pressed', 'false');
 });
