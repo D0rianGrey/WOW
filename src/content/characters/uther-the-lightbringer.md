@@ -5,7 +5,6 @@ slug: uther-the-lightbringer
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Первый из паладинов, глава Paladin Order и наставник Arthas, погибший от руки своего ученика."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

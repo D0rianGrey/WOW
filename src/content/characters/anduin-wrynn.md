@@ -5,7 +5,6 @@ slug: anduin-wrynn
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
 summary: "Десятилетний король Stormwind, правящий после исчезновения отца."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
 updatedAt: "2026-09-17"

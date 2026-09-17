@@ -1,24 +1,13 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
-import type { SourceType } from '../lib/content';
+import { sourceTypeLabels, type SourceType } from '../lib/content';
 
 interface Props {
   sources: CollectionEntry<'sources'>[];
 }
 
 const { sources } = Astro.props;
-const typeLabels: Record<SourceType, string> = {
-  'official-article': 'Официальная публикация Blizzard',
-  'official-announcement': 'Официальный анонс',
-  'official-retrospective': 'Поздняя официальная ретроспектива',
-  'official-preview': 'Официальное превью',
-  'official-promo': 'Официальный промоматериал',
-  'official-manual': 'Официальное руководство',
-  'official-book': 'Официальная книга',
-  'official-fiction': 'Официальный рассказ',
-  'in-game': 'Текст в игре'
-};
 ---
 
 <aside class="chapter-sources" aria-labelledby="chapter-sources-title">
@@ -28,7 +17,7 @@ const typeLabels: Record<SourceType, string> = {
     {sources.map((source) => (
       <li id={`source-${source.id}`}>
         {source.data.url ? <a href={source.data.url} rel="noreferrer">{source.data.title}</a> : <cite>{source.data.title}</cite>}
-        <span>{source.data.publisher} · {typeLabels[source.data.type]}{source.data.citation && ` · ${source.data.citation}`}</span>
+        <span>{source.data.publisher} · {sourceTypeLabels[source.data.type].singular}{source.data.citation && ` · ${source.data.citation}`}</span>
       </li>
     ))}
   </ol>

@@ -17,6 +17,9 @@
     "locator": "PDF p. 4",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/arthas-menethil"
     ]
   },
   {
@@ -27,6 +30,9 @@
     "locator": "PDF p. 4",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
     ]
   },
   {
@@ -56,6 +62,11 @@
     "locator": "PDF p. 83",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "factions/scourge",
+      "glossary/lich-king",
+      "glossary/scourge"
     ]
   },
   {
@@ -66,6 +77,10 @@
     "locator": "PDF p. 83",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/kelthuzad",
+      "factions/scourge"
     ]
   },
   {
@@ -78,6 +93,8 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/kelthuzad",
+      "factions/scourge",
       "glossary/third-war",
       "timeline/plague-of-undeath"
     ]
@@ -90,6 +107,9 @@
     "locator": "PDF p. 83",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
     ]
   },
   {
@@ -123,6 +143,9 @@
     "locator": "PDF p. 83",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
     ]
   },
   {
@@ -147,6 +170,7 @@
     ],
     "entryRefs": [
       "characters/arthas-menethil",
+      "characters/jaina-proudmoore",
       "timeline/stratholme"
     ]
   },
@@ -159,6 +183,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
       "timeline/stratholme"
     ]
   },
@@ -206,6 +231,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
       "glossary/frostmourne",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
@@ -220,6 +246,8 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
+      "characters/uther-the-lightbringer",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
   },
@@ -233,6 +261,8 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "factions/scourge",
+      "locations/lordaeron",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
   },
@@ -256,6 +286,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/sylvanas-windrunner",
       "timeline/fall-of-quelthalas"
     ]
   },
@@ -294,6 +325,8 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/kelthuzad",
+      "locations/quelthalas",
       "timeline/fall-of-quelthalas"
     ]
   },
@@ -318,6 +351,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/kelthuzad",
       "timeline/archimonde-summoned"
     ]
   },
@@ -328,6 +362,9 @@
     "quote": "Among these powerful mortals was an Archmage of the Kirin Tor, by the name of Kel’Thuzad. As one of that council’s ruling members, Kel’Thuzad thought himself above the strictures of its self-imposed laws which forbade experimentation with dark magic.",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/kelthuzad"
     ]
   },
   {
@@ -337,6 +374,9 @@
     "quote": "Taken with the promises of power offered by the entity he now knew as the Lich King, Kel’Thuzad pledged his allegiance and went forth to convert more into the service of his new lord.",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/kelthuzad"
     ]
   },
   {
@@ -346,6 +386,10 @@
     "quote": "The four-mission Last Days of Lordaeron prologue begins as Arthas returns home. Players experience the kingdom’s final hours through the eyes of the Capital City Guard",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "forever/forsaken-kingdom",
+      "locations/lordaeron"
     ]
   },
   {
@@ -367,6 +411,9 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/dark-ranger-anya",
+      "characters/garek-bandarion",
+      "forever/forsaken-kingdom",
       "timeline/forsaken-kingdom"
     ]
   },
@@ -380,6 +427,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/dark-ranger-anya",
+      "characters/garek-bandarion",
       "forever/forsaken-kingdom",
       "locations/undercity"
     ]
@@ -395,7 +444,9 @@
     ],
     "entryRefs": [
       "characters/uther-the-lightbringer",
-      "forever/forsaken-paladins"
+      "factions/forsaken",
+      "forever/forsaken-paladins",
+      "locations/bandarion-keep"
     ]
   },
   {
@@ -406,6 +457,10 @@
     "chapterIds": [
       "arthas-and-lordaeron",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/bandarion-keep",
+      "locations/tirisfal-glades"
     ]
   },
   {
@@ -429,6 +484,9 @@
     "locator": "PDF p. 4",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/arthas-menethil"
     ]
   },
   {
@@ -462,6 +520,9 @@
     "locator": "PDF p. 4",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
     ]
   },
   {
@@ -487,6 +548,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/sylvanas-windrunner",
       "timeline/fall-of-quelthalas"
     ]
   }

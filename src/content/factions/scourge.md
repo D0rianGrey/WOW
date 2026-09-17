@@ -5,7 +5,6 @@ slug: scourge
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Армия нежити Lich King, опустошившая Lordaeron и Quel’Thalas."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

@@ -2,12 +2,39 @@ import { expect, test } from '@playwright/test';
 
 const origin = 'http://127.0.0.1:4321';
 
-function internalLinks(html: string): string[] {
-  return [...html.matchAll(/href="(\/WOW[^"]*)"/g)].map((match) => match[1].replaceAll('&amp;', '&'));
+// Every URL the built pages reference, resolved against the page it was found on: a link that
+// forgets the /WOW base, a relative path or a missing image would otherwise look fine here.
+function referencedUrls(html: string, pageUrl: string): string[] {
+  const values = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
+
+  for (const match of html.matchAll(/srcset="([^"]+)"/g)) {
+    for (const candidate of match[1].split(',')) {
+      values.push(candidate.trim().split(/\s+/)[0]);
+    }
+  }
+
+  const resolved = [];
+
+  for (const value of values) {
+    const raw = value.replaceAll('&amp;', '&').trim();
+
+    if (raw === '' || raw.startsWith('#') || /^(mailto|tel|javascript|data):/i.test(raw)) {
+      continue;
+    }
+
+    const url = new URL(raw, pageUrl);
+
+    if (url.origin === new URL(pageUrl).origin) {
+      resolved.push(url.pathname + url.hash);
+    }
+  }
+
+  return resolved;
 }
 
-test('every internal link on the built site resolves, including its #anchor', async ({ request }) => {
+test('every referenced URL on the built site resolves, including images and #anchors', async ({ request }) => {
   const pages = new Map<string, string>();
+  const assets = new Set<string>();
   const queue = ['/WOW/'];
   const failures: string[] = [];
   const anchors: { from: string; path: string; id: string }[] = [];
@@ -34,17 +61,27 @@ test('every internal link on the built site resolves, including its #anchor', as
     const html = await response.text();
     pages.set(path, html);
 
-    for (const href of internalLinks(html)) {
-      const [target, id] = href.split('#');
-      const targetPath = target.split('?')[0] || path;
+    for (const reference of referencedUrls(html, `${origin}${path}`)) {
+      const [target, id] = reference.split('#');
+      const targetPath = target || path;
 
       if (id) {
         anchors.push({ from: path, path: targetPath, id: decodeURIComponent(id) });
       }
 
-      if (!pages.has(targetPath)) {
+      if (/\.[a-z0-9]+$/i.test(targetPath) && !targetPath.endsWith('.html')) {
+        assets.add(targetPath);
+      } else if (!pages.has(targetPath)) {
         queue.push(targetPath);
       }
+    }
+  }
+
+  for (const asset of assets) {
+    const response = await request.get(`${origin}${asset}`);
+
+    if (response.status() !== 200) {
+      failures.push(`asset ${asset} → ${response.status()}`);
     }
   }
 
@@ -57,6 +94,7 @@ test('every internal link on the built site resolves, including its #anchor', as
   }
 
   expect(pages.size).toBeGreaterThan(60);
+  expect(assets.size).toBeGreaterThan(5);
   expect([...new Set(failures)]).toEqual([]);
 });
 

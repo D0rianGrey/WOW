@@ -52,3 +52,16 @@ export function contentRefExists(index: Map<string, Set<string>>, ref: string): 
 
   return index.get(collection)?.has(id) ?? false;
 }
+
+export const entityCollections = ['characters', 'factions', 'locations'] as const;
+
+export type EntityCollection = (typeof entityCollections)[number];
+
+/** Entity IDs as the dossiers define them — the same registry the site builds from. */
+export function loadEntityIds(): Record<EntityCollection, string[]> {
+  const index = loadContentIds();
+
+  return Object.fromEntries(
+    entityCollections.map((collection) => [collection, [...(index.get(collection) ?? [])].sort()])
+  ) as Record<EntityCollection, string[]>;
+}

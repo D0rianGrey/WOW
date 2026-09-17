@@ -5,7 +5,6 @@ slug: announced-schedule
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Бета, запуск, выбор имён и первые рейды Forever."
-spoilerLevel: 0
 sourceIds:
   - forever-pre-purchase
   - forever-announcement

@@ -3,6 +3,8 @@ import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
+import { listField, loadJsonEntries, loadMarkdownEntries } from './helpers/content-entries';
+
 interface LedgerEntry {
   id: string;
   claim: string;
@@ -25,26 +27,11 @@ const ledger: LedgerEntry[] = readdirSync(evidenceDir)
   .filter((file) => file.endsWith('.json'))
   .flatMap((file) => JSON.parse(readFileSync(resolve(evidenceDir, file), 'utf8')) as LedgerEntry[]);
 
-function readFrontmatterList(markdown: string, field: string): string[] {
-  const block = markdown.match(new RegExp(`\\n${field}:\\n((?:  - .+\\n)+)`));
-
-  if (!block) {
-    return [];
-  }
-
-  return block[1]
-    .trim()
-    .split('\n')
-    .map((line) => line.replace(/^\s*-\s*/, '').trim());
-}
-
-const chapters = readdirSync(chapterDir)
-  .filter((file) => file.endsWith('.md'))
-  .map((file) => {
-    const markdown = readFileSync(resolve(chapterDir, file), 'utf8');
-    const id = markdown.match(/\nid: (.+)\n/)?.[1].trim() ?? file;
-    return { file, id, sourceIds: readFrontmatterList(markdown, 'sourceIds') };
-  });
+const chapters = loadMarkdownEntries('chapters').map((entry) => ({
+  file: entry.file,
+  id: String(entry.data.id),
+  sourceIds: listField(entry, 'sourceIds')
+}));
 
 interface ContentEntry {
   collection: string;
@@ -53,44 +40,26 @@ interface ContentEntry {
 }
 
 // Non-chapter content that must be backed by the ledger, addressed as "collection/id" in entryRefs.
-function readJsonCollection(collection: string, file: string): ContentEntry[] {
-  const path = resolve('src/content', collection, file);
-
-  if (!existsSync(path)) {
-    return [];
-  }
-
-  return (JSON.parse(readFileSync(path, 'utf8')) as { id: string; sourceIds?: string[] }[]).map((entry) => ({
-    collection,
-    id: entry.id,
-    sourceIds: entry.sourceIds ?? []
+function collectionEntries(entries: ReturnType<typeof loadMarkdownEntries>): ContentEntry[] {
+  return entries.map((entry) => ({
+    collection: entry.collection,
+    id: String(entry.data.id),
+    sourceIds: listField(entry, 'sourceIds')
   }));
 }
 
-function readMarkdownCollection(collection: string): ContentEntry[] {
-  const directory = resolve('src/content', collection);
-
-  if (!existsSync(directory)) {
-    return [];
-  }
-
-  return readdirSync(directory)
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => {
-      const markdown = readFileSync(resolve(directory, file), 'utf8');
-      const id = markdown.match(/\nid: (.+)\n/)?.[1].trim() ?? file;
-      return { collection, id, sourceIds: readFrontmatterList(markdown, 'sourceIds') };
-    });
-}
-
 const contentEntries: ContentEntry[] = [
-  ...readJsonCollection('timeline', 'core.json'),
-  ...readJsonCollection('glossary', 'core.json'),
-  ...readMarkdownCollection('characters'),
-  ...readMarkdownCollection('factions'),
-  ...readMarkdownCollection('locations'),
-  ...readMarkdownCollection('forever')
+  ...collectionEntries(loadJsonEntries('timeline', 'core.json')),
+  ...collectionEntries(loadJsonEntries('glossary', 'core.json')),
+  ...collectionEntries(loadMarkdownEntries('characters')),
+  ...collectionEntries(loadMarkdownEntries('factions')),
+  ...collectionEntries(loadMarkdownEntries('locations')),
+  ...collectionEntries(loadMarkdownEntries('forever'))
 ];
+
+function normalizeQuote(quote: string): string {
+  return quote.toLowerCase().replace(/[^a-z0-9\u0430-\u044f\u0451]+/g, '');
+}
 
 describe('evidence ledger', () => {
   it('has unique ids and well-formed entries', () => {
@@ -103,6 +72,18 @@ describe('evidence ledger', () => {
       expect(entry.quote.trim().split(/\s+/).length, `${entry.id} quote is too short`).toBeGreaterThanOrEqual(8);
       expect(entry.url, `${entry.id} must reference a registered source, not a raw url`).toBeUndefined();
       expect(Array.isArray(entry.chapterIds), entry.id).toBe(true);
+    }
+  });
+
+  it('stores each quote once, listing every entry that relies on it', () => {
+    const seen = new Map<string, string>();
+
+    for (const entry of ledger) {
+      const key = `${entry.sourceId}|${normalizeQuote(entry.quote)}`;
+      const first = seen.get(key);
+
+      expect(first, `${entry.id} repeats the quote of ${first}: add an entryRef there instead`).toBeUndefined();
+      seen.set(key, entry.id);
     }
   });
 

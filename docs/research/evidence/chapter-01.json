@@ -58,6 +58,9 @@
     "locator": "PDF p. 25",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
     ]
   },
   {
@@ -115,6 +118,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "characters/queen-azshara",
       "timeline/highborne-summon-legion"
     ]
   },
@@ -150,6 +154,9 @@
     "quote": "The songs of Queen Azshara's beauty, majesty, and power are too numerous to count, but it was her vanity that drove the Highborne to summon the Burning Legion.",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
     ]
   },
   {
@@ -199,6 +206,9 @@
     "quote": "He joined forces with his brother Malfurion Stormrage and together they reversed the magic of the portal Sargeras tried to use to enter Azeroth.",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
     ]
   },
   {
@@ -239,6 +249,9 @@
     "locator": "PDF p. 26",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/illidan-stormrage"
     ]
   },
   {
@@ -251,6 +264,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "characters/queen-azshara",
       "timeline/great-sundering"
     ]
   },
@@ -324,6 +338,9 @@
     "locator": "PDF p. 27",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
     ]
   },
   {
@@ -403,6 +420,7 @@
     ],
     "entryRefs": [
       "characters/illidan-stormrage",
+      "characters/malfurion-stormrage",
       "timeline/nordrassil-planted"
     ]
   },
@@ -528,8 +546,11 @@
     "sourceId": "forever-found-photos",
     "quote": "Their elemental benefactors have vanished, the pylons that hold Zephras together are failing, and portions of the island have begun falling into ruin and darkness.",
     "chapterIds": [
-      "war-of-the-ancients",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "forever/zephras-isle"
     ]
   },
   {
@@ -538,8 +559,15 @@
     "sourceId": "forever-found-photos",
     "quote": "Several groups are vying for control of Zephras Isle as the crisis deepens, including the Windshapers, the High Order, and the Al’Aketh.",
     "chapterIds": [
-      "war-of-the-ancients",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "factions/alaketh",
+      "factions/high-order",
+      "factions/windshapers",
+      "forever/zephras-isle",
+      "locations/zephras-isle"
     ]
   },
   {
@@ -548,12 +576,14 @@
     "sourceId": "forever-whats-next",
     "quote": "Horde-aligned Skyborne embrace elemental traditions and gain access to the Shaman class, while Alliance-aligned Skyborne pursue the arcane legacy of their ancestors and gain access to the Mage class.",
     "chapterIds": [
-      "war-of-the-ancients",
+      "third-war-to-forever",
       "thrall-and-new-horde",
-      "third-war-to-forever"
+      "war-of-the-ancients"
     ],
     "entryRefs": [
-      "characters/thrall"
+      "characters/thrall",
+      "factions/high-order",
+      "factions/windshapers"
     ]
   },
   {
@@ -562,8 +592,13 @@
     "sourceId": "forever-found-photos",
     "quote": "South of Desolace through the Valley of Bones, the addition of Shen'dralas opens a fresh, new area, exploring the characters and stories connected to Eldre'Thalas.",
     "chapterIds": [
-      "war-of-the-ancients",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "forever/shendralas",
+      "locations/kalimdor",
+      "locations/shendralas"
     ]
   },
   {

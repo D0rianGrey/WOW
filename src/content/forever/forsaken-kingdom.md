@@ -5,7 +5,6 @@ slug: forsaken-kingdom
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Новая кампания Warcraft III Reforged рассказывает о годах между Warcraft III и World of Warcraft."
-spoilerLevel: 0
 sourceIds:
   - forsaken-kingdom-whats-next
   - forsaken-kingdom-deep-dive

@@ -43,6 +43,7 @@
       "orcs-and-humans"
     ],
     "entryRefs": [
+      "characters/guldan",
       "timeline/horde-corrupted"
     ]
   },
@@ -55,6 +56,7 @@
       "orcs-and-humans"
     ],
     "entryRefs": [
+      "characters/medivh",
       "timeline/dark-portal-opened"
     ]
   },
@@ -109,6 +111,9 @@
     "quote": "With Khadgar’s aid, Lothar slew Medivh and banished the spirit of Sargeras within him to the Nether.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "characters/medivh"
     ]
   },
   {
@@ -118,6 +123,9 @@
     "quote": "The great orc chieftain Orgrim Doomhammer found himself disillusioned with the Horde’s leadership under Gul’dan and Blackhand. Sensing an opportunity, he challenged Blackhand for the mantle of Warchief and emerged from the fray victorious.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
     ]
   },
   {

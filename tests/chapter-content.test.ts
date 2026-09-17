@@ -67,6 +67,9 @@ describe('guided lore chapter contract', () => {
       const chapter = readFileSync(resolve(chapterDir, file), 'utf8');
       const blocks = [...chapter.matchAll(/<div class="lore-status-block" data-lore-status="([A-Z]+)">\n(.+)\n/g)];
 
+      // Without this the loop below would pass silently if the blocks or their syntax disappeared.
+      expect(blocks.length, `${file} has no lore status blocks`).toBeGreaterThan(0);
+
       for (const [, status, badgeLine] of blocks) {
         expect(Object.keys(labels), `${file} uses unknown status ${status}`).toContain(status);
         expect(badgeLine, `${file} ${status} block needs a visible badge`).toContain(`class="lore-badge status-${status.toLowerCase()}"`);

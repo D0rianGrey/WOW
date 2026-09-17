@@ -105,6 +105,7 @@ main:focus-visible { outline-offset: -4px; }
 .chapter-illustration img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); background: #11181b; }
 .chapter-illustration figcaption { margin-top: 10px; color: var(--muted); font-size: .78rem; }
 .chapter-meta { display: flex; gap: 20px; align-items: center; color: #aab3ba; font-size: .74rem; }
+.confidence-note { color: var(--muted); font-size: .78rem; }
 .prose { max-width: 72ch; color: #ced2d1; line-height: 1.85; }
 .prose h2, .prose h3 { color: #eee2c7; margin-top: 1.5em; }
 .prose a { color: #e4c88e; }
@@ -292,6 +293,7 @@ main:focus-visible { outline-offset: -4px; }
 .glossary-term dt { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .glossary-title { font-family: var(--font-family-heading); font-size: 1.35rem; }
 .glossary-original { color: var(--gold); font-size: .9rem; }
+.glossary-editorial { padding: 3px 9px; border: 1px dashed #5b6870; color: var(--muted); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; }
 .glossary-term dd { margin: 8px 0 0; }
 .glossary-aliases, .glossary-sources { color: var(--muted); font-size: .82rem; margin: 6px 0 0; }
 .source-group { margin-bottom: 34px; }

@@ -5,7 +5,6 @@ slug: forsaken-paladins
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Undead получают класс Paladin, закрытый для них в первый год."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

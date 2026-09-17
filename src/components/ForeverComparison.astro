@@ -1,4 +1,5 @@
 ---
+import { confidenceLabels } from '../lib/content';
 import type { CollectionEntry } from 'astro:content';
 
 import LoreBadge from './LoreBadge.astro';
@@ -19,16 +20,17 @@ const data = entry.data;
   </header>
   <p class="forever-summary">{data.summary}</p>
   <div class="forever-columns">
-    <section class="forever-column is-original" aria-label="В первый год оригинального World of Warcraft">
+    <div role="group" class="forever-column is-original" aria-label="В первый год оригинального World of Warcraft">
       <p class="section-kicker">Первый год оригинального WoW</p>
       <p>{data.oldExpectation}</p>
-    </section>
-    <section class="forever-column is-forever" aria-label="В World of Warcraft: Forever">
+    </div>
+    <div role="group" class="forever-column is-forever" aria-label="В World of Warcraft: Forever">
       <p class="section-kicker">World of Warcraft: Forever</p>
       <p>{data.foreverVersion}</p>
-    </section>
+    </div>
   </div>
   <p class="forever-why"><strong>Почему это важно.</strong> {data.whyItMatters}</p>
+  <p class="confidence-note">{confidenceLabels[data.confidence]}</p>
   {data.sourceNote && <p class="event-date-note"><strong>Об источниках:</strong> {data.sourceNote}</p>}
   <details class="forever-sources">
     <summary>Источники ({data.sourceIds.length})</summary>

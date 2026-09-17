@@ -5,7 +5,6 @@ slug: thrall
 status: ESTABLISHED
 era: "Эпоха V: New Horde"
 summary: "Бывший раб-гладиатор, осадивший лагеря для интернированных и ставший warchief новой Horde."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - thrall-hero-week

@@ -2,7 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 
 import LoreBadge from './LoreBadge.astro';
-import { entityNames } from '../lib/canonical-ids';
+import { loadEntityRegistry } from '../lib/entities';
 import { eras } from '../lib/eras';
 import { route } from '../lib/routes';
 
@@ -12,6 +12,7 @@ interface Props {
 }
 
 const { events, chapterTitles } = Astro.props;
+const { names: entityNames } = await loadEntityRegistry();
 
 const bands = eras
   .map((era) => ({ era, events: events.filter((event) => event.data.eraId === era.id) }))

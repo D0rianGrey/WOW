@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-import { canonicalIds } from './canonical-ids';
+import { loadEntityRegistry } from './entities';
 import { assertValidContentReferences } from './content';
 
 export type DossierCollection = 'characters' | 'factions' | 'locations';
@@ -27,6 +27,7 @@ export const dossierLabels: Record<DossierCollection, { title: string; singular:
 export async function loadDossiers(collection: DossierCollection) {
   const entries = (await getCollection(collection)) as CollectionEntry<DossierCollection>[];
   const sources = await getCollection('sources');
+  const registry = await loadEntityRegistry();
 
   assertValidContentReferences(
     entries.map((entry) => ({
@@ -38,9 +39,9 @@ export async function loadDossiers(collection: DossierCollection) {
     })),
     {
       sources: sources.map((source) => source.id),
-      characters: canonicalIds.characters,
-      factions: canonicalIds.factions,
-      locations: canonicalIds.locations
+      characters: registry.ids.characters,
+      factions: registry.ids.factions,
+      locations: registry.ids.locations
     }
   );
 

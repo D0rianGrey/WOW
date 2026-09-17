@@ -5,7 +5,6 @@ slug: medivh
 status: ESTABLISHED
 era: "Эпоха III: Orcs & Humans"
 summary: "Последний Guardian, одержимый Sargeras, открывший путь Horde и вернувшийся пророком Third War."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - world-of-warcraft-2004-manual

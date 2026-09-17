@@ -5,7 +5,6 @@ slug: dark-ranger-anya
 status: FOREVER
 era: "Эпоха VIII: Мост к Forever"
 summary: "Второй новый герой кампании Forsaken Kingdom."
-spoilerLevel: 0
 sourceIds:
   - forsaken-kingdom-whats-next
   - forsaken-kingdom-wage-war

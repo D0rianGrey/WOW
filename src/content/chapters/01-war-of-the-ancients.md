@@ -5,7 +5,6 @@ slug: war-of-the-ancients
 status: ESTABLISHED
 era: Ancient Azeroth
 summary: Магия Highborne привела в мир Burning Legion, а битва у Well of Eternity расколола единственный континент и создала мир, который знают герои Forever.
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - well-of-eternity-preview

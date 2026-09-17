@@ -51,6 +51,9 @@
     "quote": "Found and taken in by the human Aedelas Blackmoore, Thrall (“slave” in the human tongue) began his life in imprisonment, forced into gladiatorial combat.",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/thrall"
     ]
   },
   {
@@ -80,6 +83,9 @@
     "locator": "PDF p. 11",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
     ]
   },
   {
@@ -90,18 +96,22 @@
     "locator": "PDF p. 11",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/thrall"
     ]
   },
   {
     "id": "ch05-drekthar",
     "claim": "Под наставничеством Drek’Thar Thrall изучил шаманскую культуру.",
     "sourceId": "warcraft-iii-manual",
-    "quote": "Under the tutelage of the venerable shaman, Drek’Thar, Thrall studied the ancient shamanistic culture of his people that had been forgotten under Gul’dan’s evil rule.",
+    "quote": "Under the tutelage of the venerable shaman, Drek’Thar, Thrall studied the ancient shamanistic culture of his people that had been forgotten under Gul’dan’s’ evil rule.",
     "locator": "PDF p. 11",
     "chapterIds": [
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/thrall",
       "timeline/thrall-frees-orcs"
     ]
   },
@@ -113,6 +123,9 @@
     "locator": "PDF p. 11",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
     ]
   },
   {
@@ -125,6 +138,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/orgrim-doomhammer",
       "timeline/thrall-frees-orcs"
     ]
   },
@@ -138,6 +152,8 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/orgrim-doomhammer",
+      "characters/thrall",
       "timeline/thrall-frees-orcs"
     ]
   },
@@ -151,6 +167,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/thrall",
       "factions/horde"
     ]
   },
@@ -161,10 +178,11 @@
     "quote": "This prophet proved to be none other than Medivh, the last Guardian, miraculously returned from the Beyond to redeem himself for past sins.",
     "locator": "PDF p. 84",
     "chapterIds": [
-      "thrall-and-new-horde",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/medivh",
       "timeline/voyage-to-kalimdor"
     ]
   },
@@ -175,8 +193,11 @@
     "quote": "Medivh told the Horde and the Alliance of the dangers they faced and urged them to band together. Jaded by generations of hate, the orcs and humans would have none of it.",
     "locator": "PDF p. 84",
     "chapterIds": [
-      "thrall-and-new-horde",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/medivh"
     ]
   },
   {
@@ -186,10 +207,13 @@
     "quote": "Medivh was forced to deal with each race separately, using prophecy and trickery to guide them across the sea to the legendary land of Kalimdor.",
     "locator": "PDF p. 84",
     "chapterIds": [
-      "thrall-and-new-horde",
-      "third-war-to-forever"
+      "third-war-to-forever",
+      "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/medivh",
+      "characters/thrall",
+      "locations/kalimdor",
       "timeline/voyage-to-kalimdor"
     ]
   },
@@ -227,6 +251,10 @@
     "locator": "PDF p. 99",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/cairne-bloodhoof",
+      "locations/kalimdor"
     ]
   },
   {
@@ -237,6 +265,9 @@
     "locator": "PDF p. 84",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
     ]
   },
   {
@@ -262,6 +293,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/grom-hellscream",
       "timeline/blood-curse-ended"
     ]
   },
@@ -275,6 +307,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/grom-hellscream",
       "timeline/blood-curse-ended"
     ]
   },
@@ -285,6 +318,9 @@
     "quote": "Before going with Thrall to confront Mannoroth, Grom had fallen under the Legion's influence. Jaina and Thrall worked together to cleanse him of the corruption, using a mixture of human and orc magic.",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
     ]
   },
   {
@@ -294,6 +330,9 @@
     "quote": "His own father had been the first to drink the blood of Mannoroth, he knew that—by the ancestors, how he knew it; no one would ever let him forget it—but Grom had in turn slain Mannoroth and ended the curse for them all at the cost of his own life.",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
     ]
   },
   {
@@ -306,6 +345,9 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/thrall",
+      "locations/durotar",
+      "locations/kalimdor",
       "timeline/durotar-and-theramore"
     ]
   },
@@ -317,6 +359,11 @@
     "locator": "PDF p. 87",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream",
+      "factions/horde",
+      "glossary/horde"
     ]
   },
   {
@@ -327,6 +374,9 @@
     "locator": "PDF p. 97",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
     ]
   },
   {
@@ -395,6 +445,8 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/jaina-proudmoore",
+      "locations/kalimdor",
       "timeline/durotar-and-theramore"
     ]
   },
@@ -448,6 +500,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/jaina-proudmoore",
       "timeline/durotar-and-theramore"
     ]
   },

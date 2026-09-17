@@ -5,7 +5,6 @@ slug: skyborne
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Новая играбельная раса со своей историей, берущей начало после War of the Ancients."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

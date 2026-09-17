@@ -5,7 +5,6 @@ slug: second-war
 status: ESTABLISHED
 era: Alliance and Horde
 summary: Alliance of Lordaeron разбил Horde и разрушил Dark Portal, но лагеря для интернированных, налоги и расколы превратили победу в новую проблему.
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - warcraft-iii-manual

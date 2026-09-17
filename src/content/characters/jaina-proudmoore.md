@@ -5,7 +5,6 @@ slug: jaina-proudmoore
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Волшебница Kirin Tor, увидевшая падение Lordaeron, глава людей в Kalimdor и основательница Theramore."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - jaina-hero-week

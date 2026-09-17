@@ -5,7 +5,6 @@ slug: teldrassil
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Новое Мировое древо ночных эльфов с городом Darnassus."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-whats-next

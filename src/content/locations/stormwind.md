@@ -5,7 +5,6 @@ slug: stormwind
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
 summary: "Столица людей, павшая перед Horde, отстроенная и управляемая ребёнком-королём."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - warcraft-iii-story-so-far

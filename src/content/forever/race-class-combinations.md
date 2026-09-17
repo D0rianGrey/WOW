@@ -5,7 +5,6 @@ slug: race-class-combinations
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "На запуске появятся шесть сочетаний, невозможных в первый год."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-deep-dive

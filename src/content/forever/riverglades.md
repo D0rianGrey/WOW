@@ -5,7 +5,6 @@ slug: riverglades
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Прежде недоступная земля в Eastern Kingdoms становится зоной середины пути."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
   - forever-whats-next

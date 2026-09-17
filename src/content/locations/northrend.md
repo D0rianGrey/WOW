@@ -5,7 +5,6 @@ slug: northrend
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
 summary: "Ледяной север, где Arthas взял Frostmourne и стал Lich King."
-spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
   - forever-found-photos

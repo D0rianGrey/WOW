@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://d0riangrey.github.io/WOW/sitemap-index.xml

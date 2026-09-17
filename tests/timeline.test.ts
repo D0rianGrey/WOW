@@ -3,7 +3,9 @@ import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
-import { canonicalIds } from '../src/lib/canonical-ids';
+import { loadEntityIds } from './helpers/content-index';
+
+const entityIds = loadEntityIds();
 import { timelineEntrySchema } from '../src/lib/content';
 import { eras } from '../src/lib/eras';
 import { filterTimeline, matchesTimelineFilter, sortTimeline } from '../src/lib/timeline';
@@ -79,15 +81,15 @@ describe('timeline data', () => {
       expect(chapterSlugs, event.id).toContain(event.chapterSlug);
 
       for (const id of event.characterIds) {
-        expect(canonicalIds.characters as readonly string[], `${event.id} character`).toContain(id);
+        expect(entityIds.characters, `${event.id} character`).toContain(id);
       }
 
       for (const id of event.factionIds) {
-        expect(canonicalIds.factions as readonly string[], `${event.id} faction`).toContain(id);
+        expect(entityIds.factions, `${event.id} faction`).toContain(id);
       }
 
       for (const id of event.locationIds) {
-        expect(canonicalIds.locations as readonly string[], `${event.id} location`).toContain(id);
+        expect(entityIds.locations, `${event.id} location`).toContain(id);
       }
     }
   });

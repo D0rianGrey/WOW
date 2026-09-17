@@ -5,7 +5,6 @@ slug: lordaeron
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Могущественное человеческое королевство, уничтоженное Scourge."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
   - world-of-warcraft-2004-manual

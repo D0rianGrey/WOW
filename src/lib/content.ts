@@ -7,9 +7,49 @@ export const confidenceLevels = ['high', 'medium', 'low'] as const;
 
 export type Confidence = (typeof confidenceLevels)[number];
 
+// Shown next to the lore badge: a reader should see when the sources are thin, not only the editor.
+export const confidenceLabels: Record<Confidence, string> = {
+  high: 'Источники прямые',
+  medium: 'Источники косвенные',
+  low: 'Источники спорные'
+};
+
+// A real calendar date, not just the right shape: 2026-02-30 would sort and render as a fact.
+function isCalendarDate(value: string): boolean {
+  const [year, month, day] = value.split('-').map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+
+  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day;
+}
+
 const dateSchema = z
   .string()
-  .regex(/^\d{4}-\d{2}-\d{2}$/, 'Expected an ISO date in YYYY-MM-DD format');
+  .regex(/^\d{4}-\d{2}-\d{2}$/, 'Expected an ISO date in YYYY-MM-DD format')
+  .refine(isCalendarDate, 'Expected a date that exists in the calendar');
+
+// Blizzard keeps the Warcraft II and III manuals on an FTP host that has no working certificate;
+// everything else must be https, so no source can ship a javascript:, data: or file: link.
+const httpOnlyHosts = new Set(['ftp.blizzard.com']);
+
+export function isPublishableSourceUrl(value: string): boolean {
+  let url;
+
+  try {
+    url = new URL(value);
+  } catch {
+    return false;
+  }
+
+  if (url.username !== '' || url.password !== '') {
+    return false;
+  }
+
+  if (url.protocol === 'https:') {
+    return true;
+  }
+
+  return url.protocol === 'http:' && httpOnlyHosts.has(url.hostname);
+}
 
 const loreFields = {
   id: z.string().trim().min(1),
@@ -18,7 +58,6 @@ const loreFields = {
   status: z.enum(loreStatuses),
   era: z.string().trim().min(1),
   summary: z.string().trim().min(1),
-  spoilerLevel: z.number().int().min(0),
   sourceIds: z.array(z.string().trim().min(1)),
   updatedAt: dateSchema,
   confidence: z.enum(confidenceLevels)
@@ -84,6 +123,8 @@ export const dossierEntrySchema = z.object({
 export const glossaryEntrySchema = z.object({
   ...loreFields,
   term: z.string().trim().min(1),
+  // Conventions of this encyclopedia (lore statuses, dating rules) carry no lore status badge.
+  editorial: z.boolean().default(false),
   aliases: z.array(z.string().trim().min(1))
 }).superRefine(requireSourcesUnlessEstablished);
 
@@ -135,16 +176,31 @@ export const sourceTypes = [
   'official-manual',
   'official-book',
   'official-fiction',
+  'official-forum',
   'in-game'
 ] as const;
 
 export type SourceType = (typeof sourceTypes)[number];
 
+// One table for the source list under an article and for the source explorer.
+export const sourceTypeLabels: Record<SourceType, { singular: string; plural: string }> = {
+  'official-article': { singular: 'Публикация Blizzard', plural: 'Публикации Blizzard' },
+  'official-announcement': { singular: 'Официальный анонс', plural: 'Официальные анонсы' },
+  'official-retrospective': { singular: 'Поздняя ретроспектива', plural: 'Поздние ретроспективы' },
+  'official-preview': { singular: 'Официальное превью', plural: 'Официальные превью' },
+  'official-promo': { singular: 'Промоматериал', plural: 'Промоматериалы' },
+  'official-manual': { singular: 'Официальное руководство', plural: 'Официальные руководства' },
+  'official-book': { singular: 'Официальная книга', plural: 'Официальные книги' },
+  'official-fiction': { singular: 'Официальный рассказ', plural: 'Официальные рассказы' },
+  'official-forum': { singular: 'Официальный форум', plural: 'Официальный форум Blizzard' },
+  'in-game': { singular: 'Текст в игре', plural: 'Тексты в игре' }
+};
+
 export const sourceSchema = z.object({
   id: z.string().trim().min(1),
   title: z.string().trim().min(1),
   publisher: z.string().trim().min(1),
-  url: z.url().optional(),
+  url: z.url().refine(isPublishableSourceUrl, 'Expected an https URL (http only for ftp.blizzard.com)').optional(),
   citation: z.string().trim().min(1).optional(),
   type: z.enum(sourceTypes),
   publishedAt: dateSchema.optional(),
@@ -187,11 +243,21 @@ export function assertValidContentReferences(
   registry: ReferenceRegistry
 ): void {
   const problems: string[] = [];
+  const knownByTarget = new Map<string, Set<string>>();
+
+  for (const [target, ids] of Object.entries(registry)) {
+    if (ids !== undefined) {
+      knownByTarget.set(target, new Set(ids));
+    }
+  }
 
   for (const entry of entries) {
     for (const [field, target] of Object.entries(referenceTargets)) {
-      const registeredIds = registry[target as ReferenceCollection];
-      if (registeredIds === undefined) continue;
+      const knownIds = knownByTarget.get(target);
+
+      if (knownIds === undefined) {
+        continue;
+      }
 
       const value = entry[field];
       const referenceIds = Array.isArray(value)
@@ -199,7 +265,6 @@ export function assertValidContentReferences(
         : typeof value === 'string'
           ? [value]
           : [];
-      const knownIds = new Set(registeredIds);
 
       for (const referenceId of referenceIds) {
         if (!knownIds.has(referenceId)) {

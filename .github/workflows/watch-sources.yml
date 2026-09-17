@@ -1,0 +1,84 @@
+name: Watch official sources
+
+# Daily check for official Blizzard articles the encyclopedia does not cite yet.
+# It never edits content: it opens (or refreshes) one issue with the links, and a human
+# or an agent then follows docs/automation/lore-update-contract.md.
+on:
+  schedule:
+    # The news page only lists the few newest articles and an item can rotate off within hours,
+    # so the watch runs four times a day rather than once.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch-sources
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+
+      - name: Look for unregistered official articles
+        id: watch
+        run: |
+          set +e
+          node scripts/watch-sources.mjs --json watch-report.json > watch-output.txt 2>&1
+          status=$?
+          cat watch-output.txt
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          exit $((status == 20 ? 0 : status))
+
+      # The issue is never closed automatically: an article can disappear from the news page before
+      # anyone registers it, and a closed issue would quietly take that material with it.
+      - name: Open or refresh the tracking issue
+        if: steps.watch.outputs.status == '20'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          title="Новые официальные материалы: проверить лор"
+          number=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')
+          urls=$(jq -r '.unregistered[].url' watch-report.json)
+
+          if [ -n "$number" ]; then
+            seen=$(gh issue view "$number" --json body,comments --jq '.body, (.comments[].body)')
+            fresh=""
+            for url in $urls; do
+              case "$seen" in
+                *"$url"*) ;;
+                *) fresh="yes" ;;
+              esac
+            done
+            if [ -z "$fresh" ]; then
+              echo "Everything found is already listed in issue #$number."
+              exit 0
+            fi
+          fi
+
+          body=$'Следилка нашла официальные статьи, которых нет в `src/content/sources/core.json`.\n\n```\n'"$(cat watch-output.txt)"$'\n```\n\nДальше — по контракту `docs/automation/lore-update-contract.md`: цитаты в реестр, `npm run verify:evidence`, правки контента, записи в журналы, PR. Issue закрывает человек, когда материалы разобраны.'
+
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: source-watch-report
+          path: watch-report.json
+          retention-days: 14
+          if-no-files-found: ignore

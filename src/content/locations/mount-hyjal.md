@@ -5,7 +5,6 @@ slug: mount-hyjal
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Священная гора ночных эльфов, место рождения Nordrassil и последней битвы Third War."
-spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual

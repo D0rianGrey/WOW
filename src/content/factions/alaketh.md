@@ -5,7 +5,6 @@ slug: alaketh
 status: FOREVER
 era: "World of Warcraft: Forever"
 summary: "Третья группа, спорящая за Zephras Isle."
-spoilerLevel: 0
 sourceIds:
   - forever-found-photos
 updatedAt: "2026-09-17"

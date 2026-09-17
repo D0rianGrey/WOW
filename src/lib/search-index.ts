@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 
-import { entityNames } from './canonical-ids';
+import { loadEntityRegistry } from './entities';
 import type { DossierEntry } from './content';
 import { route } from './routes';
 import type { SearchDocument } from './search';
@@ -8,6 +8,7 @@ import type { SearchDocument } from './search';
 // Built only from titles, summaries, aliases and entity names — never from chapter bodies or
 // SpoilerBlock content — so search cannot surface hidden later-Retail material.
 export async function buildSearchIndex(): Promise<SearchDocument[]> {
+  const { names: entityNames } = await loadEntityRegistry();
   const [chapters, timeline, characters, factions, locations, forever, glossary] = await Promise.all([
     getCollection('chapters'),
     getCollection('timeline'),

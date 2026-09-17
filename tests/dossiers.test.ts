@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
-import { canonicalIds } from '../src/lib/canonical-ids';
+import { loadEntityIds } from './helpers/content-index';
 
 const headings = {
   characters: ['## Кто это', '## Путь до первого года', '## В первый год', '## Почему это важно в Forever'],
@@ -22,13 +22,16 @@ function listField(markdown: string, field: string): string[] {
   return block ? block[1].trim().split('\n').map((line) => line.replace(/^\s*-\s*"?|"$/g, '').trim()) : [];
 }
 
+const entityIds = loadEntityIds();
+
 describe('dossiers', () => {
   for (const collection of Object.keys(headings) as (keyof typeof headings)[]) {
     const directory = resolve('src/content', collection);
     const files = readdirSync(directory).filter((file) => file.endsWith('.md'));
 
-    it(`${collection}: one dossier for every registered canonical ID`, () => {
-      expect(files.map((file) => file.replace(/\.md$/, '')).sort()).toEqual([...canonicalIds[collection]].sort());
+    it(`${collection}: file name, frontmatter id and slug agree`, () => {
+      expect(files.length).toBeGreaterThan(0);
+      expect(files.map((file) => file.replace(/\.md$/, '')).sort()).toEqual(entityIds[collection]);
     });
 
     it(`${collection}: required sections, matching slug and registered related IDs`, () => {
@@ -44,15 +47,15 @@ describe('dossiers', () => {
         }
 
         for (const related of listField(markdown, 'relatedCharacterIds')) {
-          expect(canonicalIds.characters as readonly string[], `${file} -> ${related}`).toContain(related);
+          expect(entityIds.characters, `${file} -> ${related}`).toContain(related);
         }
 
         for (const related of listField(markdown, 'relatedFactionIds')) {
-          expect(canonicalIds.factions as readonly string[], `${file} -> ${related}`).toContain(related);
+          expect(entityIds.factions, `${file} -> ${related}`).toContain(related);
         }
 
         for (const related of listField(markdown, 'relatedLocationIds')) {
-          expect(canonicalIds.locations as readonly string[], `${file} -> ${related}`).toContain(related);
+          expect(entityIds.locations, `${file} -> ${related}`).toContain(related);
         }
       }
     });

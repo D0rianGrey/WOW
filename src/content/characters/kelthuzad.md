@@ -5,7 +5,6 @@ slug: kelthuzad
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
 summary: "Архимаг Kirin Tor, ставший слугой Lich King, основателем Cult of the Damned и, после смерти, lich."
-spoilerLevel: 0
 sourceIds:
   - kelthuzad-enters-the-nexus
   - world-of-warcraft-2004-manual

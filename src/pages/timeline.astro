@@ -4,20 +4,21 @@ import { getCollection } from 'astro:content';
 import TimelineComponent from '../components/Timeline.astro';
 import TimelineFilters from '../components/TimelineFilters.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { canonicalIds } from '../lib/canonical-ids';
+import { loadEntityRegistry } from '../lib/entities';
 import { assertValidContentReferences } from '../lib/content';
 
 const events = (await getCollection('timeline')).sort((left, right) => left.data.sortKey - right.data.sortKey);
 const chapters = await getCollection('chapters');
 const sources = await getCollection('sources');
+const registry = await loadEntityRegistry();
 
 assertValidContentReferences(
   events.map((event) => ({ ...event.data })),
   {
     sources: sources.map((source) => source.id),
-    characters: canonicalIds.characters,
-    factions: canonicalIds.factions,
-    locations: canonicalIds.locations,
+    characters: registry.ids.characters,
+    factions: registry.ids.factions,
+    locations: registry.ids.locations,
     chapters: chapters.map((chapter) => chapter.data.slug)
   }
 );

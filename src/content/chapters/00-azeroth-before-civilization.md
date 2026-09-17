@@ -5,7 +5,6 @@ slug: azeroth-before-civilization
 status: ESTABLISHED
 era: Древнейший Azeroth
 summary: Мир до королевств — titans, Old Gods, titan-forged и Dragon Aspects, чьё наследие будущие народы получат вместе с его трещинами.
-spoilerLevel: 0
 sourceIds:
   - dragon-aspects-story-so-far
   - warcraft-iii-manual

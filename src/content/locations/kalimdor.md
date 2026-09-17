@@ -5,7 +5,6 @@ slug: kalimdor
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
 summary: "Древний континент многих народов, куда пророк привёл orcs и людей."
-spoilerLevel: 0
 sourceIds:
   - forever-whats-next
   - warcraft-iii-manual

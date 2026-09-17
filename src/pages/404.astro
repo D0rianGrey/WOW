@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { route } from '../lib/routes';
+
+const destinations = [
+  ['start-here', 'Начать здесь', 'Путь из восьми глав от древнего Azeroth до порога Forever.'],
+  ['timeline', 'Хронология', 'Тридцать два события по эпохам, с пометкой «Вы здесь».'],
+  ['forever-changes', 'Изменения Forever', 'Что Forever меняет по сравнению с первым годом.'],
+  ['search', 'Поиск', 'Найти персонажа, место, событие или термин.']
+];
+---
+
+<BaseLayout title="Страница не найдена" description="Такой страницы в энциклопедии нет.">
+  <header class="path-header">
+    <p class="eyebrow">404</p>
+    <h1>Страница не найдена</h1>
+    <p class="lead">Возможно, ссылка устарела или в адресе опечатка. Вот основные разделы энциклопедии.</p>
+  </header>
+
+  <ul class="entity-grid">
+    {destinations.map(([path, label, description]) => (
+      <li class="entity-card">
+        <h2><a href={route(path)}>{label}</a></h2>
+        <p>{description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
