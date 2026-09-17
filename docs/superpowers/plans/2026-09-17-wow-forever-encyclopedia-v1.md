@@ -374,7 +374,7 @@ Audit report: `docs/audits/2026-09-17-encyclopedia-v1-audit.md`. This task recor
 - Every factual claim added by a task needs a ledger entry in `docs/research/evidence/` whose verbatim quote passes `npm run verify:evidence`. Research is done with Grok (web, read-only) and then machine-verified; nothing is written from memory.
 - Community sites (Warcraft Wiki, Wowpedia, Wowhead, Icy Veins) may only point to an official text or back `BETA` / `UNCONFIRMED` material. They are never the source of `ESTABLISHED` or `FOREVER` claims.
 - Year-1 fence: dossiers, timeline, glossary and search describe the world as of original WoW Year 1 / the Forever starting point. Anything later in Retail lives only inside a `SpoilerBlock`.
-- Canonical IDs come from `src/lib/canonical-ids.ts`. A new entity gets its ID there first; timeline, dossiers and search reference only registered IDs.
+- Canonical IDs come from `src/lib/canonical-ids.ts`. A new entity gets its ID there first; timeline, dossiers and search reference only registered IDs. **Superseded by the final audit (2026-09-17):** the registry is derived from the dossiers themselves (`src/lib/entities.ts`), so a new entity is a new content file.
 - Before each task's review, run a Grok fact-check pass on the new content (web, read-only) and store its findings in `docs/audits/`.
 
 ---
