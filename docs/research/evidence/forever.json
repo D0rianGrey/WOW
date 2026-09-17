@@ -108,7 +108,8 @@
     "chapterIds": [],
     "entryRefs": [
       "forever/forsaken-paladins",
-      "forever/race-class-combinations"
+      "forever/race-class-combinations",
+      "locations/tirisfal-glades"
     ]
   },
   {
@@ -119,6 +120,7 @@
     "locator": "PDF p. 8",
     "chapterIds": [],
     "entryRefs": [
+      "factions/alliance",
       "forever/forsaken-paladins",
       "forever/race-class-combinations"
     ]
@@ -171,6 +173,7 @@
     "locator": "PDF p. 8",
     "chapterIds": [],
     "entryRefs": [
+      "factions/horde",
       "forever/race-class-combinations"
     ]
   },
@@ -215,7 +218,8 @@
     "locator": "PDF p. 35",
     "chapterIds": [],
     "entryRefs": [
-      "forever/race-class-combinations"
+      "forever/race-class-combinations",
+      "locations/durotar"
     ]
   },
   {
@@ -226,7 +230,8 @@
     "locator": "PDF p. 35",
     "chapterIds": [],
     "entryRefs": [
-      "forever/race-class-combinations"
+      "forever/race-class-combinations",
+      "locations/durotar"
     ]
   },
   {
@@ -320,7 +325,8 @@
     "locator": "PDF p. 35",
     "chapterIds": [],
     "entryRefs": [
-      "forever/zephras-isle"
+      "forever/zephras-isle",
+      "locations/teldrassil"
     ]
   },
   {
@@ -502,7 +508,8 @@
     "quote": "Its port, Powderfuse Port, ties directly into the new Steamwheedle route and gives the journey across the sea a destination that feels both fresh and rooted in Azeroth.",
     "chapterIds": [],
     "entryRefs": [
-      "forever/riverglades"
+      "forever/riverglades",
+      "locations/riverglades"
     ]
   },
   {
@@ -532,7 +539,8 @@
     "quote": "from helping the Forsaken reclaim the Ruins of Lordaeron to investigating strange magical trouble in Dalaran, titan mysteries in Un’Goro, naga and pirates around the Drowned City, and unsettling corruption stirring in the depths of Blackmaw Hold.",
     "chapterIds": [],
     "entryRefs": [
-      "forever/dungeons-and-raids"
+      "forever/dungeons-and-raids",
+      "locations/lordaeron"
     ]
   },
   {
@@ -542,7 +550,8 @@
     "quote": "The Barrow Deeps is planned as a maximum-level 10-player challenge, while Hyjal Summit will bring 20-player raid encounters to one of Warcraft’s most important locations.",
     "chapterIds": [],
     "entryRefs": [
-      "forever/dungeons-and-raids"
+      "forever/dungeons-and-raids",
+      "locations/mount-hyjal"
     ]
   },
   {

@@ -1,0 +1,1932 @@
+[
+  {
+    "id": "ds-r1-01",
+    "claim": "Arthas — единственный сын короля Terenas, вырос сильным и уверенным.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "King Terenas’ only son, Arthas, had grown into a strong, confident young man.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-02",
+    "claim": "В девятнадцать лет принц вступил в Order of the Silver Hand под началом Lord Uther.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "At the tender age of nineteen Arthas was inducted into the Order of the Silver Hand under the command of Lord Uther.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-03",
+    "claim": "Arthas вёл борьбу со Scourge и убил Kel’Thuzad, но армия Lich King росла с каждым павшим.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Prince Arthas, took up the fight against the Scourge. Arthas succeeded in killing Kel’Thuzad, but even so, the Lich King's forces grew with every soldier that fell in battle.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-04",
+    "claim": "Взяв Frostmourne, он получил силу, но клинок украл душу и сделал его величайшим death knight Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The sword did indeed grant him unfathomable power; however, it also stole his soul. His spirit lost and his sanity shattered, Arthas was transformed into the greatest of the Lich King’s death knights.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-05",
+    "claim": "Он повёл Scourge на своё королевство, убил Uther в бою и отца, короля Terenas.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He willingly led the Scourge against his own kingdom, slew Uther in battle, and murdered his own father, King Terenas.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-06",
+    "claim": "Надев шлем, он слился с Ner’zhul в одно существо.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Arthas placed the unimaginably powerful helm on his head, and Ner’zhul and Arthas’ spirits fused into a single mighty being, as Ner’zhul had planned all along.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil",
+      "locations/northrend"
+    ]
+  },
+  {
+    "id": "ds-r1-07",
+    "claim": "К Year 1 Arthas — новый бессмертный Lich King в Northrend.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Currently Arthas, the new and immortal Lich King, resides in Northrend; he is rumored to be rebuilding the citadel of Icecrown.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-08",
+    "claim": "Mal’Ganis был выбран, чтобы привести Arthas на службу Lich King, и подтолкнул его к зачистке Stratholme.",
+    "sourceId": "heroes-patch-notes-2018-10-16",
+    "quote": "Cunning and intelligent, Mal'Ganis was chosen to bring Arthas Menthil into the Lich King's service. After manipulating the prince into purging Stratholme of life, he finally fell to Frostmourne",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil"
+    ]
+  },
+  {
+    "id": "ds-r1-09",
+    "claim": "Имя Thrall на языке людей значит «раб»; Blackmoore растил его в неволе как гладиатора.",
+    "sourceId": "thrall-hero-week",
+    "quote": "Found and taken in by the human Aedelas Blackmoore, Thrall (“slave” in the human tongue) began his life in imprisonment, forced into gladiatorial combat.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-10",
+    "claim": "Он сын и наследник Durotan, законного вождя Frostwolves.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "He also discovered that he was the son and heir of the orc hero, Durotan – the true chieftain of the Frostwolves who had been murdered in the wilds nearly twenty years before",
+    "locator": "PDF p. 11",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-100",
+    "claim": "Stormwind отстроен после Second War; молодой король Anduin правит из своей цитадели.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Rebuilt after the Second War, Stormwind is a marvel of human design and engineering. Stormwind’s guards keep the peace within the city’s walls, and its young king, Anduin Wrynn, rules from his mighty keep.",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/anduin-wrynn"
+    ]
+  },
+  {
+    "id": "ds-r1-101",
+    "claim": "Официальный Year-1 возраст: он «tenyear-old»; отец Varian недавно пропал по пути на встречу в Theramore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "King Anduin is as wise a ruler as any tenyear-old has a right to be. Recently his father, King Varian Wrynn, went missing under suspicious circumstances while en route to a diplomatic summit at Theramore Isle.",
+    "locator": "PDF p. 90",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/anduin-wrynn"
+    ]
+  },
+  {
+    "id": "ds-r1-103",
+    "claim": "Армии Stormwind снова ушли воевать с Horde; оборона города легла на граждан.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Backed by their stalwart allies, the armies of Stormwind have been called away to once again fight the savage Horde on distant battlefields. With the armies gone, the defense of Stormwind now falls to its proud citizens.",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/anduin-wrynn",
+      "locations/stormwind"
+    ]
+  },
+  {
+    "id": "ds-r1-104",
+    "claim": "Garek Bandarion — новый персонаж: недавно восставший воин Forsaken.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "At the heart of the story are two new characters—Garek Bandarion, a newly risen Forsaken warrior, and Dark Ranger Anya.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/garek-bandarion"
+    ]
+  },
+  {
+    "id": "ds-r1-105",
+    "claim": "Через Garek и Anya игроки должны узнать, как возник Undercity и своя культура Forsaken.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Through Garek and Anya, players will learn how the Undercity was established, how the Forsaken formed their own culture and community, why the Scourge did not reclaim Lordaeron… and why the water is green.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/garek-bandarion"
+    ]
+  },
+  {
+    "id": "ds-r1-106",
+    "claim": "Их история разворачивается рядом с уже известными фигурами, включая Sylvanas Windrunner, Arthas и Kel’Thuzad.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Their story unfolds alongside familiar figures including Sylvanas Windrunner, Putress, Varimathras, Sally Whitemane, Renault Mograine, Arthas, Kel’Thuzad, Ras Frostwhisper, and Baron Rivendare.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/garek-bandarion"
+    ]
+  },
+  {
+    "id": "ds-r1-107",
+    "claim": "Dark Ranger Anya названа одним из двух новых центральных персонажей кампании Forsaken Kingdom.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "At the heart of the story are two new characters—Garek Bandarion, a newly risen Forsaken warrior, and Dark Ranger Anya.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/dark-ranger-anya"
+    ]
+  },
+  {
+    "id": "ds-r1-108",
+    "claim": "Вместе с Garek она — проводник рассказа о рождении Undercity и культуры Forsaken.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Through Garek and Anya, players will learn how the Undercity was established, how the Forsaken formed their own culture and community, why the Scourge did not reclaim Lordaeron… and why the water is green.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/dark-ranger-anya"
+    ]
+  },
+  {
+    "id": "ds-r1-109",
+    "claim": "Кампания заполняет четырёхлетний разрыв между Warcraft III и World of Warcraft, то есть эпоху до Year 1, а не сам старт оригинального WoW.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Warcraft III Reforged: Forsaken Kingdom explores the events between Arthas's return to Lordaeron and the emergence of the Undercity, filling in the four-year gap between Warcraft III and World of Warcraft.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/garek-bandarion",
+      "characters/dark-ranger-anya"
+    ]
+  },
+  {
+    "id": "ds-r1-11",
+    "claim": "Под наставничеством Drek’Thar он вернул забытый при Gul’dan шаманизм.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Under the tutelage of the venerable shaman, Drek’Thar, Thrall studied the ancient shamanistic culture of his people that had been forgotten under Gul’dan’s’ evil rule.",
+    "locator": "PDF p. 11",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-12",
+    "claim": "После гибели Doomhammer Thrall взял молот и чёрные латы и стал новым warchief Horde.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Thrall took up Doomhammer’s legendary warhammer and donned his black plate-armor to become the new warchief of the horde.",
+    "locator": "PDF p. 12",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall",
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-13",
+    "claim": "Под его властью orcs освободились от демонической порчи и вернули шаманское наследие.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Fittingly enough, the young orc’s name was Thrall. Under his rule, the orcs freed themselves from the chains of demonic corruption and embraced their shamanistic heritage.",
+    "locator": "PDF p. 97",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-14",
+    "claim": "Он привёл orcs в Kalimdor и с tauren основал Durotar в честь убитого отца.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Thrall led the orcs to the continent of Kalimdor, where they founded a new homeland with the help of their tauren brethren. Naming their new land Durotar after Thrall’s murdered father, the orcs settled down to rebuild their once-glorious society.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall",
+      "locations/kalimdor",
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ds-r1-15",
+    "claim": "К Year 1 Thrall — warchief всей Horde, воин с Doomhammer и шаман; его цель — свобода народа.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Thrall, the son of Durotan, is perhaps the mightiest orc alive. Armed with the mighty Doomhammer, Thrall is a peerless warrior and powerful shaman. He stands as warchief over the entire Horde, holding dominion over the Darkspear trolls and tauren tribes alike.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-16",
+    "claim": "Пророк Medivh хитростью повёл Horde через море в Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh was forced to deal with each race separately, using prophecy and trickery to guide them across the sea to the legendary land of Kalimdor.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ds-r1-17",
+    "claim": "Sylvanas была Ranger-General of Silvermoon и храбро сражалась, но Arthas прорвался к Sunwell.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Sylvanas Windrunner, the Ranger-General of Silvermoon, put up a valiant fight, but Arthas eventually wiped out the high elf army and won through to the Sunwell.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r1-18",
+    "claim": "Arthas поднял её тело как banshee, обречённую служить завоевателю Quel’Thalas.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "In a cruel gesture of his dominance, he even raised Sylvanas’ defeated body as a banshee, cursed to mindless undeath in the service of Quel'Thalas' conqueror.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r1-19",
+    "claim": "Половина нежити во главе с banshee Sylvanas подняла мятеж за контроль над империей undead.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Half of the standing undead forces, led by the banshee Sylvanas Windrunner, staged a coup for control over the undead empire.",
+    "locator": "PDF p. 86",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r1-20",
+    "claim": "Sylvanas и её мятежная нежить, известная как Forsaken, заняли разрушенную столицу Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Ultimately Sylvanas and her rebel undead (known as the Forsaken) claimed the ruined capital city of Lordaeron as their own.",
+    "locator": "PDF p. 86",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r1-21",
+    "claim": "К Year 1 Sylvanas и Forsaken держат только Tirisfal Glades.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "His trusted lieutenant, Kel’Thuzad, commands the Scourge in the Plaguelands. Sylvanas and her rebel Forsaken hold only the Tirisfal Glades, a small portion of the war-torn kingdom.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r1-22",
+    "claim": "С Sylvanas как banshee queen Forsaken построили оплот под руинами столицы Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With Sylvanas as their banshee queen, the Forsaken have built a dark stronghold beneath the ruins of Lordaeron’s former capital city.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner",
+      "factions/forsaken"
+    ]
+  },
+  {
+    "id": "ds-r1-23",
+    "claim": "Её заявленная цель — месть Arthas и свобода для проклятого народа.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Now she rules over the Forsaken from the Undercity of Lordaeron. Her goal is to take vengeance upon Arthas one day and find lasting freedom for her cursed people.",
+    "locator": "PDF p. 105",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner",
+      "locations/undercity"
+    ]
+  },
+  {
+    "id": "ds-r1-24",
+    "claim": "Jaina — младшая дочь адмирала Proudmoore и подруга детства Arthas.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Jaina was the youngest daughter of Admiral Proudmoore, a childhood friend of Arthas.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-25",
+    "claim": "Она была лучшей ученицей Kirin Tor, совета магов Dalaran.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "However, the beautiful, yet shy young woman was also the star pupil of the Kirin Tor – the Wizard Council of Dalaran.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-26",
+    "claim": "Вместе с Arthas она расследовала чуму и ушла, когда он приказал перебить жителей Stratholme.",
+    "sourceId": "jaina-hero-week",
+    "quote": "When Arthas ordered his soldiers to slaughter the people of Stratholme -- many of whom might not yet have been infected -- that was the last straw for Jaina: she parted ways with him rather than watch him carry out such a terrible deed.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-27",
+    "claim": "Под руководством Medivh Jaina стала лидером человеческих сил в Kalimdor и вместе с Thrall отложила вражду.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Under Medivh’s guidance, Thrall and Jaina Proudmoore – the leader of the human forces in Kalimdor – realized that they had to put aside their differences.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-28",
+    "claim": "Остатки Alliance под Jaina построили порт Theramore у Dustwallow Marsh.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The remaining Alliance forces under Jaina Proudmoore settled in southern Kalimdor. Off the eastern coast of Dustwallow Marsh, they built the rugged port city of Theramore.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore",
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r1-29",
+    "claim": "Jaina помогла Thrall победить отца; адмирал погиб, не примирившись с дочерью.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "After much soul-searching, Jaina chose the latter and helped Thrall defeat her crazed father. Unfortunately Admiral Proudmoore died in battle before Jaina could reconcile with him or prove that orcs were no longer bloodthirsty monsters.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-30",
+    "claim": "К Year 1 Jaina — сильнейшая живая человеческая волшебница и правит Theramore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Jaina Proudmoore is the most powerful human sorceress alive. A one-time ally of Prince Arthas, Jaina saw the fall of Lordaeron firsthand.",
+    "locator": "PDF p. 90",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ds-r1-31",
+    "claim": "Uther — верховный командующий Paladin Order; после Second War он хранил мир в Lordaeron.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Uther the Lightbringer, the supreme commander of the Paladin Order, kept the peace in Lordaeron by settling civil disputes and quelling demi-human uprisings throughout the realm.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-32",
+    "claim": "Он был как брат королю Terenas и считал принца скорее любимым племянником, чем учеником.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The kindly Uther, who had been like a brother to King Terenas for years, considered the Prince more of a favored nephew than a pupil.",
+    "locator": "PDF p. 4",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-33",
+    "claim": "Uther — один из самых знаменитых героев человечества и расследовал заражённые земли, надеясь остановить чуму.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Uther the Lightbringer, one of humanity’s most famous heroes, investigated the infected regions in the hope of finding a way to halt the plague's progress.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-34",
+    "claim": "Он предупредил Arthas, что тот теряет человечность.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Finally Uther warned Arthas that he was losing his hold on humanity.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-35",
+    "claim": "Arthas убил Uther в бою.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He willingly led the Scourge against his own kingdom, slew Uther in battle, and murdered his own father, King Terenas.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-36",
+    "claim": "Uther был первым паладином, благословлённым Archbishop Faol до Second War; его удерживала от отставки надежда сделать Arthas достойным короны отца.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Uther was the first of the paladins blessed by the Archbishop Faol, prior to the Second War. He is a weathered veteran, respected as one of the greatest warriors in human history.",
+    "locator": "PDF p. 46",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
+    ]
+  },
+  {
+    "id": "ds-r1-37",
+    "claim": "После неудачной атаки 10 000 лет назад Sargeras вселился в мага Medivh.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "After a failed attack on Azeroth 10,000 years ago, Sargeras saw an opportunity to once again strike at the world, and possessed the magus Medivh, intending to use his power to foment a war between worlds that would force Azeroth to buckle upon itself.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-38",
+    "claim": "В обмен на обещание божественности Gul’dan должен был создать врата между Azeroth и Draenor.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Medivh struck a deal with his new ally: in exchange for the promise of godhood, Gul’dan would create a gateway between the human homeworld of Azeroth and his own planet, Draenor.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-39",
+    "claim": "Lothar с помощью Khadgar убил Medivh и изгнал дух Sargeras в Nether.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "With Khadgar’s aid, Lothar slew Medivh and banished the spirit of Sargeras within him to the Nether.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-40",
+    "claim": "Пророк Third War оказался Medivh, последним Guardian, вернувшимся из Beyond искупить грехи.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "This prophet proved to be none other than Medivh, the last Guardian, miraculously returned from the Beyond to redeem himself for past sins.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-41",
+    "claim": "Он призвал Horde и Alliance объединиться, но orcs и люди отказались.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh told the Horde and the Alliance of the dangers they faced and urged them to band together. Jaded by generations of hate, the orcs and humans would have none of it.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-42",
+    "claim": "Тогда он по отдельности хитростью повёл оба народа в Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh was forced to deal with each race separately, using prophecy and trickery to guide them across the sea to the legendary land of Kalimdor.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/medivh"
+    ]
+  },
+  {
+    "id": "ds-r1-43",
+    "claim": "Официальные титулы: предатель orcs, основатель Shadow Council, создатель Death-Knights, первый orcish warlock.",
+    "sourceId": "guldan-hero-week",
+    "quote": "Betrayer of the Orcs. Founder of the Shadow Council. Creator of the Death-Knights. Destroyer of Dreams. Gul’dan – the first Orcish Warlock, has held many titles throughout his storied and… troubled… history.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-44",
+    "claim": "Он убедил orcs выпить кровь Mannoroth; ими из тени управляли Gul’dan и марионетка Blackhand.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "His influence over the orcs came to a head when he convinced them to drink the blood of the demon Mannoroth, promising them invincibility in exchange for their compliance. The fiend’s blood poisoned their minds, transforming the orcs into an army consumed by bloodlust and controlled from the shadows by Gul’dan and his puppet Warchief, Blackhand.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-45",
+    "claim": "Когда Ner’zhul отказался дальше служить Legion, Kil’jaeden обратился к ученику: Gul’dan довёл orcs до жажды крови.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "When Ner'zhul refused to serve the Legion's agenda past a certain point, Kil'jaeden turned to Ner'zhul's apprentice. Gul'dan worked the orcs into a frenzy of bloodlust, and the newly formed Horde began slaughtering the peaceful draenei.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-46",
+    "claim": "Во Second War он бросил Horde и увёл половину сил искать Tomb of Sargeras ради божественности.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Doomhammer and his army, poised to strike at the heart of the Alliance, received dire news: Gul’dan had abandoned his fellow orcs, taking with him half of their military might to seek out the fabled Tomb of Sargeras in his pursuit of godhood.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-47",
+    "claim": "Открыв гробницу, он нашёл только безумных демонов.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Backed by the Stormreaver and Twilight’s Hammer clans, Gul’dan succeeded in raising the Tomb of Sargeras from the sea floor. However, when he opened the ancient, flooded vault, he found only crazed demons awaiting him.",
+    "locator": "PDF p. 9",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-48",
+    "claim": "Gul’dan был разорван безумными демонами, которых сам выпустил; с гибелью вождя мятежные кланы пали.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "For his recklessness, Gul’dan was torn apart by the maddened demons he had set loose. With their leader dead, the renegade clans quickly fell before Doomhammer’s enraged legions.",
+    "locator": "PDF p. 9",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-49",
+    "claim": "Illidan поглотил энергии артефакта Skull of Gul’dan и получил часть старых воспоминаний Gul’dan о Tomb of Sargeras.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Initially he sought to appease his comrades, but soon he reverted to true form and consumed the energies of a powerful warlock artifact known as the Skull of Gul’dan.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/guldan"
+    ]
+  },
+  {
+    "id": "ds-r1-50",
+    "claim": "Разочаровавшись в Gul’dan и Blackhand, Orgrim бросил вызов за титул Warchief и победил.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "The great orc chieftain Orgrim Doomhammer found himself disillusioned with the Horde’s leadership under Gul’dan and Blackhand. Sensing an opportunity, he challenged Blackhand for the mantle of Warchief and emerged from the fray victorious.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-51",
+    "claim": "В титаническом поединке у Blackrock Spire Doomhammer с трудом одолел Lothar.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Doomhammer and Lothar squared off in a titanic battle that left both mighty combatants battered and drained. Though Doomhammer narrowly succeeded in vanquishing Lothar, the great hero’s death did not have the effect the warchief had hoped for.",
+    "locator": "PDF p. 2",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-52",
+    "claim": "После последней битвы Second War Doomhammer попал в плен и был доставлен в Lordaeron.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Doomhammer was taken prisoner and escorted to Lordaeron while his broken clans were rounded up and hauled north - back to Lordaeron.",
+    "locator": "PDF p. 2",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-53",
+    "claim": "Thrall нашёл старого warchief Orgrim Doomhammer, много лет жившего отшельником.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "During his travels, Thrall found the aged warchief, Orgrim Doomhammer, who had been living as a hermit for many years.",
+    "locator": "PDF p. 11",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-54",
+    "claim": "При освобождении одного из лагерей Doomhammer пал в бою.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Yet, during the liberation of one camp, Doomhammer fell in battle.",
+    "locator": "PDF p. 12",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-55",
+    "claim": "К Year 1 столица orcs названа Orgrimmar в честь Orgrim Doomhammer.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs’ new homeland.",
+    "locator": "PDF p. 97",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ds-r1-56",
+    "claim": "Не найдя гордых воинов в лагерях, Thrall отправился к последнему непокорённому вождю Grom Hellscream.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Having not found the proud warriors he hoped to discover, Thrall set out to find the last undefeated orc chieftain, Grom Hellscream.",
+    "locator": "PDF p. 11",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-57",
+    "claim": "Лучший лейтенант Thrall, Grom, предал Horde, поддавшись низменным инстинктам.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even Thrall’s greatest lieutenant, Grom Hellscream, betrayed the Horde by giving himself over to his baser instincts.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-58",
+    "claim": "Warsong столкнулись с Sentinels; Grom и его orcs убили demigod Cenarius.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even so, Hellscream and his orcs, overcome with supernatural hate and rage, managed to kill Cenarius and corrupt the ancient forestlands.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-59",
+    "claim": "Позже Grom искупил честь, помогая Thrall победить Mannoroth; со смертью демона проклятие крови кончилось.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Hellscream later redeemed his honor, however, by helping Thrall defeat Mannoroth, the demonlord who first cursed the orcs with his bloodline of hate and rage. With Mannoroth’s death, the orcs’ blood-curse was finally brought to an end.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-60",
+    "claim": "Перед боем с Mannoroth Jaina и Thrall вместе очистили Grom от порчи Legion.",
+    "sourceId": "jaina-hero-week",
+    "quote": "Before going with Thrall to confront Mannoroth, Grom had fallen under the Legion's influence. Jaina and Thrall worked together to cleanse him of the corruption, using a mixture of human and orc magic.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-61",
+    "claim": "Grom убил Mannoroth и снял проклятие ценой собственной жизни.",
+    "sourceId": "garrosh-heart-of-war",
+    "quote": "His own father had been the first to drink the blood of Mannoroth, he knew that—by the ancestors, how he knew it; no one would ever let him forget it—but Grom had in turn slain Mannoroth and ended the curse for them all at the cost of his own life.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ds-r1-63",
+    "claim": "Tyrande — бессмертная High Priestess ночных Sentinels и отчаянно защищала леса Ashenvale.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Tyrande Whisperwind, the immortal High Priestess of the night elf Sentinels, battled desperately to keep the demons and undead from overrunning the forests of Ashenvale.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind"
+    ]
+  },
+  {
+    "id": "ds-r1-64",
+    "claim": "Она освободила Illidan из темницы, где он провёл десять тысяч лет.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "During the Legion’s invasion of Ashenvale, Tyrande released Illidan from his barrow prison, where he had spent ten thousand years of captivity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind"
+    ]
+  },
+  {
+    "id": "ds-r1-65",
+    "claim": "Ночные эльфы во главе с Malfurion и Tyrande решили объединиться ради защиты World Tree.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Similarly, the night elves, led by Malfurion and Tyrande, agreed that they must unite if they hoped to defend the World Tree.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind"
+    ]
+  },
+  {
+    "id": "ds-r1-66",
+    "claim": "К Year 1 Darnassus правит High Priestess Tyrande Whisperwind.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Ruled by the High Priestess Tyrande Whisperwind, Darnassus stands as a tranquil testament to all that the night elves hold sacred.",
+    "locator": "PDF p. 96",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind"
+    ]
+  },
+  {
+    "id": "ds-r1-67",
+    "claim": "Она High Priestess лунной богини Elune и почти десять тысяч лет вела Sentinels; после исчезновения Malfurion снова стала единоличной правительницей.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Tyrande is the High Priestess of the moon goddess, Elune. She has served as the leader of the night elf Sentinels for nearly ten thousand years, but her long vigil has left her with little mercy for those she regards as her foe.",
+    "locator": "PDF p. 96",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind"
+    ]
+  },
+  {
+    "id": "ds-r1-68",
+    "claim": "В руководстве 2002 года брата Illidan зовут Furion Stormrage: именно ему выпало искать помощь.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "It fell to the young scholar, Furion Stormrage, to find help for his beleaguered people. Stormrage, whose own brother, Illidan, practiced the high-borne’s magics, was incensed by the growing corruption amongst the upper class.",
+    "locator": "PDF p. 25",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-69",
+    "claim": "С помощью Cenarius Furion заточил Illidan в огромном подземном чертоге.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "With Cenarius’ help, Furion sealed Illidan within a vast underground chamber – to remain chained and powerless until the end of time.",
+    "locator": "PDF p. 27",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-70",
+    "claim": "Поздний официальный текст называет того же брата Illidan именем Malfurion Stormrage.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "He joined forces with his brother Malfurion Stormrage and together they reversed the magic of the portal Sargeras tried to use to enter Azeroth.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-71",
+    "claim": "На Hyjal Malfurion высвободил ярость Nordrassil и уничтожил Archimonde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Empowered by the very strength of the world, Malfurion succeeded in unleashing Nordrassil’s primal fury, utterly destroying Archimonde and severing the Legion’s anchor to the Well of Eternity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-72",
+    "claim": "К Year 1 дух Malfurion затерялся в Emerald Dream; новым Arch-Druid стал Fandral Staghelm.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Shortly thereafter, Malfurion’s spirit was somehow lost within the depths of the Emerald Dream. Though his fellow druids attempted to find his wandering spirit, only his body remained sleeping within his Barrow Den.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-73",
+    "claim": "Официальный Year-1 портрет: величайший друид в истории, пророк и спаситель своего народа, теперь вне досягаемости даже зелёных драконов.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The greatest druid ever to live, and arguably one of the most powerful beings in history, Malfurion Stormrage stands as both prophet and savior to his people.",
+    "locator": "PDF p. 96",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-74",
+    "claim": "Не желая лишиться магии, Illidan бросил товарищей и предупредил Highborne о плане брата.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Knowing that the Well’s destruction would prevent him from ever wielding magic again, Illidan selfishly abandoned the group and set out to warn the high-borne of Furion’s plan.",
+    "locator": "PDF p. 26",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-75",
+    "claim": "На Hyjal он вылил украденную воду Well в горное озеро и создал новый Well of Eternity.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Illidan, having survived the Sundering as well, had reached Hyjal summit long before Furion and the night elves. In his mad bid to maintain the flows of magic in the world, Illidan had poured his vials, containing the precious waters from the Well of Eternity, into the mountain lake.",
+    "locator": "PDF p. 27",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-76",
+    "claim": "Tyrande освободила его после десяти тысяч лет заключения.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "During the Legion’s invasion of Ashenvale, Tyrande released Illidan from his barrow prison, where he had spent ten thousand years of captivity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-77",
+    "claim": "Поглотив Skull of Gul’dan, он получил демонические черты и огромную силу.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "By doing so, Illidan developed demonic features and vastly magnified power. He also gained some of Gul’dan’s old memories – especially those of the Tomb of Sargeras, the island dungeon rumored to hold the remains of the Dark Titan, Sargeras.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-78",
+    "claim": "Kil’jaeden приказал Illidan уничтожить Ner’zhul и покончить со Scourge.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Kil’jaeden ordered Illidan to destroy Ner’zhul and put an end to the undead Scourge once and for all.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-79",
+    "claim": "Ослабленный Arthas опередил Illidan у Frozen Throne; Illidan бежал в Outland.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even weakened as he was, Arthas outmaneuvered Illidan and reached the Frozen Throne first.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-80",
+    "claim": "После поражения Illidan и его войска были вынуждены бежать обратно в Outland.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Illidan and his troops were forced to flee back to Outland in disgrace, and Arthas became one of the most powerful entities the world has ever known.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ds-r1-81",
+    "claim": "Королева Azshara построила на берегу Well огромный дворец для приближённых Quel’dorei.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Azshara, the night elves’ beautiful and gifted Queen, built an immense, wondrous palace on the Well’s shore that housed her favored servitors within its bejeweled halls.",
+    "locator": "PDF p. 25",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-82",
+    "claim": "Опьянённая магией, Azshara согласилась впустить Sargeras в свой мир.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Queen Azshara, overwhelmed by the terrible ecstasy of her magic, fell victim to Sargeras’ undeniable power, and agreed to grant him entrance to her world.",
+    "locator": "PDF p. 25",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-83",
+    "claim": "Поздний официальный текст называет причиной призыва Legion тщеславие королевы.",
+    "sourceId": "well-of-eternity-preview",
+    "quote": "The songs of Queen Azshara's beauty, majesty, and power are too numerous to count, but it was her vanity that drove the Highborne to summon the Burning Legion.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-84",
+    "claim": "Схватка Furion с Azshara ввергла заклинание Highborne в хаос и обрушила Well.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The ensuing battle between Furion and Azshara threw the high-borne’s carefully crafted spellwork into chaos.",
+    "locator": "PDF p. 26",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-85",
+    "claim": "Классический рассказ 2002 года: Azshara и её элита оказались разбиты на дне моря.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "It was clear that Azshara and her elite high-borne followers had been smashed to the bottom of the raging sea.",
+    "locator": "PDF p. 27",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-86",
+    "claim": "Поздний официальный текст: королева избежала смерти в глубинах, когда Well взорвался внутрь, и вместе со многими Highborne стала naga.",
+    "sourceId": "vashjir-surviving-the-depths",
+    "quote": "Queen Azshara, formerly a beloved leader of the night elves, escaped death in the depths of the sea when the Well of Eternity imploded. Such salvation came at a great cost, as the queen and many of her fellow Highborne were forever transformed into the monstrous naga, doomed to wander the seas for thousands of years.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ds-r1-87",
+    "claim": "Kel’Thuzad был архимагом Kirin Tor и членом правящего совета; он ставил себя выше запрета на тёмную магию.",
+    "sourceId": "kelthuzad-enters-the-nexus",
+    "quote": "Among these powerful mortals was an Archmage of the Kirin Tor, by the name of Kel’Thuzad. As one of that council’s ruling members, Kel’Thuzad thought himself above the strictures of its self-imposed laws which forbade experimentation with dark magic.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad"
+    ]
+  },
+  {
+    "id": "ds-r1-88",
+    "claim": "Он присягнул существу, которое узнал как Lich King, и отправился вербовать новых слуг.",
+    "sourceId": "kelthuzad-enters-the-nexus",
+    "quote": "Taken with the promises of power offered by the entity he now knew as the Lich King, Kel’Thuzad pledged his allegiance and went forth to convert more into the service of his new lord.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad"
+    ]
+  },
+  {
+    "id": "ds-r1-89",
+    "claim": "Lich King и его живой слуга Kel’Thuzad задумали чуму, чтобы пополнять Scourge восставшими мертвецами.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Lich King and his mortal servant, Kel’Thuzad, planned to spread a terrible plague across the human lands, thereby swelling the ranks of the Scourge with newly risen undead warriors.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad",
+      "factions/scourge"
+    ]
+  },
+  {
+    "id": "ds-r1-90",
+    "claim": "Kel’Thuzad и Cult of the Damned нанесли первый удар, выпустив чуму на севере Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Once their preparations were made, Kel’Thuzad and his Cult of the Damned struck the first blow against civilization by releasing the plague upon northern Lordaeron.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad"
+    ]
+  },
+  {
+    "id": "ds-r1-91",
+    "claim": "В водах Sunwell останки Kel’Thuzad возродились как lich.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "In due course, Arthas submerged Kel’Thuzad’s remains within the holy waters of the Sunwell. Although the potent waters of Eternity were fouled by this act, Kel’Thuzad was reborn as a sorcerous lich.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad",
+      "locations/quelthalas"
+    ]
+  },
+  {
+    "id": "ds-r1-92",
+    "claim": "Затем lich добыл книгу заклинаний Medivh в Dalaran, чтобы призвать Archimonde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Once Kel’Thuzad was whole again, Arthas led the Scourge south towards Dalaran. There the lich would obtain the powerful spellbook of Medivh and use it to summon the demonlord Archimonde back into the world.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad"
+    ]
+  },
+  {
+    "id": "ds-r1-93",
+    "claim": "К Year 1 верный лейтенант Kel’Thuzad командует Scourge в Plaguelands.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "His trusted lieutenant, Kel’Thuzad, commands the Scourge in the Plaguelands. Sylvanas and her rebel Forsaken hold only the Tirisfal Glades, a small portion of the war-torn kingdom.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/kelthuzad"
+    ]
+  },
+  {
+    "id": "ds-r1-94",
+    "claim": "Вождь Cairne Bloodhoof искал помощи против кентавров и подружился с Thrall.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Seeking aid against the centaur, the chieftain, Cairne Bloodhoof, befriended Warchief Thrall and the other orcs, who had recently journeyed to Kalimdor.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/cairne-bloodhoof",
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r1-95",
+    "claim": "С помощью orcs его племя отбросило кентавров и заняло равнины Mulgore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With the orcs’ help, Cairne and his Bloodhoof tribe were able to drive back the centaur and claim the grasslands of Mulgore for their own.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/cairne-bloodhoof",
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r1-96",
+    "claim": "На месах Thunder Bluff Cairne построил убежище, где приветствуются tauren любого племени.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Upon the windswept mesa of Thunder Bluff, Cairne built a refuge for his people, where tauren of every tribe is welcome.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/cairne-bloodhoof"
+    ]
+  },
+  {
+    "id": "ds-r1-97",
+    "claim": "К Year 1 могучий вождь Cairne Bloodhoof правит оживлённым городом и следит за миром объединённых племён.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The mighty chief, Cairne Bloodhoof, presides over the bustling city, ensuring that the united tauren tribes live in peace and security.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/cairne-bloodhoof"
+    ]
+  },
+  {
+    "id": "ds-r1-98",
+    "claim": "Официальный Year-1 портрет: выдающийся воин, но кроткая душа, которая жаждет покоя открытых равнин.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "An outstanding warrior, Cairne is considered one of the most dangerous creatures alive. Despite his strength and valor, he is a gentle soul who longs only for the peace and tranquility of the open plains.",
+    "locator": "PDF p. 101",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/cairne-bloodhoof"
+    ]
+  },
+  {
+    "id": "ds-r1-99",
+    "claim": "К Year 1 ребёнок-король Anduin Wrynn правит народом Stormwind, верным Grand Alliance.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The child-king Anduin Wrynn rules the people of Stormwind, who remain steadfast in their commitment to the Grand Alliance.",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/anduin-wrynn"
+    ]
+  },
+  {
+    "id": "ds-r2-01",
+    "claim": "В оригинальном WoW игровые расы делятся на Alliance и Horde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The eight races in WoW are divided into two factions: the Horde and the Alliance.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/azeroth"
+    ]
+  },
+  {
+    "id": "ds-r2-02",
+    "claim": "В Year 1 в Alliance входят dwarves, gnomes, humans и night elves.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Alliance is comprised of the dwarves, gnomes, humans, and night elves, while the Horde consists of the orcs, tauren, trolls, and undead.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance",
+      "factions/night-elves"
+    ]
+  },
+  {
+    "id": "ds-r2-03",
+    "claim": "В Year 1 в Horde входят orcs, tauren, trolls и undead.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Alliance is comprised of the dwarves, gnomes, humans, and night elves, while the Horde consists of the orcs, tauren, trolls, and undead.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ds-r2-04",
+    "claim": "К Year 1 обе фракции борются за свой уклад, а не как «добро против зла».",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "However, in today's war-torn Azeroth, such black and white distinctions are gone. Both factions are simply fighting to preserve their way of life in the wake of the Chaos War.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance",
+      "locations/azeroth"
+    ]
+  },
+  {
+    "id": "ds-r2-05",
+    "claim": "Исторический Alliance of Lordaeron собрал семь человеческих государств.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Seven nations united under a single banner for the first time in three thousand years, giving birth to the Alliance of Lordaeron.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance"
+    ]
+  },
+  {
+    "id": "ds-r2-06",
+    "claim": "Люди Stormwind остаются привержены Grand Alliance.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The child-king Anduin Wrynn rules the people of Stormwind, who remain steadfast in their commitment to the Grand Alliance.",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance"
+    ]
+  },
+  {
+    "id": "ds-r2-07",
+    "claim": "Dwarves Ironforge — опора Grand Alliance; городом правит Magni Bronzebeard.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "While the Alliance has been weakened by recent events, the dwarves of Ironforge, led by King Magni Bronzebeard, are forging a new future in the world.",
+    "locator": "PDF p. 90",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance"
+    ]
+  },
+  {
+    "id": "ds-r2-08",
+    "claim": "Gnomes Gnomeregan помогали Grand Alliance оружием.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Over the years, the gnomes have contributed ingenious weapons to aid the Grand Alliance in its fierce battles against the Horde.",
+    "locator": "PDF p. 93",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance"
+    ]
+  },
+  {
+    "id": "ds-r2-09",
+    "claim": "После радиации в Gnomeregan выжившие gnomes укрылись у dwarves в Ironforge.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Those that survived evacuated the great city and fled to the protection of their dwarven cousins in Ironforge.",
+    "locator": "PDF p. 93",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance"
+    ]
+  },
+  {
+    "id": "ds-r2-10",
+    "claim": "После войн Alliance и Horde держат шаткое перемирие.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The war had wounded each race deeply, but they had selflessly banded together to attempt a new beginning, starting with the uneasy truce between the Alliance and Horde.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance",
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ds-r2-11",
+    "claim": "Thrall — warchief всей Horde, включая Darkspear trolls и tauren.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He stands as warchief over the entire Horde, holding dominion over the Darkspear trolls and tauren tribes alike.",
+    "locator": "PDF p. 99",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/thrall",
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ds-r2-12",
+    "claim": "Без демонического проклятия Horde стала коалицией ради выживания, а не завоевания.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Now that the demon curse was ended, the Horde changed from a warlike juggernaut into more of a loose coalition, dedicated to survival and prosperity rather than conquest.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/grom-hellscream",
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ds-r2-13",
+    "claim": "Forsaken — отколовшиеся от Scourge undead под Sylvanas Windrunner.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Led by the banshee Sylvanas Windrunner, one group of undead broke away from the Scourge and freed themselves of the Lich King’s domination. These renegades call themselves the Forsaken.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/forsaken"
+    ]
+  },
+  {
+    "id": "ds-r2-14",
+    "claim": "В Year 1 Forsaken заключили союз по расчёту с orcs и tauren Horde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Convinced that the primitive races of the Horde can help them achieve victory over their enemies, the Forsaken have entered an alliance of convenience with the savage orcs and the proud tauren.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/horde",
+      "factions/forsaken"
+    ]
+  },
+  {
+    "id": "ds-r2-15",
+    "claim": "У Forsaken нет истинной лояльности новым союзникам.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Harboring no true loyalty for their new allies, they will go to any lengths to ensure their dark plans come to fruition.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/forsaken"
+    ]
+  },
+  {
+    "id": "ds-r2-16",
+    "claim": "Кампания Forsaken Kingdom описывает, как Forsaken присоединяются к Horde.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "following the aftermath of Arthas's return to Lordaeron and chronicling the rise of Sylvanas Windrunner and the Forsaken as they join the Horde.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner",
+      "factions/forsaken"
+    ]
+  },
+  {
+    "id": "ds-r2-17",
+    "claim": "Sylvanas вступила в Horde, чтобы закрепить своё королевство, и хочет мести Arthas.",
+    "sourceId": "sylvanas-hero-week",
+    "quote": "Though she joined the Horde to help secure her kingdom, she wanted her vengeance: the death of Arthas, now the Lich King, for what he did to her and her people.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ds-r2-18",
+    "claim": "Kil’jaeden создал Scourge как армию undead под волей Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "To this end, the demon Kil’jaeden created the Scourge – a vast army of undead warriors, united under the singular will of the dread Lich King.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scourge"
+    ]
+  },
+  {
+    "id": "ds-r2-19",
+    "claim": "К Year 1 Arthas — новый бессмертный Lich King в Northrend.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Currently Arthas, the new and immortal Lich King, resides in Northrend; he is rumored to be rebuilding the citadel of Icecrown.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scourge",
+      "locations/northrend"
+    ]
+  },
+  {
+    "id": "ds-r2-20",
+    "claim": "Kel’Thuzad командует Scourge в Plaguelands.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "His trusted lieutenant, Kel’Thuzad, commands the Scourge in the Plaguelands.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scourge",
+      "locations/lordaeron"
+    ]
+  },
+  {
+    "id": "ds-r2-21",
+    "claim": "Sargeras сковал Burning Legion после падения во Twisting Nether.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Convinced that the only way to spare the universe from the Nether’s demonic entities was to purge it, he soon turned his power on the cosmos, seeking to cleanse all life in existence. To this end, he forged the demonic Burning Legion.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/burning-legion"
+    ]
+  },
+  {
+    "id": "ds-r2-22",
+    "claim": "Archimonde вёл вторжение Legion на Kalimdor, чтобы уничтожить Nordrassil.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Under orders from Kil’jaeden himself, Archimonde and his demons followed the undead Scourge to Kalimdor, bent on destroying Nordrassil, the World Tree.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/burning-legion"
+    ]
+  },
+  {
+    "id": "ds-r2-23",
+    "claim": "После гибели Archimonde Burning Legion рухнул под ударом смертных армий.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Unable to draw power from the Well itself, the Burning Legion crumbled under the combined might of the mortal armies.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/burning-legion"
+    ]
+  },
+  {
+    "id": "ds-r2-24",
+    "claim": "Night elves десять тысяч лет жили как бессмертное друидическое общество в Ashenvale.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "For ten thousand years, the immortal night elves cultivated a druidic society within the shadowed recesses of Ashenvale Forest.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/night-elves"
+    ]
+  },
+  {
+    "id": "ds-r2-25",
+    "claim": "Победа на Hyjal стоила night elves бессмертия.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though victorious, the night elves were forced to sacrifice their cherished immortality and watch their beloved forests burn.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/night-elves",
+      "locations/mount-hyjal",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-26",
+    "claim": "Darnassus правит High Priestess Tyrande Whisperwind.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Ruled by the High Priestess Tyrande Whisperwind, Darnassus stands as a tranquil testament to all that the night elves hold sacred.",
+    "locator": "PDF p. 96",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/night-elves",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-27",
+    "claim": "С исчезновением Malfurion единоличной правительницей night elves снова стала Tyrande.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With Malfurion inexplicably lost, Tyrande has again become the sole ruler of her prideful people.",
+    "locator": "PDF p. 96",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind",
+      "factions/night-elves"
+    ]
+  },
+  {
+    "id": "ds-r2-28",
+    "claim": "Fandral Staghelm стал новым Arch-Druid после пропажи Malfurion.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With Malfurion missing, Fandral Staghelm – the leader of those who wished to plant the new World Tree – became the new Arch-Druid.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/malfurion-stormrage",
+      "factions/night-elves",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-29",
+    "claim": "Scarlet Crusade существует в Year-1 материале: фанатичные люди держат разрозненные владения.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "For though the very land is cursed, the zealous humans of the Scarlet Crusade cling to their scattered holdings, obsessed with eradicating the undead and retaking their once-beautiful homeland.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scarlet-crusade",
+      "locations/lordaeron"
+    ]
+  },
+  {
+    "id": "ds-r2-31",
+    "claim": "В кампании Forsaken Kingdom среди знакомых фигур названы Sally Whitemane и Renault Mograine.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Their story unfolds alongside familiar figures including Sylvanas Windrunner, Putress, Varimathras, Sally Whitemane, Renault Mograine, Arthas, Kel’Thuzad, Ras Frostwhisper, and Baron Rivendare.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scarlet-crusade"
+    ]
+  },
+  {
+    "id": "ds-r2-32",
+    "claim": "Skyborne, также shen’dorei, происходят от мятежников Eldre’Thalas, нашедших убежище в Skywall.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/night-elves",
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "ds-r2-33",
+    "claim": "За контроль Zephras Isle спорят Windshapers, High Order и Al’Aketh.",
+    "sourceId": "forever-found-photos",
+    "quote": "Several groups are vying for control of Zephras Isle as the crisis deepens, including the Windshapers, the High Order, and the Al’Aketh.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/windshapers",
+      "factions/high-order",
+      "factions/alaketh",
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "ds-r2-34",
+    "claim": "Хаб Forever предлагает путь Windshaper Horde или High Order Alliance.",
+    "sourceId": "forever-hub",
+    "quote": "Follow the path of the Windshaper Horde or the High Order Alliance in your quest to defend Zephras Isle.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/horde",
+      "factions/windshapers",
+      "factions/high-order"
+    ]
+  },
+  {
+    "id": "ds-r2-35",
+    "claim": "Skyborne Horde получают Shaman, Skyborne Alliance — Mage.",
+    "sourceId": "forever-whats-next",
+    "quote": "Horde-aligned Skyborne embrace elemental traditions and gain access to the Shaman class, while Alliance-aligned Skyborne pursue the arcane legacy of their ancestors and gain access to the Mage class.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/windshapers",
+      "factions/high-order"
+    ]
+  },
+  {
+    "id": "ds-r2-36",
+    "claim": "Titans упорядочивали Azeroth и опасались повредить world-soul.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "When the titans were ordering Azeroth, they needed a more delicate hand to combat the agents of the Old Gods. Due to their colossal forms, Aggramar feared the Pantheon would irreparably damage or even kill the world-soul.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/azeroth"
+    ]
+  },
+  {
+    "id": "ds-r2-37",
+    "claim": "Dragon Aspects наделены силой titans охранять Azeroth.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Imbued with titan-bestowed powers and charged with protecting Azeroth, the dragon Aspects have worked tirelessly to fulfill their ancient destiny.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/azeroth"
+    ]
+  },
+  {
+    "id": "ds-r2-38",
+    "claim": "Lordaeron пал под пятой Lich King после преступлений Arthas.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Caught off guard by Arthas' unthinkable crimes, Lordaeron was crushed under the Lich King's iron heel.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/scourge",
+      "locations/lordaeron"
+    ]
+  },
+  {
+    "id": "ds-r2-39",
+    "claim": "Forsaken заняли разрушенную столицу Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Ultimately Sylvanas and her rebel undead (known as the Forsaken) claimed the ruined capital city of Lordaeron as their own.",
+    "locator": "PDF p. 86",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/lordaeron",
+      "locations/tirisfal-glades"
+    ]
+  },
+  {
+    "id": "ds-r2-40",
+    "claim": "Stormwind — один из последних оплотов людей, отстроенный после Second War.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The city of Stormwind stands as the last bastion of human power in Azeroth. Rebuilt after the Second War, Stormwind is a marvel of human design and engineering.",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/stormwind"
+    ]
+  },
+  {
+    "id": "ds-r2-41",
+    "claim": "Stormwind стоит в предгорьях Elwynn Forest; им правит ребёнок-король Anduin Wrynn.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Situated in the foothills of Elwynn Forest, Stormwind City is one of the last bastions of human power in the world. The child-king Anduin Wrynn rules the people of Stormwind",
+    "locator": "PDF p. 88",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/stormwind"
+    ]
+  },
+  {
+    "id": "ds-r2-42",
+    "claim": "Varian Wrynn пропал по пути на встречу в Theramore, и корону дали Anduin.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Recently his father, King Varian Wrynn, went missing under suspicious circumstances while en route to a diplomatic summit at Theramore Isle.",
+    "locator": "PDF p. 90",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/stormwind"
+    ]
+  },
+  {
+    "id": "ds-r2-43",
+    "claim": "Kalimdor — континент, куда Medivh привёл Horde и Alliance.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh was forced to deal with each race separately, using prophecy and trickery to guide them across the sea to the legendary land of Kalimdor.",
+    "locator": "PDF p. 84",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r2-44",
+    "claim": "Финальная битва Third War потрясла континент Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The final battle shook the continent of Kalimdor to its roots.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r2-45",
+    "claim": "Eastern Kingdoms и Kalimdor — исходные континенты Forever.",
+    "sourceId": "forever-whats-next",
+    "quote": "The Eastern Kingdoms and Kalimdor still hold mysteries worth uncovering, stories waiting to be told, and places that have lingered just beyond the edge of the map for years.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/azeroth",
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ds-r2-46",
+    "claim": "Northrend — арктическая земля, куда Arthas проследил чуму.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He tracked the plague’s source to the arctic land of Northrend, intending to end its threat forever.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/northrend"
+    ]
+  },
+  {
+    "id": "ds-r2-47",
+    "claim": "Forever начинается до поздних походов в Northrend.",
+    "sourceId": "forever-found-photos",
+    "quote": "WoW: Forever begins where original World of Warcraft begins: in the early “Year 1” period of Azeroth, before Kazzak reopened the Dark Portal and before later journeys to places like Northrend reshaped the timeline.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/arthas-menethil",
+      "factions/scourge",
+      "locations/northrend"
+    ]
+  },
+  {
+    "id": "ds-r2-48",
+    "claim": "На Mount Hyjal смертные объединились, чтобы защитить World Tree.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Similarly, the night elves, led by Malfurion and Tyrande, agreed that they must unite if they hoped to defend the World Tree.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/mount-hyjal"
+    ]
+  },
+  {
+    "id": "ds-r2-49",
+    "claim": "Forever открывает Mount Hyjal как последствия поражения Archimonde.",
+    "sourceId": "forever-whats-next",
+    "quote": "Mount Hyjal invites you to explore the aftermath of Archimonde’s defeat, journey through Darkwhisper Gorge, and help shape the future of a recovering land.",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/tyrande-whisperwind",
+      "factions/burning-legion",
+      "factions/night-elves",
+      "locations/kalimdor",
+      "locations/mount-hyjal",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-50",
+    "claim": "Undercity — скрытая цитадель Forsaken под руинами столицы Lordaeron в Tirisfal Glades.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "This hidden ‘Undercity’ forms a sprawling labyrinth that stretches beneath the haunted woods of the Tirisfal Glades.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/undercity",
+      "locations/tirisfal-glades"
+    ]
+  },
+  {
+    "id": "ds-r2-51",
+    "claim": "Arthas задумал Undercity как столицу Scourge, но бросил её, уйдя в Northrend.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Arthas originally intended the Undercity to be the Scourge’s seat of power, but the budding city was abandoned when he was recalled to aid the Lich King in distant Northrend.",
+    "locator": "PDF p. 103",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/undercity"
+    ]
+  },
+  {
+    "id": "ds-r2-52",
+    "claim": "К Year 1 Forsaken удерживают только Tirisfal Glades.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Sylvanas and her rebel Forsaken hold only the Tirisfal Glades, a small portion of the war-torn kingdom.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/forsaken",
+      "locations/lordaeron",
+      "locations/tirisfal-glades"
+    ]
+  },
+  {
+    "id": "ds-r2-53",
+    "claim": "Orcs назвали новую родину Durotar и основали столицу Orgrimmar.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Naming their new land Durotar after Thrall’s murdered father, the orcs settled down to rebuild their once-glorious society.",
+    "locator": "PDF p. 87",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ds-r2-54",
+    "claim": "Orgrimmar стоит в каньоне суровой Durotar.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world.",
+    "locator": "PDF p. 97",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ds-r2-55",
+    "claim": "Darkspear после предательства Zalazane живут в деревне Sen’jin на побережье Durotar.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Forced to flee from their island holdings, the Darkspears created the fishing village of Sen’jin on the Durotar coast.",
+    "locator": "PDF p. 102",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ds-r2-56",
+    "claim": "Quel’Thalas — королевство high elves с Sunwell.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Using a vial of sacred water stolen from the first Well of Eternity, the high elves created a fount of mystical power at a convergence of ley energies within their home. They named this fountain the Sunwell.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/quelthalas"
+    ]
+  },
+  {
+    "id": "ds-r2-57",
+    "claim": "Руководство 2004 утверждает, что к уходу Scourge в Quel’Thalas не осталось живых эльфов.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "By the time Arthas and his army of the dead turned southward, not one living elf remained in Quel’Thalas. The glorious homeland of the high elves, which had stood for more than nine thousand years, was no more.",
+    "locator": "PDF p. 83",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/quelthalas"
+    ]
+  },
+  {
+    "id": "ds-r2-58",
+    "claim": "Друиды посадили Teldrassil у штормовых берегов северного Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "he and his fellow druids had forged ahead and planted the great tree, Teldrassil, off the stormy coasts of northern Kalimdor.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/kalimdor",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-59",
+    "claim": "Среди ветвей Teldrassil вырос город Darnassus, но древо не получило благословения природы.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Among the twilight boughs of the colossal tree, the wondrous city of Darnassus took root. However, the tree was not consecrated with nature’s blessing and soon fell prey to the corruption of the Burning Legion.",
+    "locator": "PDF p. 94",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "ds-r2-60",
+    "claim": "Zephras Isle — стартовая зона Skyborne 1–12 уровня.",
+    "sourceId": "forever-whats-next",
+    "quote": "On Zephras Isle, you’ll begin an elemental skybound starting experience from levels 1 through 12, blending Classic Warcraft aesthetics with architecture inspired by Skywall.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "ds-r2-61",
+    "claim": "Zephras раньше был уединённым небесным оазисом, который теперь должны защищать Skyborne.",
+    "sourceId": "forever-hub",
+    "quote": "Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "ds-r2-62",
+    "claim": "Стихийные покровители Skyborne исчезли, пилоны Zephras отказывают.",
+    "sourceId": "forever-found-photos",
+    "quote": "When players encounter them in WoW: Forever, the Skyborne are in crisis. Their elemental benefactors have vanished, the pylons that hold Zephras together are failing, and portions of the island have begun falling into ruin and darkness.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alaketh",
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "ds-r2-63",
+    "claim": "Shen’dralas описан как земля к югу от Desolace через Valley of Bones.",
+    "sourceId": "forever-found-photos",
+    "quote": "South of Desolace through the Valley of Bones, the addition of Shen’dralas opens a fresh, new area, exploring the characters and stories connected to Eldre’Thalas.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/shendralas"
+    ]
+  },
+  {
+    "id": "ds-r2-64",
+    "claim": "Shen’dralas описан как тайна между Mulgore и Desolace, связанная с Shen’dralar, Eldre’Thalas, Dire Maul и кентаврами.",
+    "sourceId": "forever-whats-next",
+    "quote": "In Shen'dralas, a long-hidden mystery between Mulgore and Desolace becomes a new adventure tied to the Shen’dralar, Eldre’Thalas, Dire Maul, and the centaur tribes of the region.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/kalimdor",
+      "locations/shendralas"
+    ]
+  },
+  {
+    "id": "ds-r2-65",
+    "claim": "Riverglades — новая, но знакомая земля у Burning Steppes, Redridge Mountains, Swamp of Sorrows и Badlands.",
+    "sourceId": "forever-found-photos",
+    "quote": "The Riverglades is one of our first major examples of “new, but familiar” content: a land connected to surrounding regions like the Burning Steppes, Redridge Mountains, the Swamp of Sorrows, and the Badlands, but previously beyond players’ reach.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/riverglades"
+    ]
+  },
+  {
+    "id": "ds-r2-66",
+    "claim": "В Riverglades названы Powderfuse goblins, Twilight’s Hammer и Brotherhood of the Horse.",
+    "sourceId": "forever-found-photos",
+    "quote": "Gnoll camps continue the conflicts of neighboring lands, fresh ogre threats create points of tension and opportunities, and groups like the new Powderfuse goblins, the Twilight’s Hammer, and the Brotherhood of the Horse help connect the area to Warcraft’s history in different ways.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/riverglades"
+    ]
+  },
+  {
+    "id": "ds-r2-67",
+    "claim": "Riverglades примерно размера Stranglethorn Vale.",
+    "sourceId": "forever-found-photos",
+    "quote": "The final route begins with the Steamwheedle Cartel in Tanaris, pointing players beyond known shores toward the Riverglades: a mid-level zone roughly the size of Stranglethorn Vale",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/riverglades"
+    ]
+  },
+  {
+    "id": "ds-r2-68",
+    "claim": "Bandarion Keep в Whispering Wood, Tirisfal Glades — ключевое место пути Forsaken paladins.",
+    "sourceId": "forever-found-photos",
+    "quote": "Bandarion Keep in the Whispering Wood of Tirisfal Glades becomes a key location for that experience, grounding the Forsaken Paladin Journey in a local struggle for acceptance, identity, and purpose.",
+    "chapterIds": [],
+    "entryRefs": [
+      "locations/tirisfal-glades",
+      "locations/bandarion-keep"
+    ]
+  },
+  {
+    "id": "ds-r2-69",
+    "claim": "Бывшим паладинам Forsaken глубоко не доверяют другие Forsaken.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their path rolls directly out of the new Warcraft III campaign Forsaken Kingdom, beginning at a time when these former paladins are deeply mistrusted by other Forsaken and still learning what it means to channel the Light in undeath.",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/forsaken",
+      "locations/bandarion-keep"
+    ]
+  }
+]

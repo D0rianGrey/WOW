@@ -9,6 +9,8 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "locations/azeroth",
+      "locations/kalimdor",
       "timeline/highborne-summon-legion"
     ]
   },
@@ -30,6 +32,9 @@
     "locator": "PDF p. 24",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "factions/night-elves"
     ]
   },
   {
@@ -93,6 +98,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "factions/burning-legion",
       "timeline/highborne-summon-legion"
     ]
   },
@@ -265,6 +271,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "locations/azeroth",
       "timeline/great-sundering"
     ]
   },
@@ -347,6 +354,9 @@
     "locator": "PDF p. 27",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/mount-hyjal"
     ]
   },
   {
@@ -379,6 +389,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "characters/illidan-stormrage",
       "timeline/nordrassil-planted"
     ]
   },
@@ -427,6 +438,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "locations/mount-hyjal",
       "timeline/nordrassil-planted"
     ]
   },
@@ -491,6 +503,9 @@
     "chapterIds": [
       "war-of-the-ancients",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
     ]
   },
   {
@@ -522,6 +537,9 @@
       "war-of-the-ancients",
       "thrall-and-new-horde",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/thrall"
     ]
   },
   {

@@ -17,6 +17,8 @@
       "orcs-and-humans"
     ],
     "entryRefs": [
+      "factions/burning-legion",
+      "factions/horde",
       "timeline/horde-corrupted"
     ]
   },
@@ -144,6 +146,9 @@
     "quote": "The morale of Stormwind’s military died along with him, and the city fell to the might of the Horde. Anduin Lothar declared the war lost and retreated with the remnants of Stormwind’s populace across the Great Sea.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "locations/stormwind"
     ]
   },
   {

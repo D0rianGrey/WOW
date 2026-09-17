@@ -263,3 +263,20 @@ main:focus { outline: none; }
   .forever-columns { grid-template-columns: 1fr; }
   .forever-change, .forever-schedule { padding: 16px; }
 }
+
+/* Dossiers */
+.entity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 10px 0 30px; }
+.entity-grid.is-compact { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.entity-card { display: flex; flex-direction: column; gap: 8px; padding: 18px; border: 1px solid var(--line); background: #151c21; }
+.entity-card h3 { margin: 0; font-size: 1.2rem; }
+.entity-card h3 a { text-decoration: none; }
+.entity-card h3 a:hover, .entity-card h3 a:focus-visible { color: var(--gold); }
+.entity-card p { margin: 0; color: #c6c2b6; font-size: .88rem; }
+.entity-card .lore-badge { align-self: flex-start; margin-top: auto; }
+.dossier-aliases { color: var(--muted); font-size: .85rem; }
+.dossier-timeline, .dossier-related { margin-top: 34px; }
+.dossier-timeline ul { padding-left: 20px; }
+.dossier-timeline span { color: var(--muted); font-size: .85rem; }
+.dossier-diagram { margin: 28px 0; }
+.dossier-diagram img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.dossier-diagram figcaption { margin-top: 10px; color: var(--muted); font-size: .84rem; }

@@ -298,5 +298,14 @@
     "type": "official-announcement",
     "checkedAt": "2026-09-17",
     "notes": "Counts Forever content as three new zones, nine dungeons and two raids."
+  },
+  {
+    "id": "guldan-hero-week",
+    "title": "Gul'dan Hero Week",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://news.blizzard.com/en-us/article/20176695/gul-dan-hero-week",
+    "type": "official-promo",
+    "checkedAt": "2026-09-17",
+    "notes": "Heroes of the Storm lore feature listing Gul'dan's titles."
   }
 ]

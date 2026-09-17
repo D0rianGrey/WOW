@@ -71,6 +71,15 @@ export const timelineEntrySchema = z.object({
   chapterSlug: z.string().trim().min(1)
 }).superRefine(requireSourcesUnlessEstablished);
 
+// Character, faction and location dossiers; related IDs must be registered canonical IDs.
+export const dossierEntrySchema = z.object({
+  ...loreFields,
+  aliases: z.array(z.string().trim().min(1)),
+  relatedCharacterIds: z.array(z.string().trim().min(1)),
+  relatedFactionIds: z.array(z.string().trim().min(1)),
+  relatedLocationIds: z.array(z.string().trim().min(1))
+}).superRefine(requireSourcesUnlessEstablished);
+
 export const foreverEntryKinds = ['change', 'schedule'] as const;
 
 // Forever comparison entries: what original WoW Year 1 had versus what Forever announces.
@@ -133,6 +142,7 @@ export type LoreEntry = z.infer<typeof loreEntrySchema>;
 export type ChapterEntry = z.infer<typeof chapterEntrySchema>;
 export type TimelineEntry = z.infer<typeof timelineEntrySchema>;
 export type ForeverEntry = z.infer<typeof foreverEntrySchema>;
+export type DossierEntry = z.infer<typeof dossierEntrySchema>;
 export type ChangelogEntry = z.infer<typeof changelogEntrySchema>;
 export type Source = z.infer<typeof sourceSchema>;
 

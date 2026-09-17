@@ -149,6 +149,9 @@
     "locator": "PDF p. 97",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "factions/horde"
     ]
   },
   {
@@ -244,6 +247,9 @@
     "locator": "PDF p. 84",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
     ]
   },
   {
@@ -361,6 +367,9 @@
     "locator": "PDF p. 102",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "locations/durotar"
     ]
   },
   {
@@ -420,6 +429,9 @@
     "locator": "PDF p. 87",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
     ]
   },
   {
@@ -463,6 +475,9 @@
     "locator": "PDF p. 12",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "factions/horde"
     ]
   },
   {

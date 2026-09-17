@@ -265,6 +265,7 @@
       "second-war"
     ],
     "entryRefs": [
+      "locations/quelthalas",
       "timeline/internment-and-splintering"
     ]
   },
@@ -336,6 +337,7 @@
       "second-war"
     ],
     "entryRefs": [
+      "locations/lordaeron",
       "timeline/alliance-of-lordaeron"
     ]
   },

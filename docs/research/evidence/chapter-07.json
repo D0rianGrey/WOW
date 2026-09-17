@@ -60,6 +60,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "locations/mount-hyjal",
       "timeline/battle-of-mount-hyjal"
     ]
   },
@@ -196,6 +197,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "factions/forsaken",
+      "locations/undercity",
       "timeline/forsaken-rise"
     ]
   },
@@ -370,6 +373,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "locations/lordaeron",
       "timeline/forsaken-kingdom"
     ]
   },
@@ -389,6 +393,11 @@
     "quote": "World of Warcraft: Forever continues shortly after the events of the Forsaken Kingdom campaign, inviting players to carve a new path through a reimagined original Azeroth when it launches on November 4, 2026.",
     "chapterIds": [
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/dark-ranger-anya",
+      "characters/garek-bandarion",
+      "locations/undercity"
     ]
   },
   {

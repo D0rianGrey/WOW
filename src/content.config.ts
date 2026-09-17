@@ -4,6 +4,7 @@ import { file, glob } from 'astro/loaders';
 import {
   changelogEntrySchema,
   chapterEntrySchema,
+  dossierEntrySchema,
   foreverEntrySchema,
   loreEntrySchema,
   sourceSchema,
@@ -17,17 +18,17 @@ const chapters = defineCollection({
 
 const characters = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/characters' }),
-  schema: loreEntrySchema
+  schema: dossierEntrySchema
 });
 
 const factions = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/factions' }),
-  schema: loreEntrySchema
+  schema: dossierEntrySchema
 });
 
 const locations = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/locations' }),
-  schema: loreEntrySchema
+  schema: dossierEntrySchema
 });
 
 const forever = defineCollection({

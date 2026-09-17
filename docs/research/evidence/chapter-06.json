@@ -142,6 +142,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
       "timeline/stratholme"
     ]
   },
@@ -167,6 +168,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "locations/northrend",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
   },
@@ -268,6 +270,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "locations/quelthalas",
       "timeline/fall-of-quelthalas"
     ]
   },
@@ -367,7 +370,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
-      "forever/forsaken-kingdom"
+      "forever/forsaken-kingdom",
+      "locations/undercity"
     ]
   },
   {
@@ -378,6 +382,9 @@
     "chapterIds": [
       "arthas-and-lordaeron",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/uther-the-lightbringer"
     ]
   },
   {
@@ -397,6 +404,9 @@
     "quote": "At level 60, Forsaken paladins will also embark on their own epic mount quest. Whereas Alliance paladins claim their epic charger in the name of Redemption, the paladins of the Forsaken ride in the name of Retribution.",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "locations/bandarion-keep"
     ]
   },
   {

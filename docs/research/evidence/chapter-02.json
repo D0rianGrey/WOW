@@ -67,6 +67,7 @@
       "kingdoms-and-peoples"
     ],
     "entryRefs": [
+      "locations/quelthalas",
       "timeline/quelthalas-founded"
     ]
   },
@@ -149,6 +150,7 @@
       "second-war"
     ],
     "entryRefs": [
+      "locations/lordaeron",
       "timeline/alliance-of-lordaeron"
     ]
   },
