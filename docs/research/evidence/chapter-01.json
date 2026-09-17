@@ -1,0 +1,622 @@
+[
+  {
+    "id": "ch01-one-continent",
+    "claim": "Около десяти тысяч лет до First War в мире был один огромный континент.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Ten thousand years before the orcs and humans clashed in their First War, the world of Azeroth cradled only one massive continent surrounded by the infinite, raging seas.",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/azeroth",
+      "locations/kalimdor",
+      "timeline/highborne-summon-legion"
+    ]
+  },
+  {
+    "id": "ch01-kalimdor-well",
+    "claim": "Этот континент назывался Kalimdor, а в его центре лежало озеро энергии.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "That land mass, known as Kalimdor, was home to a number of disparate races and creatures",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/kalimdor"
+    ]
+  },
+  {
+    "id": "ch01-elune",
+    "claim": "Kaldorei поклонялись лунной богине Elune.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The Kaldorei, or night elves as they would later be known, worshipped the moon goddess, Elune",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "factions/night-elves"
+    ]
+  },
+  {
+    "id": "ch01-cenarius-teacher",
+    "claim": "Cenarius учил ночных эльфов понимать природу.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "spent a great deal of time teaching them about the natural world.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-azshara-palace",
+    "claim": "Azshara построила у Well огромный дворец для приближённых.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Azshara, the night elves’ beautiful and gifted Queen, built an immense, wondrous palace on the Well’s shore that housed her favored servitors within its bejeweled halls.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-quel-dorei",
+    "claim": "Приближённых Azshara называли Quel’dorei, или Highborne; они считали себя выше остальных.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Her servitors, whom she called the Quel’dorei or “high-borne,” doted on her every command and believed themselves to be greater than the rest of their lower-caste brethren.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch01-highborne-control",
+    "claim": "Highborne научились управлять энергией Well.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "In time they developed the ability to manipulate and control the Well’s cosmic energies.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-warnings",
+    "claim": "Cenarius и учёные предупреждали, что магия приведёт к беде.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Cenarius and many of the wizened night elf scholars warned that only calamity would result from toying with the clearly volatile arts of magic.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-sargeras-drawn",
+    "claim": "Sargeras почувствовал волны магии и направился к их источнику.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Sargeras, the Great Enemy of all life, the Ravager of Worlds, felt the potent ripples and was drawn to their distant point of origin.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "factions/burning-legion",
+      "timeline/highborne-summon-legion"
+    ]
+  },
+  {
+    "id": "ch01-azshara-agreed",
+    "claim": "Azshara согласилась впустить Sargeras в свой мир.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Queen Azshara, overwhelmed by the terrible ecstasy of her magic, fell victim to Sargeras’ undeniable power, and agreed to grant him entrance to her world.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/highborne-summon-legion"
+    ]
+  },
+  {
+    "id": "ch01-portal-in-well",
+    "claim": "Highborne помогли королеве открыть портал в глубинах Well of Eternity.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "the high-borne aided their Queen in opening a great, swirling portal within the depths of the Well of Eternity.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/highborne-summon-legion"
+    ]
+  },
+  {
+    "id": "ch01-zin-azshari-portal",
+    "claim": "В Zin-Azshari Highborne впервые открыли портал и пригласили Burning Legion.",
+    "sourceId": "well-of-eternity-preview",
+    "quote": "Situated on the shores of the Well of Eternity, Zin-Azshari was where the aristocratic Highborne first opened a portal into the Twisting Nether and invited the Burning Legion to invade Azeroth.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "glossary/burning-legion"
+    ]
+  },
+  {
+    "id": "ch01-vanity",
+    "claim": "Поздний текст называет причиной призыва Legion тщеславие Azshara.",
+    "sourceId": "well-of-eternity-preview",
+    "quote": "The songs of Queen Azshara's beauty, majesty, and power are too numerous to count, but it was her vanity that drove the Highborne to summon the Burning Legion.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-legion-led",
+    "claim": "Legion во главе с Archimonde и Mannoroth опустошил Kalimdor.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Led by Archimonde and Mannoroth, the Legion swarmed over the lands of Kalimdor leaving only ash and sorrow in its wake.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-give-ground",
+    "claim": "Kaldorei отступали шаг за шагом.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "they were forced to give ground, inch by inch, before the fury of the Legion’s onslaught.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-furion-help",
+    "claim": "Искать помощь выпало молодому учёному Furion Stormrage.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "It fell to the young scholar, Furion Stormrage, to find help for his beleaguered people.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-illidan-magic",
+    "claim": "Брат Furion, Illidan, практиковал магию Highborne.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Stormrage, whose own brother, Illidan, practiced the high-borne’s magics, was incensed by the growing corruption amongst the upper class.",
+    "locator": "PDF p. 25",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-malfurion-brother",
+    "claim": "Поздний текст называет брата Illidan именем Malfurion Stormrage.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "He joined forces with his brother Malfurion Stormrage and together they reversed the magic of the portal Sargeras tried to use to enter Azeroth.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-cenarius-dragons",
+    "claim": "Cenarius согласился найти древних драконов и заручиться их помощью.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Cenarius, who dwelt within the sacred Moonglades of the distant Mount Hyjal, agreed to help the night elves by finding the ancient dragons and enlisting their aid.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-alexstrasza-flights",
+    "claim": "Драконы во главе с Alexstrasza выступили против демонов.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The dragons, led by the great, red leviathan, Alexstrasza, agreed to send their mighty flights to engage the demons and their infernal masters.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-destroy-well",
+    "claim": "Furion считал Well связью демонов с миром и требовал его уничтожить.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Furion, convinced that the Well of Eternity was the demons’ umbilical link to the physical world, insisted that it should be destroyed.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-illidan-warns",
+    "claim": "Illidan бросил товарищей и предупредил Highborne о плане брата.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Knowing that the Well’s destruction would prevent him from ever wielding magic again, Illidan selfishly abandoned the group and set out to warn the high-borne of Furion’s plan.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-battle-chaos",
+    "claim": "Бой Furion и Azshara сорвал заклинание Highborne.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The ensuing battle between Furion and Azshara threw the high-borne’s carefully crafted spellwork into chaos.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/great-sundering"
+    ]
+  },
+  {
+    "id": "ch01-well-collapsed",
+    "claim": "Well of Eternity схлопнулся.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "the surging Well of Eternity buckled in upon itself and collapsed.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara",
+      "timeline/great-sundering"
+    ]
+  },
+  {
+    "id": "ch01-eighty-percent",
+    "claim": "Около восьмидесяти процентов суши Kalimdor было уничтожено.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Nearly eighty percent of Kalimdor’s landmass had been blasted apart, leaving only a handful of separate continents surrounding the new, raging sea.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/azeroth",
+      "timeline/great-sundering"
+    ]
+  },
+  {
+    "id": "ch01-maelstrom",
+    "claim": "На месте Well возник вечный Maelstrom.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "This terrible scar, known as the Maelstrom, would never cease its furious spinning.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/great-sundering"
+    ]
+  },
+  {
+    "id": "ch01-sundering-preview",
+    "claim": "События у Well ведут к Great Sundering и Maelstrom.",
+    "sourceId": "well-of-eternity-preview",
+    "quote": "However, the tragic events which took place at the Well of Eternity must ultimately come to pass, leading to the Great Sundering, the creation of the Maelstrom, and the loss of countless lives.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-sundering-azshara",
+    "claim": "Sundering десять тысяч лет назад разорвал земли Azeroth; Highborne и Azshara казались обречены.",
+    "sourceId": "warbringers-azshara",
+    "quote": "Ten thousand years ago, the lands of Azeroth were torn apart by the Sundering. As the continents cracked open and the ocean rushed in, the Highborne elves and their great queen, Azshara, seemed doomed to a watery grave.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/great-sundering"
+    ]
+  },
+  {
+    "id": "ch01-azshara-sea-floor",
+    "claim": "Azshara и её элита оказались на дне моря.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "It was clear that Azshara and her elite high-borne followers had been smashed to the bottom of the raging sea.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-azshara-escaped",
+    "claim": "Azshara избежала смерти в глубинах, когда Well взорвался внутрь.",
+    "sourceId": "vashjir-surviving-the-depths",
+    "quote": "Queen Azshara, formerly a beloved leader of the night elves, escaped death in the depths of the sea when the Well of Eternity imploded.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-naga",
+    "claim": "Королева и многие Highborne превратились в naga.",
+    "sourceId": "vashjir-surviving-the-depths",
+    "quote": "Such salvation came at a great cost, as the queen and many of her fellow Highborne were forever transformed into the monstrous naga, doomed to wander the seas for thousands of years.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-nzoth-bargain",
+    "claim": "Поздний текст Battle for Azeroth называет сделку Azshara с N’Zoth.",
+    "sourceId": "eternal-palace-raid-finder-wing-3",
+    "quote": "Ten thousand years ago, as the seas engulfed Zin-Azshari, Queen Azshara forged a dark bargain with N’Zoth that transformed her loyal subjects into the sinister naga.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ch01-hyjal-survived",
+    "claim": "Выжившие ночные эльфы нашли уцелевшую священную гору Hyjal.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "As the weary mass of night elves landed upon the shores of the new land, they found that the holy mountain, Hyjal, had survived the catastrophe.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch01-illidan-vials",
+    "claim": "Illidan вылил украденную воду Well в горное озеро.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Illidan had poured his vials, containing the precious waters from the Well of Eternity, into the mountain lake.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-new-well",
+    "claim": "Энергия воды создала новый Well of Eternity.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The Well’s potent energies quickly ignited and coalesced into a new Well of Eternity.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/illidan-stormrage"
+    ]
+  },
+  {
+    "id": "ch01-illidan-sealed",
+    "claim": "Furion с помощью Cenarius заточил Illidan под землёй.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "With Cenarius’ help, Furion sealed Illidan within a vast underground chamber – to remain chained and powerless until the end of time.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/illidan-stormrage",
+      "timeline/nordrassil-planted"
+    ]
+  },
+  {
+    "id": "ch01-no-magic",
+    "claim": "Furion объявил, что ночные эльфы больше не будут практиковать магию.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "However, Furion declared that they would never practice the arts of magic again.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch01-dragon-pact",
+    "claim": "Furion и три дракона заключили договор хранить Well.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Furion and the three dragons made a pact to keep the Well safe and ensure that the agents of the Burning Legion would never find their way back into the world.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-acorn",
+    "claim": "Alexstrasza поместила в Well волшебный жёлудь.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Alexstrasza, the Life-Giver, placed a single, enchanted acorn within the heart of the Well of Eternity.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/nordrassil-planted"
+    ]
+  },
+  {
+    "id": "ch01-nordrassil-name",
+    "claim": "Мировое древо назвали Nordrassil — «венец небес».",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The night elves’ named their World Tree, Nordrassil, which meant “crown of the heavens” in their native tongue.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/mount-hyjal",
+      "timeline/nordrassil-planted"
+    ]
+  },
+  {
+    "id": "ch01-nozdormu-blessing",
+    "claim": "Nozdormu зачаровал древо: пока оно стоит, ночные эльфы не стареют и не болеют.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Nozdormu, the Timeless, placed an enchantment upon the World Tree that ensured that as long as the colossal tree stood, the night elves would never age or fall prey to sickness or disease.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/nordrassil-planted"
+    ]
+  },
+  {
+    "id": "ch01-bc-ten-thousand",
+    "claim": "Поздняя ретроспектива говорит о событиях более десяти тысяч лет назад.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "This story began over 10,000 years ago during the War of the Ancients, back when the demonic Burning Legion invaded Azeroth.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "factions/burning-legion",
+      "timeline/highborne-summon-legion"
+    ]
+  },
+  {
+    "id": "ch01-bc-illidan-sargeras",
+    "claim": "Поздняя ретроспектива: Illidan встал на сторону Sargeras ради силы.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "A night elf who held great promise, Illidan Stormrage, allied himself with Sargeras, the Destroyer of Worlds, and his Burning Legion armies in exchange for unfathomable power.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-bc-illidan-trial",
+    "claim": "Illidan осудили за нападение на сородичей и запретный источник силы.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Though Illidan fought against the Burning Legion's forces, he was put on trial for his reprehensible crimes—notable for attacking his fellow kin and creating a forbidden fount of power.",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-malygos-flight",
+    "claim": "Во время War of the Ancients Deathwing с Dragon Soul уничтожил большую часть синей стаи.",
+    "sourceId": "dragon-aspects-story-so-far",
+    "quote": "Malygos and his mate Sindragosa ruled the blue dragonflight until the War of the Ancients, when the crazed Deathwing used the Dragon Soul to wipe out most of the flight",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-skyborne-hidden-people",
+    "claim": "Skyborne известны также как shen’dorei, «скрытый народ».",
+    "sourceId": "forever-found-photos",
+    "quote": "players will discover Zephras Isle and the Skyborne, also known as the shen'dorei or hidden people.",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
+    ]
+  },
+  {
+    "id": "ch01-skyborne-crisis",
+    "claim": "Благодетели Skyborne исчезли, пилоны Zephras слабеют.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their elemental benefactors have vanished, the pylons that hold Zephras together are failing, and portions of the island have begun falling into ruin and darkness.",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch01-zephras-factions",
+    "claim": "За Zephras Isle спорят Windshapers, High Order и Al’Aketh.",
+    "sourceId": "forever-found-photos",
+    "quote": "Several groups are vying for control of Zephras Isle as the crisis deepens, including the Windshapers, the High Order, and the Al’Aketh.",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch01-skyborne-factions",
+    "claim": "Skyborne Horde получают Shaman, Skyborne Alliance — Mage.",
+    "sourceId": "forever-whats-next",
+    "quote": "Horde-aligned Skyborne embrace elemental traditions and gain access to the Shaman class, while Alliance-aligned Skyborne pursue the arcane legacy of their ancestors and gain access to the Mage class.",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "thrall-and-new-horde",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/thrall"
+    ]
+  },
+  {
+    "id": "ch01-shendralas-south",
+    "claim": "Found Photos описывает Shen’dralas к югу от Desolace через Valley of Bones.",
+    "sourceId": "forever-found-photos",
+    "quote": "South of Desolace through the Valley of Bones, the addition of Shen'dralas opens a fresh, new area, exploring the characters and stories connected to Eldre'Thalas.",
+    "chapterIds": [
+      "war-of-the-ancients",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch01-center-lake",
+    "claim": "В центре древнего континента лежало загадочное озеро энергии.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "At the dark continent’s center was a mysterious lake of incandescent energies.",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-malfurion-2004",
+    "claim": "Мануал 2004 года называет вождей ночных эльфов Tyrande и Malfurion.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Under the leadership of Tyrande and Malfurion, the night elves vanquished the Burning Legion not once, but twice.",
+    "locator": "PDF p. 96",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-illidan-steal",
+    "claim": "Illidan собирался украсть священные воды Well и оставить их энергию себе.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Convinced that the demons would crush the night elves’ civilization, he planned to steal the sacred waters and keep their energies for himself.",
+    "locator": "PDF p. 26",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-cenarius-demigod",
+    "claim": "Cenarius — могучий demigod первозданных лесов.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Cenarius, a mighty demi-god of the primordial forestlands.",
+    "locator": "PDF p. 24",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch01-acorn-sprung",
+    "claim": "Пробуждённый водами Well, жёлудь стал исполинским древом.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The acorn, activated by the potent, magical waters, sprung to life as a colossal tree.",
+    "locator": "PDF p. 27",
+    "chapterIds": [
+      "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/nordrassil-planted"
+    ]
+  }
+]

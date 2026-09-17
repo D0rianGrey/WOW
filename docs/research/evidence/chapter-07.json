@@ -1,0 +1,620 @@
+[
+  {
+    "id": "ch07-hyjal-unite-humans",
+    "claim": "Под руководством Medivh Thrall и Jaina отложили вражду.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Under Medivh’s guidance, Thrall and Jaina Proudmoore – the leader of the human forces in Kalimdor – realized that they had to put aside their differences.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/battle-of-mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch07-hyjal-unite-elves",
+    "claim": "Ночные эльфы во главе с Malfurion и Tyrande решили объединиться ради Мирового древа.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Similarly, the night elves, led by Malfurion and Tyrande, agreed that they must unite if they hoped to defend the World Tree.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/battle-of-mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch07-archimonde-target",
+    "claim": "Archimonde шёл уничтожить Nordrassil.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Under orders from Kil’jaeden himself, Archimonde and his demons followed the undead Scourge to Kalimdor, bent on destroying Nordrassil, the World Tree.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/archimonde-summoned"
+    ]
+  },
+  {
+    "id": "ch07-jaina-thrall-delay",
+    "claim": "Jaina и Thrall сдерживали Legion, пока друиды готовили последнюю защиту.",
+    "sourceId": "jaina-hero-week",
+    "quote": "Setting aside their differences, Jaina and Thrall worked together to delay the Legion's advance while night elf druids prepared one last defense: a powerful explosion of magic that destroyed most of the Legion's forces on Kalimdor.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/battle-of-mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch07-nordrassil-fury",
+    "claim": "Malfurion высвободил ярость Nordrassil и уничтожил Archimonde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Empowered by the very strength of the world, Malfurion succeeded in unleashing Nordrassil’s primal fury, utterly destroying Archimonde and severing the Legion’s anchor to the Well of Eternity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/mount-hyjal",
+      "timeline/battle-of-mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch07-legion-crumbled",
+    "claim": "Лишённый силы Well, Legion рухнул.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Unable to draw power from the Well itself, the Burning Legion crumbled under the combined might of the mortal armies.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-immortality-lost",
+    "claim": "Ночные эльфы пожертвовали бессмертием.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though victorious, the night elves were forced to sacrifice their cherished immortality and watch their beloved forests burn.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/battle-of-mount-hyjal"
+    ]
+  },
+  {
+    "id": "ch07-malfurion-lost",
+    "claim": "Дух Malfurion затерялся в Emerald Dream.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Shortly thereafter, Malfurion’s spirit was somehow lost within the depths of the Emerald Dream.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-fandral",
+    "claim": "Fandral Staghelm стал новым Arch-Druid.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With Malfurion missing, Fandral Staghelm – the leader of those who wished to plant the new World Tree – became the new Arch-Druid.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-teldrassil",
+    "claim": "Друиды посадили Teldrassil у северных берегов Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "he and his fellow druids had forged ahead and planted the great tree, Teldrassil, off the stormy coasts of northern Kalimdor.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-darnassus",
+    "claim": "В ветвях Teldrassil вырос город Darnassus.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Among the twilight boughs of the colossal tree, the wondrous city of Darnassus took root.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-teldrassil-tainted",
+    "claim": "Древо не получило благословения природы и поддалось порче.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "However, the tree was not consecrated with nature’s blessing and soon fell prey to the corruption of the Burning Legion.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-illidan-released",
+    "claim": "Tyrande освободила Illidan после десяти тысяч лет заключения.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "During the Legion’s invasion of Ashenvale, Tyrande released Illidan from his barrow prison, where he had spent ten thousand years of captivity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever",
+      "war-of-the-ancients"
+    ]
+  },
+  {
+    "id": "ch07-kiljaeden-offer",
+    "claim": "Kil’jaeden приказал Illidan уничтожить Ner’zhul.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Kil’jaeden ordered Illidan to destroy Ner’zhul and put an end to the undead Scourge once and for all.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/arthas-becomes-lich-king"
+    ]
+  },
+  {
+    "id": "ch07-sylvanas-coup",
+    "claim": "Половина нежити во главе с Sylvanas подняла мятеж.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Half of the standing undead forces, led by the banshee Sylvanas Windrunner, staged a coup for control over the undead empire.",
+    "locator": "PDF p. 86",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forsaken-rise"
+    ]
+  },
+  {
+    "id": "ch07-forsaken-capital",
+    "claim": "Sylvanas и Forsaken заняли разрушенную столицу Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Ultimately Sylvanas and her rebel undead (known as the Forsaken) claimed the ruined capital city of Lordaeron as their own.",
+    "locator": "PDF p. 86",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "glossary/third-war",
+      "timeline/forsaken-rise"
+    ]
+  },
+  {
+    "id": "ch07-forsaken-bastion",
+    "claim": "Forsaken построили оплот под руинами и поклялись изгнать Scourge.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Constructing their own bastion, far beneath the wrecked city, the Forsaken vowed to defeat the Scourge and drive Kel’Thuzad and his minions from the land.",
+    "locator": "PDF p. 86",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "factions/forsaken",
+      "locations/undercity",
+      "timeline/forsaken-rise"
+    ]
+  },
+  {
+    "id": "ch07-arthas-throne",
+    "claim": "Arthas опередил Illidan и первым достиг Frozen Throne.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even weakened as he was, Arthas outmaneuvered Illidan and reached the Frozen Throne first.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/northrend",
+      "timeline/arthas-becomes-lich-king"
+    ]
+  },
+  {
+    "id": "ch07-spirits-fused",
+    "claim": "Духи Ner’zhul и Arthas слились в одно существо.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Arthas placed the unimaginably powerful helm on his head, and Ner’zhul and Arthas’ spirits fused into a single mighty being, as Ner’zhul had planned all along.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "glossary/lich-king",
+      "timeline/arthas-becomes-lich-king"
+    ]
+  },
+  {
+    "id": "ch07-lich-king-northrend",
+    "claim": "Arthas — новый бессмертный Lich King в Northrend.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Currently Arthas, the new and immortal Lich King, resides in Northrend",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/time-bubble-year-1",
+      "glossary/lich-king",
+      "timeline/arthas-becomes-lich-king"
+    ]
+  },
+  {
+    "id": "ch07-kelthuzad-plaguelands",
+    "claim": "Kel’Thuzad командует Scourge в Plaguelands; Forsaken держат только Tirisfal.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "His trusted lieutenant, Kel’Thuzad, commands the Scourge in the Plaguelands. Sylvanas and her rebel Forsaken hold only the Tirisfal Glades",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "ch07-uneasy-truce",
+    "claim": "Народы начали новую жизнь с шаткого перемирия Alliance и Horde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The war had wounded each race deeply, but they had selflessly banded together to attempt a new beginning, starting with the uneasy truce between the Alliance and Horde.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-four-years",
+    "claim": "Мануал 2004 года: вторжение Legion случилось четыре года назад.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Legion meticulously planned its return to the mortal world over the course of many long centuries. Four years ago, their grand design came to fruition at last.",
+    "locator": "PDF p. 82",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "factions/burning-legion",
+      "glossary/third-war",
+      "timeline/battle-of-mount-hyjal",
+      "timeline/plague-of-undeath"
+    ]
+  },
+  {
+    "id": "ch07-stormwind-child-king",
+    "claim": "Stormwind правит ребёнок-король Anduin Wrynn.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The child-king Anduin Wrynn rules the people of Stormwind, who remain steadfast in their commitment to the Grand Alliance.",
+    "locator": "PDF p. 88",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/varian-missing"
+    ]
+  },
+  {
+    "id": "ch07-stormwind-armies",
+    "claim": "Армии Stormwind снова воюют с Horde на далёких полях.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Backed by their stalwart allies, the armies of Stormwind have been called away to once again fight the savage Horde on distant battlefields.",
+    "locator": "PDF p. 88",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-stormwind-rebuilt",
+    "claim": "Stormwind отстроен после Second War.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Rebuilt after the Second War, Stormwind is a marvel of human design and engineering.",
+    "locator": "PDF p. 88",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-varian-missing",
+    "claim": "Король Varian Wrynn пропал по пути на встречу в Theramore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Recently his father, King Varian Wrynn, went missing under suspicious circumstances while en route to a diplomatic summit at Theramore Isle.",
+    "locator": "PDF p. 90",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/varian-missing"
+    ]
+  },
+  {
+    "id": "ch07-gnomeregan-radiation",
+    "claim": "По приказу Mekkatorque gnomes выпустили радиацию в Gnomeregan.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "At the command of the High Tinker Mekkatorque, the gnomes opened the pressure valves of their giant, grinding machines and released toxic radiation throughout the city.",
+    "locator": "PDF p. 93",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/gnomeregan-lost"
+    ]
+  },
+  {
+    "id": "ch07-gnomeregan-eighty",
+    "claim": "Радиация убила почти восемьдесят процентов gnomes.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though the radiation killed the troggs, the gnomes soon discovered that it killed their own people just as quickly. Nearly eighty percent of the gnomish race died within days.",
+    "locator": "PDF p. 93",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/gnomeregan-lost"
+    ]
+  },
+  {
+    "id": "ch07-gnomes-ironforge",
+    "claim": "Выжившие gnomes бежали в Ironforge.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Those that survived evacuated the great city and fled to the protection of their dwarven cousins in Ironforge.",
+    "locator": "PDF p. 93",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/gnomeregan-lost"
+    ]
+  },
+  {
+    "id": "ch07-fk-four-year-gap",
+    "claim": "Forsaken Kingdom заполняет четырёхлетний разрыв между Warcraft III и WoW.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Warcraft III Reforged: Forsaken Kingdom explores the events between Arthas's return to Lordaeron and the emergence of the Undercity, filling in the four-year gap between Warcraft III and World of Warcraft.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "locations/lordaeron",
+      "timeline/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "ch07-fk-available",
+    "claim": "Forsaken Kingdom уже доступна.",
+    "sourceId": "forsaken-kingdom-deep-dive",
+    "quote": "Forsaken Kingdom is available today. Players can also see Definitive Edition Graphics and the Forsaken Paladin in action during the Classic Cup.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-forever-shortly-after",
+    "claim": "Forever продолжается вскоре после событий Forsaken Kingdom.",
+    "sourceId": "forsaken-kingdom-wage-war",
+    "quote": "World of Warcraft: Forever continues shortly after the events of the Forsaken Kingdom campaign, inviting players to carve a new path through a reimagined original Azeroth when it launches on November 4, 2026.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/dark-ranger-anya",
+      "characters/garek-bandarion",
+      "locations/undercity"
+    ]
+  },
+  {
+    "id": "ch07-forever-permanent",
+    "claim": "Forever — новый постоянный дом рядом с modern и Classic WoW.",
+    "sourceId": "forever-announcement",
+    "quote": "Built as a new permanent home alongside modern and Classic WoW, Forever invites past, current, and new players into a familiar yet fresh Azeroth where the world takes center stage, community comes first, and the journey matters as much as the destination.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-hyjal-aftermath",
+    "claim": "Hyjal в Forever — последствия поражения Archimonde и Darkwhisper Gorge.",
+    "sourceId": "forever-whats-next",
+    "quote": "Mount Hyjal invites you to explore the aftermath of Archimonde’s defeat, journey through Darkwhisper Gorge, and help shape the future of a recovering land.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-riverglades-level",
+    "claim": "Riverglades — зона середины пути, размером со Stranglethorn Vale.",
+    "sourceId": "forever-found-photos",
+    "quote": "toward the Riverglades: a mid-level zone roughly the size of Stranglethorn Vale, built from a previously inaccessible part of the Classic world",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-zephras-start",
+    "claim": "Zephras Isle — стартовая зона Skyborne для уровней 1–12.",
+    "sourceId": "forever-whats-next",
+    "quote": "On Zephras Isle, you’ll begin an elemental skybound starting experience from levels 1 through 12, blending Classic Warcraft aesthetics with architecture inspired by Skywall.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-raids",
+    "claim": "Объявлены Barrow Deeps на 10 игроков и Hyjal Summit на 20.",
+    "sourceId": "forever-whats-next",
+    "quote": "The Barrow Deeps is planned as a maximum-level 10-player challenge, while Hyjal Summit will bring 20-player raid encounters to one of Warcraft’s most important locations.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-dates",
+    "claim": "Запуск 4 ноября 2026, бета с 17 сентября, новые рейды откроются 9 декабря.",
+    "sourceId": "forever-whats-next",
+    "quote": "World of Warcraft: Forever launches globally on November 4, 2026, at 3:00 p.m. PST, with beta beginning September 17. New raids unlock on December 9, followed by more raids, dungeons, PvP updates, world content, additional quests throughout the level 1–60 journey.",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-aging-disease",
+    "claim": "Многие ночные эльфы не смогли смириться со старением и болезнями.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "there were many night elves who could not adjust to the prospects of aging, disease, and frailty.",
+    "locator": "PDF p. 94",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-kiljaeden-fear",
+    "claim": "Kil’jaeden чувствовал, что его создание, Lich King, выходит из-под контроля.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Sensing that his creation, the Lich King, was growing too powerful to control",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-frozen-throne-cask",
+    "claim": "Frozen Throne — ледяной кристалл, где заключён дух Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Illidan agreed and immediately set out to destroy the Frozen Throne, the icy crystal cask in which the Lich King’s spirit resided.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-strength-waned",
+    "claim": "Когда сила Lich King слабела, слабел и Arthas.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "As the Lich King's strength waned, so too did Arthas' powers.",
+    "locator": "PDF p. 86",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/sylvanas-windrunner",
+      "timeline/forsaken-rise"
+    ]
+  },
+  {
+    "id": "ch07-save-master",
+    "claim": "Ослабленный Arthas поспешил в Northrend спасать господина.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Weakened, but determined to save his master, Arthas reached Northrend only to find Illidan’s naga and blood elves waiting for him.",
+    "locator": "PDF p. 86",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-prison-shattered",
+    "claim": "Frostmourne Arthas разбил ледяную темницу Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Using his runeblade, Frostmourne, Arthas shattered the Lich King’s icy prison and thereby released Ner’zhul’s enchanted helm and breastplate.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-last-bastion",
+    "claim": "Stormwind — один из последних оплотов людей.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Stormwind City is one of the last bastions of human power in the world.",
+    "locator": "PDF p. 88",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-trogg-invasion",
+    "claim": "Troggs вырвались из-под Gnomeregan и начали истреблять gnomes.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The troggs – believed to have been unearthed from the Uldaman excavation – erupted beneath Gnomeregan and began to slaughter every gnome within the city.",
+    "locator": "PDF p. 93",
+    "chapterIds": [
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/gnomeregan-lost"
+    ]
+  },
+  {
+    "id": "ch07-eye-dalaran",
+    "claim": "С Eye of Sargeras Illidan отправился в Dalaran.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With the powerful Eye in his possession, Illidan traveled to the former wizard-city of Dalaran.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-icecrown-spell",
+    "claim": "Illidan обрушил разрушительное заклинание на Icecrown.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Illidan used the Eye to cast a destructive spell against the Lich King’s citadel of Icecrown in distant Northrend.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-spell-stopped",
+    "claim": "Заклинание остановили Malfurion и Tyrande, пришедшие на помощь Maiev.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "At the final moment, Illidan’s destructive spell was stopped when his brother Malfurion and the Priestess Tyrande arrived to aid Maiev.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-maiev-jailor",
+    "claim": "Maiev была тюремщицей Illidan десять тысяч лет.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Maiev had been Illidan's jailor for ten thousand years and relished the prospect of recapturing him.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-illidan-fled",
+    "claim": "Illidan бежал обратно в Outland.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Illidan and his troops were forced to flee back to Outland in disgrace",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-illidan-eye",
+    "claim": "Illidan обошёл Maiev и добыл Eye of Sargeras.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Nevertheless, Illidan outsmarted Maiev and her Watchers and succeeded in claiming the Eye of Sargeras despite their efforts.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch07-kiljaeden-angered",
+    "claim": "Kil’jaeden был разгневан поражением Archimonde, но тревожился о большем.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Kil’jaeden was angered by Archimonde’s defeat at Mount Hyjal, but he had bigger concerns than vengeance.",
+    "locator": "PDF p. 85",
+    "chapterIds": [
+      "third-war-to-forever"
+    ]
+  }
+]

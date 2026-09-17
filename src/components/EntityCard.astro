@@ -1,0 +1,21 @@
+---
+import LoreBadge from './LoreBadge.astro';
+import type { LoreStatus } from '../lib/status';
+
+interface Props {
+  href: string;
+  title: string;
+  summary: string;
+  status: LoreStatus;
+  kicker?: string;
+}
+
+const { href, title, summary, status, kicker } = Astro.props;
+---
+
+<article class="entity-card">
+  {kicker && <p class="section-kicker">{kicker}</p>}
+  <h3><a href={href}>{title}</a></h3>
+  <p>{summary}</p>
+  <LoreBadge status={status} />
+</article>

@@ -1,0 +1,259 @@
+[
+  {
+    "id": "ch03-shamanistic-orcs",
+    "claim": "Draenei поселились на мире шаманских orcs и назвали его Draenor.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "In time the draenei settled on a remote world and met the shamanistic orcs who inhabited it. The draenei came to call their new home Draenor or \\\"Exiles' Refuge.\\\"",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-kiljaeden-nerzhul",
+    "claim": "Kil’jaeden развращал orcs через Ner’zhul, затем обратился к его ученику.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Working through the shaman Ner'zhul, the demon lord gradually began corrupting the orcs. When Ner'zhul refused to serve the Legion's agenda past a certain point, Kil'jaeden turned to Ner'zhul's apprentice.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "factions/burning-legion",
+      "factions/horde",
+      "timeline/horde-corrupted"
+    ]
+  },
+  {
+    "id": "ch03-draenei-slaughter",
+    "claim": "Gul’dan довёл orcs до жажды крови, и Horde истребляла draenei.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Gul'dan worked the orcs into a frenzy of bloodlust, and the newly formed Horde began slaughtering the peaceful draenei.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/horde-corrupted"
+    ]
+  },
+  {
+    "id": "ch03-mannoroth-blood",
+    "claim": "Gul’dan убедил orcs выпить кровь Mannoroth; ими управляли он и Blackhand.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "His influence over the orcs came to a head when he convinced them to drink the blood of the demon Mannoroth, promising them invincibility in exchange for their compliance. The fiend’s blood poisoned their minds, transforming the orcs into an army consumed by bloodlust and controlled from the shadows by Gul’dan and his puppet Warchief, Blackhand.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/horde-corrupted"
+    ]
+  },
+  {
+    "id": "ch03-sargeras-medivh",
+    "claim": "Sargeras, однажды атаковавший Azeroth, вселился в Medivh.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "After a failed attack on Azeroth 10,000 years ago, Sargeras saw an opportunity to once again strike at the world, and possessed the magus Medivh, intending to use his power to foment a war between worlds that would force Azeroth to buckle upon itself.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
+    ]
+  },
+  {
+    "id": "ch03-timeline-contact",
+    "claim": "Sargeras заставил Medivh связаться с Gul’dan на Draenor.",
+    "sourceId": "wow-story-timeline-orcs-and-humans",
+    "quote": "To this end, Sargeras possessed the human sorcerer Medivh and compelled him to contact Gul'dan, an orc warlock on the world of Draenor.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-dark-portal",
+    "claim": "В обмен на божественность Gul’dan открыл Dark Portal, и Horde хлынула в Azeroth.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Medivh struck a deal with his new ally: in exchange for the promise of godhood, Gul’dan would create a gateway between the human homeworld of Azeroth and his own planet, Draenor. Thus, the Dark Portal was first opened, and the Horde flooded through to clash with the humans of Azeroth.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "glossary/dark-portal",
+      "glossary/lore-editions",
+      "timeline/dark-portal-opened"
+    ]
+  },
+  {
+    "id": "ch03-three-years",
+    "claim": "Годами шли стычки; через три года после открытия портала Horde пошла на Stormwind.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "For years, orcs and humans clashed in savage skirmishes, each side biding their time and surveying the enemy with the intent to launch a full-force strike when the hour was right. Three years after the Dark Portal was opened, the Horde marched on Stormwind City.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
+    ]
+  },
+  {
+    "id": "ch03-khadgar",
+    "claim": "Khadgar открыл Llane и Lothar правду о Medivh.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Meanwhile, Medivh’s apprentice Khadgar confided in King Llane and Anduin Lothar, revealing that his master had been corrupted by dark forces and had unleashed the Horde upon Azeroth.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-medivh-slain",
+    "claim": "Lothar с помощью Khadgar убил Medivh и изгнал дух Sargeras.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "With Khadgar’s aid, Lothar slew Medivh and banished the spirit of Sargeras within him to the Nether.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-doomhammer-rise",
+    "claim": "Orgrim Doomhammer бросил вызов Blackhand и стал вождём.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "The great orc chieftain Orgrim Doomhammer found himself disillusioned with the Horde’s leadership under Gul’dan and Blackhand. Sensing an opportunity, he challenged Blackhand for the mantle of Warchief and emerged from the fray victorious.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-garona",
+    "claim": "Garona Halforcen по приказу Shadow Council убила короля Llane.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "While the city was under siege, Garona Halforcen, a former ally of the humans who was secretly in the thrall of Gul’dan’s Shadow Council, secured victory for the orcs, and assassinated King Llane under the Council’s orders.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
+    ]
+  },
+  {
+    "id": "ch03-timeline-garona",
+    "claim": "Timeline: half-orc Garona помогала защитникам, затем предала их и убила Llane Wrynn.",
+    "sourceId": "wow-story-timeline-orcs-and-humans",
+    "quote": "Aided by the half-orc Garona, human champions like Anduin Lothar fought valiantly to protect their kingdom. Yet, in the end, the mighty Horde shattered Stormwind's defenses. Amid the city's tragic fall, Garona betrayed her allies and assassinated King Llane Wrynn, sealing the nation's defeat.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ]
+  },
+  {
+    "id": "ch03-lothar-retreat",
+    "claim": "Stormwind пал; Lothar увёл остатки жителей через Great Sea.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "The morale of Stormwind’s military died along with him, and the city fell to the might of the Horde. Anduin Lothar declared the war lost and retreated with the remnants of Stormwind’s populace across the Great Sea.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "locations/lordaeron",
+      "locations/stormwind"
+    ]
+  },
+  {
+    "id": "ch03-wc2-583",
+    "claim": "Руководство к Warcraft II датирует открытие портала 583 годом.",
+    "sourceId": "warcraft-ii-manual",
+    "quote": "Thus, in the year 583, the first of Medivh’s unnatural Portals was opened between the world of Azeroth and the red world of the Orcs.",
+    "locator": "PDF p. 37",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
+    ]
+  },
+  {
+    "id": "ch03-wc2-five-years",
+    "claim": "Руководство к Warcraft II: война длилась почти пять лет.",
+    "sourceId": "warcraft-ii-manual",
+    "quote": "The arrival of Gul’dan and the Horde War Chief Blackhand heralded a war that tore the realm of Azeroth asunder for nearly five years.",
+    "locator": "PDF p. 37",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
+    ]
+  },
+  {
+    "id": "ch03-forever-start",
+    "claim": "Forever начинается после Forsaken Kingdom и до Molten Core, на исходных континентах, с уровнем 60.",
+    "sourceId": "forever-announcement",
+    "quote": "Set after the events of Warcraft III Reforged: Forsaken Kingdom and before Molten Core, players will return to the original continents, adventure to level 60, and continue progressing through new stories, experiences, and updates inspired by years of player passion and feedback.",
+    "chapterIds": [
+      "orcs-and-humans",
+      "second-war",
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forever"
+    ]
+  },
+  {
+    "id": "ch03-fled-north",
+    "claim": "Lothar и выжившие защитники Stormwind бежали на север.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Desperate for aid, Lothar and the survivors of Stormwind’s siege fled north.",
+    "chapterIds": [
+      "orcs-and-humans",
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/alliance-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch03-refugees-proof",
+    "claim": "Беженцы стали неопровержимым доказательством угрозы; Terenas созвал правителей.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "The refugees were irrefutable proof of the threat posed by the Horde; unable to deny the existence of such a threat to life on Azeroth, King Terenas summoned the leaders of the human kingdoms to prepare a counteroffensive against the Horde.",
+    "chapterIds": [
+      "orcs-and-humans",
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch03-first-attack-repelled",
+    "claim": "Первый штурм Stormwind отбил Anduin Lothar, и Horde отступила.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Though their first attack was repelled by the King’s Commander Anduin Lothar, the Horde retreated to regroup and decide how best to land a decisive blow against the human kingdom.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
+    ]
+  },
+  {
+    "id": "ch03-marched-once-more",
+    "claim": "Под знаменем Doomhammer Horde снова пошла на Stormwind.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "United under the banner of Doomhammer, the Horde marched upon Stormwind once more.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
+    ]
+  },
+  {
+    "id": "ch03-timeline-gateway",
+    "claim": "Официальная хронология: Dark Portal создали Medivh и Gul’dan.",
+    "sourceId": "wow-story-timeline-orcs-and-humans",
+    "quote": "This cursed force invaded Azeroth through the Dark Portal, a dimensional gateway created by Medivh and Gul'dan, and clashed with the human nation of Stormwind.",
+    "chapterIds": [
+      "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "glossary/dark-portal",
+      "glossary/lore-editions",
+      "timeline/dark-portal-opened"
+    ]
+  }
+]

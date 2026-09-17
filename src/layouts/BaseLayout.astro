@@ -1,0 +1,32 @@
+---
+import AppShell from '../components/AppShell.astro';
+import '../styles/global.css';
+import '../styles/components.css';
+import '../styles/print.css';
+interface Props {
+  title: string;
+  description?: string;
+  documentTitle?: string;
+  breadcrumbs?: { label: string; href?: string }[];
+}
+const { title, description = 'Русскоязычный путеводитель по истории Warcraft и World of Warcraft: Forever с прозрачными статусами лора.', documentTitle = `${title} — Warcraft: Forever`, breadcrumbs } = Astro.props;
+---
+<!doctype html>
+<html lang="ru" data-reading-mode="essential" data-spoilers="hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#10151a" />
+    <title>{documentTitle}</title>
+    <script is:inline>
+      try {
+        const reading = localStorage.getItem('wow-reading-mode');
+        const spoilers = localStorage.getItem('wow-spoilers');
+        document.documentElement.dataset.readingMode = reading === 'deep' ? 'deep' : 'essential';
+        document.documentElement.dataset.spoilers = spoilers === 'shown' ? 'shown' : 'hidden';
+      } catch { /* Defaults are safe when browser storage is unavailable. */ }
+    </script>
+  </head>
+  <body><AppShell title={title} breadcrumbs={breadcrumbs}><slot /></AppShell></body>
+</html>

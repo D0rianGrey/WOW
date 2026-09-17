@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+
+import ReadingModeToggle from './ReadingModeToggle.astro';
+import { route } from '../lib/routes';
+interface Props {
+  title: string;
+  breadcrumbs?: { label: string; href?: string }[];
+}
+const { title, breadcrumbs } = Astro.props;
+// Every page shows progress along the same guided path, so a reader never sees an empty "0 / 0".
+const chapterIds = (await getCollection('chapters')).sort((a, b) => a.data.order - b.data.order).map((chapter) => chapter.data.id);
+const navigation = [
+  ['', 'Главная'], ['start-here', 'Начать здесь'], ['timeline', 'Хронология'],
+  ['eras', 'Эпохи'], ['characters', 'Персонажи'], ['factions', 'Фракции'],
+  ['locations', 'Места'], ['forever-changes', 'Изменения Forever'],
+  ['glossary', 'Словарь'], ['sources', 'Источники'], ['changelog', 'Журнал обновлений']
+];
+const currentPath = Astro.url.pathname.replace(/\/$/, '');
+---
+<a class="skip-link" href="#main-content">Перейти к содержанию</a>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href={route()} aria-label="World of Warcraft: Forever — главная">
+      <span class="brand-seal" aria-hidden="true">W</span>
+      <span><span class="brand-world">WORLD OF WARCRAFT</span><strong>FOREVER</strong><span class="brand-subtitle">Хроники Азерота</span></span>
+    </a>
+    <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="primary-navigation">Оглавление <span aria-hidden="true">☰</span></button>
+    <div id="primary-navigation" class="navigation-panel">
+      <span class="nav-caption">КНИГА МИРА</span>
+      <nav aria-label="Основные разделы">
+        {navigation.map(([path, label], index) => <a href={route(path)} aria-current={currentPath === route(path).replace(/\/$/, '') || (path && currentPath.startsWith(`${route(path)}/`)) ? 'page' : undefined}><span class="nav-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{label}</a>)}
+      </nav>
+      <a class="timeline-anchor" href={route('timeline#forever')}><span class="live-dot" aria-hidden="true"></span><span>Вы здесь<strong>На пороге Forever</strong></span><span aria-hidden="true">↗</span></a>
+      <p class="sidebar-note">История до вашего первого шага.<br />Дальше — ваша история.</p>
+    </div>
+  </aside>
+  <div class="main-column">
+    <header class="utility-bar">
+      <span class="edition-label">ПУТЕВОДИТЕЛЬ ПО ЛОРУ <span> / </span> RU</span>
+      <a class="search-link" href={route('search')} aria-label="Поиск по энциклопедии"><span aria-hidden="true">⌕</span> Поиск</a>
+    </header>
+    <div class="reader-toolbar"><ReadingModeToggle />{chapterIds.length > 0 && <div class="reading-progress" data-chapter-ids={JSON.stringify(chapterIds)}>
+      <div><span>Ваш путь</span><span data-progress-label>0 / {chapterIds.length} глав</span></div>
+      <progress value="0" max={chapterIds.length} aria-label="Прочитанные главы"></progress>
+    </div>}</div>
+    <main id="main-content" tabindex="-1">
+      <nav class="breadcrumbs" aria-label="Навигационная цепочка"><a href={route()}>Хроники</a><span aria-hidden="true">/</span>{(breadcrumbs ?? []).map(crumb => <><span>{crumb.href ? <a href={crumb.href}>{crumb.label}</a> : crumb.label}</span><span aria-hidden="true">/</span></>)}<span aria-current="page">{title}</span></nav>
+      <slot />
+    </main>
+    <footer class="site-footer"><span>WORLD OF WARCRAFT <b>FOREVER</b></span><p>Независимый путеводитель по лору. Warcraft — вселенная Blizzard Entertainment.</p><a href={route('sources')}>Каждая история начинается с источника ↗</a></footer>
+  </div>
+</div>
+<script>
+  const menu = document.querySelector<HTMLButtonElement>('.mobile-menu');
+  const panel = document.querySelector<HTMLElement>('.navigation-panel');
+  menu?.addEventListener('click', () => {
+    const open = menu.getAttribute('aria-expanded') !== 'true';
+    menu.setAttribute('aria-expanded', String(open));
+    panel?.classList.toggle('is-open', open);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
+      menu.setAttribute('aria-expanded', 'false');
+      panel?.classList.remove('is-open');
+      menu.focus();
+    }
+  });
+  function updateProgress() {
+    document.querySelectorAll<HTMLElement>('[data-chapter-ids]').forEach(element => {
+      const ids = new Set<string>(JSON.parse(element.dataset.chapterIds || '[]'));
+      let saved: unknown = [];
+      try { saved = JSON.parse(localStorage.getItem('wow-reading-progress') || '[]'); } catch { /* Empty progress is the safe fallback. */ }
+      const completed = new Set(Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string' && ids.has(id)) : []);
+      element.querySelector('progress')!.value = completed.size;
+      element.querySelector('[data-progress-label]')!.textContent = `${completed.size} / ${ids.size} глав`;
+    });
+  }
+  updateProgress();
+  window.addEventListener('wow:progress-changed', updateProgress);
+  window.addEventListener('storage', updateProgress);
+</script>

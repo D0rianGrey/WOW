@@ -1,0 +1,493 @@
+[
+  {
+    "id": "ch06-arthas-trained",
+    "claim": "Arthas учился бою у Muradin Bronzebeard, брата короля Magni.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The young Prince was trained as a warrior by Muradin Bronzebeard – brother to King Magni of Ironforge",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-silver-hand",
+    "claim": "В девятнадцать лет Arthas вступил в Order of the Silver Hand под началом Uther.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "At the tender age of nineteen Arthas was inducted into the Order of the Silver Hand under the command of Lord Uther.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-jaina-kirin-tor",
+    "claim": "Jaina была лучшей ученицей Kirin Tor.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "However, the beautiful, yet shy young woman was also the star pupil of the Kirin Tor – the Wizard Council of Dalaran.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-death-cults",
+    "claim": "В северных провинциях появились «культы смерти».",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Rumor held that a number of supposed “death cults” had formed in the northern provinces.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-plague-rumors",
+    "claim": "Слухи о чуме побудили Arthas искать её источник.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Rumors of a plague spread quickly through the kingdom of Lordaeron, unsettling the citizenry and prompting King Terenas’s son, Arthas, to investigate its source",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-scourge-created",
+    "claim": "Kil’jaeden создал Scourge под волей Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "To this end, the demon Kil’jaeden created the Scourge – a vast army of undead warriors, united under the singular will of the dread Lich King.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-plague-plan",
+    "claim": "Lich King и Kel’Thuzad задумали чуму, чтобы пополнять Scourge.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Lich King and his mortal servant, Kel’Thuzad, planned to spread a terrible plague across the human lands, thereby swelling the ranks of the Scourge with newly risen undead warriors.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-cult-first-blow",
+    "claim": "Kel’Thuzad и Cult of the Damned выпустили чуму на севере Lordaeron.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Once their preparations were made, Kel’Thuzad and his Cult of the Damned struck the first blow against civilization by releasing the plague upon northern Lordaeron.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "glossary/third-war",
+      "timeline/plague-of-undeath"
+    ]
+  },
+  {
+    "id": "ch06-uther-investigated",
+    "claim": "Uther расследовал заражённые земли.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Uther the Lightbringer, one of humanity’s most famous heroes, investigated the infected regions in the hope of finding a way to halt the plague's progress.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-kelthuzad-killed",
+    "claim": "Arthas взялся за борьбу со Scourge и убил Kel’Thuzad.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "As the ranks of the undead swept across Lordaeron, the king’s only son, Prince Arthas, took up the fight against the Scourge. Arthas succeeded in killing Kel’Thuzad",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/plague-of-undeath"
+    ]
+  },
+  {
+    "id": "ch06-extreme-steps",
+    "claim": "Arthas прибегал ко всё более крайним мерам.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Frustrated and stymied by the seemingly unstoppable enemy, Arthas took increasingly extreme steps to hold back their advance.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-uther-warned",
+    "claim": "Uther предупредил Arthas, что тот теряет человечность.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Finally Uther warned Arthas that he was losing his hold on humanity.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-jaina-investigated",
+    "claim": "Jaina расследовала чуму вместе с Arthas.",
+    "sourceId": "jaina-hero-week",
+    "quote": "When the plague of undeath began spreading through the Eastern Kingdoms, Jaina was asked to investigate it along with Arthas Menethil, crown prince of Lordaeron.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ch06-stratholme",
+    "claim": "Arthas приказал перебить жителей Stratholme; Jaina ушла.",
+    "sourceId": "jaina-hero-week",
+    "quote": "When Arthas ordered his soldiers to slaughter the people of Stratholme -- many of whom might not yet have been infected -- that was the last straw for Jaina: she parted ways with him rather than watch him carry out such a terrible deed.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/arthas-menethil",
+      "timeline/stratholme"
+    ]
+  },
+  {
+    "id": "ch06-malganis",
+    "claim": "Mal’Ganis был выбран, чтобы привести Arthas на службу Lich King, и подтолкнул его к зачистке Stratholme.",
+    "sourceId": "heroes-patch-notes-2018-10-16",
+    "quote": "Cunning and intelligent, Mal'Ganis was chosen to bring Arthas Menthil into the Lich King's service. After manipulating the prince into purging Stratholme of life, he finally fell to Frostmourne",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/stratholme"
+    ]
+  },
+  {
+    "id": "ch06-northrend-frostmourne",
+    "claim": "Arthas проследил чуму до Northrend и взял Frostmourne.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He tracked the plague’s source to the arctic land of Northrend, intending to end its threat forever. Instead, he fell into the Lich King’s trap when he took up the cursed runeblade Frostmourne",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/arthas-menethil",
+      "glossary/frostmourne",
+      "locations/northrend",
+      "timeline/frostmourne-and-fall-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-terrible-price",
+    "claim": "Arthas знал о страшной цене клинка, но взял его.",
+    "sourceId": "muradin-hero-week",
+    "quote": "Arthas was blinded by revenge, and although he knew that there would be a terrible price if he took up the blade, he did it anyway.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-muradin-struck",
+    "claim": "Проклятие клинка сразило Muradin; Arthas счёл его мёртвым.",
+    "sourceId": "muradin-hero-week",
+    "quote": "When he did, the blade’s curse unexpectedly struck down Muradin. Arthas believed his friend to be dead and left to take on Mal’Ganis.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-soul-stolen",
+    "claim": "Frostmourne украл душу Arthas и сделал его death knight.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The sword did indeed grant him unfathomable power; however, it also stole his soul. His spirit lost and his sanity shattered, Arthas was transformed into the greatest of the Lich King’s death knights.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "glossary/frostmourne",
+      "timeline/frostmourne-and-fall-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-terenas-murdered",
+    "claim": "Arthas повёл Scourge на своё королевство, убил Uther и отца.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "He willingly led the Scourge against his own kingdom, slew Uther in battle, and murdered his own father, King Terenas.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/frostmourne-and-fall-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-lordaeron-crushed",
+    "claim": "Lordaeron был раздавлен властью Lich King.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Caught off guard by Arthas' unthinkable crimes, Lordaeron was crushed under the Lich King's iron heel.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/frostmourne-and-fall-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-kelthuzad-ghost",
+    "claim": "Призрак Kel’Thuzad велел доставить его останки к Sunwell.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though he had defeated all of the people he now saw as his enemies, Arthas was haunted by the ghost of Kel’Thuzad. The ghost told Arthas to bring Kel’Thuzad’s remains to the mystical Sunwell",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-sylvanas-banshee-2004",
+    "claim": "Arthas поднял тело Sylvanas как banshee.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "In a cruel gesture of his dominance, he even raised Sylvanas’ defeated body as a banshee, cursed to mindless undeath in the service of Quel'Thalas' conqueror.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/fall-of-quelthalas"
+    ]
+  },
+  {
+    "id": "ch06-sylvanas-resistance",
+    "claim": "Несмотря на сопротивление Sylvanas, Scourge прорвал Quel’Thalas.",
+    "sourceId": "sylvanas-hero-week",
+    "quote": "Despite her strong resistance, the Scourge ripped through Quel’Thalas and she met defeat at the hands of Arthas. He denied her a clean death and instead transformed her soul into a banshee, forced to serve the Scourge.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
+    ]
+  },
+  {
+    "id": "ch06-anasterian",
+    "claim": "Arthas разорил Quel’Thalas; погиб король Anasterian Sunstrider.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Arthas craved the power of the Sunwell and would stop at nothing to harness it. He invaded Quel'Thalas and wiped out most of its population. In the end, even King Anasterian Sunstrider lay dead.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "locations/quelthalas",
+      "timeline/fall-of-quelthalas"
+    ]
+  },
+  {
+    "id": "ch06-lich-reborn",
+    "claim": "В водах Sunwell Kel’Thuzad возродился как lich.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "In due course, Arthas submerged Kel’Thuzad’s remains within the holy waters of the Sunwell. Although the potent waters of Eternity were fouled by this act, Kel’Thuzad was reborn as a sorcerous lich.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/fall-of-quelthalas"
+    ]
+  },
+  {
+    "id": "ch06-no-elf-remained",
+    "claim": "Мануал 2004 года: в Quel’Thalas не осталось ни одного живого эльфа.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "By the time Arthas and his army of the dead turned southward, not one living elf remained in Quel’Thalas.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-dalaran-archimonde",
+    "claim": "Scourge пошёл на Dalaran за книгой Medivh, чтобы призвать Archimonde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Once Kel’Thuzad was whole again, Arthas led the Scourge south towards Dalaran. There the lich would obtain the powerful spellbook of Medivh and use it to summon the demonlord Archimonde back into the world.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/archimonde-summoned"
+    ]
+  },
+  {
+    "id": "ch06-kelthuzad-archmage",
+    "claim": "Kel’Thuzad был архимагом Kirin Tor и нарушил запрет на тёмную магию.",
+    "sourceId": "kelthuzad-enters-the-nexus",
+    "quote": "Among these powerful mortals was an Archmage of the Kirin Tor, by the name of Kel’Thuzad. As one of that council’s ruling members, Kel’Thuzad thought himself above the strictures of its self-imposed laws which forbade experimentation with dark magic.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-kelthuzad-pledged",
+    "claim": "Kel’Thuzad присягнул Lich King.",
+    "sourceId": "kelthuzad-enters-the-nexus",
+    "quote": "Taken with the promises of power offered by the entity he now knew as the Lich King, Kel’Thuzad pledged his allegiance and went forth to convert more into the service of his new lord.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-fk-prologue",
+    "claim": "Пролог Last Days of Lordaeron — четыре миссии с возвращения Arthas.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "The four-mission Last Days of Lordaeron prologue begins as Arthas returns home. Players experience the kingdom’s final hours through the eyes of the Capital City Guard",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-fk-locations",
+    "claim": "В прологе есть Andorhal и Stratholme после чистки.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Revisit familiar locations from a new point of view, including the Capital of Lordaeron, the sewers that will eventually become Undercity, Andorhal, and Stratholme after the culling.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-fk-heroes",
+    "claim": "Новые персонажи — Garek Bandarion и Dark Ranger Anya.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "At the heart of the story are two new characters—Garek Bandarion, a newly risen Forsaken warrior, and Dark Ranger Anya.",
+    "chapterIds": [
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "ch06-fk-themes",
+    "claim": "Кампания обещает рассказать, как возник Undercity и культура Forsaken.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Through Garek and Anya, players will learn how the Undercity was established, how the Forsaken formed their own culture and community, why the Scourge did not reclaim Lordaeron… and why the water is green.",
+    "chapterIds": [
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "forever/forsaken-kingdom",
+      "locations/undercity"
+    ]
+  },
+  {
+    "id": "ch06-forsaken-paladins",
+    "claim": "Путь Forsaken paladins вытекает из Forsaken Kingdom; им не доверяют.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their path rolls directly out of the new Warcraft III campaign Forsaken Kingdom, beginning at a time when these former paladins are deeply mistrusted by other Forsaken and still learning what it means to channel the Light in undeath.",
+    "chapterIds": [
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "characters/uther-the-lightbringer",
+      "forever/forsaken-paladins"
+    ]
+  },
+  {
+    "id": "ch06-bandarion-keep",
+    "claim": "Bandarion Keep в Whispering Wood — ключевое место этого пути.",
+    "sourceId": "forever-found-photos",
+    "quote": "Bandarion Keep in the Whispering Wood of Tirisfal Glades becomes a key location for that experience, grounding the Forsaken Paladin Journey in a local struggle for acceptance, identity, and purpose.",
+    "chapterIds": [
+      "arthas-and-lordaeron",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch06-retribution",
+    "claim": "Forsaken paladins получают эпическое задание во имя Retribution.",
+    "sourceId": "forever-found-photos",
+    "quote": "At level 60, Forsaken paladins will also embark on their own epic mount quest. Whereas Alliance paladins claim their epic charger in the name of Redemption, the paladins of the Forsaken ride in the name of Retribution.",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "forever/forsaken-paladins",
+      "locations/bandarion-keep"
+    ]
+  },
+  {
+    "id": "ch06-arthas-grown",
+    "claim": "Единственный сын Terenas, Arthas, вырос сильным и уверенным.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "King Terenas’ only son, Arthas, had grown into a strong, confident young man.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-forces-grew",
+    "claim": "Несмотря на смерть Kel’Thuzad, силы Lich King росли с каждым павшим.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Arthas succeeded in killing Kel’Thuzad, but even so, the Lich King's forces grew with every soldier that fell in battle.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/plague-of-undeath"
+    ]
+  },
+  {
+    "id": "ch06-save-his-people",
+    "claim": "Arthas взял Frostmourne, веря, что спасёт им свой народ.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "in the belief that he could use it to save his people.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-jaina-childhood",
+    "claim": "Jaina — младшая дочь адмирала Proudmoore и подруга детства Arthas.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Jaina was the youngest daughter of Admiral Proudmoore, a childhood friend of Arthas.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ]
+  },
+  {
+    "id": "ch06-sunwell-hidden",
+    "claim": "Sunwell был скрыт в королевстве high elves Quel’Thalas.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "to bring Kel’Thuzad’s remains to the mystical Sunwell, which was hidden within the high elves’ kingdom of Quel’Thalas.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "glossary/sunwell"
+    ]
+  },
+  {
+    "id": "ch06-ranger-general",
+    "claim": "Sylvanas, Ranger-General of Silvermoon, храбро сражалась, но Arthas разбил армию эльфов.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Sylvanas Windrunner, the Ranger-General of Silvermoon, put up a valiant fight, but Arthas eventually wiped out the high elf army and won through to the Sunwell.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/fall-of-quelthalas"
+    ]
+  }
+]

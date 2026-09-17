@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import type { SourceType } from '../lib/content';
+
+interface Props {
+  sources: CollectionEntry<'sources'>[];
+}
+
+const { sources } = Astro.props;
+const typeLabels: Record<SourceType, string> = {
+  'official-article': 'Официальная публикация Blizzard',
+  'official-announcement': 'Официальный анонс',
+  'official-retrospective': 'Поздняя официальная ретроспектива',
+  'official-preview': 'Официальное превью',
+  'official-promo': 'Официальный промоматериал',
+  'official-manual': 'Официальное руководство',
+  'official-book': 'Официальная книга',
+  'official-fiction': 'Официальный рассказ',
+  'in-game': 'Текст в игре'
+};
+---
+
+<aside class="chapter-sources" aria-labelledby="chapter-sources-title">
+  <p class="section-kicker">Границы рассказа</p>
+  <h2 id="chapter-sources-title">Источники главы</h2>
+  <ol>
+    {sources.map((source) => (
+      <li id={`source-${source.id}`}>
+        {source.data.url ? <a href={source.data.url} rel="noreferrer">{source.data.title}</a> : <cite>{source.data.title}</cite>}
+        <span>{source.data.publisher} · {typeLabels[source.data.type]}{source.data.citation && ` · ${source.data.citation}`}</span>
+      </li>
+    ))}
+  </ol>
+  <p>Источники подтверждают обозначенный слой истории. Поздняя ретроспектива не выдаётся за текст эпохи Warcraft III или 2004 года, а анонсы Forever не дополняются предполагаемыми концовками.</p>
+</aside>

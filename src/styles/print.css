@@ -1,0 +1,18 @@
+@media print {
+  :root { color-scheme: light; }
+  html, body, .main-column { color: #111; background: #fff !important; }
+  .app-shell { display: block; }
+  .sidebar, .utility-bar, .reader-toolbar, .skip-link, .site-footer, .hero-actions, .text-button, .chronicle-mark { display: none !important; }
+  main { padding: 0; }
+  .breadcrumbs { margin-bottom: 1rem; }
+  h1 { font-size: 32pt !important; }
+  h2 { font-size: 22pt; }
+  h3 { font-size: 16pt; }
+  p, .lead, .purpose, .prose, .prose h2, .prose h3, .eyebrow, .section-kicker, .spoiler-warning { color: #111; }
+  a { color: #111 !important; }
+  .home-hero, .intro-grid, .disclosure-grid { display: block; }
+  .parchment-panel, .spoiler-block, .deep-note, .lore-badge { color: #111; background: #fff; border-color: #555; break-inside: avoid; }
+  .spoiler-block { margin-block: 1rem; }
+  h1, h2, h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+}

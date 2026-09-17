@@ -1,0 +1,17 @@
+---
+import type { LoreStatus } from '../lib/status';
+interface Props { status: LoreStatus }
+const { status } = Astro.props;
+const labels = {
+  ESTABLISHED: ['◆', 'История Warcraft', 'Устоявшаяся история Warcraft, используемая как предыстория.'],
+  FOREVER: ['✦', 'Forever', 'Подтверждённое дополнение World of Warcraft: Forever.'],
+  CHANGED: ['↔', 'Изменено', 'Документированное изменение или расхождение с прежней версией истории.'],
+  BETA: ['△', 'Бета · может измениться', 'Сведения из беты. Не окончательный канон: содержание может измениться.'],
+  UNCONFIRMED: ['?', 'Не подтверждено', 'Слух, интерпретация или датамайнинг. Не установленный факт.']
+};
+const [symbol, label, description] = labels[status];
+---
+<span class:list={['lore-badge', `status-${status.toLowerCase()}`]}>
+  <span aria-hidden="true">{symbol}</span> {label}
+  <span class="sr-only"> — {description}</span>
+</span>

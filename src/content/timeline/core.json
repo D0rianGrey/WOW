@@ -1,0 +1,958 @@
+[
+  {
+    "id": "titans-order-azeroth",
+    "title": "Titans упорядочивают Azeroth",
+    "slug": "titans-order-azeroth",
+    "status": "ESTABLISHED",
+    "era": "Пролог: Azeroth до знакомого мира",
+    "eraId": "prologue",
+    "summary": "Руководство к Warcraft III: titans веками двигают и формируют землю, пока не остаётся один совершенный континент. Поздняя ретроспектива эпохи Dragonflight: Aggramar опасается, что Pantheon повредит world-soul, и titans действуют через созданные конструкты — keepers ведут titan-forged против армий Black Empire.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "dragon-aspects-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Древнейшие времена",
+    "approximate": true,
+    "sortKey": 10,
+    "major": true,
+    "characterIds": [],
+    "factionIds": [],
+    "locationIds": [
+      "azeroth"
+    ],
+    "chapterSlug": "azeroth-before-civilization",
+    "dateNote": "Официальные тексты не датируют эту эпоху."
+  },
+  {
+    "id": "dragon-aspects-empowered",
+    "title": "Proto-dragons становятся Dragon Aspects",
+    "slug": "dragon-aspects-empowered",
+    "status": "ESTABLISHED",
+    "era": "Пролог: Azeroth до знакомого мира",
+    "eraId": "prologue",
+    "summary": "По ретроспективе эпохи Dragonflight, под руководством Tyr пять proto-dragons сражаются с Galakrond и получают силу охранять земли Azeroth.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "dragon-aspects-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Древнейшие времена",
+    "approximate": true,
+    "sortKey": 20,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "azeroth-before-civilization",
+    "dateNote": "Официальные тексты не датируют эту эпоху."
+  },
+  {
+    "id": "highborne-summon-legion",
+    "title": "Highborne открывают путь Burning Legion",
+    "slug": "highborne-summon-legion",
+    "status": "ESTABLISHED",
+    "era": "Эпоха I: Древний Azeroth",
+    "eraId": "ancient",
+    "summary": "Магия Highborne у Well of Eternity привлекает Sargeras, и Queen Azshara открывает Burning Legion портал в глубинах Well.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "burning-crusade-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Около 10 000 лет назад",
+    "approximate": true,
+    "sortKey": 30,
+    "major": true,
+    "characterIds": [
+      "queen-azshara"
+    ],
+    "factionIds": [
+      "burning-legion",
+      "night-elves"
+    ],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "war-of-the-ancients",
+    "dateNote": "Руководство к Warcraft III: «за десять тысяч лет до First War»; ретроспектива Burning Crusade Classic: «более 10 000 лет назад»."
+  },
+  {
+    "id": "great-sundering",
+    "title": "Great Sundering",
+    "slug": "great-sundering",
+    "status": "ESTABLISHED",
+    "era": "Эпоха I: Древний Azeroth",
+    "eraId": "ancient",
+    "summary": "Схватка Furion с Azshara ввергает заклинание Highborne в хаос; Well of Eternity схлопывается, Kalimdor раскалывается, и возникает Maelstrom.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "warbringers-azshara"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Около 10 000 лет назад",
+    "approximate": true,
+    "sortKey": 40,
+    "major": true,
+    "characterIds": [
+      "queen-azshara",
+      "malfurion-stormrage"
+    ],
+    "factionIds": [
+      "night-elves",
+      "burning-legion"
+    ],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "war-of-the-ancients",
+    "dateNote": "Warbringers: Azshara: Sundering случился «десять тысяч лет назад»."
+  },
+  {
+    "id": "nordrassil-planted",
+    "title": "Nordrassil вырастает на Mount Hyjal",
+    "slug": "nordrassil-planted",
+    "status": "ESTABLISHED",
+    "era": "Эпоха I: Древний Azeroth",
+    "eraId": "ancient",
+    "summary": "Furion заточает Illidan; Alexstrasza кладёт в сердце Well of Eternity волшебный жёлудь, из него вырастает Мировое древо Nordrassil, и Nozdormu дарует ночным эльфам бессмертие, пока древо стоит.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "После Great Sundering",
+    "approximate": true,
+    "sortKey": 50,
+    "major": false,
+    "characterIds": [
+      "illidan-stormrage",
+      "malfurion-stormrage"
+    ],
+    "factionIds": [
+      "night-elves"
+    ],
+    "locationIds": [
+      "mount-hyjal"
+    ],
+    "chapterSlug": "war-of-the-ancients"
+  },
+  {
+    "id": "highborne-exiled",
+    "title": "Изгнание Highborne",
+    "slug": "highborne-exiled",
+    "status": "ESTABLISHED",
+    "era": "Эпоха II: Народы и королевства",
+    "eraId": "kingdoms",
+    "summary": "Dath’Remar высмеивает друидов, отказавшихся от магии, и его последователи обрушивают на Ashenvale магический шторм. Безрассудных Highborne изгоняют: они уплывают, высаживаются на землях будущего Lordaeron и становятся high elves.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Века после Great Sundering",
+    "approximate": true,
+    "sortKey": 60,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [
+      "night-elves"
+    ],
+    "locationIds": [
+      "lordaeron"
+    ],
+    "chapterSlug": "kingdoms-and-peoples"
+  },
+  {
+    "id": "quelthalas-founded",
+    "title": "Основание Quel’Thalas",
+    "slug": "quelthalas-founded",
+    "status": "ESTABLISHED",
+    "era": "Эпоха II: Народы и королевства",
+    "eraId": "kingdoms",
+    "summary": "После многих битв с trolls high elves основывают Quel’Thalas и создают Sunwell из воды, украденной из первого Well of Eternity.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "burning-crusade-story-so-far",
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Тысячи лет назад",
+    "approximate": true,
+    "sortKey": 70,
+    "major": true,
+    "characterIds": [],
+    "factionIds": [],
+    "locationIds": [
+      "quelthalas"
+    ],
+    "chapterSlug": "kingdoms-and-peoples",
+    "dateNote": "Руководство 2004 года: к падению королевство простояло «более девяти тысяч лет»."
+  },
+  {
+    "id": "troll-wars-arathor",
+    "title": "Союз Quel’Thalas и Arathor",
+    "slug": "troll-wars-arathor",
+    "status": "ESTABLISHED",
+    "era": "Эпоха II: Народы и королевства",
+    "eraId": "kingdoms",
+    "summary": "Против Amani high elves заключают союз с Arathor, основанным Thoradin: эльфы учат магии небольшую группу людей, люди помогают разрушить опору силы trolls.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "burning-crusade-story-so-far",
+      "legion-warrior-artifact-reveal"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Тысячи лет назад",
+    "approximate": true,
+    "sortKey": 80,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [],
+    "locationIds": [
+      "quelthalas"
+    ],
+    "chapterSlug": "kingdoms-and-peoples",
+    "dateNote": "Открытые официальные тексты не называют точную дату Troll Wars."
+  },
+  {
+    "id": "war-of-the-three-hammers",
+    "title": "War of the Three Hammers",
+    "slug": "war-of-the-three-hammers",
+    "status": "ESTABLISHED",
+    "era": "Эпоха II: Народы и королевства",
+    "eraId": "kingdoms",
+    "summary": "После смерти Modimus Anvilmar кланы dwarves воюют за Ironforge; Thaurissan призывает Ragnaros, а клан Bronzebeard удерживает город.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "muradin-hero-week",
+      "molten-core-anniversary"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Древняя история Ironforge",
+    "approximate": true,
+    "sortKey": 90,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [],
+    "locationIds": [],
+    "chapterSlug": "kingdoms-and-peoples",
+    "dateNote": "Официальные тексты не датируют эту войну."
+  },
+  {
+    "id": "horde-corrupted",
+    "title": "Порча orcs на Draenor",
+    "slug": "horde-corrupted",
+    "status": "ESTABLISHED",
+    "era": "Эпоха III: Orcs & Humans",
+    "eraId": "orcs-and-humans",
+    "summary": "Kil’jaeden развращает orcs через Ner’zhul и Gul’dan; кровь Mannoroth превращает Horde в армию, одержимую жаждой крови.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "burning-crusade-story-so-far",
+      "warcraft-iii-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "До открытия Dark Portal",
+    "approximate": true,
+    "sortKey": 100,
+    "major": false,
+    "characterIds": [
+      "guldan"
+    ],
+    "factionIds": [
+      "horde",
+      "burning-legion"
+    ],
+    "locationIds": [],
+    "chapterSlug": "orcs-and-humans",
+    "dateNote": "Порядок отдельных звеньев порчи официальные тексты не уточняют."
+  },
+  {
+    "id": "dark-portal-opened",
+    "title": "Открытие Dark Portal",
+    "slug": "dark-portal-opened",
+    "status": "ESTABLISHED",
+    "era": "Эпоха III: Orcs & Humans",
+    "eraId": "orcs-and-humans",
+    "summary": "Sargeras овладевает Medivh, чтобы развязать войну миров; Medivh заключает сделку с Gul’dan, открывается Dark Portal, и Horde вторгается в Azeroth. Официальные тексты по-разному называют создателя врат: Gul’dan, Medivh или обоих.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "warcraft-ii-manual",
+      "wow-story-timeline-orcs-and-humans"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Начало First War",
+    "approximate": false,
+    "sortKey": 110,
+    "major": true,
+    "characterIds": [
+      "medivh",
+      "guldan"
+    ],
+    "factionIds": [
+      "horde"
+    ],
+    "locationIds": [
+      "azeroth"
+    ],
+    "chapterSlug": "orcs-and-humans",
+    "dateNote": "Руководство к Warcraft II называет 583 год по своему летоисчислению; поздние тексты этот год не повторяют."
+  },
+  {
+    "id": "stormwind-falls",
+    "title": "Падение Stormwind",
+    "slug": "stormwind-falls",
+    "status": "ESTABLISHED",
+    "era": "Эпоха III: Orcs & Humans",
+    "eraId": "orcs-and-humans",
+    "summary": "Первый штурм Stormwind отбит; под знаменем Doomhammer Horde возвращается, Garona убивает короля Llane, и город падает.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "warcraft-ii-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Конец First War",
+    "approximate": true,
+    "sortKey": 120,
+    "major": true,
+    "characterIds": [
+      "orgrim-doomhammer"
+    ],
+    "factionIds": [
+      "horde"
+    ],
+    "locationIds": [
+      "stormwind"
+    ],
+    "chapterSlug": "orcs-and-humans",
+    "dateNote": "Первый поход Horde — через три года после открытия портала; руководство к Warcraft II называет войну почти пятилетней."
+  },
+  {
+    "id": "alliance-of-lordaeron",
+    "title": "Рождение Alliance of Lordaeron",
+    "slug": "alliance-of-lordaeron",
+    "status": "ESTABLISHED",
+    "era": "Эпоха IV: Alliance и Horde",
+    "eraId": "alliance-and-horde",
+    "summary": "Беженцы Stormwind бегут на север, и семь человеческих государств впервые за три тысячи лет объединяются под одним знаменем.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Начало Second War",
+    "approximate": false,
+    "sortKey": 130,
+    "major": true,
+    "characterIds": [],
+    "factionIds": [
+      "alliance"
+    ],
+    "locationIds": [
+      "lordaeron",
+      "stormwind"
+    ],
+    "chapterSlug": "second-war"
+  },
+  {
+    "id": "horde-defeated",
+    "title": "Разгром Horde",
+    "slug": "horde-defeated",
+    "status": "ESTABLISHED",
+    "era": "Эпоха IV: Alliance и Horde",
+    "eraId": "alliance-and-horde",
+    "summary": "Gul’dan уводит часть Horde к Tomb of Sargeras; Doomhammer убивает Lothar, но Turalyon разбивает Horde, Doomhammer попадает в плен, а Dark Portal разрушен.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "warcraft-iii-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Конец Second War",
+    "approximate": false,
+    "sortKey": 140,
+    "major": true,
+    "characterIds": [
+      "guldan",
+      "orgrim-doomhammer"
+    ],
+    "factionIds": [
+      "horde",
+      "alliance"
+    ],
+    "locationIds": [],
+    "chapterSlug": "second-war"
+  },
+  {
+    "id": "draenor-shattered",
+    "title": "Гибель Draenor",
+    "slug": "draenor-shattered",
+    "status": "ESTABLISHED",
+    "era": "Эпоха IV: Alliance и Horde",
+    "eraId": "alliance-and-horde",
+    "summary": "Ner’zhul снова открывает Dark Portal; его порталы разрывают Draenor, а Khadgar и его спутники уничтожают портал, чтобы спасти Azeroth.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "wow-story-timeline-beyond-the-dark-portal"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Вскоре после Second War",
+    "approximate": true,
+    "sortKey": 150,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [
+      "horde",
+      "alliance"
+    ],
+    "locationIds": [],
+    "chapterSlug": "second-war"
+  },
+  {
+    "id": "internment-and-splintering",
+    "title": "Лагеря и раскол Alliance",
+    "slug": "internment-and-splintering",
+    "status": "ESTABLISHED",
+    "era": "Эпоха IV: Alliance и Horde",
+    "eraId": "alliance-and-horde",
+    "summary": "Orcs в лагерях впадают в апатию, а налоги на содержание лагерей и споры раскалывают Alliance: уходят Quel’Thalas, Gilneas и Stromgarde.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "warcraft-iii-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Годы после Second War",
+    "approximate": true,
+    "sortKey": 160,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [
+      "alliance",
+      "horde"
+    ],
+    "locationIds": [
+      "lordaeron"
+    ],
+    "chapterSlug": "second-war"
+  },
+  {
+    "id": "thrall-frees-orcs",
+    "title": "Thrall освобождает orcs",
+    "slug": "thrall-frees-orcs",
+    "status": "ESTABLISHED",
+    "era": "Эпоха V: New Horde",
+    "eraId": "new-horde",
+    "summary": "Бывший раб-гладиатор Thrall возвращает orcs шаманизм; Doomhammer погибает при освобождении одного из лагерей, и Thrall становится вождём Horde.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "warcraft-iii-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Почти через 13 лет после поражения Horde",
+    "approximate": true,
+    "sortKey": 170,
+    "major": true,
+    "characterIds": [
+      "thrall",
+      "orgrim-doomhammer"
+    ],
+    "factionIds": [
+      "horde"
+    ],
+    "locationIds": [],
+    "chapterSlug": "thrall-and-new-horde",
+    "dateNote": "Та же ретроспектива говорит, что orcs провели в лагерях «последнее десятилетие»."
+  },
+  {
+    "id": "plague-of-undeath",
+    "title": "Чума нежити",
+    "slug": "plague-of-undeath",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VI: Arthas и падение Lordaeron",
+    "eraId": "fall-of-lordaeron",
+    "summary": "Kel’Thuzad и Cult of the Damned выпускают чуму на севере Lordaeron; Arthas убивает Kel’Thuzad, но армия Scourge продолжает расти.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Начало Third War",
+    "approximate": false,
+    "sortKey": 180,
+    "major": true,
+    "characterIds": [
+      "kelthuzad",
+      "arthas-menethil"
+    ],
+    "factionIds": [
+      "scourge"
+    ],
+    "locationIds": [
+      "lordaeron"
+    ],
+    "chapterSlug": "arthas-and-lordaeron",
+    "dateNote": "Руководство 2004 года относит вторжение Legion на четыре года назад от первого года World of Warcraft."
+  },
+  {
+    "id": "stratholme",
+    "title": "Stratholme",
+    "slug": "stratholme",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VI: Arthas и падение Lordaeron",
+    "eraId": "fall-of-lordaeron",
+    "summary": "Arthas приказывает перебить жителей Stratholme, многие из которых, возможно, ещё не заражены, и Jaina уходит от него.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "jaina-hero-week",
+      "heroes-patch-notes-2018-10-16"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 190,
+    "major": false,
+    "characterIds": [
+      "arthas-menethil",
+      "jaina-proudmoore"
+    ],
+    "factionIds": [],
+    "locationIds": [
+      "lordaeron"
+    ],
+    "chapterSlug": "arthas-and-lordaeron",
+    "dateNote": "Эпизод известен по поздним официальным текстам — Jaina Hero Week и описанию героев Heroes of the Storm."
+  },
+  {
+    "id": "frostmourne-and-fall-of-lordaeron",
+    "title": "Frostmourne и падение Lordaeron",
+    "slug": "frostmourne-and-fall-of-lordaeron",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VI: Arthas и падение Lordaeron",
+    "eraId": "fall-of-lordaeron",
+    "summary": "В Northrend Arthas берёт Frostmourne и теряет душу; вернувшись, он убивает Uther и своего отца, короля Terenas.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 200,
+    "major": true,
+    "characterIds": [
+      "arthas-menethil",
+      "uther-the-lightbringer"
+    ],
+    "factionIds": [
+      "scourge"
+    ],
+    "locationIds": [
+      "northrend",
+      "lordaeron"
+    ],
+    "chapterSlug": "arthas-and-lordaeron"
+  },
+  {
+    "id": "fall-of-quelthalas",
+    "title": "Падение Quel’Thalas",
+    "slug": "fall-of-quelthalas",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VI: Arthas и падение Lordaeron",
+    "eraId": "fall-of-lordaeron",
+    "summary": "Scourge прорывается к Sunwell: Sylvanas поднята как banshee, король Anasterian погибает, а Kel’Thuzad возрождается lich.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual",
+      "burning-crusade-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 210,
+    "major": false,
+    "characterIds": [
+      "arthas-menethil",
+      "sylvanas-windrunner",
+      "kelthuzad"
+    ],
+    "factionIds": [
+      "scourge"
+    ],
+    "locationIds": [
+      "quelthalas"
+    ],
+    "chapterSlug": "arthas-and-lordaeron"
+  },
+  {
+    "id": "archimonde-summoned",
+    "title": "Призыв Archimonde",
+    "slug": "archimonde-summoned",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VII: Third War",
+    "eraId": "third-war",
+    "summary": "В Dalaran Kel’Thuzad добывает книгу заклинаний Medivh и призывает Archimonde; демоны следуют за Scourge в Kalimdor.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 220,
+    "major": false,
+    "characterIds": [
+      "kelthuzad"
+    ],
+    "factionIds": [
+      "burning-legion",
+      "scourge"
+    ],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "third-war-to-forever"
+  },
+  {
+    "id": "voyage-to-kalimdor",
+    "title": "Путь в Kalimdor",
+    "slug": "voyage-to-kalimdor",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VII: Third War",
+    "eraId": "third-war",
+    "summary": "Пророк Medivh по отдельности ведёт orcs и людей в Kalimdor; в Barrens Thrall заключает союз с tauren Cairne Bloodhoof.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 230,
+    "major": false,
+    "characterIds": [
+      "medivh",
+      "thrall",
+      "cairne-bloodhoof"
+    ],
+    "factionIds": [
+      "horde",
+      "alliance"
+    ],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "thrall-and-new-horde"
+  },
+  {
+    "id": "blood-curse-ended",
+    "title": "Конец проклятия крови",
+    "slug": "blood-curse-ended",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VII: Third War",
+    "eraId": "third-war",
+    "summary": "Grom Hellscream убивает Cenarius, но затем помогает Thrall победить Mannoroth, и проклятие крови orcs заканчивается.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Third War",
+    "approximate": false,
+    "sortKey": 240,
+    "major": false,
+    "characterIds": [
+      "grom-hellscream",
+      "thrall"
+    ],
+    "factionIds": [
+      "horde",
+      "burning-legion"
+    ],
+    "locationIds": [
+      "kalimdor"
+    ],
+    "chapterSlug": "thrall-and-new-horde"
+  },
+  {
+    "id": "battle-of-mount-hyjal",
+    "title": "Битва за Mount Hyjal",
+    "slug": "battle-of-mount-hyjal",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VII: Third War",
+    "eraId": "third-war",
+    "summary": "Под руководством Medivh смертные народы объединяются, и Malfurion силой Nordrassil уничтожает Archimonde; ночные эльфы платят за победу бессмертием.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual",
+      "jaina-hero-week"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Конец Third War",
+    "approximate": false,
+    "sortKey": 250,
+    "major": true,
+    "characterIds": [
+      "malfurion-stormrage",
+      "tyrande-whisperwind",
+      "thrall",
+      "jaina-proudmoore"
+    ],
+    "factionIds": [
+      "night-elves",
+      "burning-legion",
+      "horde",
+      "alliance"
+    ],
+    "locationIds": [
+      "mount-hyjal"
+    ],
+    "chapterSlug": "third-war-to-forever",
+    "dateNote": "Руководство 2004 года называет вторжение Legion случившимся «четыре года назад» от первого года World of Warcraft."
+  },
+  {
+    "id": "durotar-and-theramore",
+    "title": "Durotar, Theramore и флот Daelin",
+    "slug": "durotar-and-theramore",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VII: Third War",
+    "eraId": "third-war",
+    "summary": "Thrall основывает Durotar, Jaina — Theramore; флот Daelin Proudmoore нарушает перемирие, и Jaina помогает Thrall его победить.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "После битвы за Hyjal",
+    "approximate": true,
+    "sortKey": 260,
+    "major": false,
+    "characterIds": [
+      "thrall",
+      "jaina-proudmoore"
+    ],
+    "factionIds": [
+      "horde",
+      "alliance"
+    ],
+    "locationIds": [
+      "durotar",
+      "kalimdor"
+    ],
+    "chapterSlug": "thrall-and-new-horde"
+  },
+  {
+    "id": "forsaken-kingdom",
+    "title": "Forsaken Kingdom",
+    "slug": "forsaken-kingdom",
+    "status": "FOREVER",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Новая кампания Warcraft III Reforged рассказывает о событиях между возвращением Arthas в Lordaeron и появлением Undercity; в центре истории — Garek Bandarion и Dark Ranger Anya.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "forsaken-kingdom-whats-next"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "От возвращения Arthas в Lordaeron до появления Undercity",
+    "approximate": true,
+    "sortKey": 270,
+    "major": false,
+    "characterIds": [
+      "garek-bandarion",
+      "dark-ranger-anya"
+    ],
+    "factionIds": [
+      "forsaken"
+    ],
+    "locationIds": [
+      "lordaeron",
+      "undercity"
+    ],
+    "chapterSlug": "third-war-to-forever",
+    "dateNote": "Blizzard говорит, что кампания заполняет четырёхлетний разрыв между Warcraft III и World of Warcraft."
+  },
+  {
+    "id": "forsaken-rise",
+    "title": "Мятеж Forsaken",
+    "slug": "forsaken-rise",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Когда сила Lich King слабеет, Sylvanas поднимает мятеж нежити; Forsaken занимают руины столицы Lordaeron и строят под ними свой оплот.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "После Third War",
+    "approximate": false,
+    "sortKey": 275,
+    "major": true,
+    "characterIds": [
+      "sylvanas-windrunner"
+    ],
+    "factionIds": [
+      "forsaken",
+      "scourge"
+    ],
+    "locationIds": [
+      "lordaeron",
+      "undercity"
+    ],
+    "chapterSlug": "third-war-to-forever"
+  },
+  {
+    "id": "arthas-becomes-lich-king",
+    "title": "Arthas становится Lich King",
+    "slug": "arthas-becomes-lich-king",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Illidan по приказу Kil’jaeden пытается уничтожить Frozen Throne, но Arthas первым достигает трона и сливается с Ner’zhul.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "После Third War",
+    "approximate": false,
+    "sortKey": 280,
+    "major": true,
+    "characterIds": [
+      "arthas-menethil",
+      "illidan-stormrage"
+    ],
+    "factionIds": [
+      "scourge"
+    ],
+    "locationIds": [
+      "northrend"
+    ],
+    "chapterSlug": "third-war-to-forever"
+  },
+  {
+    "id": "gnomeregan-lost",
+    "title": "Потеря Gnomeregan",
+    "slug": "gnomeregan-lost",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Troggs вторгаются в Gnomeregan; радиация, выпущенная по приказу Mekkatorque, убивает почти восемьдесят процентов gnomes, и выжившие бегут в Ironforge.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Незадолго до первого года",
+    "approximate": true,
+    "sortKey": 300,
+    "major": false,
+    "characterIds": [],
+    "factionIds": [
+      "alliance"
+    ],
+    "locationIds": [],
+    "chapterSlug": "third-war-to-forever",
+    "dateNote": "Руководство 2004 года говорит, что это случилось «недавно»."
+  },
+  {
+    "id": "varian-missing",
+    "title": "Исчезновение Varian Wrynn",
+    "slug": "varian-missing",
+    "status": "ESTABLISHED",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Король Varian Wrynn пропадает при подозрительных обстоятельствах по пути в Theramore; Stormwind правит ребёнок-король Anduin.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "medium",
+    "dateLabel": "Незадолго до первого года",
+    "approximate": true,
+    "sortKey": 310,
+    "major": false,
+    "characterIds": [
+      "anduin-wrynn"
+    ],
+    "factionIds": [
+      "alliance"
+    ],
+    "locationIds": [
+      "stormwind"
+    ],
+    "chapterSlug": "third-war-to-forever",
+    "dateNote": "Руководство 2004 года говорит, что Varian пропал «недавно»."
+  },
+  {
+    "id": "forever",
+    "title": "Вы здесь: World of Warcraft: Forever",
+    "slug": "forever",
+    "status": "FOREVER",
+    "era": "Эпоха IX: World of Warcraft: Forever",
+    "eraId": "forever",
+    "summary": "Forever начинается в раннем «Year 1» оригинального World of Warcraft, до того как Kazzak вновь открыл Dark Portal, — после Forsaken Kingdom и до Molten Core, в собственной «time bubble».",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "forever-found-photos",
+      "forever-announcement"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "Ранний Year 1",
+    "approximate": true,
+    "sortKey": 320,
+    "major": true,
+    "characterIds": [],
+    "factionIds": [
+      "alliance",
+      "horde"
+    ],
+    "locationIds": [
+      "azeroth"
+    ],
+    "chapterSlug": "third-war-to-forever"
+  }
+]

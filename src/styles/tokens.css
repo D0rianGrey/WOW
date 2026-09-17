@@ -1,0 +1,50 @@
+:root {
+  --color-parchment: #f2e3bd;
+  --color-parchment-deep: #dfc58e;
+  --color-charcoal: #211d19;
+  --color-gold: #b98a32;
+  --color-gold-bright: #d8ad52;
+  --color-text-muted: #746959;
+  --color-border: #a98e5f;
+  --color-status-established: #31735b;
+  --color-status-forever: #8659a6;
+  --color-status-changed: #b06c2f;
+  --color-status-beta: #916d16;
+  --color-status-unconfirmed: #9a3f3f;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --font-family-body: Georgia, 'Times New Roman', serif;
+  --font-family-heading: Georgia, 'Times New Roman', serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: clamp(2.25rem, 8vw, 4.5rem);
+  --line-height-body: 1.65;
+  --line-height-heading: 1.08;
+  --content-width: 72rem;
+  --motion-duration: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

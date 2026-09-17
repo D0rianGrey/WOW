@@ -1,0 +1,366 @@
+[
+  {
+    "id": "ch02-dathremar-mock",
+    "claim": "Вождь Highborne Dath’Remar публично высмеивал друидов.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Dath’Remar, the brash, outspoken leader of the high-borne, began to mock the druids publicly – calling them cowards for refusing to wield the magic that was theirs by right.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-storm",
+    "claim": "Dath’Remar и его сторонники обрушили на Ashenvale магическую бурю.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "In their insolence, Dath’Remar and his followers unleashed a terrible magical storm upon Ashenvale in an ill-fated attempt to convince the druids to rescind their law.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-exile",
+    "claim": "Друиды не стали убивать сородичей и изгнали Highborne.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The druids, unable to bring themselves to slaughter so many of their kin, decided to exile the reckless high-borne from their lands.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-lordaeron-shore",
+    "claim": "Изгнанники высадились на восточной земле, которую люди назовут Lordaeron.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "would eventually set shore upon the eastern land men would call Lordaeron.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-high-elves-name",
+    "claim": "С тех пор их называли high elves.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Forever after, they would be known only as the “high elves.”",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-quelthalas-founded",
+    "claim": "После битв с trolls high elves основали Quel’Thalas.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Long ago the exiled high elves landed on the shores of Lordaeron. They struck out to find a new home, and after many battles with the trolls, established the kingdom of Quel'Thalas.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "locations/quelthalas",
+      "timeline/quelthalas-founded"
+    ]
+  },
+  {
+    "id": "ch02-sunwell",
+    "claim": "Sunwell создан с помощью воды, украденной из первого Well of Eternity.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Using a vial of sacred water stolen from the first Well of Eternity, the high elves created a fount of mystical power at a convergence of ley energies within their home. They named this fountain the Sunwell.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "glossary/sunwell",
+      "timeline/quelthalas-founded"
+    ]
+  },
+  {
+    "id": "ch02-peace-thousands",
+    "claim": "Под магическим барьером high elves тысячи лет жили в мире.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "Protected by a magical barrier, the high elves enjoyed peace for thousands of years, but that peace was not meant to last.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-amani-assault",
+    "claim": "Amani напали; high elves заключили союз с Arathor.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "The Amani trolls gathered an immense army and assaulted the elven kingdom. Vastly outnumbered, the high elves hastily struck an alliance with the human nation of Arathor.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
+    ]
+  },
+  {
+    "id": "ch02-magic-for-aid",
+    "claim": "Эльфы учили людей магии, люди помогли сломить trolls.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "The elves taught a small number of humans how to wield magic. In exchange the humans aided the elves in destroying the trolls' power base forever.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
+    ]
+  },
+  {
+    "id": "ch02-thoradin-arathor",
+    "claim": "Thoradin первым объединил людей и основал Arathor.",
+    "sourceId": "legion-warrior-artifact-reveal",
+    "quote": "This greatsword was borne into combat by the barbarian warlord who first united humanity under a single banner, founding the nation of Arathor.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
+    ]
+  },
+  {
+    "id": "ch02-thoradin-troll-wars",
+    "claim": "Thoradin сыграл ключевую роль в окончании Troll Wars.",
+    "sourceId": "legion-warrior-artifact-reveal",
+    "quote": "A master tactician and strategist, King Thoradin went on to play a critical role in ending the Troll Wars.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
+    ]
+  },
+  {
+    "id": "ch02-seven-nations",
+    "claim": "Семь государств объединились впервые за три тысячи лет в Alliance of Lordaeron.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Seven nations united under a single banner for the first time in three thousand years, giving birth to the Alliance of Lordaeron.",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "second-war"
+    ],
+    "entryRefs": [
+      "glossary/alliance",
+      "locations/lordaeron",
+      "timeline/alliance-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch02-lothar-arathi",
+    "claim": "Lothar как последний потомок рода Arathi призвал high elves Quel’Thalas.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "While the Horde readied themselves to march upon their enemies, Lothar rallied the disparate races of Lordaeron, gaining the aid of the dwarves of Ironforge and invoking his right as the last descendant of the Arathi line to call upon the high elves of Quel’Thalas.",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch02-three-clans",
+    "claim": "Bronzebeard, Wildhammer и Dark Iron веками жили в Ironforge при Modimus Anvilmar.",
+    "sourceId": "muradin-hero-week",
+    "quote": "For many long centuries, three dwarven clans— the Bronzebeards, the Wildhammers, and the Dark Irons— lived united in Ironforge under the wise rule of High King Modimus Anvilmar.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-modimus-death",
+    "claim": "После смерти Modimus от старости началась война за город.",
+    "sourceId": "muradin-hero-week",
+    "quote": "When Modimus passed away from old age, tensions boiled over among the clans, and war erupted for control of the city.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
+    ]
+  },
+  {
+    "id": "ch02-three-hammers",
+    "claim": "War of the Three Hammers; Bronzebeard единолично завладели Ironforge.",
+    "sourceId": "muradin-hero-week",
+    "quote": "Thus began the War of the Three Hammers, a savage conflict that raged for many years, during which time the Bronzebeard clan won sole ownership of Ironforge and expelled its rivals.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
+    ]
+  },
+  {
+    "id": "ch02-clans-severed",
+    "claim": "Война разорвала связи между кланами.",
+    "sourceId": "muradin-hero-week",
+    "quote": "The war severed relations among the clans, and they went on to forge new destinies apart from one another.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-thaurissan-ragnaros",
+    "claim": "Thaurissan призвал Ragnaros ради перелома в гражданской войне dwarves.",
+    "sourceId": "molten-core-anniversary",
+    "quote": "It is the heart of Blackrock Mountain and the exact spot where, long ago, in a desperate bid to turn the tide of the dwarven civil war, Emperor Thaurissan summoned the elemental Firelord, Ragnaros, into the world.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
+    ]
+  },
+  {
+    "id": "ch02-ragnaros-sleeping",
+    "claim": "Ragnaros спит в огненном озере под Blackrock Mountain.",
+    "sourceId": "molten-core-anniversary",
+    "quote": "The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-magni-grand-alliance",
+    "claim": "Dwarves Ironforge под предводительством Magni Bronzebeard стали опорой Grand Alliance.",
+    "sourceId": "muradin-hero-week",
+    "quote": "When the orcish Horde invaded Azeroth, Ironforge’s dwarves offered to join the Grand Alliance. Led by King Magni Bronzebeard, the city's resilient inhabitants proved to be the backbone of the Alliance forces, helping to secure victory after victory against the orcs.",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch02-gnomes-alliance",
+    "claim": "Gnomes Gnomeregan вошли в союз во время Second War.",
+    "sourceId": "muradin-hero-week",
+    "quote": "During the events surrounding Warcraft II: Tides of Darkness and the Second War, King Tereneas Menethil II managed to gain the allegiance of various human kingdoms as well as the Bronzebeard Dwarves of Ironforge, the Wildhammer Dwarves of Aerie Peak, the Gnomes of Gnomeregan, and the high elves of Quel’Thalas.",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "second-war"
+    ],
+    "entryRefs": [
+      "glossary/alliance"
+    ]
+  },
+  {
+    "id": "ch02-loa",
+    "claim": "Loa — Wild Gods, или духи Azeroth.",
+    "sourceId": "zuldazar-visitors-guide",
+    "quote": "Worshipped as deities by the Zandalar trolls, loa are Wild Gods—or spirits of Azeroth.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-dazar",
+    "claim": "Dazar — основатель и первый король Zandalar.",
+    "sourceId": "zuldazar-visitors-guide",
+    "quote": "Dazar. The founder and first King of Zandalar, who led an exodus of his people out of the muck and mire and built a city of gold.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-atal-dazar",
+    "claim": "Тысячелетиями королей Zandalari хоронили в Atal’Dazar.",
+    "sourceId": "zuldazar-visitors-guide",
+    "quote": "For millennia, the Zandalari kings were laid to rest within the tombs of Atal’Dazar, secluded high atop the mountain Mugamba.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-quelthalas-nine-thousand",
+    "claim": "Мануал 2004 года: Quel’Thalas простоял более девяти тысяч лет.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "By the time Arthas and his army of the dead turned southward, not one living elf remained in Quel’Thalas. The glorious homeland of the high elves, which had stood for more than nine thousand years, was no more.",
+    "locator": "PDF p. 83",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/quelthalas-founded"
+    ]
+  },
+  {
+    "id": "ch02-riverglades-connected",
+    "claim": "Riverglades связана с Burning Steppes, Redridge, Swamp of Sorrows и Badlands, но прежде была недоступна.",
+    "sourceId": "forever-found-photos",
+    "quote": "The Riverglades is one of our first major examples of “new, but familiar” content: a land connected to surrounding regions like the Burning Steppes, Redridge Mountains, the Swamp of Sorrows, and the Badlands, but previously beyond players’ reach.",
+    "chapterIds": [
+      "kingdoms-and-peoples",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch02-riverglades-groups",
+    "claim": "В Riverglades действуют Powderfuse goblins, Twilight’s Hammer и Brotherhood of the Horse.",
+    "sourceId": "forever-found-photos",
+    "quote": "groups like the new Powderfuse goblins, the Twilight's Hammer, and the Brotherhood of the Horse help connect the area to Warcraft's history in different ways.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "forever/riverglades"
+    ]
+  },
+  {
+    "id": "ch02-ships",
+    "claim": "Dath’Remar и его сторонники уплыли на кораблях.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Dath’Remar and his followers, glad to be rid of their conservative cousins at last, boarded a number of specially crafted ships and set sail upon the seas.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "ch02-homeland-magic",
+    "claim": "Изгнанники хотели основать родину, где смогут свободно заниматься магией.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "they were eager to establish their own homeland where they could practice their coveted magics with impunity.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-reject-precepts",
+    "claim": "Они планировали построить Quel’Thalas и отвергнуть обычаи ночных эльфов.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "They planned to build their own magical kingdom - Quel’Thalas - and reject the night elves’ precepts of moon worship and nocturnal activity.",
+    "locator": "PDF p. 28",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  },
+  {
+    "id": "ch02-ragnaros-during-war",
+    "claim": "Лейтенанты Ragnaros участвовали в War of the Three Hammers.",
+    "sourceId": "molten-core-anniversary",
+    "quote": "One of the lieutenants that accompanied Ragnaros during the War of the Three Hammers, Garr is responsible for the betrayal and defeat of Prince Thunderran together with Baron Geddon.",
+    "chapterIds": [
+      "kingdoms-and-peoples"
+    ]
+  }
+]

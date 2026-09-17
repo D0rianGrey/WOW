@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+
+import ForeverComparison from '../components/ForeverComparison.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assertValidContentReferences } from '../lib/content';
+
+const entries = (await getCollection('forever')).sort((left, right) => left.data.order - right.data.order);
+const sources = await getCollection('sources');
+
+assertValidContentReferences(
+  entries.map((entry) => ({ id: entry.data.id, sourceIds: entry.data.sourceIds })),
+  { sources: sources.map((source) => source.id) }
+);
+
+const sourceTitles = Object.fromEntries(sources.map((source) => [source.id, { title: source.data.title, url: source.data.url }]));
+const changes = entries.filter((entry) => entry.data.kind === 'change');
+const schedule = entries.filter((entry) => entry.data.kind === 'schedule');
+---
+
+<BaseLayout title="Изменения Forever" description="Что было в первый год оригинального World of Warcraft и что объявлено для World of Warcraft: Forever — с источниками.">
+  <header class="path-header">
+    <p class="eyebrow">Старый мир и новый путь</p>
+    <h1>Изменения Forever</h1>
+    <p class="lead">Слева — мир первого года оригинального World of Warcraft, справа — то, что Blizzard объявила для Forever. Это анонсы, а не свершившиеся исходы: сюжеты новых историй и финалы заданий официально не пересказаны.</p>
+  </header>
+
+  <nav class="forever-index" aria-label="Изменения Forever">
+    <ol>
+      {changes.map((entry) => <li><a href={`#${entry.data.id}`}>{entry.data.title}</a></li>)}
+      {schedule.map((entry) => <li><a href={`#${entry.data.id}`}>{entry.data.title}</a></li>)}
+    </ol>
+  </nav>
+
+  <div class="forever-list">
+    {changes.map((entry) => <ForeverComparison entry={entry} sourceTitles={sourceTitles} />)}
+  </div>
+
+  {schedule.map((entry) => (
+    <section class="forever-schedule" id={entry.data.id} aria-labelledby={`schedule-${entry.data.id}`}>
+      <p class="section-kicker">Календарь объявлений</p>
+      <h2 id={`schedule-${entry.data.id}`}>{entry.data.title}</h2>
+      <p>{entry.data.foreverVersion}</p>
+      <p class="forever-why">{entry.data.whyItMatters}</p>
+      {entry.data.sourceNote && <p class="event-date-note"><strong>Об источниках:</strong> {entry.data.sourceNote}</p>}
+    </section>
+  ))}
+</BaseLayout>

@@ -1,0 +1,498 @@
+[
+  {
+    "id": "ch05-past-decade",
+    "claim": "Молодой лидер поднимает orcs, проведших последнее десятилетие в лагерях.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Meanwhile, a young upstart rallies the orcs that have spent the past decade laboring in crowded internment camps, inspiring them to cast off the yoke of imprisonment and once more take up their blades.",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch05-blackmoore-found",
+    "claim": "Во время First War Aedelas Blackmoore нашёл брошенного младенца-орка.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "During the dark days of the First War, a cunning human officer named Aedelas Blackmoore found an infant orc abandoned in the wilds.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-slave-gladiator",
+    "claim": "Blackmoore растил Thrall как любимого раба и гладиатора.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "There, Blackmoore raised the young orc as a favored slave and gladiator.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch05-blackmoore-plan",
+    "claim": "Blackmoore хотел с помощью Thrall овладеть Horde.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Blackmoore hoped to use Thrall to take over the horde, and thereby achieve dominion over his fellow men.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-thrall-name",
+    "claim": "Имя Thrall означает «раб» на языке людей.",
+    "sourceId": "thrall-hero-week",
+    "quote": "Found and taken in by the human Aedelas Blackmoore, Thrall (“slave” in the human tongue) began his life in imprisonment, forced into gladiatorial combat.",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-taretha",
+    "claim": "Thrall бежал с помощью Taretha Foxton.",
+    "sourceId": "thrall-hero-week",
+    "quote": "Thrall escaped with the help of Taretha Foxton—his friend from childhood. She was one of the few humans who taught him the meaning of honor and decency.",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-camps-lethargic",
+    "claim": "Thrall нашёл свой народ в лагерях сломленным и апатичным.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "During his journeys Thrall visited the internment camps and found his once mighty race to be strangely cowed and lethargic.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-find-grom",
+    "claim": "Thrall отправился к последнему непокорённому вождю Grom Hellscream.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Having not found the proud warriors he hoped to discover, Thrall set out to find the last undefeated orc chieftain, Grom Hellscream.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-durotan-heir",
+    "claim": "Thrall узнал, что он сын и наследник Durotan.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "He also discovered that he was the son and heir of the orc hero, Durotan – the true chieftain of the Frostwolves who had been murdered in the wilds nearly twenty years before",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-drekthar",
+    "claim": "Под наставничеством Drek’Thar Thrall изучил шаманскую культуру.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Under the tutelage of the venerable shaman, Drek’Thar, Thrall studied the ancient shamanistic culture of his people that had been forgotten under Gul’dan’s evil rule.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch05-doomhammer-hermit",
+    "claim": "Thrall нашёл старого вождя Orgrim Doomhammer, жившего отшельником.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "During his travels, Thrall found the aged warchief, Orgrim Doomhammer, who had been living as a hermit for many years.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-doomhammer-fell",
+    "claim": "При освобождении одного из лагерей Doomhammer пал.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Yet, during the liberation of one camp, Doomhammer fell in battle.",
+    "locator": "PDF p. 12",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch05-new-warchief",
+    "claim": "Thrall взял молот и доспехи Doomhammer и стал вождём Horde.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Thrall took up Doomhammer’s legendary warhammer and donned his black plate-armor to become the new warchief of the horde.",
+    "locator": "PDF p. 12",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch05-shaman-heritage",
+    "claim": "Под властью Thrall orcs освободились от демонической порчи и вернули шаманское наследие.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Fittingly enough, the young orc’s name was Thrall. Under his rule, the orcs freed themselves from the chains of demonic corruption and embraced their shamanistic heritage.",
+    "locator": "PDF p. 97",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ch05-medivh-prophet",
+    "claim": "Пророком оказался Medivh, вернувшийся из Beyond.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "This prophet proved to be none other than Medivh, the last Guardian, miraculously returned from the Beyond to redeem himself for past sins.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/voyage-to-kalimdor"
+    ]
+  },
+  {
+    "id": "ch05-medivh-urged",
+    "claim": "Medivh призывал Horde и Alliance объединиться, но они отказались.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh told the Horde and the Alliance of the dangers they faced and urged them to band together. Jaded by generations of hate, the orcs and humans would have none of it.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde",
+      "third-war-to-forever"
+    ]
+  },
+  {
+    "id": "ch05-medivh-trickery",
+    "claim": "Medivh по отдельности отправил народы в Kalimdor.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Medivh was forced to deal with each race separately, using prophecy and trickery to guide them across the sea to the legendary land of Kalimdor.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde",
+      "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/voyage-to-kalimdor"
+    ]
+  },
+  {
+    "id": "ch05-cairne-barrens",
+    "claim": "В Barrens orcs понесли потери, но подружились с Cairne Bloodhoof и tauren.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Led by their young warchief, Thrall, the orcs suffered a series of setbacks on their journey across Kalimdor’s Barrens. Though they befriended Cairne Bloodhoof and his mighty tauren warriors, many orcs began to succumb to the demonic bloodlust that had plagued them for years.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/voyage-to-kalimdor"
+    ]
+  },
+  {
+    "id": "ch05-tauren-centaur",
+    "claim": "Tauren искали помощи против кентавров, и Cairne подружился с Thrall.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Scattered across the land, the wandering tribes were united only by a common hatred for their sworn enemy, the marauding centaur. Seeking aid against the centaur, the chieftain, Cairne Bloodhoof, befriended Warchief Thrall and the other orcs, who had recently journeyed to Kalimdor.",
+    "locator": "PDF p. 99",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/voyage-to-kalimdor"
+    ]
+  },
+  {
+    "id": "ch05-mulgore",
+    "claim": "С помощью orcs Cairne отбил кентавров и занял Mulgore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "With the orcs’ help, Cairne and his Bloodhoof tribe were able to drive back the centaur and claim the grasslands of Mulgore for their own.",
+    "locator": "PDF p. 99",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-grom-betrayed",
+    "claim": "Grom Hellscream поддался низменным инстинктам.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even Thrall’s greatest lieutenant, Grom Hellscream, betrayed the Horde by giving himself over to his baser instincts.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-ashenvale-cenarius",
+    "claim": "Warsong столкнулись с Sentinels; Cenarius вышел против orcs.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "As Hellscream and his loyal Warsong warriors stalked through the forests of Ashenvale, they clashed with the night elf Sentinels. Certain that the orcs had returned to their warlike ways, the demigod Cenarius came forth to drive Hellscream and his orcs back.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/grom-hellscream"
+    ]
+  },
+  {
+    "id": "ch05-cenarius-killed",
+    "claim": "Grom и его orcs убили Cenarius.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Even so, Hellscream and his orcs, overcome with supernatural hate and rage, managed to kill Cenarius and corrupt the ancient forestlands.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/blood-curse-ended"
+    ]
+  },
+  {
+    "id": "ch05-mannoroth-defeated",
+    "claim": "Grom искупил честь, помогая Thrall победить Mannoroth; проклятие крови кончилось.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Hellscream later redeemed his honor, however, by helping Thrall defeat Mannoroth, the demonlord who first cursed the orcs with his bloodline of hate and rage. With Mannoroth’s death, the orcs’ blood-curse was finally brought to an end.",
+    "locator": "PDF p. 84",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/blood-curse-ended"
+    ]
+  },
+  {
+    "id": "ch05-grom-cleansed",
+    "claim": "Jaina и Thrall очистили Grom от влияния Legion.",
+    "sourceId": "jaina-hero-week",
+    "quote": "Before going with Thrall to confront Mannoroth, Grom had fallen under the Legion's influence. Jaina and Thrall worked together to cleanse him of the corruption, using a mixture of human and orc magic.",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-grom-life",
+    "claim": "Grom убил Mannoroth и снял проклятие ценой собственной жизни.",
+    "sourceId": "garrosh-heart-of-war",
+    "quote": "His own father had been the first to drink the blood of Mannoroth, he knew that—by the ancestors, how he knew it; no one would ever let him forget it—but Grom had in turn slain Mannoroth and ended the curse for them all at the cost of his own life.",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-durotar-named",
+    "claim": "Durotar назван в честь убитого отца Thrall; tauren помогли основать родину.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Thrall led the orcs to the continent of Kalimdor, where they founded a new homeland with the help of their tauren brethren. Naming their new land Durotar after Thrall’s murdered father, the orcs settled down to rebuild their once-glorious society.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/durotar-and-theramore"
+    ]
+  },
+  {
+    "id": "ch05-loose-coalition",
+    "claim": "Horde стала рыхлой коалицией ради выживания, а не завоевания.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Now that the demon curse was ended, the Horde changed from a warlike juggernaut into more of a loose coalition, dedicated to survival and prosperity rather than conquest.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-orgrimmar-named",
+    "claim": "Orgrimmar назван в честь Orgrim Doomhammer.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs’ new homeland.",
+    "locator": "PDF p. 97",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-senjin-help",
+    "claim": "Sen’jin просил Thrall о помощи против людей; победа была короткой.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Darkspears, led by the aged witch doctor, Sen’jin, appealed to Thrall and his Horde for help against the human invaders. Together the trolls and orcs won the day, but it proved to be a short-lived victory.",
+    "locator": "PDF p. 102",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-senjin-fell",
+    "claim": "Sen’jin погиб в последней битве с murlocs.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The local murlocs captured many of the victors and prepared to sacrifice them to a sea witch. The Darkspears fought alongside the Horde, but the noble Sen’jin fell during the final battle against the murlocs.",
+    "locator": "PDF p. 102",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-darkspear-place",
+    "claim": "Thrall поклялся, что у Darkspear всегда будет место в Horde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "In honor of Sen’jin’s sacrifice, Thrall vowed that the Darkspears would always have a place within the Horde. He offered the trolls sanctuary in the new kingdom he and his orcs planned to build across the sea.",
+    "locator": "PDF p. 102",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-voljin-echo-isles",
+    "claim": "Почти через год Vol’jin привёл племя на Echo Isles.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Vol’jin, the son of Sen’jin, took control of the Darkspear tribe and wished Thrall farewell. Nearly one year later, he finally led his people to Kalimdor and made a home for them on the Echo Isles, just off the rugged crimson coastline of Durotar.",
+    "locator": "PDF p. 102",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ch05-zalazane",
+    "claim": "Предательство Zalazane вытеснило Darkspear в деревню Sen’jin.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though the Darkspears originally settled in the Echo Isles, they were betrayed by one of their own, a crazed sorcerer named Zalazane. Forced to flee from their island holdings, the Darkspears created the fishing village of Sen’jin on the Durotar coast.",
+    "locator": "PDF p. 102",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "ch05-theramore",
+    "claim": "Остатки Alliance под Jaina построили Theramore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The remaining Alliance forces under Jaina Proudmoore settled in southern Kalimdor. Off the eastern coast of Dustwallow Marsh, they built the rugged port city of Theramore.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/durotar-and-theramore"
+    ]
+  },
+  {
+    "id": "ch05-tentative-truce",
+    "claim": "Между Durotar и Theramore держалось непрочное перемирие.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Though the defenders of Durotar and Theramore kept the tentative truce with one another, the fragile colonial serenity was not meant to last.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore",
+      "timeline/durotar-and-theramore"
+    ]
+  },
+  {
+    "id": "ch05-daelin-fleet",
+    "claim": "Мир нарушил флот Великого адмирала Daelin Proudmoore.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The peace between the orcs and humans was shattered by the arrival of a massive Alliance fleet in Kalimdor. The mighty fleet, under the command of Grand Admiral Daelin Proudmoore (Jaina’s father), had left Lordaeron before Arthas destroyed the kingdom.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/durotar-and-theramore"
+    ]
+  },
+  {
+    "id": "ch05-daelin-durotar",
+    "claim": "Daelin хотел уничтожить Durotar.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "As a renowned hero of the Second War, Jaina’s father was a staunch enemy of the Horde, and he was determined to destroy Durotar before the orcs could gain a foothold in the land.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
+    ]
+  },
+  {
+    "id": "ch05-daelin-died",
+    "claim": "Jaina помогла Thrall; адмирал погиб, не примирившись с дочерью.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "After much soul-searching, Jaina chose the latter and helped Thrall defeat her crazed father. Unfortunately Admiral Proudmoore died in battle before Jaina could reconcile with him or prove that orcs were no longer bloodthirsty monsters.",
+    "locator": "PDF p. 87",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/durotar-and-theramore"
+    ]
+  },
+  {
+    "id": "ch05-stratholme-raid",
+    "claim": "Новая Horde атаковала Stratholme и разрушила Durnholde.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The horde even destroyed Durnholde – the fortress that oversaw the security of the internment camps – and murdered the officers who ran it.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-revitalized",
+    "claim": "С поддержкой ветеранов Thrall возродил Horde и дал народу новую духовную опору.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Supported by many of the veteran chieftains, Thrall ultimately succeeded in revitalizing the horde and giving his people a new spiritual identity.",
+    "locator": "PDF p. 12",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch05-durnholde-siege",
+    "claim": "Thrall вернулся к Durnholde и осадил лагеря.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "To symbolize his people’s rebirth, Thrall returned to Blackmoore’s fortress of Durnholde and put a decisive end to his former master’s plans by laying siege to the internment camps.",
+    "locator": "PDF p. 12",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "characters/thrall",
+      "factions/horde"
+    ]
+  },
+  {
+    "id": "ch05-named-thrall",
+    "claim": "Blackmoore назвал найденного младенца Thrall.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "found an infant orc abandoned in the wilds. The infant orc, whom Blackmoore aptly named Thrall",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "thrall-and-new-horde"
+    ]
+  }
+]

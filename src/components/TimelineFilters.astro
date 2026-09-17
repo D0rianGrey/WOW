@@ -1,0 +1,149 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import { entityNames } from '../lib/canonical-ids';
+import { eras } from '../lib/eras';
+import { loreStatuses } from '../lib/status';
+
+interface Props {
+  events: CollectionEntry<'timeline'>[];
+}
+
+const { events } = Astro.props;
+
+const statusLabels: Record<string, string> = {
+  ESTABLISHED: 'История Warcraft',
+  FOREVER: 'Forever',
+  CHANGED: 'Изменено',
+  BETA: 'Бета',
+  UNCONFIRMED: 'Не подтверждено'
+};
+
+const used = (field: 'characterIds' | 'factionIds' | 'locationIds') => {
+  const ids = new Set(events.flatMap((event) => event.data[field]));
+  return [...ids].sort((left, right) => (entityNames[left] ?? left).localeCompare(entityNames[right] ?? right));
+};
+
+const presentEras = eras.filter((era) => events.some((event) => event.data.eraId === era.id));
+const presentStatuses = loreStatuses.filter((status) => events.some((event) => event.data.status === status));
+---
+
+<form class="timeline-filters" data-timeline-filters aria-label="Фильтры хронологии">
+  <label>
+    <span>Эпоха</span>
+    <select name="era">
+      <option value="">Все эпохи</option>
+      {presentEras.map((era) => <option value={era.id}>{era.title}</option>)}
+    </select>
+  </label>
+  <label>
+    <span>Фракция</span>
+    <select name="faction">
+      <option value="">Все фракции</option>
+      {used('factionIds').map((id) => <option value={id}>{entityNames[id] ?? id}</option>)}
+    </select>
+  </label>
+  <label>
+    <span>Персонаж</span>
+    <select name="character">
+      <option value="">Все персонажи</option>
+      {used('characterIds').map((id) => <option value={id}>{entityNames[id] ?? id}</option>)}
+    </select>
+  </label>
+  <label>
+    <span>Место</span>
+    <select name="location">
+      <option value="">Все места</option>
+      {used('locationIds').map((id) => <option value={id}>{entityNames[id] ?? id}</option>)}
+    </select>
+  </label>
+  <label>
+    <span>Статус</span>
+    <select name="status">
+      <option value="">Все статусы</option>
+      {presentStatuses.map((status) => <option value={status}>{statusLabels[status]}</option>)}
+    </select>
+  </label>
+  <button type="reset" class="text-button">Сбросить фильтры</button>
+  <p class="timeline-count" data-timeline-count aria-live="polite">Событий: {events.length}</p>
+</form>
+
+<script>
+  import { matchesTimelineFilter } from '../lib/timeline';
+  import type { LoreStatus } from '../lib/status';
+
+  const form = document.querySelector<HTMLFormElement>('[data-timeline-filters]');
+  const items = [...document.querySelectorAll<HTMLElement>('[data-timeline-event]')];
+  const bands = [...document.querySelectorAll<HTMLElement>('[data-era-band]')];
+  const counter = document.querySelector<HTMLElement>('[data-timeline-count]');
+  const empty = document.querySelector<HTMLElement>('[data-timeline-empty]');
+
+  const words = (value: string | undefined) => {
+    return value ? value.split(' ').filter(Boolean) : [];
+  };
+
+  function apply() {
+    if (!form) {
+      return;
+    }
+
+    const data = new FormData(form);
+    const filter = {
+      eraId: String(data.get('era') ?? ''),
+      factionId: String(data.get('faction') ?? ''),
+      characterId: String(data.get('character') ?? ''),
+      locationId: String(data.get('location') ?? ''),
+      status: (String(data.get('status') ?? '') || undefined) as LoreStatus | undefined
+    };
+    let visible = 0;
+
+    for (const item of items) {
+      const matches = matchesTimelineFilter(
+        {
+          eraId: item.dataset.era ?? '',
+          status: item.dataset.status as LoreStatus,
+          characterIds: words(item.dataset.characters),
+          factionIds: words(item.dataset.factions),
+          locationIds: words(item.dataset.locations)
+        },
+        filter
+      );
+      item.hidden = !matches;
+
+      if (matches) {
+        visible += 1;
+      }
+    }
+
+    for (const band of bands) {
+      band.hidden = !band.querySelector('[data-timeline-event]:not([hidden])');
+    }
+
+    if (counter) {
+      counter.textContent = visible === items.length ? `Событий: ${items.length}` : `Показано ${visible} из ${items.length}`;
+    }
+
+    if (empty) {
+      empty.hidden = visible > 0;
+    }
+  }
+
+  if (form) {
+    const params = new URLSearchParams(window.location.search);
+
+    for (const name of ['era', 'faction', 'character', 'location', 'status']) {
+      const select = form.elements.namedItem(name);
+      const value = params.get(name);
+
+      if (select instanceof HTMLSelectElement && value && [...select.options].some((option) => option.value === value)) {
+        select.value = value;
+      }
+    }
+
+    form.addEventListener('change', apply);
+    form.addEventListener('reset', () => {
+      window.setTimeout(apply, 0);
+    });
+    apply();
+  }
+</script>

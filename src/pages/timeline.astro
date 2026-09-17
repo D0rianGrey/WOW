@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+
+import TimelineComponent from '../components/Timeline.astro';
+import TimelineFilters from '../components/TimelineFilters.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { canonicalIds } from '../lib/canonical-ids';
+import { assertValidContentReferences } from '../lib/content';
+
+const events = (await getCollection('timeline')).sort((left, right) => left.data.sortKey - right.data.sortKey);
+const chapters = await getCollection('chapters');
+const sources = await getCollection('sources');
+
+assertValidContentReferences(
+  events.map((event) => ({ ...event.data })),
+  {
+    sources: sources.map((source) => source.id),
+    characters: canonicalIds.characters,
+    factions: canonicalIds.factions,
+    locations: canonicalIds.locations,
+    chapters: chapters.map((chapter) => chapter.data.slug)
+  }
+);
+
+const chapterTitles = Object.fromEntries(chapters.map((chapter) => [chapter.data.slug, chapter.data.title]));
+---
+
+<BaseLayout title="Хронология" description="Главная хронология Warcraft от древнего Azeroth до первого года World of Warcraft: Forever — без выдуманных дат.">
+  <header class="path-header">
+    <p class="eyebrow">От древности до первого шага</p>
+    <h1>Хронология</h1>
+    <p class="lead">События выстроены по порядку, но без выдуманных лет. Официальные тексты Blizzard часто называют сроки приблизительно или расходятся между собой — тогда у события стоит знак ≈ и пояснение «О датировке».</p>
+  </header>
+  <TimelineFilters events={events} />
+  <TimelineComponent events={events} chapterTitles={chapterTitles} />
+</BaseLayout>

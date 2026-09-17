@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="factions-title factions-desc">
+  <title id="factions-title">Фракции в первый год</title>
+  <desc id="factions-desc">Схема: Alliance (humans, dwarves, gnomes, night elves) и Horde (orcs, tauren, trolls, undead) держат шаткое перемирие. Forsaken входят в Horde по расчёту и враждуют со Scourge. Scourge Lich King угрожает с севера. Scarlet Crusade воюет с нежитью. Burning Legion разбит на Mount Hyjal.</desc>
+  <rect width="960" height="520" fill="#10151a"/>
+  <g font-family="Georgia, serif" text-anchor="middle">
+    <rect x="40" y="170" width="300" height="170" rx="4" fill="#1a2433" stroke="#9bc0d8" stroke-width="2"/>
+    <text x="190" y="210" font-size="24" fill="#e8e4da">Alliance</text>
+    <text x="190" y="245" font-size="14" fill="#c6c2b6">humans · dwarves</text>
+    <text x="190" y="268" font-size="14" fill="#c6c2b6">gnomes · night elves</text>
+    <text x="190" y="310" font-size="13" fill="#a3a9ac">Stormwind, Ironforge, Darnassus</text>
+    <rect x="620" y="170" width="300" height="170" rx="4" fill="#33201c" stroke="#e0a28f" stroke-width="2"/>
+    <text x="770" y="210" font-size="24" fill="#e8e4da">Horde</text>
+    <text x="770" y="245" font-size="14" fill="#c6c2b6">orcs · tauren</text>
+    <text x="770" y="268" font-size="14" fill="#c6c2b6">trolls · undead</text>
+    <text x="770" y="310" font-size="13" fill="#a3a9ac">Orgrimmar, Thunder Bluff, Undercity</text>
+    <line x1="340" y1="255" x2="620" y2="255" stroke="#d7b779" stroke-width="3" stroke-dasharray="12 8"/>
+    <text x="480" y="240" font-size="15" fill="#d7b779">шаткое перемирие</text>
+    <rect x="640" y="380" width="260" height="90" rx="4" fill="#1d2320" stroke="#bed6c8" stroke-width="2"/>
+    <text x="770" y="415" font-size="20" fill="#e8e4da">Forsaken</text>
+    <text x="770" y="445" font-size="13" fill="#a3a9ac">союз с Horde по расчёту</text>
+    <line x1="770" y1="340" x2="770" y2="380" stroke="#e0a28f" stroke-width="2"/>
+    <rect x="360" y="30" width="240" height="90" rx="4" fill="#1b2c3a" stroke="#d8e6f0" stroke-width="2"/>
+    <text x="480" y="65" font-size="20" fill="#e8e4da">Scourge</text>
+    <text x="480" y="95" font-size="13" fill="#a3a9ac">Lich King, Northrend</text>
+    <polyline points="600,75 945,75 945,425 900,425" fill="none" stroke="#9a3f3f" stroke-width="2" stroke-dasharray="4 6"/>
+    <text x="780" y="62" font-size="13" fill="#e8b4b0">вражда: Scourge и Forsaken</text>
+    <rect x="360" y="400" width="240" height="80" rx="4" fill="#3b282b" stroke="#c4918c" stroke-width="2"/>
+    <text x="480" y="433" font-size="18" fill="#e8e4da">Scarlet Crusade</text>
+    <text x="480" y="460" font-size="13" fill="#a3a9ac">война с нежитью</text>
+    <line x1="600" y1="440" x2="640" y2="430" stroke="#9a3f3f" stroke-width="2" stroke-dasharray="4 6"/>
+    <rect x="40" y="30" width="250" height="90" rx="4" fill="#2a1f2e" stroke="#8659a6" stroke-width="2"/>
+    <text x="165" y="65" font-size="18" fill="#e8e4da">Burning Legion</text>
+    <text x="165" y="95" font-size="13" fill="#a3a9ac">разбит на Mount Hyjal</text>
+  </g>
+</svg>

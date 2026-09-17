@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+
+import LoreBadge from '../components/LoreBadge.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assertValidContentReferences } from '../lib/content';
+
+const terms = (await getCollection('glossary')).sort((left, right) => left.data.title.localeCompare(right.data.title));
+const sources = await getCollection('sources');
+assertValidContentReferences(
+  terms.map((term) => ({ id: term.data.id, sourceIds: term.data.sourceIds })),
+  { sources: sources.map((source) => source.id) }
+);
+const sourceById = Object.fromEntries(sources.map((source) => [source.id, source.data]));
+---
+
+<BaseLayout title="Словарь" description="Ключевые термины Warcraft и правила энциклопедии — с оригинальными названиями и источниками.">
+  <header class="path-header">
+    <p class="eyebrow">Язык мира</p>
+    <h1>Словарь</h1>
+    <p class="lead">Короткие объяснения главных понятий Warcraft. Оригинальное английское название указано рядом; определения опираются на официальные источники.</p>
+  </header>
+  <dl class="glossary">
+    {terms.map((term) => (
+      <div class="glossary-term" id={term.data.id}>
+        <dt>
+          <span class="glossary-title">{term.data.title}</span>
+          {term.data.term !== term.data.title && <span class="glossary-original">{term.data.term}</span>}
+          <LoreBadge status={term.data.status} />
+        </dt>
+        <dd>
+          <p>{term.data.summary}</p>
+          {term.data.aliases.length > 0 && <p class="glossary-aliases">Также: {term.data.aliases.join(', ')}</p>}
+          {term.data.sourceIds.length > 0 && (
+            <p class="glossary-sources">
+              Источники: {term.data.sourceIds.map((id, index) => (
+                <>{index > 0 && ', '}{sourceById[id]?.url ? <a href={sourceById[id].url} rel="noreferrer">{sourceById[id].title}</a> : sourceById[id]?.title}</>
+              ))}
+            </p>
+          )}
+        </dd>
+      </div>
+    ))}
+  </dl>
+</BaseLayout>

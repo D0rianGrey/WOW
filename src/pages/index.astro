@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LoreBadge from '../components/LoreBadge.astro';
+import SpoilerBlock from '../components/SpoilerBlock.astro';
+import { route } from '../lib/routes';
+---
+<BaseLayout title="Главная" documentTitle="World of Warcraft: Forever — энциклопедия">
+  <section class="home-hero">
+    <div>
+      <p class="eyebrow">Мир меняется. История остаётся.</p>
+      <h1>Прежде чем<br />войти в <em>Azeroth.</em></h1>
+      <p class="purpose">У каждого королевства есть прошлое. У каждого героя — причина. Узнайте историю мира, в котором начнётся ваша.</p>
+      <div class="hero-actions"><a class="start-link" href={route('start-here')}>Начать знакомство <span aria-hidden="true">→</span></a><a class="quiet-link" href={route('timeline')}>Открыть хронологию ↗</a></div>
+      <p class="hero-note">От древнего Azeroth до порога Forever · В вашем темпе</p>
+    </div>
+    <div class="chronicle-mark" aria-hidden="true"><span class="mark-star">✦</span><span class="diamond"></span><span class="mark-letter">W</span><span class="mark-caption">История · Мир · Наследие</span></div>
+  </section>
+  <div class="intro-grid">
+    <section class="parchment-panel"><p class="section-kicker">01 / Ваша точка входа</p><h2>Не нужно знать всё.<br />Начните с главного.</h2><p>Warcraft — история народов, чьи решения меняют мир. Этот путеводитель связывает события, героев и места в один маршрут: что случилось, почему это важно и с чем вы встретитесь в Forever.</p><a href={route('start-here')}>Выбрать первую главу →</a></section>
+    <section class="reading-guide"><p class="section-kicker">Как устроена хроника</p><h2>Один мир. Ваша глубина.</h2><div class="guide-step"><span>01</span><div><strong>Главное — нить истории</strong><p>Причины, последствия и связь с Forever.</p></div></div><div class="guide-step"><span>02</span><div><strong>Подробно — больше контекста</strong><p>Мотивы героев, политика и заметки об источниках.</p></div></div><div class="guide-step"><span>03</span><div><strong>Будущее — только по выбору</strong><p>Поздняя история Retail скрыта по умолчанию.</p></div></div></section>
+  </div>
+  <aside class="deep-note" data-depth="deep"><h3>Детали не должны терять нить истории</h3><p>В подробном режиме к основному рассказу добавляются исторический контекст и оговорки источников. Переключитесь на «Главное» в любой момент: выбранный режим сохранится в этом браузере.</p></aside>
+  <section class="status-guide"><p class="section-kicker">Прозрачность канона</p><h2>Факт, изменение или ещё вопрос?</h2><div class="status-list"><LoreBadge status="ESTABLISHED" /><LoreBadge status="FOREVER" /><LoreBadge status="CHANGED" /><LoreBadge status="BETA" /><LoreBadge status="UNCONFIRMED" /></div></section>
+  <div class="disclosure-grid">
+    <SpoilerBlock title="Граница с поздней историей" id="retail-boundary"><h4>Самостоятельное продолжение Retail</h4><p>Поздние события Retail рассматриваются отдельно. Они не определяют исход истории Forever автоматически: для связи с Forever нужен собственный источник.</p></SpoilerBlock>
+    <SpoilerBlock title="Как читать неподтверждённое" kind="unconfirmed" id="unconfirmed-guidance"><p>Эта поясняющая заметка не содержит слухов о мире. Пометка «Не подтверждено» предназначена для изолированных интерпретаций и сведений, которым пока не хватает подтверждения. Открытие спойлеров Retail не открывает такие заметки.</p></SpoilerBlock>
+  </div>
+</BaseLayout>

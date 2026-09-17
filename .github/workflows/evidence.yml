@@ -1,0 +1,37 @@
+name: Verify evidence
+
+# Network-dependent, so it is not a pull-request gate. A failure means an official page
+# changed, moved or disappeared: review the report and fix the ledger by hand.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify every quote against its source
+        run: npm run verify:evidence -- --json evidence-report.json
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: evidence-report
+          path: evidence-report.json
+          retention-days: 30

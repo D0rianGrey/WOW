@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ch04-amani-demon-soul",
+    "claim": "Horde получила подневольных Amani и Demon Soul для контроля драконов.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "With powerful aid in the form of conscripted Amani trolls and the recently discovered Demon Soul—an ancient artifact capable of controlling dragons—the orcs prepared to advance upon the remaining human nations.",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-guldan-abandons",
+    "claim": "Gul’dan бросил Horde и увёл половину сил к Tomb of Sargeras.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Doomhammer and his army, poised to strike at the heart of the Alliance, received dire news: Gul’dan had abandoned his fellow orcs, taking with him half of their military might to seek out the fabled Tomb of Sargeras in his pursuit of godhood.",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
+    ]
+  },
+  {
+    "id": "ch04-blackrock-spire",
+    "claim": "Войска Lothar оттеснили Horde до Blackrock Spire.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Gul’dan’s betrayal afforded the Alliance the very chance it needed to turn the tide of war. Anduin Lothar’s troops rallied and pushed the Horde from the lands of Lordaeron all the way down to the volcanic fortress of Blackrock Spire.",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-wc3-charge",
+    "claim": "Doomhammer атаковал из Spire и столкнулся с паладинами Lothar в Burning Steppes.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "In a last-ditch effort, Doomhammer and his lieutenants staged a daring charge from the Spire and clashed with Lothar’s paladins in the center of the Burning Steppes.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-wc3-lothar-death",
+    "claim": "Doomhammer с трудом одолел Lothar.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Though Doomhammer narrowly succeeded in vanquishing Lothar, the great hero’s death did not have the effect the warchief had hoped for.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
+    ]
+  },
+  {
+    "id": "ch04-ssf-suicidal-charge",
+    "claim": "Поздняя ретроспектива: Doomhammer убил Lothar в самоубийственной атаке.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Unwilling to accept defeat, the determined Doomhammer landed one final blow upon the humans, putting an end to Lothar’s life in a suicidal charge.",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "characters/orgrim-doomhammer"
+    ]
+  },
+  {
+    "id": "ch04-turalyon-shield",
+    "claim": "Turalyon поднял щит Lothar и повёл контратаку.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Turalyon, Lothar’s most trusted lieutenant, took up Lothar’s bloodstained shield and rallied his grief-stricken brethren for a vicious counterattack.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
+    ]
+  },
+  {
+    "id": "ch04-last-battle",
+    "claim": "У Dark Portal прошла последняя, самая кровавая битва Second War.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "the broken horde and the rugged Alliance clashed in what would be the last, bloodiest battle of the Second War.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-doomhammer-prisoner",
+    "claim": "Doomhammer попал в плен и был доставлен в Lordaeron.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Doomhammer was taken prisoner and escorted to Lordaeron while his broken clans were rounded up and hauled north",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
+    ]
+  },
+  {
+    "id": "ch04-portal-destroyed",
+    "claim": "Силы Turalyon разрушили Dark Portal.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Turalyon’s forces succeeded in destroying the dark portal, the mystical gateway that connected the orcs to their dark, red homeworld of Draenor.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
+    ]
+  },
+  {
+    "id": "ch04-internment",
+    "claim": "Пленных orcs согнали в лагеря для интернированных.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "So inspirational was his battle cry that the human forces fervently cleaved through the Horde, scattering its army and seizing those they could find as prisoners of the Alliance. Those who were caught were herded into internment camps and left to wallow.",
+    "chapterIds": [
+      "second-war",
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch04-camps-southern-lordaeron",
+    "claim": "Большие лагеря построили в южном Lordaeron.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "A number of large internment camps, meant to house the captive orcs, were constructed in southern Lordaeron.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-nerzhul-rallied",
+    "claim": "Шаман Ner’zhul, бывший наставник Gul’dan, собрал оставшиеся кланы Draenor.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The elder shaman, Ner’zhul – the former mentor of Gul’dan – rallied the handful of clans still left on Draenor under his dark banner.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-nerzhul-reopened",
+    "claim": "Ner’zhul снова открыл Dark Portal.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "To procure them, Ner’zhul reopened the dark portal and sent his ravenous clans charging through it.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
+    ]
+  },
+  {
+    "id": "ch04-expedition",
+    "claim": "Terenas отправил Turalyon и Khadgar в экспедицию через портал.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "He ordered General Turalyon and the mage, Khadgar, to lead an expedition through the dark portal to put an end to the orcish threat once and for all.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-draenor-shattered",
+    "claim": "Порталы Ner’zhul разорвали Draenor; герои Azeroth оказались в Outland.",
+    "sourceId": "wow-story-timeline-beyond-the-dark-portal",
+    "quote": "Facing certain defeat at the hands of his enemies, Ner'zhul succeeded in opening numerous portals to new worlds. The resulting magical stress shattered Draenor, trapping many of Azeroth's greatest heroes on Outland, the damaged remains of the planet.",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
+    ]
+  },
+  {
+    "id": "ch04-khadgar-portal",
+    "claim": "Khadgar и спутники уничтожили портал, чтобы гибель Draenor не задела Azeroth.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Realizing that they would be trapped on the dying world, Khadgar and his companions selflessly decided to destroy the dark portal so that Azeroth would not be harmed by Draenor’s violent destruction.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
+    ]
+  },
+  {
+    "id": "ch04-fate-unknown",
+    "claim": "Спаслись ли герои — неизвестно.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "By all accounts, the heroes were successful in destroying the portal and saving Azeroth – but whether or not they escaped the death throes of Draenor remains to be seen.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-rhonin",
+    "claim": "Rhonin с союзниками уничтожил Demon Soul и освободил Alexstrasza.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Yet, a small group of resistance fighters, led by the human mage, Rhonin, managed to destroy the Demon Soul and free the Dragonqueen from Nekros’ command.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-lethargy",
+    "claim": "После гибели Nekros orcs в лагерях впали в апатию.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "With the death of Nekros, the last of the orcish warlocks – the orcs left to wallow in the crowded internment camps – slipped into a crippling lethargy.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war",
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
+    ]
+  },
+  {
+    "id": "ch04-antonidas-withdrawal",
+    "claim": "Antonidas считал апатию отвыканием от демонической магии.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Antonidas theorized that the orcs’ communal lethargy was not actually a disease, but a long-term racial withdrawal from the volatile Warlock magics that had made them fearsome, bloodlusted warriors.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-new-tax",
+    "claim": "Для содержания лагерей Terenas ввёл новый налог.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "To properly maintain and supply the growing number of camps, King Terenas levied a new tax on the Alliance nations.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-taxes-secession",
+    "claim": "Налоги и расходы на лагеря подтолкнули лидеров к выходу из Alliance.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Those taxes, coupled with the high expense of maintaining and operating the numerous orc internment camps, led many leaders – Genn Greymane of Gilneas in particular - to believe that their kingdoms would be better off seceding from the Alliance.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
+    ]
+  },
+  {
+    "id": "ch04-elves-leave",
+    "claim": "High elves Silvermoon отозвали верность Alliance.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "the brusque high elves of Silvermoon rescinded their allegiance to the Alliance, stating that the humans’ poor leadership led to the burning of their forests during the Second War.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "locations/quelthalas",
+      "timeline/internment-and-splintering"
+    ]
+  },
+  {
+    "id": "ch04-gilneas-stromgarde",
+    "claim": "Вслед за эльфами вышли Gilneas и Stromgarde.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "In the wake of the elves’ departure, Gilneas and Stromgarde pulled stake and seceded as well.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
+    ]
+  },
+  {
+    "id": "ch04-loyal-allies",
+    "claim": "Верными остались Kul Tiras и молодой король Varian Wrynn.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Both Admiral Proudmoore of Kul Tiras and the young King, Varian Wrynn of Azeroth, remained committed to the Alliance.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-splintered",
+    "claim": "Поздняя ретроспектива: после победы Alliance раскололся.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "In the years following the Horde’s defeat, the Alliance splintered, no longer held together by the tenuous covenant that had been forged out of common desperation.",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
+    ]
+  },
+  {
+    "id": "ch04-thirteen-years",
+    "claim": "Warcraft III начинается почти через 13 лет после поражения Horde.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "As Warcraft III: Reign of Chaos begins, nearly 13 years after the Horde's defeat, trouble stirs once again.",
+    "chapterIds": [
+      "second-war",
+      "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
+    ]
+  },
+  {
+    "id": "ch04-wc3-thirteen-peace",
+    "claim": "Руководство к Warcraft III: почти тринадцать лет мира.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "After nearly thirteen years of peace, the rumors of war began to circulate once again.",
+    "locator": "PDF p. 4",
+    "chapterIds": [
+      "second-war",
+      "thrall-and-new-horde"
+    ]
+  },
+  {
+    "id": "ch04-mighty-lordaeron",
+    "claim": "Беженцы искали помощи у короля могущественного Lordaeron, Terenas Menethil II.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "There, they sought support from the sovereign of the mighty human kingdom of Lordaeron, King Terenas Menethil II.",
+    "chapterIds": [
+      "second-war"
+    ],
+    "entryRefs": [
+      "locations/lordaeron",
+      "timeline/alliance-of-lordaeron"
+    ]
+  },
+  {
+    "id": "ch04-blood-oath",
+    "claim": "Anasterian, связанный клятвой крови роду Lothar, прислал отряд.",
+    "sourceId": "warcraft-iii-story-so-far",
+    "quote": "Bound by a blood oath sworn long ago to Lothar’s kin, King Anasterian Sunstrider sent a small force of soldiers to Lordaeron",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-nerzhul-artifacts",
+    "claim": "Для новых порталов Ner’zhul нуждался в артефактах из Azeroth.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "To power his new portals, Ner’zhul needed a number of enchanted artifacts from Azeroth.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-dragonmaw-last",
+    "claim": "Лишь клан Dragonmaw был достаточно силён, чтобы нарушить мир.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "there was only one group – the Dragonmaw clan – that was large enough and strong enough to upset the delicate peace that had settled over Lordaeron.",
+    "locator": "PDF p. 3",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-dragonmaw-demon-soul",
+    "claim": "Nekros держал Alexstrasza в подчинении с помощью Demon Soul.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "The Dragonmaw clan, led by the infamous Warlock, Nekros, had maintained its control over the Dragonqueen, Alexstrasza, and her Dragonflight by using an ancient artifact known as the Demon Soul.",
+    "locator": "PDF p. 10",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-antonidas-hypothesis",
+    "claim": "Архимаг Antonidas из Dalaran выдвинул иную гипотезу.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "But the Archmage, Antonidas of Dalaran, posed a different hypothesis.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-no-cure",
+    "claim": "Antonidas не нашёл лекарства.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Though the symptoms were clear, Antonidas was unable to find a cure for the orcs’ present condition.",
+    "locator": "PDF p. 11",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-titanic-battle",
+    "claim": "Doomhammer и Lothar сошлись в титаническом поединке.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Doomhammer and Lothar squared off in a titanic battle that left both mighty combatants battered and drained.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-flee-to-portal",
+    "claim": "Уцелевшим orcs оставалось бежать к Dark Portal.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "There was nothing left for the ragged, scattered orc survivors but to flee to the last standing bastion of orcish power – the dark portal.",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ]
+  },
+  {
+    "id": "ch04-foot-of-portal",
+    "claim": "Последняя битва прошла у подножия портала.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "There, at the foot of the colossal portal, the broken horde and the rugged Alliance clashed",
+    "locator": "PDF p. 2",
+    "chapterIds": [
+      "second-war"
+    ]
+  }
+]

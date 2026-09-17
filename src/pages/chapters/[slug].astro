@@ -1,0 +1,52 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+
+import ChapterNext from '../../components/ChapterNext.astro';
+import SourceList from '../../components/SourceList.astro';
+import LoreLayout from '../../layouts/LoreLayout.astro';
+import { chapterIllustrations } from '../../lib/illustrations';
+import { route } from '../../lib/routes';
+import { validateChapterSourceIds } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const chapters = (await getCollection('chapters')).sort((a, b) => a.data.order - b.data.order);
+  const sources = await getCollection('sources');
+  validateChapterSourceIds(chapters, sources);
+  return chapters.map((chapter, index) => ({
+    params: { slug: chapter.data.slug },
+    props: { chapter, chapters, sources, index }
+  }));
+}
+
+interface Props {
+  chapter: CollectionEntry<'chapters'>;
+  chapters: CollectionEntry<'chapters'>[];
+  sources: CollectionEntry<'sources'>[];
+  index: number;
+}
+
+const { chapter, chapters, sources, index } = Astro.props;
+const { Content } = await render(chapter);
+const selectedSources = chapter.data.sourceIds.map((id) => sources.find((source) => source.id === id)!);
+const previous = chapters[index - 1];
+const next = chapters[index + 1];
+---
+
+<LoreLayout
+  title={chapter.data.title}
+  summary={chapter.data.summary}
+  status={chapter.data.status}
+  eyebrow={`${String(index + 1).padStart(2, '0')} / ${chapter.data.era}`}
+  readingMinutes={chapter.data.readingMinutes}
+  illustration={chapterIllustrations[chapter.data.slug]}
+  breadcrumbs={[{ label: 'Начать здесь', href: route('start-here') }]}
+>
+  <Content />
+  <SourceList sources={selectedSources} />
+  <ChapterNext
+    slot="navigation"
+    currentId={chapter.data.id}
+    previous={previous && { slug: previous.data.slug, title: previous.data.title }}
+    next={next && { slug: next.data.slug, title: next.data.title }}
+  />
+</LoreLayout>

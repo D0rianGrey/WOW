@@ -1,0 +1,46 @@
+<div class="reading-controls">
+  <div class="segmented-control" role="group" aria-label="Глубина чтения">
+    <button type="button" data-reading-choice="essential" aria-pressed="true">Главное</button>
+    <button type="button" data-reading-choice="deep" aria-pressed="false">Подробно</button>
+  </div>
+  <button type="button" class="spoiler-toggle" data-spoiler-toggle aria-pressed="false">
+    <span aria-hidden="true">◈</span> Спойлеры Retail
+    <span data-spoiler-label aria-hidden="true">скрыты</span>
+  </button>
+</div>
+<script>
+  const root = document.documentElement;
+  const save = (key: string, value: string) => {
+    try { localStorage.setItem(key, value); } catch { /* Reading still works without storage. */ }
+  };
+  function updateReading() {
+    document.querySelectorAll<HTMLButtonElement>('[data-reading-choice]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.readingChoice === root.dataset.readingMode));
+    });
+  }
+  function updateSpoilers() {
+    const shown = root.dataset.spoilers === 'shown';
+    document.querySelectorAll('[data-spoiler-toggle]').forEach(button => button.setAttribute('aria-pressed', String(shown)));
+    document.querySelectorAll('[data-spoiler-label]').forEach(label => { label.textContent = shown ? 'открыты' : 'скрыты'; });
+    document.dispatchEvent(new CustomEvent('wow:spoilers-changed', { detail: { shown } }));
+  }
+  document.querySelectorAll<HTMLButtonElement>('[data-reading-choice]').forEach(button => {
+    button.addEventListener('click', () => {
+      root.dataset.readingMode = button.dataset.readingChoice;
+      save('wow-reading-mode', root.dataset.readingMode!);
+      updateReading();
+    });
+  });
+  function setSpoilers(shown: boolean) {
+    root.dataset.spoilers = shown ? 'shown' : 'hidden';
+    save('wow-spoilers', root.dataset.spoilers);
+    updateSpoilers();
+  }
+  document.querySelectorAll('[data-spoiler-toggle]').forEach(button => {
+    button.addEventListener('click', () => {
+      setSpoilers(root.dataset.spoilers !== 'shown');
+    });
+  });
+  updateReading();
+  updateSpoilers();
+</script>

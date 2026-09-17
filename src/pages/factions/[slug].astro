@@ -1,0 +1,63 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+
+import EntityCard from '../../components/EntityCard.astro';
+import SourceList from '../../components/SourceList.astro';
+import LoreLayout from '../../layouts/LoreLayout.astro';
+import { dossierLabels, loadDossiers } from '../../lib/dossiers';
+import { route } from '../../lib/routes';
+
+export async function getStaticPaths() {
+  const entries = await loadDossiers('factions');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<'factions'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const sources = await getCollection('sources');
+const selectedSources = entry.data.sourceIds.map((id) => sources.find((source) => source.id === id)!);
+const [characters, factions, locations] = await Promise.all([getCollection('characters'), getCollection('factions'), getCollection('locations')]);
+const timeline = (await getCollection('timeline')).sort((left, right) => left.data.sortKey - right.data.sortKey);
+const idField = { characters: 'characterIds', factions: 'factionIds', locations: 'locationIds' } as const;
+const events = timeline.filter((event) => (event.data[idField.factions] as string[]).includes(entry.data.id));
+const related = [
+  ...characters.filter((item) => entry.data.relatedCharacterIds.includes(item.data.id)).map((item) => ({ item, collection: 'characters' })),
+  ...factions.filter((item) => entry.data.relatedFactionIds.includes(item.data.id)).map((item) => ({ item, collection: 'factions' })),
+  ...locations.filter((item) => entry.data.relatedLocationIds.includes(item.data.id)).map((item) => ({ item, collection: 'locations' }))
+];
+const collectionLabel = { characters: 'Персонаж', factions: 'Фракция', locations: 'Место' } as Record<string, string>;
+---
+
+<LoreLayout
+  title={entry.data.title}
+  summary={entry.data.summary}
+  status={entry.data.status}
+  eyebrow={`${dossierLabels.factions.singular} · ${entry.data.era}`}
+  breadcrumbs={[{ label: dossierLabels.factions.title, href: route('factions') }]}
+>
+  {entry.data.aliases.length > 0 && <p class="dossier-aliases">Также: {entry.data.aliases.join(', ')}</p>}
+  <Content />
+  {events.length > 0 && (
+    <section class="dossier-timeline" aria-labelledby="dossier-timeline-title">
+      <h2 id="dossier-timeline-title">В хронологии</h2>
+      <ul>
+        {events.map((event) => <li><a href={route(`timeline#${event.data.id}`)}>{event.data.title}</a> <span>· {event.data.dateLabel}</span></li>)}
+      </ul>
+    </section>
+  )}
+  {related.length > 0 && (
+    <section class="dossier-related" aria-labelledby="dossier-related-title">
+      <h2 id="dossier-related-title">Связи</h2>
+      <div class="entity-grid is-compact">
+        {related.map(({ item, collection }) => (
+          <EntityCard href={route(`${collection}/${item.data.slug}`)} title={item.data.title} summary={item.data.summary} status={item.data.status} kicker={collectionLabel[collection]} />
+        ))}
+      </div>
+    </section>
+  )}
+  <SourceList sources={selectedSources} />
+</LoreLayout>

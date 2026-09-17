@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { eras } from '../lib/eras';
+import { route } from '../lib/routes';
+
+const chapters = await getCollection('chapters');
+const events = (await getCollection('timeline')).sort((left, right) => left.data.sortKey - right.data.sortKey);
+const chapterTitles = Object.fromEntries(chapters.map((chapter) => [chapter.data.slug, chapter.data.title]));
+---
+
+<BaseLayout title="Эпохи" description="Десять эпох истории Warcraft: от древнего Azeroth до первого года World of Warcraft: Forever.">
+  <header class="path-header">
+    <p class="eyebrow">Карта истории</p>
+    <h1>Эпохи</h1>
+    <p class="lead">История Warcraft разбита на десять эпох. Каждая ведёт к главам путеводителя и к событиям хронологии, где собраны факты с источниками.</p>
+  </header>
+
+  <ol class="era-list">
+    {eras.map((era, index) => {
+      const eraEvents = events.filter((event) => event.data.eraId === era.id);
+
+      return (
+        <li class="era-item" id={era.id}>
+          <span class="path-number" aria-hidden="true">{String(index).padStart(2, '0')}</span>
+          <div>
+            <h2>{era.title}</h2>
+            <p class="era-topics">{era.topics}</p>
+            {eraEvents.length > 0 && (
+              <ul class="era-events" aria-label={`События эпохи: ${era.title}`}>
+                {eraEvents.map((event) => <li><a href={route(`timeline#${event.data.id}`)}>{event.data.title}</a></li>)}
+              </ul>
+            )}
+            <p class="era-links">
+              {era.chapterSlugs.map((slug) => <a href={route(`chapters/${slug}`)}>Глава: {chapterTitles[slug]}</a>)}
+              <a href={route(`timeline?era=${era.id}`)}>Открыть эпоху в хронологии →</a>
+            </p>
+          </div>
+        </li>
+      );
+    })}
+  </ol>
+</BaseLayout>

@@ -1,0 +1,630 @@
+[
+  {
+    "id": "fv-25",
+    "claim": "Forever начинается в раннем «Year 1», до повторного открытия Dark Portal.",
+    "sourceId": "forever-found-photos",
+    "quote": "WoW: Forever begins where original World of Warcraft begins: in the early “Year 1” period of Azeroth, before Kazzak reopened the Dark Portal and before later journeys to places like Northrend reshaped the timeline.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "fv-26",
+    "claim": "Forever занимает собственную «time bubble».",
+    "sourceId": "forever-found-photos",
+    "quote": "WoW: Forever occupies its own “time bubble,” allowing the team to explore those possibilities without disrupting original Azeroth’s foundational stories.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "fv-28",
+    "claim": "Forever — постоянный дом рядом с modern и Classic WoW.",
+    "sourceId": "forever-announcement",
+    "quote": "Built as a new permanent home alongside modern and Classic WoW, Forever invites past, current, and new players into a familiar yet fresh Azeroth",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "fv-30",
+    "claim": "Forever — не режим, не сезон и не новая версия Classic.",
+    "sourceId": "forever-whats-next",
+    "quote": "This is not a mode, a season, or a new version of Classic. It is a promise to keep building this world with the community",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "fv-32",
+    "claim": "В Forever нет полётов и нет level scaling.",
+    "sourceId": "forever-whats-next",
+    "quote": "You’ll feel that philosophy throughout the world: no flying mounts, no level scaling, and a continued focus on challenge, preparation, communication, and cooperation.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/time-bubble-year-1"
+    ]
+  },
+  {
+    "id": "fv-33",
+    "claim": "Forsaken Kingdom заполняет четырёхлетний разрыв между Warcraft III и WoW.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "Warcraft III Reforged: Forsaken Kingdom explores the events between Arthas's return to Lordaeron and the emergence of the Undercity, filling in the four-year gap between Warcraft III and World of Warcraft.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "fv-34",
+    "claim": "Пролог Last Days of Lordaeron — четыре миссии с возвращения Arthas.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "The four-mission Last Days of Lordaeron prologue begins as Arthas returns home. Players experience the kingdom’s final hours through the eyes of the Capital City Guard",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-kingdom",
+      "locations/lordaeron"
+    ]
+  },
+  {
+    "id": "fv-35",
+    "claim": "Новые персонажи — Garek Bandarion и Dark Ranger Anya.",
+    "sourceId": "forsaken-kingdom-whats-next",
+    "quote": "At the heart of the story are two new characters—Garek Bandarion, a newly risen Forsaken warrior, and Dark Ranger Anya.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "fv-36",
+    "claim": "Forsaken Kingdom уже доступна.",
+    "sourceId": "forsaken-kingdom-deep-dive",
+    "quote": "Forsaken Kingdom is available today. Players can also see Definitive Edition Graphics and the Forsaken Paladin in action during the Classic Cup.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "fv-38",
+    "claim": "Forever продолжается вскоре после событий Forsaken Kingdom.",
+    "sourceId": "forsaken-kingdom-wage-war",
+    "quote": "World of Warcraft: Forever continues shortly after the events of the Forsaken Kingdom campaign, inviting players to carve a new path through a reimagined original Azeroth",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-kingdom"
+    ]
+  },
+  {
+    "id": "fv-13",
+    "claim": "В 2004 году undead могли быть Mage, Priest, Rogue, Warlock и Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Mage, Priest, Rogue, Warlock, Warrior Starting Area: Deathknell, Tirisfal Glades",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-paladins",
+      "forever/race-class-combinations",
+      "locations/tirisfal-glades"
+    ]
+  },
+  {
+    "id": "fv-04",
+    "claim": "Paladin в первый год был доступен только Alliance.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The paladin is a class with melee capability, healing, and defensive spells that is available only to Alliance races.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/alliance",
+      "forever/forsaken-paladins",
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-40",
+    "claim": "Путь Forsaken paladins вытекает из Forsaken Kingdom; им не доверяют другие Forsaken.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their path rolls directly out of the new Warcraft III campaign Forsaken Kingdom, beginning at a time when these former paladins are deeply mistrusted by other Forsaken",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-paladins"
+    ]
+  },
+  {
+    "id": "fv-41",
+    "claim": "Ключевое место пути — Bandarion Keep в Whispering Wood.",
+    "sourceId": "forever-found-photos",
+    "quote": "Bandarion Keep in the Whispering Wood of Tirisfal Glades becomes a key location for that experience, grounding the Forsaken Paladin Journey in a local struggle for acceptance",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-paladins"
+    ]
+  },
+  {
+    "id": "fv-42",
+    "claim": "Эпический скакун Forsaken paladins — во имя Retribution.",
+    "sourceId": "forever-found-photos",
+    "quote": "Whereas Alliance paladins claim their epic charger in the name of Redemption, the paladins of the Forsaken ride in the name of Retribution.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-paladins"
+    ]
+  },
+  {
+    "id": "fv-39",
+    "claim": "Герой Forsaken Paladin в Warcraft III Reforged — отдельная механика кампании.",
+    "sourceId": "forsaken-kingdom-deep-dive",
+    "quote": "Armed with Consecration, Righteous Fury, Sacred Aura, and Cleansing Fire, this champion channels healing, damage, control, resistance, and battlefield-shaping power.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/forsaken-paladins"
+    ]
+  },
+  {
+    "id": "fv-05",
+    "claim": "Shaman в первый год был доступен только Horde.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The shaman is a hybrid class capable of healing, supporting group members, and fighting in melee. It is available only to Horde races.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "factions/horde",
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-08",
+    "claim": "Gnome в 2004 году: Mage, Rogue, Warlock, Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Mage, Rogue, Warlock, Warrior Starting Area: Coldridge Valley, Dun Morogh",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-09",
+    "claim": "Human в 2004 году: Mage, Priest, Paladin, Rogue, Warlock, Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Mage, Priest, Paladin, Rogue, Warlock, Warrior Starting Area: Northshire Valley, Elwynn Forest",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-07",
+    "claim": "Dwarf в 2004 году: Hunter, Mage, Rogue, Paladin, Priest, Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Hunter, Mage, Rogue, Paladin, Priest, Warrior Starting Area: Coldridge Valley, Dun Morogh",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-11",
+    "claim": "Orc в 2004 году: Hunter, Rogue, Shaman, Warlock, Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Hunter, Rogue, Shaman, Warlock, Warrior Starting Area: Valley of Trials, Durotar",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations",
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "fv-12",
+    "claim": "Troll в 2004 году: Hunter, Mage, Rogue, Priest, Shaman, Warrior.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Hunter, Mage, Rogue, Priest, Shaman, Warrior Starting Area: Valley of Trials, Durotar",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations",
+      "locations/durotar"
+    ]
+  },
+  {
+    "id": "fv-43",
+    "claim": "Deep Dive называет шесть новых сочетаний раса/класс.",
+    "sourceId": "forever-deep-dive",
+    "quote": "The team is also adding six new class-and-race combinations to explore: Gnome Priest, Human Hunter, Dwarf Shaman, Orc Mage, Troll Warlock, and Undead Paladin, with more planned for future updates.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/race-class-combinations"
+    ]
+  },
+  {
+    "id": "fv-06",
+    "claim": "В оригинальном WoW восемь играбельных рас.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "There are eight playable races in World of Warcraft, divided between the two factions of Horde and Alliance.",
+    "locator": "PDF p. 34",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne"
+    ]
+  },
+  {
+    "id": "fv-02",
+    "claim": "Alliance — dwarves, gnomes, humans, night elves; Horde — orcs, tauren, trolls, undead.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "The Alliance is comprised of the dwarves, gnomes, humans, and night elves, while the Horde consists of the orcs, tauren, trolls, and undead.",
+    "locator": "PDF p. 8",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne"
+    ]
+  },
+  {
+    "id": "fv-45",
+    "claim": "Skyborne — новая раса, также shen’dorei, «скрытый народ».",
+    "sourceId": "forever-found-photos",
+    "quote": "For one of our more unexpected additions, players will discover Zephras Isle and the Skyborne, also known as the shen’dorei or hidden people.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne",
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-46",
+    "claim": "Предки Skyborne бежали из Eldre’Thalas после War of the Ancients в Skywall.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne",
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-47",
+    "claim": "Фракция Skyborne выбирается при создании; Horde получают Shaman.",
+    "sourceId": "forever-whats-next",
+    "quote": "At character creation, you’ll choose whether your Skyborne joins the Horde or the Alliance: Horde-aligned Skyborne embrace elemental traditions and gain access to the Shaman class",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne"
+    ]
+  },
+  {
+    "id": "fv-48",
+    "claim": "Skyborne Alliance получают Mage; обеим сторонам доступны Warrior, Hunter, Rogue, Druid.",
+    "sourceId": "forever-whats-next",
+    "quote": "while Alliance-aligned Skyborne pursue the arcane legacy of their ancestors and gain access to the Mage class. Both factions can also play Warriors, Hunters, Rogues, and Druids",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne"
+    ]
+  },
+  {
+    "id": "fv-49",
+    "claim": "Пути Windshaper Horde и High Order Alliance.",
+    "sourceId": "forever-hub",
+    "quote": "Stand with a new race of windswept elves as their once-secluded home faces an existential threat. Follow the path of the Windshaper Horde or the High Order Alliance in your quest to defend Zephras Isle.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/skyborne"
+    ]
+  },
+  {
+    "id": "fv-10",
+    "claim": "Night Elf в 2004 году начинал в Shadowglen на Teldrassil.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Class Selection: Druid, Hunter, Rogue, Priest, Warrior Starting Area: Shadowglen, Teldrassil",
+    "locator": "PDF p. 35",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/zephras-isle",
+      "locations/teldrassil"
+    ]
+  },
+  {
+    "id": "fv-50",
+    "claim": "Zephras Isle — стартовая зона Skyborne уровней 1–12.",
+    "sourceId": "forever-whats-next",
+    "quote": "On Zephras Isle, you’ll begin an elemental skybound starting experience from levels 1 through 12, blending Classic Warcraft aesthetics with architecture inspired by Skywall.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-51",
+    "claim": "Покровители исчезли, пилоны Zephras отказывают.",
+    "sourceId": "forever-found-photos",
+    "quote": "Their elemental benefactors have vanished, the pylons that hold Zephras together are failing, and portions of the island have begun falling into ruin and darkness.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-52",
+    "claim": "За Zephras спорят Windshapers, High Order и Al’Aketh.",
+    "sourceId": "forever-found-photos",
+    "quote": "Several groups are vying for control of Zephras Isle as the crisis deepens, including the Windshapers, the High Order, and the Al’Aketh.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-53",
+    "claim": "Доступ к Skyborne и Zephras Isle входит в наборы улучшений.",
+    "sourceId": "forever-pre-purchase",
+    "quote": "Access to the new Skyborne race and their Zephras Isle starting experience Early Name Reservation to create and customize your character before launch",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/zephras-isle"
+    ]
+  },
+  {
+    "id": "fv-22",
+    "claim": "В первый год битва за Hyjal уже в прошлом.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Empowered by the very strength of the world, Malfurion succeeded in unleashing Nordrassil’s primal fury, utterly destroying Archimonde and severing the Legion’s anchor to the Well of Eternity.",
+    "locator": "PDF p. 85",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-54",
+    "claim": "Hyjal — место, куда игроки давно хотели попасть.",
+    "sourceId": "forever-found-photos",
+    "quote": "Anticipated: Places players have long known about or wanted to explore, such as Mount Hyjal.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-55",
+    "claim": "Forever открывает доступ к месту, полному смысла со времён ранних историй Warcraft.",
+    "sourceId": "forever-found-photos",
+    "quote": "It is one of the clearest examples of giving players access to a place that has held meaning and mystery since Warcraft’s earliest stories.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-56",
+    "claim": "На Hyjal исследуют последствия поражения Archimonde и Darkwhisper Gorge.",
+    "sourceId": "forever-whats-next",
+    "quote": "Mount Hyjal invites you to explore the aftermath of Archimonde’s defeat, journey through Darkwhisper Gorge, and help shape the future of a recovering land.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-57",
+    "claim": "На Hyjal игроки встретят новые, пока не названные фракции.",
+    "sourceId": "forever-found-photos",
+    "quote": "Mount Hyjal carries that sense of long-awaited discovery, inviting players to explore the aftermath of the Battle for Mount Hyjal, meet emerging factions, form alliances",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-58",
+    "claim": "Старые и новые угрозы бродят по склонам горы.",
+    "sourceId": "forever-hub",
+    "quote": "Threats both old and new stalk the slopes of the mountain, eager to claim its power and destroy anyone daring enough to get in their way.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/mount-hyjal-aftermath"
+    ]
+  },
+  {
+    "id": "fv-59",
+    "claim": "What’s Next: Shen’dralas между Mulgore и Desolace.",
+    "sourceId": "forever-whats-next",
+    "quote": "In Shen'dralas, a long-hidden mystery between Mulgore and Desolace becomes a new adventure tied to the Shen’dralar, Eldre’Thalas, Dire Maul, and the centaur tribes of the region.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/shendralas"
+    ]
+  },
+  {
+    "id": "fv-60",
+    "claim": "Found Photos: Shen’dralas к югу от Desolace через Valley of Bones — новая область.",
+    "sourceId": "forever-found-photos",
+    "quote": "South of Desolace through the Valley of Bones, the addition of Shen’dralas opens a fresh, new area, exploring the characters and stories connected to Eldre’Thalas.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/shendralas"
+    ]
+  },
+  {
+    "id": "fv-65",
+    "claim": "Opening Ceremony говорит о трёх новых зонах, девяти данжах и двух рейдах.",
+    "sourceId": "blizzcon-2026-opening-ceremony",
+    "quote": "Forever allows us to carve new paths and explore unseen corners of Azeroth during the Vanilla era, with three new zones, over 1,000 new quests, nine new dungeons, two new raids, the new Skyborne race, and so much more.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/shendralas",
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-66",
+    "claim": "What’s Next называет четыре места: Hyjal, Shen’dralas, Riverglades и Zephras Isle.",
+    "sourceId": "forever-whats-next",
+    "quote": "You’ll help restore Hyjal, uncover forgotten history in Shen'dralas, build a future on the Riverglades frontier, and take your first steps through Zephras Isle.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/shendralas"
+    ]
+  },
+  {
+    "id": "fv-64",
+    "claim": "Riverglades соседствует с Burning Steppes, Redridge, Swamp of Sorrows и Badlands и была недоступна.",
+    "sourceId": "forever-found-photos",
+    "quote": "The Riverglades is one of our first major examples of “new, but familiar” content: a land connected to surrounding regions like the Burning Steppes, Redridge Mountains, the Swamp of Sorrows, and the Badlands, but previously beyond players’ reach.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/riverglades"
+    ]
+  },
+  {
+    "id": "fv-61",
+    "claim": "What’s Next: более 150 заданий, уровни от середины 30-х до середины 40-х.",
+    "sourceId": "forever-whats-next",
+    "quote": "In the Riverglades, you’ll discover a rugged frontier of rivers, grasslands, trade routes, struggling communities, and old grudges, with more than 150 new quests across much of the mid-30s to mid-40s experience.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/riverglades"
+    ]
+  },
+  {
+    "id": "fv-62",
+    "claim": "Found Photos: размером со Stranglethorn Vale, почти 200 заданий.",
+    "sourceId": "forever-found-photos",
+    "quote": "pointing players beyond known shores toward the Riverglades: a mid-level zone roughly the size of Stranglethorn Vale, built from a previously inaccessible part of the Classic world and filled with nearly 200 quests",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/riverglades"
+    ]
+  },
+  {
+    "id": "fv-63",
+    "claim": "Порт Powderfuse Port связан с маршрутом Steamwheedle.",
+    "sourceId": "forever-found-photos",
+    "quote": "Its port, Powderfuse Port, ties directly into the new Steamwheedle route and gives the journey across the sea a destination that feels both fresh and rooted in Azeroth.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/riverglades",
+      "locations/riverglades"
+    ]
+  },
+  {
+    "id": "fv-29",
+    "claim": "Forever начинается после Forsaken Kingdom и до Molten Core.",
+    "sourceId": "forever-announcement",
+    "quote": "Set after the events of Warcraft III Reforged: Forsaken Kingdom and before Molten Core, players will return to the original continents, adventure to level 60",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-68",
+    "claim": "Официально названы девять новых подземелий.",
+    "sourceId": "forever-whats-next",
+    "quote": "You’ll venture into the Hall of Thanes beneath Ironforge, the Ruins of Lordaeron, a mysterious excavation site above Whelgar’s Excavation, the chaotic City of Dalaran, Blackmaw Hold, the Drowned City, Krol’dok Stronghold, Alcaz Prison, and the Shaper’s Terrace.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids"
+    ]
+  },
+  {
+    "id": "fv-69",
+    "claim": "Краткие описания части подземелий.",
+    "sourceId": "forever-whats-next",
+    "quote": "from helping the Forsaken reclaim the Ruins of Lordaeron to investigating strange magical trouble in Dalaran, titan mysteries in Un’Goro, naga and pirates around the Drowned City, and unsettling corruption stirring in the depths of Blackmaw Hold.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids",
+      "locations/lordaeron"
+    ]
+  },
+  {
+    "id": "fv-70",
+    "claim": "Barrow Deeps — испытание для 10 игроков, Hyjal Summit — рейд на 20.",
+    "sourceId": "forever-whats-next",
+    "quote": "The Barrow Deeps is planned as a maximum-level 10-player challenge, while Hyjal Summit will bring 20-player raid encounters to one of Warcraft’s most important locations.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids",
+      "locations/mount-hyjal"
+    ]
+  },
+  {
+    "id": "fv-71",
+    "claim": "Новые рейды открываются 9 декабря.",
+    "sourceId": "forever-whats-next",
+    "quote": "New raids unlock on December 9, followed by more raids, dungeons, PvP updates, world content, additional quests throughout the level 1–60 journey, Hardcore, a revamped iconic raid",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/dungeons-and-raids",
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-72",
+    "claim": "Запуск — 4 ноября 2026 года, 15:00 PST.",
+    "sourceId": "forever-pre-purchase",
+    "quote": "When World of Warcraft: Forever launches globally on November 4, 2026, at 3:00 p.m. PST, access will be included with your World of Warcraft Subscription or Game Time.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-73",
+    "claim": "На странице анонса то же время один раз помечено как PDT.",
+    "sourceId": "forever-announcement",
+    "quote": "World of Warcraft: Forever launches November 4 at 3:00 p.m. PDT globally, with beta beginning Thursday, September 17.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-74",
+    "claim": "Бета — с 17 сентября по 21 октября 2026 года (PST).",
+    "sourceId": "forever-pre-purchase",
+    "quote": "World of Warcraft: Forever Beta begins September 17, 2026, PST, and runs through October 21, 2026, PST.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-75",
+    "claim": "Collector’s Edition указывает окно беты как PDT.",
+    "sourceId": "forever-collectors-edition",
+    "quote": "Your Beta Access Code redemption instructions will be delivered by email, and benefits expire after the applicable access period of September 17 through October 21 PDT.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-76",
+    "claim": "Предварительный выбор имён — с 27 октября по 3 ноября 2026 года.",
+    "sourceId": "forever-pre-purchase",
+    "quote": "Early Name Reservation will be available from October 27 through November 3, 2026, PST, included with any upgrade purchase. You can create and customize up to three characters during this period",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "fv-77",
+    "claim": "Hardcore появится после запуска.",
+    "sourceId": "forever-deep-dive",
+    "quote": "Hardcore: Available after launch for players seeking the ultimate challenge, where every decision matters and death carries lasting consequences.",
+    "chapterIds": [],
+    "entryRefs": [
+      "forever/announced-schedule"
+    ]
+  }
+]
