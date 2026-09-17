@@ -26,7 +26,8 @@ const { title, summary, status = 'ESTABLISHED', eyebrow = 'Хроники Азе
           width={illustration.width}
           height={illustration.height}
           alt={illustration.alt}
-          loading="lazy"
+          loading="eager"
+          fetchpriority="high"
           decoding="async"
         />
         <figcaption>{illustrationCredit}</figcaption>

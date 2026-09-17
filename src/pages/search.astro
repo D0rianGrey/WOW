@@ -1,4 +1,5 @@
 ---
+import { loreStatuses, statusLabels } from '../lib/status';
 import SearchIndex from '../components/SearchIndex.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -31,8 +32,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <span>Статус</span>
       <select name="status">
         <option value="">Все статусы</option>
-        <option value="ESTABLISHED">История Warcraft</option>
-        <option value="FOREVER">Forever</option>
+        {loreStatuses.map((status) => <option value={status}>{statusLabels[status]}</option>)}
       </select>
     </label>
   </form>
@@ -44,7 +44,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <script>
   import { searchDocuments, type SearchDocument } from '../lib/search';
-  import type { LoreStatus } from '../lib/status';
+  import { statusLabels, type LoreStatus } from '../lib/status';
 
   const form = document.querySelector<HTMLFormElement>('[data-search-form]');
   const list = document.querySelector<HTMLOListElement>('[data-search-results]');
@@ -79,7 +79,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       link.href = result.href;
       link.textContent = result.title;
       meta.className = 'search-result-meta';
-      meta.textContent = `${result.type} · ${result.status === 'FOREVER' ? 'Forever' : 'История Warcraft'}`;
+      meta.textContent = `${result.type} · ${statusLabels[result.status]}`;
       summary.textContent = result.summary;
       item.append(link, meta, summary);
       list.append(item);

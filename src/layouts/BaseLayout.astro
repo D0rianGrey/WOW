@@ -1,5 +1,6 @@
 ---
 import AppShell from '../components/AppShell.astro';
+import { route } from '../lib/routes';
 import '../styles/global.css';
 import '../styles/components.css';
 import '../styles/print.css';
@@ -9,6 +10,8 @@ interface Props {
   documentTitle?: string;
   breadcrumbs?: { label: string; href?: string }[];
 }
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const socialImage = new URL(route('images/chapters/war-of-the-ancients.webp'), Astro.site).toString();
 const { title, description = 'Русскоязычный путеводитель по истории Warcraft и World of Warcraft: Forever с прозрачными статусами лора.', documentTitle = `${title} — Warcraft: Forever`, breadcrumbs } = Astro.props;
 ---
 <!doctype html>
@@ -19,6 +22,17 @@ const { title, description = 'Русскоязычный путеводител�
     <meta name="description" content={description} />
     <meta name="theme-color" content="#10151a" />
     <title>{documentTitle}</title>
+    <link rel="icon" href={route('favicon.svg')} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Хроники Азерота" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content={documentTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content="Well of Eternity под воронкой магии — иллюстрация энциклопедии" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script is:inline>
       try {
         const reading = localStorage.getItem('wow-reading-mode');
