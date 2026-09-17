@@ -17,9 +17,14 @@ const root = resolve(import.meta.dirname, '..');
 const evidenceDir = join(root, 'docs/research/evidence');
 const sourcesFile = join(root, 'src/content/sources/core.json');
 const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
-// Discourse forums answer a browser user agent with an empty app shell and put the real post
-// text in the crawler view, so a missed quote is retried with this plain agent before failing.
+// Discourse forums answer a browser user agent with an empty app shell and put the real post text
+// in the crawler view, so those hosts are asked as a crawler from the start and the browser agent
+// becomes their fallback. Every other host works the other way round.
 const crawlerAgent = 'wow-forever-encyclopedia-evidence-check';
+
+function preferredAgent(url) {
+  return /(^|\.)forums\.blizzard\.com$/i.test(new URL(url).hostname) ? crawlerAgent : userAgent;
+}
 
 const namedEntities = {
   amp: '&',
@@ -343,7 +348,7 @@ async function run(files, results) {
   await Promise.all(
     [...byHost.values()].map(async (hostUrls) => {
       for (const url of hostUrls) {
-        await load(url, userAgent);
+        await load(url, preferredAgent(url));
       }
     })
   );
@@ -356,7 +361,8 @@ async function run(files, results) {
       continue;
     }
 
-    const page = await load(url, userAgent);
+    const primaryAgent = preferredAgent(url);
+    const page = await load(url, primaryAgent);
 
     if (page.error) {
       results.push({ id: entry.id, status: 'FETCH_ERROR', detail: `${url} — ${page.error}` });
@@ -372,7 +378,7 @@ async function run(files, results) {
     let crawlerPage = null;
 
     if (!inVisibleText && !inEmbeddedData && !page.pages) {
-      crawlerPage = await load(url, crawlerAgent);
+      crawlerPage = await load(url, primaryAgent === crawlerAgent ? userAgent : crawlerAgent);
 
       if (!crawlerPage.error) {
         inVisibleText = matches(crawlerPage.text);
@@ -384,7 +390,7 @@ async function run(files, results) {
     let detail = inEmbeddedData ? `${url} (embedded page data)` : url;
 
     if (found && crawlerPage && !crawlerPage.error) {
-      detail = `${detail} (crawler view)`;
+      detail = `${detail} (second user agent)`;
     }
 
     let status = found ? 'OK' : 'NOT_FOUND';
