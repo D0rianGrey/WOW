@@ -6,7 +6,7 @@ import {
   chapterEntrySchema,
   dossierEntrySchema,
   foreverEntrySchema,
-  loreEntrySchema,
+  glossaryEntrySchema,
   sourceSchema,
   timelineEntrySchema
 } from './lib/content';
@@ -47,8 +47,8 @@ const timeline = defineCollection({
 });
 
 const glossary = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/glossary' }),
-  schema: loreEntrySchema
+  loader: file('src/content/glossary/core.json'),
+  schema: glossaryEntrySchema
 });
 
 const sources = defineCollection({

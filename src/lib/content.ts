@@ -80,6 +80,13 @@ export const dossierEntrySchema = z.object({
   relatedLocationIds: z.array(z.string().trim().min(1))
 }).superRefine(requireSourcesUnlessEstablished);
 
+// Glossary terms: the Russian title explains an original English term.
+export const glossaryEntrySchema = z.object({
+  ...loreFields,
+  term: z.string().trim().min(1),
+  aliases: z.array(z.string().trim().min(1))
+}).superRefine(requireSourcesUnlessEstablished);
+
 export const foreverEntryKinds = ['change', 'schedule'] as const;
 
 // Forever comparison entries: what original WoW Year 1 had versus what Forever announces.
@@ -143,6 +150,7 @@ export type ChapterEntry = z.infer<typeof chapterEntrySchema>;
 export type TimelineEntry = z.infer<typeof timelineEntrySchema>;
 export type ForeverEntry = z.infer<typeof foreverEntrySchema>;
 export type DossierEntry = z.infer<typeof dossierEntrySchema>;
+export type GlossaryEntry = z.infer<typeof glossaryEntrySchema>;
 export type ChangelogEntry = z.infer<typeof changelogEntrySchema>;
 export type Source = z.infer<typeof sourceSchema>;
 

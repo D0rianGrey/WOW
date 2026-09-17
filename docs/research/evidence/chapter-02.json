@@ -80,6 +80,7 @@
       "kingdoms-and-peoples"
     ],
     "entryRefs": [
+      "glossary/sunwell",
       "timeline/quelthalas-founded"
     ]
   },
@@ -150,6 +151,7 @@
       "second-war"
     ],
     "entryRefs": [
+      "glossary/alliance",
       "locations/lordaeron",
       "timeline/alliance-of-lordaeron"
     ]

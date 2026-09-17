@@ -1,0 +1,33 @@
+[
+  {
+    "id": "gl-r4-22",
+    "claim": "Horde — армия orcs, созданная порчей Legion.",
+    "sourceId": "wow-story-timeline-orcs-and-humans",
+    "quote": "Sargeras' demonic servants among the Burning Legion worked to corrupt the once - peaceful orcs and forge them into a bloodthirsty army known as the Horde.",
+    "chapterIds": [],
+    "entryRefs": [
+      "glossary/horde"
+    ]
+  },
+  {
+    "id": "gl-r4-06",
+    "claim": "Приложение I руководства 2004 года прямо называет этот обзор Third War.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "I. History A brief overview of the Third War...and the founding of the New Age.",
+    "locator": "PDF p. 82",
+    "chapterIds": [],
+    "entryRefs": [
+      "glossary/third-war"
+    ]
+  },
+  {
+    "id": "gl-r4-36",
+    "claim": "Разработчики официально называют внутриигровое время «spongy» и намеренно неточным.",
+    "sourceId": "reddit-ama-transcript",
+    "quote": "And since we're being honest, we're intentionally a little bit vague about exact time periods in-game. The content we put in will be played for years, so sometimes things get a little ... spongy.",
+    "chapterIds": [],
+    "entryRefs": [
+      "glossary/dating"
+    ]
+  }
+]

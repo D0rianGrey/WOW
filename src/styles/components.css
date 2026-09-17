@@ -280,3 +280,27 @@ main:focus { outline: none; }
 .dossier-diagram { margin: 28px 0; }
 .dossier-diagram img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .dossier-diagram figcaption { margin-top: 10px; color: var(--muted); font-size: .84rem; }
+
+/* Glossary, sources and search */
+.glossary { margin: 10px 0; border-top: 1px solid var(--line); }
+.glossary-term { padding: 20px 6px; border-bottom: 1px solid var(--line); }
+.glossary-term dt { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.glossary-title { font-family: var(--font-family-heading); font-size: 1.35rem; }
+.glossary-original { color: var(--gold); font-size: .9rem; }
+.glossary-term dd { margin: 8px 0 0; }
+.glossary-aliases, .glossary-sources { color: var(--muted); font-size: .82rem; margin: 6px 0 0; }
+.source-group { margin-bottom: 34px; }
+.source-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.source-item { padding: 16px 6px; border-bottom: 1px solid var(--line); }
+.source-item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.source-meta, .source-used { margin: 4px 0 0; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+.search-form { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)); gap: 14px; align-items: end; margin: 8px 0 18px; padding: 20px; border: 1px solid var(--line); background: #141b20; }
+.search-form label { display: grid; gap: 6px; font-size: .72rem; color: var(--muted); }
+.search-form input, .search-form select { min-height: 44px; padding: 8px 10px; border: 1px solid #45505a; border-radius: 2px; background: #10151a; color: var(--ink); font: inherit; font-size: .9rem; }
+.search-results { list-style: none; margin: 10px 0; padding: 0; }
+.search-results li { padding: 14px 4px; border-bottom: 1px solid var(--line); }
+.search-results a { font-size: 1.1rem; }
+.search-result-meta { margin: 4px 0; color: var(--gold); font-size: .74rem; }
+@media (max-width: 760px) {
+  .search-form { grid-template-columns: 1fr; }
+}

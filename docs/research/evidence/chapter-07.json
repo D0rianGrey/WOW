@@ -225,6 +225,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "glossary/lich-king",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -239,6 +240,7 @@
     ],
     "entryRefs": [
       "forever/time-bubble-year-1",
+      "glossary/lich-king",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -275,6 +277,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "glossary/third-war",
       "timeline/battle-of-mount-hyjal",
       "timeline/plague-of-undeath"
     ]

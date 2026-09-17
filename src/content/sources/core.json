@@ -307,5 +307,14 @@
     "type": "official-promo",
     "checkedAt": "2026-09-17",
     "notes": "Heroes of the Storm lore feature listing Gul'dan's titles."
+  },
+  {
+    "id": "reddit-ama-transcript",
+    "title": "Transcript: Reddit AMA with World of Warcraft Developers",
+    "publisher": "Blizzard Entertainment",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/7207171/transcript-reddit-ama-with-world-of-warcraft-developers",
+    "type": "official-article",
+    "checkedAt": "2026-09-17",
+    "notes": "Developers say time periods in-game are intentionally vague."
   }
 ]

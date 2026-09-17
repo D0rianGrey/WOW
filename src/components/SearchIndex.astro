@@ -1,0 +1,7 @@
+---
+import { buildSearchIndex } from '../lib/search-index';
+
+const documents = await buildSearchIndex();
+---
+
+<script type="application/json" id="search-index" set:html={JSON.stringify(documents)} />

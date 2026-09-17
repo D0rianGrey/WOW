@@ -160,12 +160,21 @@ async function main() {
     const found = inVisibleText || inEmbeddedData;
     let detail = inEmbeddedData ? `${url} (embedded page data)` : url;
 
+    let status = found ? 'OK' : 'NOT_FOUND';
+
     if (found && page.pages) {
       const pageNumber = page.pages.findIndex((pageText) => normalizeForMatch(pageText).includes(needle)) + 1;
       detail = pageNumber > 0 ? `${url} (PDF p. ${pageNumber})` : `${url} (PDF, spans pages)`;
+      const claimedPage = Number(entry.locator?.match(/PDF p\. (\d+)/)?.[1]);
+
+      // A quote on the wrong page is still a broken citation for the reader.
+      if (pageNumber > 0 && claimedPage && claimedPage !== pageNumber) {
+        status = 'LOCATOR_MISMATCH';
+        detail = `${detail} but ledger says PDF p. ${claimedPage}`;
+      }
     }
 
-    results.push({ id: entry.id, status: found ? 'OK' : 'NOT_FOUND', detail });
+    results.push({ id: entry.id, status, detail });
   }
 
   const failures = results.filter((result) => result.status !== 'OK');

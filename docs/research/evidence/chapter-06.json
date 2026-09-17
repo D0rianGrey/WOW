@@ -78,6 +78,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "glossary/third-war",
       "timeline/plague-of-undeath"
     ]
   },
@@ -168,6 +169,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "glossary/frostmourne",
       "locations/northrend",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
@@ -200,6 +202,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "glossary/frostmourne",
       "timeline/frostmourne-and-fall-of-lordaeron"
     ]
   },
@@ -460,6 +463,9 @@
     "locator": "PDF p. 83",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "glossary/sunwell"
     ]
   },
   {

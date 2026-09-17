@@ -44,6 +44,7 @@ describe('changelog', () => {
     const entries = (JSON.parse(readFileSync(path, 'utf8')) as unknown[]).map((raw) => changelogEntrySchema.parse(raw));
     const timelineIds = (JSON.parse(readFileSync(resolve('src/content/timeline/core.json'), 'utf8')) as { id: string }[]).map((event) => event.id);
     const foreverIds = readdirSync(foreverDir).map((file) => file.replace(/\.md$/, ''));
+    const glossaryIds = (JSON.parse(readFileSync(resolve('src/content/glossary/core.json'), 'utf8')) as { id: string }[]).map((term) => term.id);
 
     for (const entry of entries) {
       for (const ref of entry.entityRefs) {
@@ -51,6 +52,8 @@ describe('changelog', () => {
 
         if (collection === 'timeline') {
           expect(timelineIds, ref).toContain(id);
+        } else if (collection === 'glossary') {
+          expect(glossaryIds, ref).toContain(id);
         } else if (collection === 'forever') {
           expect(foreverIds, ref).toContain(id);
         } else {

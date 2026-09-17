@@ -6,6 +6,9 @@
     "quote": "The titans are a race of majestic planet-sized cosmic beings made up of Order magic and the primordial matter from which the universe was born. Notable titans are Aman'Thul and Sargeras.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/titans"
     ]
   },
   {
@@ -15,6 +18,9 @@
     "quote": "Physical manifestations of the Void, these parasitic horrors grow like cancers and are administrators of corruption. Notable Old Gods are C'Thun, N'Zoth, and Yogg-Saron.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/old-gods"
     ]
   },
   {
@@ -35,6 +41,8 @@
       "azeroth-before-civilization"
     ],
     "entryRefs": [
+      "glossary/azeroth",
+      "glossary/lore-editions",
       "timeline/titans-order-azeroth"
     ]
   },
@@ -188,6 +196,9 @@
     "locator": "PDF p. 24",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/well-of-eternity"
     ]
   },
   {
@@ -210,6 +221,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "glossary/time-bubble",
       "timeline/forever"
     ]
   },
@@ -224,6 +236,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "glossary/time-bubble",
       "timeline/forever"
     ]
   },
@@ -307,6 +320,10 @@
     "locator": "PDF p. 41",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/lore-editions",
+      "glossary/well-of-eternity"
     ]
   },
   {

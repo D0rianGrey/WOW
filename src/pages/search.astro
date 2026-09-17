@@ -1,0 +1,101 @@
+---
+import SearchIndex from '../components/SearchIndex.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Поиск" description="Поиск по главам, хронологии, персонажам, фракциям, местам, изменениям Forever и словарю.">
+  <header class="path-header">
+    <p class="eyebrow">Найти в хрониках</p>
+    <h1>Поиск</h1>
+    <p class="lead">Ищите по английским названиям и по-русски: персонажи, фракции, места, события, изменения Forever и термины.</p>
+  </header>
+  <form class="search-form" data-search-form role="search" onsubmit="return false">
+    <label class="search-field">
+      <span>Запрос</span>
+      <input type="search" name="q" autocomplete="off" placeholder="Например: Arthas, Орда, Hyjal" />
+    </label>
+    <label>
+      <span>Тип</span>
+      <select name="type">
+        <option value="">Все типы</option>
+        <option>Глава</option>
+        <option>Событие</option>
+        <option>Персонаж</option>
+        <option>Фракция</option>
+        <option>Место</option>
+        <option>Изменение Forever</option>
+        <option>Термин</option>
+      </select>
+    </label>
+    <label>
+      <span>Статус</span>
+      <select name="status">
+        <option value="">Все статусы</option>
+        <option value="ESTABLISHED">История Warcraft</option>
+        <option value="FOREVER">Forever</option>
+      </select>
+    </label>
+  </form>
+  <p class="timeline-count" data-search-count aria-live="polite">Введите запрос.</p>
+  <ol class="search-results" data-search-results></ol>
+  <noscript><p>Поиск работает с включённым JavaScript. Без него пользуйтесь разделами в меню.</p></noscript>
+  <SearchIndex />
+</BaseLayout>
+
+<script>
+  import { searchDocuments, type SearchDocument } from '../lib/search';
+  import type { LoreStatus } from '../lib/status';
+
+  const form = document.querySelector<HTMLFormElement>('[data-search-form]');
+  const list = document.querySelector<HTMLOListElement>('[data-search-results]');
+  const counter = document.querySelector<HTMLElement>('[data-search-count]');
+  const raw = document.getElementById('search-index')?.textContent ?? '[]';
+  const documents = JSON.parse(raw) as SearchDocument[];
+
+  function render() {
+    if (!form || !list || !counter) {
+      return;
+    }
+
+    const data = new FormData(form);
+    const query = String(data.get('q') ?? '').trim();
+    const status = (String(data.get('status') ?? '') || undefined) as LoreStatus | undefined;
+    const type = String(data.get('type') ?? '') || undefined;
+    list.replaceChildren();
+
+    if (!query) {
+      counter.textContent = 'Введите запрос.';
+      return;
+    }
+
+    const results = searchDocuments(documents, query, { status, type });
+    counter.textContent = results.length > 0 ? `Найдено: ${results.length}` : 'Ничего не найдено. Попробуйте другое написание или английское название.';
+
+    for (const result of results.slice(0, 50)) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      const meta = document.createElement('p');
+      const summary = document.createElement('p');
+      link.href = result.href;
+      link.textContent = result.title;
+      meta.className = 'search-result-meta';
+      meta.textContent = `${result.type} · ${result.status === 'FOREVER' ? 'Forever' : 'История Warcraft'}`;
+      summary.textContent = result.summary;
+      item.append(link, meta, summary);
+      list.append(item);
+    }
+  }
+
+  if (form) {
+    const params = new URLSearchParams(window.location.search);
+    const input = form.elements.namedItem('q');
+
+    if (input instanceof HTMLInputElement && params.get('q')) {
+      input.value = params.get('q') ?? '';
+    }
+
+    form.addEventListener('input', render);
+    form.addEventListener('change', render);
+    render();
+  }
+</script>

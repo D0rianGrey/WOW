@@ -31,7 +31,10 @@
       "Главная хронология из 32 событий без выдуманных лет, с пометками о приблизительных датах.",
       "Фильтры по эпохе, фракции, персонажу, месту и статусу; страница эпох."
     ],
-    "entityRefs": ["timeline/forever", "timeline/great-sundering"]
+    "entityRefs": [
+      "timeline/forever",
+      "timeline/great-sundering"
+    ]
   },
   {
     "id": "v0-4-forever-changes",
@@ -42,6 +45,40 @@
       "Сравнение первого года оригинального World of Warcraft и объявленного Forever: time bubble, Forsaken Kingdom, Forsaken Paladins, новые сочетания расы и класса, Skyborne, Zephras Isle, Mount Hyjal, Shen’dralas, Riverglades, подземелья и рейды.",
       "Объявленные даты беты, запуска и первых рейдов с пометкой о несогласованных часовых поясах."
     ],
-    "entityRefs": ["forever/time-bubble-year-1", "forever/skyborne", "forever/announced-schedule"]
+    "entityRefs": [
+      "forever/time-bubble-year-1",
+      "forever/skyborne",
+      "forever/announced-schedule"
+    ]
+  },
+  {
+    "id": "v0-5-dossiers",
+    "date": "2026-09-17",
+    "version": "0.5",
+    "title": "Досье персонажей, фракций и мест",
+    "changes": [
+      "43 досье: 18 персонажей, 10 фракций и 15 мест, описанных на момент первого года, включая новые группы и места Forever.",
+      "Схемы пути Arthas и отношений фракций в первый год."
+    ],
+    "entityRefs": [
+      "characters/arthas-menethil",
+      "factions/forsaken",
+      "locations/zephras-isle"
+    ]
+  },
+  {
+    "id": "v0-6-glossary-search",
+    "date": "2026-09-17",
+    "version": "0.6",
+    "title": "Словарь, источники и поиск",
+    "changes": [
+      "Словарь из 18 терминов с оригинальными названиями и источниками.",
+      "Страница источников: все официальные материалы с числом проверенных цитат.",
+      "Поиск по главам, хронологии, досье, изменениям Forever и словарю с учётом русских словоформ."
+    ],
+    "entityRefs": [
+      "glossary/time-bubble",
+      "glossary/horde"
+    ]
   }
 ]

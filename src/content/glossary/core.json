@@ -1,0 +1,339 @@
+[
+  {
+    "id": "azeroth",
+    "title": "Azeroth",
+    "slug": "azeroth",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Мир Warcraft. Titans упорядочивали его, опасаясь повредить его world-soul; в первый год восемь играбельных рас делят его между Horde и Alliance.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "dragon-aspects-story-so-far",
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Azeroth",
+    "aliases": [
+      "Азерот"
+    ]
+  },
+  {
+    "id": "titans",
+    "title": "Titans",
+    "slug": "titans",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Космические существа размером с планету, состоящие из магии Order и первозданной материи; среди них Aman’Thul и Sargeras.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "dragon-aspects-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Titans",
+    "aliases": [
+      "Титаны"
+    ]
+  },
+  {
+    "id": "old-gods",
+    "title": "Old Gods",
+    "slug": "old-gods",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Физические проявления Void — паразитические ужасы, несущие порчу; среди них C’Thun, N’Zoth и Yogg-Saron.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "dragon-aspects-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Old Gods",
+    "aliases": [
+      "Древние боги"
+    ]
+  },
+  {
+    "id": "well-of-eternity",
+    "title": "Well of Eternity",
+    "slug": "well-of-eternity",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Озеро энергий в центре древнего континента. Руководство к Warcraft III называет его «истинным сердцем» магии мира и говорит, что его сотворили titans.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Well of Eternity",
+    "aliases": [
+      "Источник Вечности"
+    ]
+  },
+  {
+    "id": "burning-legion",
+    "title": "Burning Legion",
+    "slug": "burning-legion",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Демоническая армия, которую выковал Sargeras. Highborne впервые открыли ей путь в Azeroth.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "well-of-eternity-preview"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Burning Legion",
+    "aliases": [
+      "Пылающий Легион",
+      "Legion"
+    ]
+  },
+  {
+    "id": "scourge",
+    "title": "Scourge",
+    "slug": "scourge",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Армия нежити, которую demon Kil’jaeden создал под единой волей Lich King.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Scourge",
+    "aliases": [
+      "Плеть"
+    ]
+  },
+  {
+    "id": "lich-king",
+    "title": "Lich King",
+    "slug": "lich-king",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Повелитель Scourge. В первый год это Arthas, слившийся с Ner’zhul; он живёт в Northrend.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Lich King",
+    "aliases": [
+      "Король-лич"
+    ]
+  },
+  {
+    "id": "horde",
+    "title": "Horde",
+    "slug": "horde",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Армия orcs, которую демоны Burning Legion превратили в кровожадную силу. При Thrall — рыхлая коалиция ради выживания, в которую в первый год входят orcs, tauren, trolls и undead.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "wow-story-timeline-orcs-and-humans",
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Horde",
+    "aliases": [
+      "Орда"
+    ]
+  },
+  {
+    "id": "alliance",
+    "title": "Alliance",
+    "slug": "alliance",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Союз, рождённый во Second War, когда семь человеческих государств объединились под одним знаменем. В первый год в него входят dwarves, gnomes, humans и night elves.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Alliance",
+    "aliases": [
+      "Альянс",
+      "Grand Alliance"
+    ]
+  },
+  {
+    "id": "forsaken",
+    "title": "Forsaken",
+    "slug": "forsaken",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Нежить, вырвавшаяся из-под власти Lich King во главе с Sylvanas Windrunner. В первый год — союзники Horde по расчёту.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Forsaken",
+    "aliases": [
+      "Отрёкшиеся"
+    ]
+  },
+  {
+    "id": "dark-portal",
+    "title": "Dark Portal",
+    "slug": "dark-portal",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Врата между Azeroth и Draenor, через которые Horde вторглась в мир людей. Официальные тексты по-разному говорят, кто их создал: Gul’dan или Medivh и Gul’dan вместе.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-story-so-far",
+      "wow-story-timeline-orcs-and-humans"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Dark Portal",
+    "aliases": [
+      "Тёмный портал"
+    ]
+  },
+  {
+    "id": "third-war",
+    "title": "Third War",
+    "slug": "third-war",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Война чумы, падения Lordaeron и нового вторжения Burning Legion. Руководство 2004 года относит вторжение Legion на четыре года назад от первого года World of Warcraft.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Third War",
+    "aliases": [
+      "Третья война"
+    ]
+  },
+  {
+    "id": "sunwell",
+    "title": "Sunwell",
+    "slug": "sunwell",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Источник магической силы high elves в Quel’Thalas, созданный с помощью воды, украденной из первого Well of Eternity.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "burning-crusade-story-so-far",
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Sunwell",
+    "aliases": [
+      "Солнечный Колодец"
+    ]
+  },
+  {
+    "id": "frostmourne",
+    "title": "Frostmourne",
+    "slug": "frostmourne",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Проклятый рунический клинок из Northrend: он дал Arthas невообразимую силу, но украл его душу.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "world-of-warcraft-2004-manual"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Frostmourne",
+    "aliases": [
+      "Ледяная Скорбь"
+    ]
+  },
+  {
+    "id": "time-bubble",
+    "title": "Time bubble",
+    "slug": "time-bubble",
+    "status": "FOREVER",
+    "era": "Словарь",
+    "summary": "Собственное время Forever. Оно начинается в раннем «Year 1» оригинального World of Warcraft и позволяет исследовать новые возможности, не разрушая фундаментальных историй Azeroth.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "forever-found-photos"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "time bubble",
+    "aliases": [
+      "Year 1",
+      "первый год"
+    ]
+  },
+  {
+    "id": "lore-editions",
+    "title": "Редакции истории",
+    "slug": "lore-editions",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Официальные тексты разных лет описывают одни события по-разному. Например, руководство к Warcraft III говорит, что Well of Eternity создали titans, а поздняя ретроспектива рассказывает, как titans опасались повредить world-soul. Энциклопедия показывает обе версии и помечает, к какому времени относится каждая.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "warcraft-iii-manual",
+      "dragon-aspects-story-so-far"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Retcon",
+    "aliases": [
+      "реткон",
+      "retcon",
+      "версии лора"
+    ]
+  },
+  {
+    "id": "dating",
+    "title": "Датировка",
+    "slug": "dating",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Разработчики Blizzard признают, что намеренно не уточняют сроки внутри игры. Поэтому энциклопедия не выдумывает годы: пишет даты приблизительно и показывает, где официальные тексты расходятся.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "reddit-ama-transcript"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Dates",
+    "aliases": [
+      "даты",
+      "хронология"
+    ]
+  },
+  {
+    "id": "beta-canon",
+    "title": "Бета и неподтверждённое",
+    "slug": "beta-canon",
+    "status": "ESTABLISHED",
+    "era": "Словарь",
+    "summary": "Правило энциклопедии: сведения из беты получают статус «Бета · может измениться», слухи и датамайнинг — «Не подтверждено». Ни то ни другое не выдаётся за канон.",
+    "spoilerLevel": 0,
+    "sourceIds": [],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "term": "Beta canon",
+    "aliases": [
+      "бета",
+      "датамайнинг",
+      "слухи"
+    ]
+  }
+]

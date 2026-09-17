@@ -488,7 +488,7 @@
     "claim": "Uther был первым паладином, благословлённым Archbishop Faol до Second War; его удерживала от отставки надежда сделать Arthas достойным короны отца.",
     "sourceId": "warcraft-iii-manual",
     "quote": "Uther was the first of the paladins blessed by the Archbishop Faol, prior to the Second War. He is a weathered veteran, respected as one of the greatest warriors in human history.",
-    "locator": "PDF p. 46",
+    "locator": "PDF p. 47",
     "chapterIds": [],
     "entryRefs": [
       "characters/uther-the-lightbringer"
@@ -1173,6 +1173,7 @@
     "locator": "PDF p. 8",
     "chapterIds": [],
     "entryRefs": [
+      "glossary/azeroth",
       "locations/azeroth"
     ]
   },
@@ -1185,7 +1186,8 @@
     "chapterIds": [],
     "entryRefs": [
       "factions/alliance",
-      "factions/night-elves"
+      "factions/night-elves",
+      "glossary/alliance"
     ]
   },
   {
@@ -1196,7 +1198,8 @@
     "locator": "PDF p. 8",
     "chapterIds": [],
     "entryRefs": [
-      "factions/horde"
+      "factions/horde",
+      "glossary/horde"
     ]
   },
   {
@@ -1298,7 +1301,8 @@
     "chapterIds": [],
     "entryRefs": [
       "characters/grom-hellscream",
-      "factions/horde"
+      "factions/horde",
+      "glossary/horde"
     ]
   },
   {
@@ -1309,7 +1313,8 @@
     "locator": "PDF p. 103",
     "chapterIds": [],
     "entryRefs": [
-      "factions/forsaken"
+      "factions/forsaken",
+      "glossary/forsaken"
     ]
   },
   {
@@ -1320,8 +1325,9 @@
     "locator": "PDF p. 103",
     "chapterIds": [],
     "entryRefs": [
+      "factions/forsaken",
       "factions/horde",
-      "factions/forsaken"
+      "glossary/forsaken"
     ]
   },
   {
@@ -1364,7 +1370,8 @@
     "locator": "PDF p. 83",
     "chapterIds": [],
     "entryRefs": [
-      "factions/scourge"
+      "factions/scourge",
+      "glossary/scourge"
     ]
   },
   {
@@ -1398,7 +1405,8 @@
     "quote": "Convinced that the only way to spare the universe from the Nether’s demonic entities was to purge it, he soon turned his power on the cosmos, seeking to cleanse all life in existence. To this end, he forged the demonic Burning Legion.",
     "chapterIds": [],
     "entryRefs": [
-      "factions/burning-legion"
+      "factions/burning-legion",
+      "glossary/burning-legion"
     ]
   },
   {

@@ -1,0 +1,84 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { SourceType } from '../lib/content';
+import { entityRefHref } from '../lib/entity-links';
+import { route } from '../lib/routes';
+
+interface LedgerEntry {
+  sourceId: string;
+  chapterIds: string[];
+  entryRefs?: string[];
+}
+
+const ledgerModules = import.meta.glob<{ default: LedgerEntry[] }>('../../docs/research/evidence/*.json', { eager: true });
+const ledger = Object.values(ledgerModules).flatMap((module) => module.default);
+const sources = await getCollection('sources');
+const chapters = await getCollection('chapters');
+const chapterTitles = Object.fromEntries(chapters.map((chapter) => [chapter.data.id, chapter.data]));
+
+const typeOrder: SourceType[] = ['official-manual', 'official-announcement', 'official-article', 'official-retrospective', 'official-preview', 'official-promo', 'official-fiction', 'official-book', 'in-game'];
+const typeLabels: Record<SourceType, string> = {
+  'official-manual': 'Официальные руководства',
+  'official-announcement': 'Официальные анонсы',
+  'official-article': 'Публикации Blizzard',
+  'official-retrospective': 'Поздние ретроспективы',
+  'official-preview': 'Официальные превью',
+  'official-promo': 'Промоматериалы',
+  'official-fiction': 'Официальные рассказы',
+  'official-book': 'Официальные книги',
+  'in-game': 'Тексты в игре'
+};
+
+const usage = (sourceId: string) => {
+  const entries = ledger.filter((entry) => entry.sourceId === sourceId);
+  const chaptersUsed = [...new Set(entries.flatMap((entry) => entry.chapterIds))];
+  const refs = [...new Set(entries.flatMap((entry) => entry.entryRefs ?? []))];
+  return { quotes: entries.length, chaptersUsed, refs };
+};
+
+const groups = typeOrder
+  .map((type) => ({ type, items: sources.filter((source) => source.data.type === type).sort((left, right) => left.data.title.localeCompare(right.data.title)) }))
+  .filter((group) => group.items.length > 0);
+const totalQuotes = ledger.length;
+---
+
+<BaseLayout title="Источники" description="Все официальные источники энциклопедии, сгруппированные по типу, с числом проверенных цитат.">
+  <header class="path-header">
+    <p class="eyebrow">Каждая история начинается с источника</p>
+    <h1>Источники</h1>
+    <p class="lead">Энциклопедия опирается только на официальные материалы Blizzard. Каждый факт подкреплён дословной цитатой; всего проверенных цитат — {totalQuotes}. Цитаты регулярно сверяются с живыми страницами.</p>
+  </header>
+
+  {groups.map((group) => (
+    <section class="source-group" aria-labelledby={`group-${group.type}`}>
+      <h2 id={`group-${group.type}`}>{typeLabels[group.type]}</h2>
+      <ul class="source-list">
+        {group.items.map((source) => {
+          const used = usage(source.id);
+          return (
+            <li class="source-item" id={`source-${source.id}`}>
+              <h3>{source.data.url ? <a href={source.data.url} rel="noreferrer">{source.data.title}</a> : source.data.title}</h3>
+              <p class="source-meta">
+                {source.data.publisher}
+                {source.data.publishedAt && <> · опубликовано {source.data.publishedAt}</>}
+                {source.data.checkedAt && <> · проверено {source.data.checkedAt}</>}
+                <> · цитат: {used.quotes}</>
+              </p>
+              {(used.chaptersUsed.length > 0 || used.refs.length > 0) && (
+                <p class="source-used">
+                  Используется: {used.chaptersUsed.map((id, index) => (
+                    <>{index > 0 && ', '}<a href={route(`chapters/${chapterTitles[id]?.slug ?? id}`)}>{chapterTitles[id]?.title ?? id}</a></>
+                  ))}{used.chaptersUsed.length > 0 && used.refs.length > 0 && ', '}{used.refs.slice(0, 12).map((ref, index) => (
+                    <>{index > 0 && ', '}<a href={entityRefHref(ref)}>{ref}</a></>
+                  ))}{used.refs.length > 12 && ` и ещё ${used.refs.length - 12}`}
+                </p>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  ))}
+</BaseLayout>
