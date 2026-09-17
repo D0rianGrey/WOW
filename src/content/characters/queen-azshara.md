@@ -11,13 +11,13 @@ sourceIds:
   - well-of-eternity-preview
   - vashjir-surviving-the-depths
   - forever-found-photos
+  - eternal-palace-raid-finder-wing-3
 updatedAt: "2026-09-17"
 confidence: high
 aliases:
   - "Azshara"
 relatedCharacterIds:
   - "malfurion-stormrage"
-  - "illidan-stormrage"
 relatedFactionIds:
   - "night-elves"
   - "burning-legion"
@@ -31,12 +31,12 @@ Azshara — прекрасная и одарённая королева древ
 
 ## Путь до первого года
 
-Опьянённая магией, Azshara согласилась впустить Sargeras в свой мир; поздний официальный текст называет причиной призыва Legion её тщеславие. Схватка Furion с Azshara ввергла заклинание Highborne в хаос, и Well of Eternity схлопнулся.
+Опьянённая магией, Azshara согласилась впустить Sargeras в свой мир; поздний официальный текст называет причиной призыва Legion её тщеславие. Схватка Furion с Azshara ввергла заклинание Highborne в хаос. Бурлящий Well of Eternity обрушился сам в себя.
 
 ## В первый год
 
-Руководство 2002 года говорит, что Azshara и её элита оказались на дне моря. Поздний официальный текст продолжает: королева избежала смерти в глубинах, но вместе со многими Highborne навсегда превратилась в naga.
+Руководство 2002 года говорит, что Azshara и её элиту разбило о дно моря. Поздние официальные тексты продолжают по-разному: по одному, королева избежала смерти в глубинах, но вместе со многими Highborne навсегда превратилась в naga; по другому, когда моря поглотили Zin-Azshari, Azshara заключила тёмную сделку с N’Zoth, и её подданные стали naga.
 
 ## Почему это важно в Forever
 
-Наследие её двора живёт в Forever: предки Skyborne ушли из Eldre’Thalas после войны, которую начала магия Highborne.
+Эхо её эпохи живёт в Forever: предки Skyborne — мятежники, бежавшие из Eldre’Thalas после War of the Ancients.

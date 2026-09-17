@@ -20,7 +20,6 @@ relatedFactionIds:
   - "night-elves"
   - "alliance"
 relatedLocationIds:
-  - "teldrassil"
   - "mount-hyjal"
 ---
 
@@ -34,7 +33,7 @@ Tyrande — верховная жрица лунной богини Elune. По�
 
 ## В первый год
 
-Tyrande правит Darnassus. После исчезновения Malfurion она снова стала единоличной правительницей своего народа.
+Tyrande правит Darnassus, а ночные эльфы входят в Alliance. После исчезновения Malfurion она снова стала единоличной правительницей своего народа.
 
 ## Почему это важно в Forever
 

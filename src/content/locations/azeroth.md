@@ -21,12 +21,11 @@ relatedFactionIds:
   - "horde"
 relatedLocationIds:
   - "kalimdor"
-  - "northrend"
 ---
 
 ## Где это
 
-Azeroth — мир, который упорядочивали titans, опасаясь повредить его world-soul. Dragon Aspects наделены силой titans охранять его.
+Руководство к Warcraft III говорит, что titans веками двигали и формировали землю Azeroth, пока не остался один совершенный континент. Поздняя ретроспектива эпохи Dragonflight добавляет, что у мира есть world-soul: пока titans упорядочивали Azeroth, Aggramar боялся, что Pantheon повредит его, а Dragon Aspects получили от titans силу охранять мир.
 
 ## Что здесь произошло
 

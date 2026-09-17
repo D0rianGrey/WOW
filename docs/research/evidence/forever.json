@@ -66,7 +66,8 @@
     "quote": "The four-mission Last Days of Lordaeron prologue begins as Arthas returns home. Players experience the kingdom’s final hours through the eyes of the Capital City Guard",
     "chapterIds": [],
     "entryRefs": [
-      "forever/forsaken-kingdom"
+      "forever/forsaken-kingdom",
+      "locations/lordaeron"
     ]
   },
   {
@@ -284,7 +285,8 @@
     "quote": "Their history begins with rebels who fled Eldre’Thalas after the War of the Ancients and eventually found refuge in Skywall, where wind spirits anchored their island home in the elemental plane.",
     "chapterIds": [],
     "entryRefs": [
-      "forever/skyborne"
+      "forever/skyborne",
+      "forever/zephras-isle"
     ]
   },
   {

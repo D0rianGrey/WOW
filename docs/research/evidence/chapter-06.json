@@ -132,6 +132,9 @@
     "quote": "When the plague of undeath began spreading through the Eastern Kingdoms, Jaina was asked to investigate it along with Arthas Menethil, crown prince of Lordaeron.",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/jaina-proudmoore"
     ]
   },
   {
@@ -169,6 +172,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "characters/arthas-menethil",
       "glossary/frostmourne",
       "locations/northrend",
       "timeline/frostmourne-and-fall-of-lordaeron"
@@ -262,6 +266,9 @@
     "quote": "Despite her strong resistance, the Scourge ripped through Quel’Thalas and she met defeat at the hands of Arthas. He denied her a clean death and instead transformed her soul into a banshee, forced to serve the Scourge.",
     "chapterIds": [
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "characters/sylvanas-windrunner"
     ]
   },
   {
@@ -387,7 +394,8 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
-      "characters/uther-the-lightbringer"
+      "characters/uther-the-lightbringer",
+      "forever/forsaken-paladins"
     ]
   },
   {
@@ -409,6 +417,7 @@
       "arthas-and-lordaeron"
     ],
     "entryRefs": [
+      "forever/forsaken-paladins",
       "locations/bandarion-keep"
     ]
   },

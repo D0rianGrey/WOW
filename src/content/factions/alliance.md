@@ -16,19 +16,16 @@ aliases:
   - "Альянс"
 relatedCharacterIds:
   - "anduin-wrynn"
-  - "jaina-proudmoore"
-  - "tyrande-whisperwind"
 relatedFactionIds:
   - "night-elves"
   - "horde"
 relatedLocationIds:
   - "stormwind"
-  - "teldrassil"
 ---
 
 ## Происхождение
 
-Во Second War семь человеческих государств впервые за три тысячи лет объединились под одним знаменем — так родился Alliance of Lordaeron.
+Семь государств впервые за три тысячи лет объединились под одним знаменем — так родился Alliance of Lordaeron.
 
 ## Лидеры и цели
 
@@ -40,4 +37,4 @@ relatedLocationIds:
 
 ## Почему это важно в Forever
 
-После войн Alliance и Horde держат шаткое перемирие — с этой точки начинается Forever.
+После войн Alliance и Horde держат шаткое перемирие.

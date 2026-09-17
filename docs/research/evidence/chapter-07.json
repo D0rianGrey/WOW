@@ -184,6 +184,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "glossary/third-war",
       "timeline/forsaken-rise"
     ]
   },
@@ -212,6 +213,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "locations/northrend",
       "timeline/arthas-becomes-lich-king"
     ]
   },
@@ -277,6 +279,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "factions/burning-legion",
       "glossary/third-war",
       "timeline/battle-of-mount-hyjal",
       "timeline/plague-of-undeath"
@@ -497,6 +500,7 @@
       "third-war-to-forever"
     ],
     "entryRefs": [
+      "characters/sylvanas-windrunner",
       "timeline/forsaken-rise"
     ]
   },

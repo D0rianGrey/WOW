@@ -14,10 +14,8 @@ sourceIds:
   - world-of-warcraft-2004-manual
 updatedAt: "2026-09-17"
 confidence: high
-aliases:
-  - "Shadow Council"
+aliases: []
 relatedCharacterIds:
-  - "medivh"
   - "orgrim-doomhammer"
   - "illidan-stormrage"
 relatedFactionIds:
@@ -32,7 +30,7 @@ Blizzard называет Gul’dan предателем orcs, основате�
 
 ## Путь до первого года
 
-Когда шаман Ner’zhul отказался дальше служить Legion, Kil’jaeden обратился к его ученику Gul’dan, и тот довёл orcs до безумной жажды крови. Gul’dan убедил orcs выпить кровь Mannoroth. Во Second War он бросил Horde и увёл половину её сил искать Tomb of Sargeras. Руководство к Warcraft III рассказывает, что Gul’dan поднял гробницу со дна моря, но нашёл в ней лишь безумных демонов и был ими разорван.
+Поздняя ретроспектива Burning Crusade Classic рассказывает: когда Ner’zhul отказался дальше служить планам Legion, Kil’jaeden обратился к его ученику Gul’dan, и тот довёл orcs до безумной жажды крови. Gul’dan убедил orcs выпить кровь Mannoroth. Во Second War он бросил Horde и увёл половину её сил искать Tomb of Sargeras. Руководство к Warcraft III рассказывает, что Gul’dan поднял гробницу со дна моря, но нашёл в ней лишь безумных демонов и был ими разорван.
 
 ## В первый год
 

@@ -17,8 +17,6 @@ aliases:
   - "королева Forsaken"
 relatedCharacterIds:
   - "arthas-menethil"
-  - "garek-bandarion"
-  - "dark-ranger-anya"
 relatedFactionIds:
   - "forsaken"
   - "horde"

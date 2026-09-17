@@ -4,7 +4,7 @@ title: "Stormwind"
 slug: stormwind
 status: ESTABLISHED
 era: "Первый год World of Warcraft"
-summary: "Столица людей, павшая в First War, отстроенная и управляемая ребёнком-королём."
+summary: "Столица людей, павшая перед Horde, отстроенная и управляемая ребёнком-королём."
 spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
@@ -26,7 +26,7 @@ Stormwind стоит в предгорьях Elwynn Forest.
 
 ## Что здесь произошло
 
-В First War Horde взяла Stormwind, и Anduin Lothar увёл выживших через Great Sea на север. После Second War город отстроили; руководство 2004 года называет его чудом человеческой инженерии.
+Horde взяла Stormwind, и Anduin Lothar увёл уцелевших жителей через Great Sea. После Second War город отстроили; руководство 2004 года называет его чудом человеческой инженерии.
 
 ## Кто контролирует сейчас
 
@@ -34,4 +34,4 @@ Stormwind — один из последних оплотов людей. Им �
 
 ## Что может встретиться в Forever
 
-Stormwind без Varian — отправная точка Alliance в первый год Forever.
+Stormwind без Varian — столица людей, какой её застают игроки первого года Forever.

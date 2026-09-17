@@ -11,26 +11,23 @@ sourceIds:
   - warcraft-iii-manual
   - world-of-warcraft-2004-manual
   - forever-hub
+  - wow-story-timeline-orcs-and-humans
 updatedAt: "2026-09-17"
 confidence: high
 aliases:
   - "Орда"
-  - "New Horde"
 relatedCharacterIds:
   - "thrall"
-  - "cairne-bloodhoof"
-  - "sylvanas-windrunner"
 relatedFactionIds:
   - "forsaken"
   - "alliance"
   - "windshapers"
-relatedLocationIds:
-  - "durotar"
+relatedLocationIds: []
 ---
 
 ## Происхождение
 
-Первую Horde развратили демоны; новую собрал Thrall, освободив orcs из лагерей и вернув им шаманизм.
+Демонические слуги Sargeras из Burning Legion развратили когда-то мирных orcs и выковали из них кровожадную армию — Horde. Thrall осадил лагеря для интернированных, и при нём orcs сбросили оковы демонической порчи и вернули шаманское наследие.
 
 ## Лидеры и цели
 
@@ -42,4 +39,4 @@ Thrall — warchief всей Horde, и его власть признают и D
 
 ## Почему это важно в Forever
 
-После войн Horde и Alliance держат шаткое перемирие. В Forever Horde получает новых союзников — Skyborne, выбравших путь Windshaper Horde.
+После войн Horde и Alliance держат шаткое перемирие. В Forever Skyborne могут выбрать путь Windshaper Horde.

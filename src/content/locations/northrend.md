@@ -26,7 +26,7 @@ Northrend — арктическая земля на севере мира.
 
 ## Что здесь произошло
 
-Arthas проследил источник чумы до Northrend и взял там Frostmourne. Позже у Frozen Throne он слился с Ner’zhul.
+Arthas проследил источник чумы до Northrend и взял там Frostmourne. Позже он первым добрался до Frozen Throne и надел шлем Ner’zhul, и их духи слились.
 
 ## Кто контролирует сейчас
 

@@ -4,7 +4,7 @@ title: "Night Elves"
 slug: night-elves
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
-summary: "Древний народ Kalimdor, потерявший бессмертие в Third War."
+summary: "Древний народ Kalimdor, заплативший бессмертием за победу над Archimonde."
 spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
@@ -19,7 +19,6 @@ aliases:
 relatedCharacterIds:
   - "tyrande-whisperwind"
   - "malfurion-stormrage"
-  - "illidan-stormrage"
 relatedFactionIds:
   - "alliance"
   - "burning-legion"
@@ -35,7 +34,7 @@ Kaldorei, или ночные эльфы, поклонялись лунной б
 
 ## Лидеры и цели
 
-Победа над Archimonde на Mount Hyjal стоила ночным эльфам бессмертия. Дух Malfurion затерялся в Emerald Dream, и новым Arch-Druid стал Fandral Staghelm.
+Malfurion высвободил первобытную ярость Nordrassil и уничтожил Archimonde, но победа стоила ночным эльфам бессмертия. Вскоре дух Malfurion затерялся в глубинах Emerald Dream, и новым Arch-Druid стал Fandral Staghelm.
 
 ## В первый год
 

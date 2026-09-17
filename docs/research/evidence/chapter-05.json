@@ -380,6 +380,9 @@
     "locator": "PDF p. 102",
     "chapterIds": [
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "locations/durotar"
     ]
   },
   {
@@ -405,6 +408,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/jaina-proudmoore",
       "timeline/durotar-and-theramore"
     ]
   },
@@ -477,6 +481,7 @@
       "thrall-and-new-horde"
     ],
     "entryRefs": [
+      "characters/thrall",
       "factions/horde"
     ]
   },

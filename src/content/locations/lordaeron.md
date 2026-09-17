@@ -15,7 +15,6 @@ updatedAt: "2026-09-17"
 confidence: high
 aliases:
   - "Лордерон"
-  - "Plaguelands"
 relatedCharacterIds:
   - "arthas-menethil"
   - "sylvanas-windrunner"
@@ -31,7 +30,7 @@ relatedLocationIds:
 
 ## Где это
 
-Lordaeron — могущественное человеческое королевство; к его королю бежали выжившие Stormwind, и семь человеческих государств создали Alliance of Lordaeron.
+Lordaeron — могущественное человеческое королевство; у его короля искали поддержки уцелевшие жители Stormwind, и семь государств создали Alliance of Lordaeron.
 
 ## Что здесь произошло
 
@@ -43,4 +42,4 @@ Kel’Thuzad командует Scourge в Plaguelands, а Forsaken удержи
 
 ## Что может встретиться в Forever
 
-Кампания Forsaken Kingdom показывает последние дни Lordaeron, а в Forever Forsaken возвращают себе Ruins of Lordaeron в одном из новых подземелий.
+Пролог кампании Forsaken Kingdom показывает последние часы королевства глазами городской стражи, а в Forever Forsaken возвращают себе Ruins of Lordaeron в одном из новых подземелий.

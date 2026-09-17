@@ -77,6 +77,7 @@
     ],
     "entryRefs": [
       "glossary/dark-portal",
+      "glossary/lore-editions",
       "timeline/dark-portal-opened"
     ]
   },
@@ -149,6 +150,7 @@
       "orcs-and-humans"
     ],
     "entryRefs": [
+      "locations/lordaeron",
       "locations/stormwind"
     ]
   },
@@ -250,6 +252,7 @@
     ],
     "entryRefs": [
       "glossary/dark-portal",
+      "glossary/lore-editions",
       "timeline/dark-portal-opened"
     ]
   }

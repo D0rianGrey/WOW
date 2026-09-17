@@ -30,6 +30,10 @@
     "quote": "When the titans were ordering Azeroth, they needed a more delicate hand to combat the agents of the Old Gods.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/azeroth",
+      "locations/azeroth"
     ]
   },
   {
@@ -42,7 +46,6 @@
     ],
     "entryRefs": [
       "glossary/azeroth",
-      "glossary/lore-editions",
       "timeline/titans-order-azeroth"
     ]
   },
@@ -310,6 +313,11 @@
     "locator": "PDF p. 41",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "glossary/titans",
+      "locations/azeroth",
+      "timeline/titans-order-azeroth"
     ]
   },
   {
@@ -322,7 +330,7 @@
       "azeroth-before-civilization"
     ],
     "entryRefs": [
-      "glossary/lore-editions",
+      "glossary/titans",
       "glossary/well-of-eternity"
     ]
   },

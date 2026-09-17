@@ -18,7 +18,6 @@ aliases:
 relatedCharacterIds:
   - "illidan-stormrage"
   - "tyrande-whisperwind"
-  - "queen-azshara"
 relatedFactionIds:
   - "night-elves"
 relatedLocationIds:
@@ -40,4 +39,4 @@ relatedLocationIds:
 
 ## Почему это важно в Forever
 
-Его исчезновение объясняет, почему ночными эльфами первого года правит Tyrande, а древо Teldrassil посадили без его благословения.
+Его исчезновение объясняет, почему ночными эльфами первого года единолично правит Tyrande. Новое Мировое древо Teldrassil друиды посадили, пока Malfurion был потерян, и оно не получило благословения природы.

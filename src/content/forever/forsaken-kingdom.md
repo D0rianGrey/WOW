@@ -15,6 +15,6 @@ confidence: high
 kind: change
 order: 1
 oldExpectation: "Между Warcraft III и World of Warcraft лежит четырёхлетний разрыв: от возвращения Arthas в Lordaeron до появления Undercity."
-foreverVersion: "Кампания Warcraft III Reforged: Forsaken Kingdom заполняет этот разрыв. Пролог Last Days of Lordaeron из четырёх миссий начинается с возвращения Arthas домой, а в центре истории — новые персонажи Garek Bandarion, недавно восставший воин Forsaken, и Dark Ranger Anya. Кампания уже доступна, и Forever продолжает историю вскоре после её событий."
-whyItMatters: "Через Garek и Anya Blizzard обещает показать, как возник Undercity, как Forsaken создали собственную культуру и почему Scourge не вернул себе Lordaeron. Подробности и финалы официально не пересказаны."
+foreverVersion: "Кампания Warcraft III Reforged: Forsaken Kingdom заполняет этот разрыв. Пролог Last Days of Lordaeron из четырёх миссий начинается с возвращения Arthas домой и показывает последние часы королевства глазами городской стражи. В центре основной истории — новые персонажи Garek Bandarion, недавно восставший воин Forsaken, и Dark Ranger Anya; через них Blizzard обещает показать, как возник Undercity, как Forsaken создали собственную культуру и почему Scourge не вернул себе Lordaeron. Кампания уже доступна, и Forever продолжает историю вскоре после её событий."
+whyItMatters: "Кампания закрывает разрыв, после которого начинается Forever. Её подробности и финалы официально не пересказаны, поэтому энциклопедия их не достраивает."
 ---

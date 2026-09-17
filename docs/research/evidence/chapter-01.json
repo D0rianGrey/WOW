@@ -22,6 +22,9 @@
     "locator": "PDF p. 24",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "locations/kalimdor"
     ]
   },
   {
@@ -261,6 +264,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "characters/queen-azshara",
       "timeline/great-sundering"
     ]
   },
@@ -347,6 +351,9 @@
     "quote": "Ten thousand years ago, as the seas engulfed Zin-Azshari, Queen Azshara forged a dark bargain with N’Zoth that transformed her loyal subjects into the sinister naga.",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/queen-azshara"
     ]
   },
   {
@@ -380,6 +387,9 @@
     "locator": "PDF p. 27",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "characters/illidan-stormrage"
     ]
   },
   {
@@ -468,6 +478,7 @@
       "war-of-the-ancients"
     ],
     "entryRefs": [
+      "factions/burning-legion",
       "timeline/highborne-summon-legion"
     ]
   },
@@ -603,6 +614,9 @@
     "locator": "PDF p. 27",
     "chapterIds": [
       "war-of-the-ancients"
+    ],
+    "entryRefs": [
+      "timeline/nordrassil-planted"
     ]
   }
 ]

@@ -4,7 +4,7 @@ title: "Anduin Wrynn"
 slug: anduin-wrynn
 status: ESTABLISHED
 era: "Эпоха VIII: Мост к Forever"
-summary: "Десятилетний король Stormwind, получивший корону после исчезновения отца."
+summary: "Десятилетний король Stormwind, правящий после исчезновения отца."
 spoilerLevel: 0
 sourceIds:
   - world-of-warcraft-2004-manual
@@ -25,7 +25,7 @@ Anduin Wrynn — сын короля Varian Wrynn.
 
 ## Путь до первого года
 
-Недавно Varian пропал при подозрительных обстоятельствах по пути на дипломатическую встречу в Theramore, и корону, чтобы сохранить порядок в королевстве, отдали мальчику.
+Недавно Varian пропал при подозрительных обстоятельствах по пути на дипломатическую встречу в Theramore.
 
 ## В первый год
 

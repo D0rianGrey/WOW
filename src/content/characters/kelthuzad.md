@@ -11,8 +11,7 @@ sourceIds:
   - world-of-warcraft-2004-manual
 updatedAt: "2026-09-17"
 confidence: high
-aliases:
-  - "Cult of the Damned"
+aliases: []
 relatedCharacterIds:
   - "arthas-menethil"
 relatedFactionIds:

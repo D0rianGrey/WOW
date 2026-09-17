@@ -13,7 +13,6 @@ updatedAt: "2026-09-17"
 confidence: high
 aliases:
   - "Тельдрассил"
-  - "Darnassus"
 relatedCharacterIds:
   - "tyrande-whisperwind"
   - "malfurion-stormrage"

@@ -10,8 +10,7 @@ sourceIds:
   - forever-found-photos
 updatedAt: "2026-09-17"
 confidence: medium
-aliases:
-  - "Bandarion"
+aliases: []
 relatedCharacterIds: []
 relatedFactionIds:
   - "forsaken"

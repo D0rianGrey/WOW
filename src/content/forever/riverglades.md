@@ -14,7 +14,7 @@ confidence: medium
 kind: change
 order: 8
 oldExpectation: "Земля Riverglades граничила с Burning Steppes, Redridge Mountains, Swamp of Sorrows и Badlands, но была недоступна игрокам."
-foreverVersion: "Riverglades — зона середины пути размером примерно со Stranglethorn Vale. Её порт Powderfuse Port связан с новым морским маршрутом Steamwheedle. Там действуют новые гоблины Powderfuse, Twilight’s Hammer и Brotherhood of the Horse."
-whyItMatters: "Blizzard называет Riverglades первым крупным примером «нового, но знакомого» содержания."
+foreverVersion: "Riverglades — зона середины пути размером примерно со Stranglethorn Vale. Её порт Powderfuse Port связан с новым морским маршрутом Steamwheedle. Там действуют новые гоблины Powderfuse, Twilight’s Hammer и Brotherhood of the Horse. Blizzard называет Riverglades одним из первых крупных примеров «нового, но знакомого» содержания."
+whyItMatters: "Прежде недоступная земля лежит между зонами, знакомыми по первому году."
 sourceNote: "What’s Next говорит о более чем 150 заданиях для уровней от середины 30-х до середины 40-х, Found Photos — почти о 200 заданиях. Энциклопедия не выбирает одну цифру."
 ---

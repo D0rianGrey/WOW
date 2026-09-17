@@ -34,4 +34,4 @@ Scarlet Crusade удерживает разрозненные владения �
 
 ## Почему это важно в Forever
 
-Кампания Forsaken Kingdom, после которой начинается Forever, называет среди знакомых фигур Sally Whitemane и Renault Mograine.
+Кампания Forsaken Kingdom называет среди знакомых фигур Sally Whitemane и Renault Mograine.

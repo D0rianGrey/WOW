@@ -21,13 +21,11 @@ relatedCharacterIds:
   - "uther-the-lightbringer"
   - "jaina-proudmoore"
   - "kelthuzad"
-  - "sylvanas-windrunner"
 relatedFactionIds:
   - "scourge"
 relatedLocationIds:
   - "lordaeron"
   - "northrend"
-  - "quelthalas"
 ---
 
 ## Кто это
@@ -36,7 +34,7 @@ relatedLocationIds:
 
 ## Путь до первого года
 
-Когда по Lordaeron пошла чума, Arthas взялся за борьбу со Scourge и убил Kel’Thuzad, но армия Lich King росла с каждым павшим солдатом. В Stratholme он приказал перебить жителей, многие из которых, возможно, ещё не были заражены, и Jaina ушла от него; поздний официальный текст называет demon Mal’Ganis тем, кто подтолкнул принца к этой расправе. В Northrend Arthas взял Frostmourne: клинок дал ему невообразимую силу, но украл душу и сделал его величайшим из death knights Lich King. Он повёл Scourge на своё королевство, убил Uther в бою и своего отца, короля Terenas. Позже, у Frozen Throne, он надел шлем Ner’zhul, и их духи слились в одно могущественное существо.
+Когда по Lordaeron пошла чума, Arthas взялся за борьбу со Scourge и убил Kel’Thuzad, но армия Lich King росла с каждым павшим солдатом. В Stratholme он приказал перебить жителей, многие из которых, возможно, ещё не были заражены, и Jaina ушла от него; поздний официальный текст называет Mal’Ganis тем, кто подтолкнул принца к этой расправе. В Northrend Arthas взял Frostmourne: клинок дал ему невообразимую силу, но украл душу и сделал его величайшим из death knights Lich King. Он повёл Scourge на своё королевство, убил Uther в бою и своего отца, короля Terenas. Позже он первым добрался до Frozen Throne, надел шлем Ner’zhul, и их духи слились в одно могущественное существо.
 
 ## В первый год
 
@@ -44,4 +42,4 @@ Arthas — новый бессмертный Lich King. Он живёт в North
 
 ## Почему это важно в Forever
 
-Forever начинается до поздних походов в Northrend, поэтому для игрока первого года Arthas — далёкая угроза севера. Судьба, которую он приготовил Lordaeron, определяет жизнь Forsaken в Tirisfal Glades.
+Forever начинается до поздних походов в Northrend, поэтому для игрока первого года Arthas — далёкая угроза севера. От королевства, которое он погубил, мятежные Forsaken удерживают лишь Tirisfal Glades — небольшую часть разорённой страны.

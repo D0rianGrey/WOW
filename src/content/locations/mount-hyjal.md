@@ -17,7 +17,6 @@ aliases:
 relatedCharacterIds:
   - "malfurion-stormrage"
   - "tyrande-whisperwind"
-  - "illidan-stormrage"
 relatedFactionIds:
   - "night-elves"
   - "burning-legion"
@@ -31,7 +30,7 @@ Mount Hyjal — священная гора ночных эльфов.
 
 ## Что здесь произошло
 
-После Great Sundering выжившие ночные эльфы нашли Hyjal уцелевшим, и драконы посадили здесь Мировое древо Nordrassil. В Third War смертные народы объединились, чтобы защитить древо, и Malfurion силой Nordrassil уничтожил Archimonde.
+После Great Sundering выжившие ночные эльфы нашли Hyjal уцелевшим, и здесь выросло их Мировое древо Nordrassil. В Third War ночные эльфы во главе с Malfurion и Tyrande решили объединиться с другими народами, чтобы защитить древо, и Malfurion силой Nordrassil уничтожил Archimonde.
 
 ## Кто контролирует сейчас
 

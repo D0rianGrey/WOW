@@ -4,7 +4,7 @@ title: "Uther the Lightbringer"
 slug: uther-the-lightbringer
 status: ESTABLISHED
 era: "Эпоха VI: Arthas и падение Lordaeron"
-summary: "Первый паладин Silver Hand и наставник Arthas, погибший от руки своего ученика."
+summary: "Первый из паладинов, глава Paladin Order и наставник Arthas, погибший от руки своего ученика."
 spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
@@ -16,15 +16,14 @@ aliases:
   - "Lightbringer"
 relatedCharacterIds:
   - "arthas-menethil"
-relatedFactionIds:
-  - "alliance"
+relatedFactionIds: []
 relatedLocationIds:
   - "lordaeron"
 ---
 
 ## Кто это
 
-Uther был первым из паладинов, благословлённых Archbishop Faol ещё до Second War. После войны он как верховный командующий ордена паладинов хранил мир в Lordaeron, разрешая споры и подавляя мятежи.
+Uther был первым из паладинов, благословлённых Archbishop Faol ещё до Second War. После войны он как верховный командующий ордена паладинов хранил мир в Lordaeron, разрешая споры и подавляя восстания demi-humans.
 
 ## Путь до первого года
 
@@ -32,7 +31,7 @@ Uther много лет был почти братом королю Terenas и �
 
 ## В первый год
 
-Uther погиб: вернувшийся с Frostmourne Arthas убил его в бою.
+Uther погиб: Arthas убил его в бою.
 
 ## Почему это важно в Forever
 

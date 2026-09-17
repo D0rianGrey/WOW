@@ -6,9 +6,10 @@
     "status": "ESTABLISHED",
     "era": "Пролог: Azeroth до знакомого мира",
     "eraId": "prologue",
-    "summary": "Опасаясь повредить world-soul, titans действуют через созданные конструкты: keepers ведут titan-forged против армий Black Empire.",
+    "summary": "Руководство к Warcraft III: titans веками двигают и формируют землю, пока не остаётся один совершенный континент. Поздняя ретроспектива эпохи Dragonflight: Aggramar опасается, что Pantheon повредит world-soul, и titans действуют через созданные конструкты — keepers ведут titan-forged против армий Black Empire.",
     "spoilerLevel": 0,
     "sourceIds": [
+      "warcraft-iii-manual",
       "dragon-aspects-story-so-far"
     ],
     "updatedAt": "2026-09-17",
@@ -32,7 +33,7 @@
     "status": "ESTABLISHED",
     "era": "Пролог: Azeroth до знакомого мира",
     "eraId": "prologue",
-    "summary": "Под руководством keeper Tyr пять proto-dragons сражаются с Galakrond и получают силу охранять земли Azeroth.",
+    "summary": "По ретроспективе эпохи Dragonflight, под руководством Tyr пять proto-dragons сражаются с Galakrond и получают силу охранять земли Azeroth.",
     "spoilerLevel": 0,
     "sourceIds": [
       "dragon-aspects-story-so-far"
@@ -123,7 +124,7 @@
     "status": "ESTABLISHED",
     "era": "Эпоха I: Древний Azeroth",
     "eraId": "ancient",
-    "summary": "Furion заточает Illidan; драконы сажают Мировое древо Nordrassil, и Nozdormu дарует ночным эльфам бессмертие, пока древо стоит.",
+    "summary": "Furion заточает Illidan; Alexstrasza кладёт в сердце Well of Eternity волшебный жёлудь, из него вырастает Мировое древо Nordrassil, и Nozdormu дарует ночным эльфам бессмертие, пока древо стоит.",
     "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual"
@@ -153,7 +154,7 @@
     "status": "ESTABLISHED",
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
-    "summary": "Highborne во главе с Dath’Remar не отказываются от магии и изгнаны; они высаживаются на землях будущего Lordaeron и становятся high elves.",
+    "summary": "Dath’Remar высмеивает друидов, отказавшихся от магии, и его последователи обрушивают на Ashenvale магический шторм. Безрассудных Highborne изгоняют: они уплывают, высаживаются на землях будущего Lordaeron и становятся high elves.",
     "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual"
@@ -207,7 +208,7 @@
     "status": "ESTABLISHED",
     "era": "Эпоха II: Народы и королевства",
     "eraId": "kingdoms",
-    "summary": "Против Amani high elves заключают союз с Arathor, основанным Thoradin: эльфы учат людей магии, люди помогают разрушить опору силы trolls.",
+    "summary": "Против Amani high elves заключают союз с Arathor, основанным Thoradin: эльфы учат магии небольшую группу людей, люди помогают разрушить опору силы trolls.",
     "spoilerLevel": 0,
     "sourceIds": [
       "burning-crusade-story-so-far",
@@ -242,7 +243,7 @@
     ],
     "updatedAt": "2026-09-17",
     "confidence": "medium",
-    "dateLabel": "До прихода Horde",
+    "dateLabel": "Древняя история Ironforge",
     "approximate": true,
     "sortKey": 90,
     "major": false,
@@ -289,7 +290,7 @@
     "status": "ESTABLISHED",
     "era": "Эпоха III: Orcs & Humans",
     "eraId": "orcs-and-humans",
-    "summary": "Sargeras, овладевший Medivh, помогает Gul’dan: открывается Dark Portal, и Horde вторгается в Azeroth.",
+    "summary": "Sargeras овладевает Medivh, чтобы развязать войну миров; Medivh заключает сделку с Gul’dan, открывается Dark Portal, и Horde вторгается в Azeroth. Официальные тексты по-разному называют создателя врат: Gul’dan, Medivh или обоих.",
     "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far",
@@ -467,7 +468,7 @@
     "status": "ESTABLISHED",
     "era": "Эпоха V: New Horde",
     "eraId": "new-horde",
-    "summary": "Бежавший раб-гладиатор Thrall возвращает orcs шаманизм, после гибели Doomhammer становится вождём Horde и громит лагеря.",
+    "summary": "Бывший раб-гладиатор Thrall возвращает orcs шаманизм; Doomhammer погибает при освобождении одного из лагерей, и Thrall становится вождём Horde.",
     "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-manual",
@@ -481,8 +482,7 @@
     "major": true,
     "characterIds": [
       "thrall",
-      "orgrim-doomhammer",
-      "grom-hellscream"
+      "orgrim-doomhammer"
     ],
     "factionIds": [
       "horde"
@@ -511,8 +511,7 @@
     "major": true,
     "characterIds": [
       "kelthuzad",
-      "arthas-menethil",
-      "uther-the-lightbringer"
+      "arthas-menethil"
     ],
     "factionIds": [
       "scourge"
@@ -551,7 +550,7 @@
       "lordaeron"
     ],
     "chapterSlug": "arthas-and-lordaeron",
-    "dateNote": "Руководство 2004 года этот эпизод не упоминает; его описывают более поздние официальные тексты."
+    "dateNote": "Эпизод известен по поздним официальным текстам — Jaina Hero Week и описанию героев Heroes of the Storm."
   },
   {
     "id": "frostmourne-and-fall-of-lordaeron",
@@ -779,6 +778,38 @@
     "chapterSlug": "thrall-and-new-horde"
   },
   {
+    "id": "forsaken-kingdom",
+    "title": "Forsaken Kingdom",
+    "slug": "forsaken-kingdom",
+    "status": "FOREVER",
+    "era": "Эпоха VIII: Мост к Forever",
+    "eraId": "bridge",
+    "summary": "Новая кампания Warcraft III Reforged рассказывает о событиях между возвращением Arthas в Lordaeron и появлением Undercity; в центре истории — Garek Bandarion и Dark Ranger Anya.",
+    "spoilerLevel": 0,
+    "sourceIds": [
+      "forsaken-kingdom-whats-next"
+    ],
+    "updatedAt": "2026-09-17",
+    "confidence": "high",
+    "dateLabel": "От возвращения Arthas в Lordaeron до появления Undercity",
+    "approximate": true,
+    "sortKey": 270,
+    "major": false,
+    "characterIds": [
+      "garek-bandarion",
+      "dark-ranger-anya"
+    ],
+    "factionIds": [
+      "forsaken"
+    ],
+    "locationIds": [
+      "lordaeron",
+      "undercity"
+    ],
+    "chapterSlug": "third-war-to-forever",
+    "dateNote": "Blizzard говорит, что кампания заполняет четырёхлетний разрыв между Warcraft III и World of Warcraft."
+  },
+  {
     "id": "forsaken-rise",
     "title": "Мятеж Forsaken",
     "slug": "forsaken-rise",
@@ -794,7 +825,7 @@
     "confidence": "high",
     "dateLabel": "После Third War",
     "approximate": false,
-    "sortKey": 270,
+    "sortKey": 275,
     "major": true,
     "characterIds": [
       "sylvanas-windrunner"
@@ -836,37 +867,6 @@
     ],
     "locationIds": [
       "northrend"
-    ],
-    "chapterSlug": "third-war-to-forever"
-  },
-  {
-    "id": "forsaken-kingdom",
-    "title": "Forsaken Kingdom",
-    "slug": "forsaken-kingdom",
-    "status": "FOREVER",
-    "era": "Эпоха VIII: Мост к Forever",
-    "eraId": "bridge",
-    "summary": "Новая кампания Warcraft III Reforged рассказывает о событиях между возвращением Arthas в Lordaeron и появлением Undercity; в центре истории — Garek Bandarion и Dark Ranger Anya.",
-    "spoilerLevel": 0,
-    "sourceIds": [
-      "forsaken-kingdom-whats-next"
-    ],
-    "updatedAt": "2026-09-17",
-    "confidence": "high",
-    "dateLabel": "Четыре года между Warcraft III и World of Warcraft",
-    "approximate": false,
-    "sortKey": 290,
-    "major": false,
-    "characterIds": [
-      "garek-bandarion",
-      "dark-ranger-anya"
-    ],
-    "factionIds": [
-      "forsaken"
-    ],
-    "locationIds": [
-      "lordaeron",
-      "undercity"
     ],
     "chapterSlug": "third-war-to-forever"
   },
@@ -941,8 +941,8 @@
     ],
     "updatedAt": "2026-09-17",
     "confidence": "high",
-    "dateLabel": "Year 1",
-    "approximate": false,
+    "dateLabel": "Ранний Year 1",
+    "approximate": true,
     "sortKey": 320,
     "major": true,
     "characterIds": [],

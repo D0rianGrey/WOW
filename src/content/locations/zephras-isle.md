@@ -28,7 +28,7 @@ Zephras Isle — остров, который духи ветра закрепи
 
 ## Что здесь произошло
 
-Предки Skyborne, мятежники из Eldre’Thalas, нашли убежище в Skywall после War of the Ancients.
+Предки Skyborne, мятежники, бежали из Eldre’Thalas после War of the Ancients и со временем нашли убежище в Skywall.
 
 ## Кто контролирует сейчас
 

@@ -29,7 +29,8 @@
     "locator": "PDF p. 83",
     "chapterIds": [],
     "entryRefs": [
-      "characters/arthas-menethil"
+      "characters/arthas-menethil",
+      "characters/kelthuzad"
     ]
   },
   {
@@ -169,6 +170,7 @@
     "quote": "Their story unfolds alongside familiar figures including Sylvanas Windrunner, Putress, Varimathras, Sally Whitemane, Renault Mograine, Arthas, Kel’Thuzad, Ras Frostwhisper, and Baron Rivendare.",
     "chapterIds": [],
     "entryRefs": [
+      "characters/dark-ranger-anya",
       "characters/garek-bandarion"
     ]
   },
@@ -324,7 +326,8 @@
     "locator": "PDF p. 87",
     "chapterIds": [],
     "entryRefs": [
-      "characters/sylvanas-windrunner"
+      "characters/sylvanas-windrunner",
+      "factions/scourge"
     ]
   },
   {
@@ -391,7 +394,8 @@
     "locator": "PDF p. 85",
     "chapterIds": [],
     "entryRefs": [
-      "characters/jaina-proudmoore"
+      "characters/jaina-proudmoore",
+      "characters/medivh"
     ]
   },
   {
@@ -584,7 +588,8 @@
     "quote": "When Ner'zhul refused to serve the Legion's agenda past a certain point, Kil'jaeden turned to Ner'zhul's apprentice. Gul'dan worked the orcs into a frenzy of bloodlust, and the newly formed Horde began slaughtering the peaceful draenei.",
     "chapterIds": [],
     "entryRefs": [
-      "characters/guldan"
+      "characters/guldan",
+      "factions/burning-legion"
     ]
   },
   {
@@ -627,7 +632,8 @@
     "locator": "PDF p. 85",
     "chapterIds": [],
     "entryRefs": [
-      "characters/guldan"
+      "characters/guldan",
+      "characters/illidan-stormrage"
     ]
   },
   {
@@ -822,6 +828,7 @@
     "locator": "PDF p. 25",
     "chapterIds": [],
     "entryRefs": [
+      "characters/illidan-stormrage",
       "characters/malfurion-stormrage"
     ]
   },
@@ -854,7 +861,9 @@
     "locator": "PDF p. 85",
     "chapterIds": [],
     "entryRefs": [
-      "characters/malfurion-stormrage"
+      "characters/malfurion-stormrage",
+      "factions/burning-legion",
+      "factions/night-elves"
     ]
   },
   {
@@ -865,7 +874,8 @@
     "locator": "PDF p. 94",
     "chapterIds": [],
     "entryRefs": [
-      "characters/malfurion-stormrage"
+      "characters/malfurion-stormrage",
+      "factions/night-elves"
     ]
   },
   {
@@ -920,6 +930,7 @@
     "locator": "PDF p. 85",
     "chapterIds": [],
     "entryRefs": [
+      "characters/guldan",
       "characters/illidan-stormrage"
     ]
   },
@@ -942,6 +953,7 @@
     "locator": "PDF p. 87",
     "chapterIds": [],
     "entryRefs": [
+      "characters/arthas-menethil",
       "characters/illidan-stormrage"
     ]
   },
@@ -1060,7 +1072,8 @@
     "locator": "PDF p. 83",
     "chapterIds": [],
     "entryRefs": [
-      "characters/kelthuzad"
+      "characters/kelthuzad",
+      "factions/scourge"
     ]
   },
   {
@@ -1094,6 +1107,7 @@
     "locator": "PDF p. 87",
     "chapterIds": [],
     "entryRefs": [
+      "characters/arthas-menethil",
       "characters/kelthuzad"
     ]
   },
@@ -1185,6 +1199,7 @@
     "locator": "PDF p. 8",
     "chapterIds": [],
     "entryRefs": [
+      "characters/tyrande-whisperwind",
       "factions/alliance",
       "factions/night-elves",
       "glossary/alliance"
@@ -1289,7 +1304,8 @@
     "chapterIds": [],
     "entryRefs": [
       "characters/thrall",
-      "factions/horde"
+      "factions/horde",
+      "glossary/horde"
     ]
   },
   {
@@ -1371,6 +1387,7 @@
     "chapterIds": [],
     "entryRefs": [
       "factions/scourge",
+      "glossary/lich-king",
       "glossary/scourge"
     ]
   },
@@ -1475,6 +1492,7 @@
     "locator": "PDF p. 96",
     "chapterIds": [],
     "entryRefs": [
+      "characters/malfurion-stormrage",
       "characters/tyrande-whisperwind",
       "factions/night-elves"
     ]
@@ -1775,6 +1793,7 @@
     "locator": "PDF p. 97",
     "chapterIds": [],
     "entryRefs": [
+      "characters/orgrim-doomhammer",
       "locations/durotar"
     ]
   },
@@ -1807,6 +1826,7 @@
     "locator": "PDF p. 83",
     "chapterIds": [],
     "entryRefs": [
+      "factions/scourge",
       "locations/quelthalas"
     ]
   },
@@ -1830,6 +1850,7 @@
     "locator": "PDF p. 94",
     "chapterIds": [],
     "entryRefs": [
+      "characters/malfurion-stormrage",
       "locations/teldrassil"
     ]
   },
@@ -1871,6 +1892,7 @@
     "quote": "South of Desolace through the Valley of Bones, the addition of Shen’dralas opens a fresh, new area, exploring the characters and stories connected to Eldre’Thalas.",
     "chapterIds": [],
     "entryRefs": [
+      "locations/kalimdor",
       "locations/shendralas"
     ]
   },
@@ -1935,6 +1957,16 @@
     "entryRefs": [
       "factions/forsaken",
       "locations/bandarion-keep"
+    ]
+  },
+  {
+    "id": "ds-r3-01",
+    "claim": "Поздняя ретроспектива: после долгого кровавого боя Arthas сразил Illidan и оставил его умирать в снегу, а союзники унесли Illidan в Outland.",
+    "sourceId": "burning-crusade-story-so-far",
+    "quote": "After a long, bloody battle, Arthas gained the upper hand and cut down Illidan and left him for dead in the snow. Illidan was recovered by his allies and returned to Outland",
+    "chapterIds": [],
+    "entryRefs": [
+      "characters/illidan-stormrage"
     ]
   }
 ]

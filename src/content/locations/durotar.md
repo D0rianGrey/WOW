@@ -12,10 +12,8 @@ updatedAt: "2026-09-17"
 confidence: high
 aliases:
   - "Дуротар"
-  - "Orgrimmar"
 relatedCharacterIds:
   - "thrall"
-  - "orgrim-doomhammer"
 relatedFactionIds:
   - "horde"
 relatedLocationIds:
@@ -32,8 +30,8 @@ Orcs основали здесь новую родину с помощью taure
 
 ## Кто контролирует сейчас
 
-Orgrimmar, одна из самых могучих воинских столиц мира, стоит в огромном извилистом каньоне Durotar. Здесь, в Valley of Trials, начинали путь orcs и trolls первого года.
+Orgrimmar, один из самых могучих воинских городов мира, стоит в огромном извилистом каньоне Durotar. Здесь, в Valley of Trials, начинали путь orcs и trolls первого года.
 
 ## Что может встретиться в Forever
 
-Durotar — сердце Horde, с которой Forever начинает свою историю.
+Для orcs и trolls первого года Durotar — родной край и одна из стартовых земель Horde.

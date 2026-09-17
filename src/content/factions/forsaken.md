@@ -17,15 +17,12 @@ aliases:
   - "undead"
 relatedCharacterIds:
   - "sylvanas-windrunner"
-  - "garek-bandarion"
-  - "dark-ranger-anya"
 relatedFactionIds:
   - "horde"
   - "scourge"
 relatedLocationIds:
   - "undercity"
   - "tirisfal-glades"
-  - "bandarion-keep"
 ---
 
 ## Происхождение

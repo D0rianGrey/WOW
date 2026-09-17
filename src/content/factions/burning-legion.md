@@ -4,7 +4,7 @@ title: "Burning Legion"
 slug: burning-legion
 status: ESTABLISHED
 era: "Эпоха I: Древний Azeroth"
-summary: "Демоническая армия Sargeras, дважды вторгавшаяся в Azeroth."
+summary: "Демоническая армия Sargeras, вторгавшаяся в Azeroth во время War of the Ancients и вернувшаяся в Third War."
 spoilerLevel: 0
 sourceIds:
   - warcraft-iii-story-so-far
@@ -18,9 +18,7 @@ aliases:
   - "Пылающий Легион"
   - "Legion"
 relatedCharacterIds:
-  - "queen-azshara"
   - "guldan"
-  - "medivh"
 relatedFactionIds:
   - "scourge"
   - "night-elves"
@@ -35,11 +33,11 @@ relatedLocationIds:
 
 ## Лидеры и цели
 
-Магия Highborne привлекла Sargeras, и Legion впервые вторгся в Azeroth во время War of the Ancients. Позже Kil’jaeden развратил orcs через Ner’zhul и Gul’dan. В Third War Archimonde вёл демонов в Kalimdor, чтобы уничтожить Nordrassil.
+Руководство к Warcraft III говорит, что Sargeras почувствовал мощные волны магии и пришёл к их далёкому источнику; поздняя ретроспектива уточняет, что Burning Legion вторгся в Azeroth во время War of the Ancients. Позже Kil’jaeden развращал orcs через шамана Ner’zhul, а затем через его ученика Gul’dan. Руководство 2004 года говорит, что Legion веками готовил возвращение и осуществил замысел за четыре года до первого года World of Warcraft. В Third War Archimonde вёл демонов в Kalimdor, чтобы уничтожить Nordrassil.
 
 ## В первый год
 
-После гибели Archimonde на Mount Hyjal Legion, лишённый силы Well, рухнул под ударом смертных армий.
+Malfurion высвободил ярость Nordrassil, уничтожил Archimonde и перерезал связь Legion с Well of Eternity. Не в силах черпать силу Well, Legion рухнул под объединённым натиском смертных армий.
 
 ## Почему это важно в Forever
 

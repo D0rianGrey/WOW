@@ -4,7 +4,7 @@ title: "Jaina Proudmoore"
 slug: jaina-proudmoore
 status: ESTABLISHED
 era: "Эпоха VII: Third War"
-summary: "Волшебница Kirin Tor, увидевшая падение Lordaeron, союзница Thrall на Hyjal и правительница Theramore."
+summary: "Волшебница Kirin Tor, увидевшая падение Lordaeron, глава людей в Kalimdor и основательница Theramore."
 spoilerLevel: 0
 sourceIds:
   - warcraft-iii-manual
@@ -31,7 +31,7 @@ Jaina — младшая дочь адмирала Proudmoore и подруга 
 
 ## Путь до первого года
 
-Вместе с Arthas Jaina расследовала чуму, но ушла от принца, когда он приказал перебить жителей Stratholme. Под руководством Medivh она возглавила человеческие силы в Kalimdor и вместе с Thrall отложила вражду. Остатки Alliance под её началом построили порт Theramore у берегов Dustwallow Marsh. Когда флот её отца, Daelin Proudmoore, пришёл уничтожить Durotar, Jaina помогла Thrall его победить; адмирал погиб, так и не примирившись с дочерью.
+Вместе с Arthas Jaina расследовала чуму, но ушла от принца, когда он приказал перебить жителей Stratholme. Уже возглавляя человеческие силы в Kalimdor, под руководством Medivh она вместе с Thrall поняла, что вражду нужно отложить. Остатки Alliance под её началом построили порт Theramore у берегов Dustwallow Marsh. Когда флот её отца, Daelin Proudmoore, пришёл уничтожить Durotar, Jaina помогла Thrall его победить; адмирал погиб, так и не примирившись с дочерью.
 
 ## В первый год
 

@@ -5,7 +5,7 @@
     "slug": "azeroth",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Мир Warcraft. Titans упорядочивали его, опасаясь повредить его world-soul; в первый год восемь играбельных рас делят его между Horde и Alliance.",
+    "summary": "Мир Warcraft. В первый год восемь играбельных рас входят в Horde и Alliance. Поздняя ретроспектива эпохи Dragonflight добавляет, что у Azeroth есть world-soul: пока titans упорядочивали мир, Aggramar боялся, что Pantheon повредит его.",
     "spoilerLevel": 0,
     "sourceIds": [
       "dragon-aspects-story-so-far",
@@ -24,9 +24,10 @@
     "slug": "titans",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Космические существа размером с планету, состоящие из магии Order и первозданной материи; среди них Aman’Thul и Sargeras.",
+    "summary": "Руководство к Warcraft III говорит, что titans веками двигали и формировали землю, пока не остался один совершенный континент, и выковали в его центре Well of Eternity. Поздняя ретроспектива эпохи Dragonflight описывает их как космических существ размером с планету из магии Order и первозданной материи; среди них Aman’Thul и Sargeras.",
     "spoilerLevel": 0,
     "sourceIds": [
+      "warcraft-iii-manual",
       "dragon-aspects-story-so-far"
     ],
     "updatedAt": "2026-09-17",
@@ -42,7 +43,7 @@
     "slug": "old-gods",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Физические проявления Void — паразитические ужасы, несущие порчу; среди них C’Thun, N’Zoth и Yogg-Saron.",
+    "summary": "В поздней ретроспективе эпохи Dragonflight — физические проявления Void, паразитические ужасы, несущие порчу; среди названных — C’Thun, N’Zoth и Yogg-Saron.",
     "spoilerLevel": 0,
     "sourceIds": [
       "dragon-aspects-story-so-far"
@@ -134,7 +135,7 @@
     "slug": "horde",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Армия orcs, которую демоны Burning Legion превратили в кровожадную силу. При Thrall — рыхлая коалиция ради выживания, в которую в первый год входят orcs, tauren, trolls и undead.",
+    "summary": "Армия orcs, которую демоны Burning Legion превратили в кровожадную силу. Когда демоническое проклятие было снято, Horde стала рыхлой коалицией ради выживания; её вождь — Thrall. В первый год в неё входят orcs, tauren, trolls и undead.",
     "spoilerLevel": 0,
     "sourceIds": [
       "wow-story-timeline-orcs-and-humans",
@@ -153,10 +154,11 @@
     "slug": "alliance",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Союз, рождённый во Second War, когда семь человеческих государств объединились под одним знаменем. В первый год в него входят dwarves, gnomes, humans и night elves.",
+    "summary": "Союз времён Second War: семь государств впервые за три тысячи лет объединились под одним знаменем и дали начало Alliance of Lordaeron, а король Terenas привлёк человеческие королевства, dwarves, gnomes и high elves. В первый год в Alliance входят dwarves, gnomes, humans и night elves.",
     "spoilerLevel": 0,
     "sourceIds": [
       "warcraft-iii-story-so-far",
+      "muradin-hero-week",
       "world-of-warcraft-2004-manual"
     ],
     "updatedAt": "2026-09-17",
@@ -210,7 +212,7 @@
     "slug": "third-war",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Война чумы, падения Lordaeron и нового вторжения Burning Legion. Руководство 2004 года относит вторжение Legion на четыре года назад от первого года World of Warcraft.",
+    "summary": "Война, начатая чумой в северном Lordaeron и завершённая новым вторжением Burning Legion; после неё столица Lordaeron лежит в руинах. Руководство 2004 года относит возвращение Legion на четыре года назад от первого года World of Warcraft.",
     "spoilerLevel": 0,
     "sourceIds": [
       "world-of-warcraft-2004-manual"
@@ -274,8 +276,7 @@
     "confidence": "high",
     "term": "time bubble",
     "aliases": [
-      "Year 1",
-      "первый год"
+      "пузырь времени"
     ]
   },
   {
@@ -284,11 +285,11 @@
     "slug": "lore-editions",
     "status": "ESTABLISHED",
     "era": "Словарь",
-    "summary": "Официальные тексты разных лет описывают одни события по-разному. Например, руководство к Warcraft III говорит, что Well of Eternity создали titans, а поздняя ретроспектива рассказывает, как titans опасались повредить world-soul. Энциклопедия показывает обе версии и помечает, к какому времени относится каждая.",
+    "summary": "Официальные тексты описывают одни и те же события по-разному. Например, обзор Blizzard «Warcraft III: The Story So Far» говорит, что Dark Portal по договору с Medivh создал Gul’dan, а хронология на сайте World of Warcraft — что врата создали Medivh и Gul’dan. Энциклопедия показывает обе версии и не выбирает одну.",
     "spoilerLevel": 0,
     "sourceIds": [
-      "warcraft-iii-manual",
-      "dragon-aspects-story-so-far"
+      "warcraft-iii-story-so-far",
+      "wow-story-timeline-orcs-and-humans"
     ],
     "updatedAt": "2026-09-17",
     "confidence": "high",

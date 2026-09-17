@@ -18,8 +18,7 @@ relatedCharacterIds:
   - "guldan"
   - "thrall"
   - "jaina-proudmoore"
-relatedFactionIds:
-  - "burning-legion"
+relatedFactionIds: []
 relatedLocationIds:
   - "kalimdor"
 ---
@@ -38,4 +37,4 @@ Medivh — маг и последний Guardian. Официальная рет�
 
 ## Почему это важно в Forever
 
-Без пророка Medivh не было бы ни Horde в Kalimdor, ни союза смертных на Mount Hyjal — а значит, и мира, в котором начинается Forever.
+Под руководством Medivh Thrall и Jaina Proudmoore поняли, что должны отложить вражду. Без пророка не было бы ни Horde в Kalimdor, ни мира, в котором начинается Forever.

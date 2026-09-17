@@ -25,11 +25,11 @@ relatedLocationIds:
 
 ## Кто это
 
-Великий вождь orcs Orgrim Doomhammer разочаровался в руководстве Gul’dan и Blackhand, бросил Blackhand вызов за титул Warchief и победил.
+Могучий вождь orcs Orgrim Doomhammer разочаровался в руководстве Gul’dan и Blackhand, бросил Blackhand вызов за титул Warchief и победил.
 
 ## Путь до первого года
 
-Во Second War он сошёлся с Anduin Lothar в титаническом поединке и с трудом одолел его. После последней битвы войны Doomhammer попал в плен и был доставлен в Lordaeron. Годы спустя Thrall нашёл его: старый warchief много лет жил отшельником. При освобождении одного из лагерей Doomhammer пал в бою.
+Во Second War, по руководству к Warcraft III, он сошёлся с Anduin Lothar в титаническом поединке и с трудом одолел его; поздний обзор Blizzard говорит, что Doomhammer оборвал жизнь Lothar в самоубийственной атаке. После последней битвы войны Doomhammer попал в плен и был доставлен в Lordaeron. Годы спустя Thrall нашёл его: старый warchief много лет жил отшельником. При освобождении одного из лагерей Doomhammer пал в бою.
 
 ## В первый год
 

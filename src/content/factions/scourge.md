@@ -30,7 +30,7 @@ Demon Kil’jaeden создал Scourge — огромную армию нежи
 
 ## Лидеры и цели
 
-Lich King и его живой слуга Kel’Thuzad распространяли чуму, чтобы пополнять Scourge восставшей нежитью. После преступлений Arthas Lordaeron пал под железной пятой Lich King.
+Lich King и его живой слуга Kel’Thuzad задумали распространить чуму, чтобы пополнять Scourge восставшей нежитью, и Kel’Thuzad с Cult of the Damned выпустил её на севере Lordaeron. После преступлений Arthas Lordaeron пал под железной пятой Lich King.
 
 ## В первый год
 
@@ -38,4 +38,4 @@ Arthas — новый бессмертный Lich King в Northrend, а Kel’Th
 
 ## Почему это важно в Forever
 
-Forever начинается до поздних походов в Northrend: Scourge первого года — угроза севера, соседствующая с землями Forsaken.
+Forever начинается до поздних походов в Northrend. Пока Scourge хозяйничает в Plaguelands, мятежные Forsaken удерживают лишь Tirisfal Glades.
