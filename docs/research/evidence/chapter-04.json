@@ -15,6 +15,9 @@
     "quote": "Doomhammer and his army, poised to strike at the heart of the Alliance, received dire news: Gul’dan had abandoned his fellow orcs, taking with him half of their military might to seek out the fabled Tomb of Sargeras in his pursuit of godhood.",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
     ]
   },
   {
@@ -44,6 +47,9 @@
     "locator": "PDF p. 2",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
     ]
   },
   {
@@ -63,6 +69,9 @@
     "locator": "PDF p. 2",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
     ]
   },
   {
@@ -83,6 +92,9 @@
     "locator": "PDF p. 2",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
     ]
   },
   {
@@ -93,6 +105,9 @@
     "locator": "PDF p. 10",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/horde-defeated"
     ]
   },
   {
@@ -133,6 +148,9 @@
     "locator": "PDF p. 10",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
     ]
   },
   {
@@ -152,6 +170,9 @@
     "quote": "Facing certain defeat at the hands of his enemies, Ner'zhul succeeded in opening numerous portals to new worlds. The resulting magical stress shattered Draenor, trapping many of Azeroth's greatest heroes on Outland, the damaged remains of the planet.",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
     ]
   },
   {
@@ -162,6 +183,9 @@
     "locator": "PDF p. 3",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/draenor-shattered"
     ]
   },
   {
@@ -193,6 +217,9 @@
     "chapterIds": [
       "second-war",
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
     ]
   },
   {
@@ -223,6 +250,9 @@
     "locator": "PDF p. 3",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
     ]
   },
   {
@@ -233,6 +263,9 @@
     "locator": "PDF p. 3",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
     ]
   },
   {
@@ -243,6 +276,9 @@
     "locator": "PDF p. 3",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
     ]
   },
   {
@@ -262,6 +298,9 @@
     "quote": "In the years following the Horde’s defeat, the Alliance splintered, no longer held together by the tenuous covenant that had been forged out of common desperation.",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/internment-and-splintering"
     ]
   },
   {
@@ -272,6 +311,9 @@
     "chapterIds": [
       "second-war",
       "thrall-and-new-horde"
+    ],
+    "entryRefs": [
+      "timeline/thrall-frees-orcs"
     ]
   },
   {
@@ -292,6 +334,9 @@
     "quote": "There, they sought support from the sovereign of the mighty human kingdom of Lordaeron, King Terenas Menethil II.",
     "chapterIds": [
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/alliance-of-lordaeron"
     ]
   },
   {

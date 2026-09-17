@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
@@ -10,6 +10,7 @@ interface LedgerEntry {
   quote: string;
   locator?: string;
   chapterIds: string[];
+  entryRefs?: string[];
   url?: string;
 }
 
@@ -45,6 +46,52 @@ const chapters = readdirSync(chapterDir)
     return { file, id, sourceIds: readFrontmatterList(markdown, 'sourceIds') };
   });
 
+interface ContentEntry {
+  collection: string;
+  id: string;
+  sourceIds: string[];
+}
+
+// Non-chapter content that must be backed by the ledger, addressed as "collection/id" in entryRefs.
+function readJsonCollection(collection: string, file: string): ContentEntry[] {
+  const path = resolve('src/content', collection, file);
+
+  if (!existsSync(path)) {
+    return [];
+  }
+
+  return (JSON.parse(readFileSync(path, 'utf8')) as { id: string; sourceIds?: string[] }[]).map((entry) => ({
+    collection,
+    id: entry.id,
+    sourceIds: entry.sourceIds ?? []
+  }));
+}
+
+function readMarkdownCollection(collection: string): ContentEntry[] {
+  const directory = resolve('src/content', collection);
+
+  if (!existsSync(directory)) {
+    return [];
+  }
+
+  return readdirSync(directory)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => {
+      const markdown = readFileSync(resolve(directory, file), 'utf8');
+      const id = markdown.match(/\nid: (.+)\n/)?.[1].trim() ?? file;
+      return { collection, id, sourceIds: readFrontmatterList(markdown, 'sourceIds') };
+    });
+}
+
+const contentEntries: ContentEntry[] = [
+  ...readJsonCollection('timeline', 'core.json'),
+  ...readJsonCollection('glossary', 'core.json'),
+  ...readMarkdownCollection('characters'),
+  ...readMarkdownCollection('factions'),
+  ...readMarkdownCollection('locations'),
+  ...readMarkdownCollection('forever')
+];
+
 describe('evidence ledger', () => {
   it('has unique ids and well-formed entries', () => {
     const ids = ledger.map((entry) => entry.id);
@@ -59,15 +106,32 @@ describe('evidence ledger', () => {
     }
   });
 
-  it('references only registered sources and existing chapters', () => {
+  it('references only registered sources and existing content', () => {
     const sourceIds = new Set(sources.map((source) => source.id));
     const chapterIds = new Set(chapters.map((chapter) => chapter.id));
+    const contentRefs = new Set(contentEntries.map((entry) => `${entry.collection}/${entry.id}`));
 
     for (const entry of ledger) {
       expect(sourceIds.has(entry.sourceId), `${entry.id} -> unknown source ${entry.sourceId}`).toBe(true);
+      expect(entry.chapterIds.length + (entry.entryRefs?.length ?? 0), `${entry.id} is used by nothing`).toBeGreaterThan(0);
 
       for (const chapterId of entry.chapterIds) {
         expect(chapterIds.has(chapterId), `${entry.id} -> unknown chapter ${chapterId}`).toBe(true);
+      }
+
+      for (const ref of entry.entryRefs ?? []) {
+        expect(contentRefs.has(ref), `${entry.id} -> unknown entry ${ref}`).toBe(true);
+      }
+    }
+  });
+
+  it('backs every source a timeline, dossier, Forever or glossary entry cites with a quote for that entry', () => {
+    for (const content of contentEntries) {
+      const ref = `${content.collection}/${content.id}`;
+
+      for (const sourceId of content.sourceIds) {
+        const backed = ledger.some((entry) => entry.sourceId === sourceId && (entry.entryRefs ?? []).includes(ref));
+        expect(backed, `${ref} cites ${sourceId} without ledger evidence`).toBe(true);
       }
     }
   });

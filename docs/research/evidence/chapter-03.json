@@ -15,6 +15,9 @@
     "quote": "Working through the shaman Ner'zhul, the demon lord gradually began corrupting the orcs. When Ner'zhul refused to serve the Legion's agenda past a certain point, Kil'jaeden turned to Ner'zhul's apprentice.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/horde-corrupted"
     ]
   },
   {
@@ -24,6 +27,9 @@
     "quote": "Gul'dan worked the orcs into a frenzy of bloodlust, and the newly formed Horde began slaughtering the peaceful draenei.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/horde-corrupted"
     ]
   },
   {
@@ -33,6 +39,9 @@
     "quote": "His influence over the orcs came to a head when he convinced them to drink the blood of the demon Mannoroth, promising them invincibility in exchange for their compliance. The fiend’s blood poisoned their minds, transforming the orcs into an army consumed by bloodlust and controlled from the shadows by Gul’dan and his puppet Warchief, Blackhand.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/horde-corrupted"
     ]
   },
   {
@@ -42,6 +51,9 @@
     "quote": "After a failed attack on Azeroth 10,000 years ago, Sargeras saw an opportunity to once again strike at the world, and possessed the magus Medivh, intending to use his power to foment a war between worlds that would force Azeroth to buckle upon itself.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
     ]
   },
   {
@@ -60,6 +72,9 @@
     "quote": "Medivh struck a deal with his new ally: in exchange for the promise of godhood, Gul’dan would create a gateway between the human homeworld of Azeroth and his own planet, Draenor. Thus, the Dark Portal was first opened, and the Horde flooded through to clash with the humans of Azeroth.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
     ]
   },
   {
@@ -69,6 +84,9 @@
     "quote": "For years, orcs and humans clashed in savage skirmishes, each side biding their time and surveying the enemy with the intent to launch a full-force strike when the hour was right. Three years after the Dark Portal was opened, the Horde marched on Stormwind City.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
     ]
   },
   {
@@ -105,6 +123,9 @@
     "quote": "While the city was under siege, Garona Halforcen, a former ally of the humans who was secretly in the thrall of Gul’dan’s Shadow Council, secured victory for the orcs, and assassinated King Llane under the Council’s orders.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
     ]
   },
   {
@@ -133,6 +154,9 @@
     "locator": "PDF p. 37",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
     ]
   },
   {
@@ -143,6 +167,9 @@
     "locator": "PDF p. 37",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
     ]
   },
   {
@@ -155,6 +182,9 @@
       "second-war",
       "arthas-and-lordaeron",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forever"
     ]
   },
   {
@@ -165,6 +195,9 @@
     "chapterIds": [
       "orcs-and-humans",
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/alliance-of-lordaeron"
     ]
   },
   {
@@ -184,6 +217,9 @@
     "quote": "Though their first attack was repelled by the King’s Commander Anduin Lothar, the Horde retreated to regroup and decide how best to land a decisive blow against the human kingdom.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
     ]
   },
   {
@@ -193,6 +229,9 @@
     "quote": "United under the banner of Doomhammer, the Horde marched upon Stormwind once more.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/stormwind-falls"
     ]
   },
   {
@@ -202,6 +241,9 @@
     "quote": "This cursed force invaded Azeroth through the Dark Portal, a dimensional gateway created by Medivh and Gul'dan, and clashed with the human nation of Stormwind.",
     "chapterIds": [
       "orcs-and-humans"
+    ],
+    "entryRefs": [
+      "timeline/dark-portal-opened"
     ]
   }
 ]

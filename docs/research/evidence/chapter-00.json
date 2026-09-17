@@ -33,6 +33,9 @@
     "quote": "Due to their colossal forms, Aggramar feared the Pantheon would irreparably damage or even kill the world-soul. He proposed creating powerful constructs to act as the Pantheon's hands and prosecute their will against the Black Empire.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/titans-order-azeroth"
     ]
   },
   {
@@ -42,6 +45,9 @@
     "quote": "In time, the keepers led the titan-forged against the armies of the Black Empire.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/titans-order-azeroth"
     ]
   },
   {
@@ -51,6 +57,9 @@
     "quote": "In the far north of ancient Kalimdor, the proto-dragon Galakrond had been the largest and most effective predator.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/dragon-aspects-empowered"
     ]
   },
   {
@@ -78,6 +87,9 @@
     "quote": "Under Tyr's guidance, the proto-dragons warred with Galakrond.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/dragon-aspects-empowered"
     ]
   },
   {
@@ -87,6 +99,9 @@
     "quote": "Tyr requested that these five proto-dragons be imbued with powers to guard Azeroth's lands.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/dragon-aspects-empowered"
     ]
   },
   {
@@ -96,6 +111,9 @@
     "quote": "the proto-dragons were transformed into the Aspects—leaders of the dragonflights and guardians of Azeroth.",
     "chapterIds": [
       "azeroth-before-civilization"
+    ],
+    "entryRefs": [
+      "timeline/dragon-aspects-empowered"
     ]
   },
   {
@@ -190,6 +208,9 @@
     "chapterIds": [
       "azeroth-before-civilization",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forever"
     ]
   },
   {
@@ -201,6 +222,9 @@
       "azeroth-before-civilization",
       "orcs-and-humans",
       "third-war-to-forever"
+    ],
+    "entryRefs": [
+      "timeline/forever"
     ]
   },
   {

@@ -1,5 +1,6 @@
 import { z } from 'astro/zod';
 
+import { eraIds } from './eras';
 import { loreStatuses, type LoreStatus } from './status';
 
 export const confidenceLevels = ['high', 'medium', 'low'] as const;
@@ -55,15 +56,20 @@ export const chapterEntrySchema = z.object({
   readingMinutes: z.number().int().min(1)
 }).superRefine(requireSourcesUnlessEstablished);
 
-export const timelineEntrySchema = createLoreSchema({
+// A plain object schema (not createLoreSchema) so pages keep typed access to every field.
+export const timelineEntrySchema = z.object({
+  ...loreFields,
+  eraId: z.enum(eraIds),
   dateLabel: z.string().trim().min(1),
+  dateNote: z.string().trim().min(1).optional(),
+  approximate: z.boolean(),
   sortKey: z.number(),
   major: z.boolean(),
   characterIds: z.array(z.string().trim().min(1)),
   factionIds: z.array(z.string().trim().min(1)),
   locationIds: z.array(z.string().trim().min(1)),
   chapterSlug: z.string().trim().min(1)
-});
+}).superRefine(requireSourcesUnlessEstablished);
 
 export const sourceTypes = [
   'official-article',

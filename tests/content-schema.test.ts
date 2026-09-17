@@ -89,6 +89,8 @@ describe('collection-specific schemas', () => {
   it('accepts timeline linkage fields without manufacturing a numeric date', () => {
     const result = timelineEntrySchema.parse({
       ...validLoreEntry,
+      eraId: 'ancient',
+      approximate: true,
       dateLabel: 'около 10 000 лет до открытия Dark Portal',
       sortKey: -10000,
       major: true,

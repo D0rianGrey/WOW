@@ -1,0 +1,80 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import LoreBadge from './LoreBadge.astro';
+import { entityNames } from '../lib/canonical-ids';
+import { eras } from '../lib/eras';
+import { route } from '../lib/routes';
+
+interface Props {
+  events: CollectionEntry<'timeline'>[];
+  chapterTitles: Record<string, string>;
+}
+
+const { events, chapterTitles } = Astro.props;
+
+const bands = eras
+  .map((era) => ({ era, events: events.filter((event) => event.data.eraId === era.id) }))
+  .filter((band) => band.events.length > 0);
+
+const entityLinks = (collection: string, ids: string[]) => {
+  return ids.map((id) => ({ id, name: entityNames[id] ?? id, href: route(`${collection}/${id}`) }));
+};
+---
+
+<div class="timeline" data-timeline>
+  {bands.map(({ era, events: eraEvents }) => (
+    <section class="timeline-era" data-era-band={era.id} aria-labelledby={`era-${era.id}`}>
+      <header class="timeline-era-header">
+        <h2 id={`era-${era.id}`}>{era.title}</h2>
+        <p>{era.topics}</p>
+      </header>
+      <ol class="timeline-events">
+        {eraEvents.map((event) => {
+          const people = entityLinks('characters', event.data.characterIds);
+          const factions = entityLinks('factions', event.data.factionIds);
+          const places = entityLinks('locations', event.data.locationIds);
+          const isAnchor = event.data.id === 'forever';
+
+          return (
+            <li
+              class:list={['timeline-event', { 'is-major': event.data.major, 'is-anchor': isAnchor }]}
+              id={event.data.id}
+              data-timeline-event
+              data-era={event.data.eraId}
+              data-status={event.data.status}
+              data-characters={event.data.characterIds.join(' ')}
+              data-factions={event.data.factionIds.join(' ')}
+              data-locations={event.data.locationIds.join(' ')}
+            >
+              <article aria-labelledby={`event-${event.data.id}`}>
+                {isAnchor && <p class="timeline-anchor-label"><span class="live-dot" aria-hidden="true"></span> Вы здесь</p>}
+                <p class="event-date">
+                  {event.data.approximate && <span class="event-approximate" aria-hidden="true">≈</span>}
+                  {event.data.dateLabel}
+                  {event.data.approximate && <span class="event-approximate-text">приблизительно</span>}
+                </p>
+                <h3 id={`event-${event.data.id}`}>{event.data.title}</h3>
+                <div class="event-meta"><LoreBadge status={event.data.status} /></div>
+                <p class="event-summary">{event.data.summary}</p>
+                {event.data.dateNote && <p class="event-date-note"><strong>О датировке:</strong> {event.data.dateNote}</p>}
+                {(people.length > 0 || factions.length > 0 || places.length > 0) && (
+                  <ul class="event-entities" aria-label="Связанные персонажи, фракции и места">
+                    {[...people, ...factions, ...places].map((entity) => (
+                      <li><a href={entity.href}>{entity.name}</a></li>
+                    ))}
+                  </ul>
+                )}
+                <p class="event-links">
+                  <a href={route(`chapters/${event.data.chapterSlug}`)}>Глава: {chapterTitles[event.data.chapterSlug]}</a>
+                  <span>Источников: {event.data.sourceIds.length}</span>
+                </p>
+              </article>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  ))}
+  <p class="timeline-empty" data-timeline-empty hidden>Под выбранные фильтры не подходит ни одно событие. Сбросьте один из фильтров.</p>
+</div>

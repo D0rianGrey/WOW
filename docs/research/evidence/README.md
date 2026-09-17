@@ -23,6 +23,10 @@ One JSON file per content area (`chapter-00.json`, `timeline.json`, `dossiers.js
 - `quote` is exact English text from the source (at least eight words); never a paraphrase.
 - `locator` is required for PDFs (page number as reported by the verifier).
 - `chapterIds` lists the chapters that rely on the claim.
+- `entryRefs` (optional) lists other content that relies on it, as `collection/id`
+  (`timeline/great-sundering`, `characters/thrall`, `forever/skyborne`, `glossary/scourge`).
+  Reuse an existing entry instead of duplicating a quote.
+- The ledger JSON files are the source of truth; edit them directly.
 
 ## Rules
 

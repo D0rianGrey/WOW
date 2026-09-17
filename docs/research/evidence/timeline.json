@@ -1,0 +1,35 @@
+[
+  {
+    "id": "tl-centuries-passed",
+    "claim": "Прошли века, и новое общество ночных эльфов окрепло в Ashenvale.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "As the centuries passed, the night elves’ new society grew strong and expanded throughout the budding forest that they came to call Ashenvale.",
+    "locator": "PDF p. 28",
+    "chapterIds": [],
+    "entryRefs": [
+      "timeline/highborne-exiled"
+    ]
+  },
+  {
+    "id": "tl-few-months-nethergarde",
+    "claim": "Через несколько месяцев после постройки Nethergarde портал открылся снова.",
+    "sourceId": "warcraft-iii-manual",
+    "quote": "Only a few months after Nethergarde’s completion, the energies of the dark portal coalesced and opened up a new gateway to Draenor.",
+    "locator": "PDF p. 3",
+    "chapterIds": [],
+    "entryRefs": [
+      "timeline/draenor-shattered"
+    ]
+  },
+  {
+    "id": "tl-gnomeregan-recently",
+    "claim": "Недавно из недр земли поднялась угроза и вторглась в Gnomeregan.",
+    "sourceId": "world-of-warcraft-2004-manual",
+    "quote": "Yet recently, a barbaric menace rose up from the bowels of the earth and invaded Gnomeregan.",
+    "locator": "PDF p. 93",
+    "chapterIds": [],
+    "entryRefs": [
+      "timeline/gnomeregan-lost"
+    ]
+  }
+]

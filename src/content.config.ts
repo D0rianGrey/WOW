@@ -29,7 +29,7 @@ const forever = defineCollection({
 });
 
 const timeline = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/timeline' }),
+  loader: file('src/content/timeline/core.json'),
   schema: timelineEntrySchema
 });
 

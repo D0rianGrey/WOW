@@ -27,6 +27,9 @@
     "locator": "PDF p. 28",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
     ]
   },
   {
@@ -37,6 +40,9 @@
     "locator": "PDF p. 28",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
     ]
   },
   {
@@ -47,6 +53,9 @@
     "locator": "PDF p. 28",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/highborne-exiled"
     ]
   },
   {
@@ -56,6 +65,9 @@
     "quote": "Long ago the exiled high elves landed on the shores of Lordaeron. They struck out to find a new home, and after many battles with the trolls, established the kingdom of Quel'Thalas.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/quelthalas-founded"
     ]
   },
   {
@@ -65,6 +77,9 @@
     "quote": "Using a vial of sacred water stolen from the first Well of Eternity, the high elves created a fount of mystical power at a convergence of ley energies within their home. They named this fountain the Sunwell.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/quelthalas-founded"
     ]
   },
   {
@@ -83,6 +98,9 @@
     "quote": "The Amani trolls gathered an immense army and assaulted the elven kingdom. Vastly outnumbered, the high elves hastily struck an alliance with the human nation of Arathor.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
     ]
   },
   {
@@ -92,6 +110,9 @@
     "quote": "The elves taught a small number of humans how to wield magic. In exchange the humans aided the elves in destroying the trolls' power base forever.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
     ]
   },
   {
@@ -101,6 +122,9 @@
     "quote": "This greatsword was borne into combat by the barbarian warlord who first united humanity under a single banner, founding the nation of Arathor.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
     ]
   },
   {
@@ -110,6 +134,9 @@
     "quote": "A master tactician and strategist, King Thoradin went on to play a critical role in ending the Troll Wars.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/troll-wars-arathor"
     ]
   },
   {
@@ -120,6 +147,9 @@
     "chapterIds": [
       "kingdoms-and-peoples",
       "second-war"
+    ],
+    "entryRefs": [
+      "timeline/alliance-of-lordaeron"
     ]
   },
   {
@@ -148,6 +178,9 @@
     "quote": "When Modimus passed away from old age, tensions boiled over among the clans, and war erupted for control of the city.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
     ]
   },
   {
@@ -157,6 +190,9 @@
     "quote": "Thus began the War of the Three Hammers, a savage conflict that raged for many years, during which time the Bronzebeard clan won sole ownership of Ironforge and expelled its rivals.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
     ]
   },
   {
@@ -175,6 +211,9 @@
     "quote": "It is the heart of Blackrock Mountain and the exact spot where, long ago, in a desperate bid to turn the tide of the dwarven civil war, Emperor Thaurissan summoned the elemental Firelord, Ragnaros, into the world.",
     "chapterIds": [
       "kingdoms-and-peoples"
+    ],
+    "entryRefs": [
+      "timeline/war-of-the-three-hammers"
     ]
   },
   {
@@ -242,6 +281,9 @@
     "chapterIds": [
       "kingdoms-and-peoples",
       "arthas-and-lordaeron"
+    ],
+    "entryRefs": [
+      "timeline/quelthalas-founded"
     ]
   },
   {
