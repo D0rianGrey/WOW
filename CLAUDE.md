@@ -11,11 +11,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Состояние работ
 
-- Код живёт в ветке `feat/encyclopedia-v1`; `main` содержит только спеку.
-  **Не мержить в `main` и не деплоить без явного одобрения.** Деплой — только ручной
-  (`.github/workflows/deploy.yml`, `workflow_dispatch`, только из `main`).
-- План из 10 задач (плюс аудит Task 4R) выполнен. Актуальное состояние и открытые вопросы — в
-  последнем handoff в `docs/superpowers/handoffs/`.
+- V1 смержен в `main`, репозиторий **публичный**, сайт опубликован:
+  `https://d0riangrey.github.io/WOW/`. **Деплой только ручной и только с явного одобрения**
+  (`.github/workflows/deploy.yml`, `workflow_dispatch`, из `main`).
+- План из 10 задач (плюс аудит Task 4R и финальный аудит) выполнен. Актуальное состояние
+  и открытые вопросы — в последнем handoff в `docs/superpowers/handoffs/`.
+- Актуальность контента держится на следилке: `scripts/watch-sources.mjs` +
+  `.github/workflows/watch-sources.yml` ежедневно ищут официальные статьи, которых нет в реестре
+  источников, и заводят issue. Дальше — по контракту `docs/automation/lore-update-contract.md`.
 
 | Файл | Роль |
 |---|---|
@@ -36,6 +39,7 @@ npm run preview          # просмотр собранного dist/
 npm test                 # Vitest (tests/*.test.ts, e2e исключены), офлайн
 npm run test:e2e         # Playwright: сам делает build + preview на 127.0.0.1:4321
 npm run verify:evidence  # сверка всех цитат реестра с живыми страницами и PDF (нужна сеть)
+node scripts/watch-sources.mjs  # официальные статьи, которых ещё нет в реестре источников (rc 20 = есть новое)
 
 # Один файл
 npm test -- tests/content-schema.test.ts
@@ -54,8 +58,9 @@ Playwright переиспользует уже запущенный сервер
 
 CI (`.github/workflows/`): `validate.yml` — тесты, сборка и e2e на PR и push в `main`;
 `evidence.yml` — `verify:evidence` раз в неделю и вручную (зависит от сети, поэтому не гейт PR);
-`deploy.yml` — ручной деплой. Node: `.nvmrc` = 24; `engines` повторяет диапазон Vitest
-(`^22.12.0 || ^24.0.0 || >=26.0.0`).
+`watch-sources.yml` — ежедневная следилка за официальными статьями; `deploy.yml` — ручной деплой.
+Экшены закреплены на commit SHA (версия — в комментарии рядом), права выданы на уровне job.
+Node: `.nvmrc` = 24; `engines` повторяет диапазон Vitest (`^22.12.0 || ^24.0.0 || >=26.0.0`).
 
 ## Доказательства (обязательно для любого факта)
 
@@ -70,6 +75,9 @@ CI (`.github/workflows/`): `validate.yml` — тесты, сборка и e2e н
    цитата ищется и в видимом тексте, и во встроенных JSON-данных страницы (так отдаёт текст
    story timeline Blizzard). Статусы: `OK`, `NOT_FOUND` (цитаты нет — утверждение выбрасывается),
    `LOCATOR_MISMATCH` (цитата на другой странице PDF, чем `locator`), `FETCH_ERROR`, `UNKNOWN_SOURCE`.
+   Загрузчик ходит только по публичным http(s)-адресам, проверяет каждый редирект, обрывает ответы
+   больше 32 МБ, повторяет запрос при 502/504 и при неудаче пробует «поисковый» user-agent —
+   форумы Blizzard отдают браузеру пустую оболочку приложения.
    Grok ошибается и в цитатах, и в выводах «имени нет на странице» — доверять только скрипту.
 3. **Текст** пишется только из проверенных записей; `sourceIds` записи = источники её цитат.
    Запись реестра привязана к главам через `chapterIds`, к остальному контенту — через
@@ -85,8 +93,9 @@ Forever и термина был подкреплён цитатой именн�
 Источники:
 - Схема (`sourceSchema`): `type` — enum (`official-article`, `official-announcement`,
   `official-retrospective`, `official-preview`, `official-promo`, `official-manual`, `official-book`,
-  `official-fiction`, `in-game`);
+  `official-fiction`, `official-forum`, `in-game`);
   нужен `url` **или** `citation` (печатные книги вроде Warcraft Chronicle — через `citation`).
+  URL — только `https`, исключение по хосту сделано для `http://ftp.blizzard.com` (мануалы).
 - Мануалы Warcraft II и III на `ftp.blizzard.com` открываются только по `http://` (у `https://` битый
   сертификат). Это не мёртвые ссылки.
 - Community-сайты (Warcraft Wiki, Wowpedia, Wowhead, Icy Veins) — только чтобы найти официальный текст
@@ -161,7 +170,9 @@ Forever и термина был подкреплён цитатой именн�
 
 ### Базовый путь `/WOW`
 
-Внутренние ссылки — только через `route()` из `src/lib/routes.ts`; в e2e `page.goto` всегда с `/WOW`.
+Внутренние ссылки — только через `route()` из `src/lib/routes.ts`: он добавляет завершающий слэш
+страницам (иначе GitHub Pages отвечает редиректом 301 на каждый переход) и не трогает файлы и якоря.
+В e2e `page.goto` всегда с `/WOW`.
 `tests/e2e/navigation.spec.ts` обходит все внутренние ссылки собранного сайта и требует 200 и
 существующий `#якорь`.
 

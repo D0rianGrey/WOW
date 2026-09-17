@@ -1,7 +1,7 @@
 # Encyclopedia V1 — handoff after Tasks 5–10
 
-Date: 2026-09-17
-Branch: `feat/encyclopedia-v1` (pull request to `main`, not merged)
+Date: 2026-09-17 (updated the same evening after the final audit)
+Branch: merged into `main`; the site is live at https://d0riangrey.github.io/WOW/
 Binding spec: `docs/superpowers/specs/2026-09-17-wow-forever-encyclopedia-design.md`
 Implementation plan: `docs/superpowers/plans/2026-09-17-wow-forever-encyclopedia-v1.md` (all tasks done)
 Audit report: `docs/audits/2026-09-17-encyclopedia-v1-audit.md` (includes the Tasks 5–8 fact-check)
@@ -9,8 +9,13 @@ Supersedes: `docs/superpowers/handoffs/2026-09-17-encyclopedia-v1-after-audit.md
 
 ## State
 
-The V1 plan is complete. Nothing is deployed and `main` still holds only the spec: merging and the first
-deployment wait for the owner's explicit approval.
+The V1 plan is complete, merged and deployed. The repository is public (GitHub Pages needs that on the
+free plan) and the owner ran the manual deployment. Deployment stays manual: it never happens without
+the owner asking for it.
+
+A final audit followed the deployment — four review channels, all findings triaged and fixed:
+`docs/audits/2026-09-17-final-audit.md`, raw model output under `docs/audits/reviews/2026-09-17/`.
+Content gaps it found are queued in `docs/superpowers/plans/2026-09-17-content-backlog.md`.
 
 | Area | Where | Notes |
 |---|---|---|
@@ -22,14 +27,15 @@ deployment wait for the owner's explicit approval.
 | Automation contract | `docs/automation/lore-update-contract.md` | PR-only, evidence-verified, human approval for FOREVER/CHANGED/BETA |
 | CI | `.github/workflows/validate.yml`, `evidence.yml`, `deploy.yml` | deploy is `workflow_dispatch` only; its build job runs only on `main` |
 | Illustrations | `public/images/chapters/`, `src/lib/illustrations.ts` | eight original AI scenes, WebP 1600w + 960w, credited as not Blizzard art |
+| Staying current | `scripts/watch-sources.mjs`, `.github/workflows/watch-sources.yml` | daily check for official articles the encyclopedia does not cite yet; opens one tracking issue |
 
 ## Verification at hand-off
 
 ```bash
-npm run verify:evidence  # 561/561 quotes verified against live sources
-npm test                 # 54/54
+npm run verify:evidence  # 571/571 quotes verified against live sources
+npm test                 # 61/61
 npm run build            # astro check 0 errors
-npm run test:e2e         # 18/18, including a crawl of every internal link and #anchor
+npm run test:e2e         # 18/18, including a crawl of every referenced URL, image and #anchor
 ```
 
 ## Fact-check of Tasks 5–8
@@ -49,13 +55,16 @@ every entry that relies on it.
 - Reading progress is always counted against the full eight-chapter path.
 - Empty YAML lists must be written as `[]`: a bare `field:` parses as `null` and fails the content schema at
   build time (unit tests do not parse frontmatter with YAML).
+- Internal links carry a trailing slash (`route()` adds it): without it GitHub Pages answers every click
+  with a 301.
+- Blizzard forums serve browsers an empty app shell, so the evidence checker retries with a crawler
+  user agent; its 502/504 answers are throttling, not dead pages, and are retried with backoff.
 
-## Manual steps for the owner
+## Publishing (done once, repeat per release)
 
-1. Review and merge the pull request into `main`.
-2. Settings → Pages → Source: GitHub Actions.
-3. Settings → Environments → `github-pages`: add required reviewers if deployments should need approval.
-4. Actions → "Deploy to GitHub Pages" → Run workflow on `main`.
+Actions → "Deploy to GitHub Pages" → Run workflow on `main`. Pages is already configured with the
+GitHub Actions source, and the build job refuses any ref but `main`. Optional: Settings →
+Environments → `github-pages` → required reviewers, if a deployment should need a second pair of eyes.
 
 ## Open
 
