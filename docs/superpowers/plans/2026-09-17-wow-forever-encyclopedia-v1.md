@@ -379,7 +379,7 @@ Audit report: `docs/audits/2026-09-17-encyclopedia-v1-audit.md`. This task recor
 
 ---
 
-### Task 5: Implement the master timeline and eras
+### Task 5: Implement the master timeline and eras (done 2026-09-17)
 
 **Files:**
 - Create: `src/content/timeline/core.json`
@@ -442,7 +442,7 @@ git commit -m "feat: add interactive master timeline and eras"
 
 ---
 
-### Task 6: Add character, faction, and location dossiers
+### Task 6: Add character, faction, and location dossiers (done 2026-09-17)
 
 **Files:**
 - Create real, evidence-backed content entries for at least:
@@ -509,7 +509,7 @@ git commit -m "feat: add lore dossiers and diagrams"
 
 ---
 
-### Task 7: Build the Forever Changes experience and changelog
+### Task 7: Build the Forever Changes experience and changelog (done 2026-09-17)
 
 **Files:**
 - Modify: `src/lib/content.ts` and `src/content.config.ts` (`foreverEntrySchema` = lore fields + `oldExpectation`, `foreverVersion`, `whyItMatters`)
@@ -550,7 +550,7 @@ git commit -m "feat: add Forever-specific lore comparison and changelog"
 
 ---
 
-### Task 8: Add glossary, source explorer, and search
+### Task 8: Add glossary, source explorer, and search (done 2026-09-17)
 
 **Files:**
 - Create: `src/content/glossary/core.json`
@@ -599,7 +599,7 @@ git commit -m "feat: add search glossary and source explorer"
 
 ---
 
-### Task 9: E2E coverage, CI validation, and gated GitHub Pages deployment
+### Task 9: E2E coverage, CI validation, and gated GitHub Pages deployment (done 2026-09-17)
 
 **Files:**
 - Create: `tests/e2e/navigation.spec.ts`
@@ -637,7 +637,7 @@ git commit -m "ci: validate and gate encyclopedia deployment"
 
 ---
 
-### Task 10: Wire the future lore-monitoring automation to the content architecture
+### Task 10: Wire the future lore-monitoring automation to the content architecture (done 2026-09-17)
 
 **Files:**
 - Create: `docs/automation/lore-update-contract.md`

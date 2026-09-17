@@ -1,5 +1,7 @@
 # Encyclopedia V1 — handoff after the audit (Task 4R)
 
+> **Superseded** by `2026-09-17-encyclopedia-v1-complete.md` (Tasks 5–10 done).
+
 Date: 2026-09-17
 Branch: `feat/encyclopedia-v1`
 Binding spec: `docs/superpowers/specs/2026-09-17-wow-forever-encyclopedia-design.md`
