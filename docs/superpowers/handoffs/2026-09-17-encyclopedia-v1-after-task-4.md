@@ -9,6 +9,8 @@ Implementation plan: `docs/superpowers/plans/2026-09-17-wow-forever-encyclopedia
 
 Tasks 1–4 are complete and independently reviewed. Resume at **Task 5: Implement the master timeline**. Do not repeat Tasks 1–4.
 
+GitHub checkpoint commit: `6df6d743f2c74c0758b37098b5ea05223f0a7f95`. The task-level SHAs below belong to the isolated local SDD checkout; GitHub carries their combined reviewed tree in that checkpoint commit.
+
 The SDD scratch ledger remains at:
 
 `.superpowers/sdd/2026-09-17-wow-forever-encyclopedia-v1/progress.md`
